@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Teknopers — Personel & Saha Yönetim Sistemi</title>
-    <meta name="description" content="Teknopers: Donanımsız, GPS teyitli, güvenli bulut tabanlı personel ve saha operasyon yönetimi. Puantaj, görev, ekipman zimmeti, izin ve disiplin takibi tek uygulamada."/>
+    <title>Teknopers — Personel & Saha Yönetim Sistemi | Puantaj ve Mesai Takip</title>
+    <meta name="description" content="Teknopers: Donanımsız, GPS teyitli, güvenli bulut tabanlı personel ve saha operasyon yönetimi. Şantiye personel takip sistemi, puantaj hesaplama, görev ve izin takibi."/>
     
     <!-- Google Search Console Doğrulama Kodu -->
     <meta name="google-site-verification" content="oL2ri1b4a6M4V8Gg3lxedLUdWtLHEjcz9VKLOJ43VOU" />
@@ -34,9 +34,6 @@
             background-image: linear-gradient(rgba(51, 65, 85, .15) 1px, transparent 1px), linear-gradient(90deg, rgba(51, 65, 85, .15) 1px, transparent 1px);
             background-size: 22px 22px;
         }
-        .tp-badge-bg {
-            background: radial-gradient(circle at 34% 30%, theme('colors.gold.300'), theme('colors.gold.500') 64%, theme('colors.gold.700'));
-        }
         .text-gradient-gold {
             background: linear-gradient(90deg, theme('colors.gold.300'), theme('colors.gold.500'));
             -webkit-background-clip: text;
@@ -61,25 +58,36 @@
         }
         .animate-bob { animation: bob 1.5s infinite; }
         
-        /* Custom Scrollbar for Phone Container */
-        .phone-scroll::-webkit-scrollbar { width: 4px; }
-        .phone-scroll::-webkit-scrollbar-track { background: rgba(30, 41, 59, 0.5); border-radius: 10px; }
-        .phone-scroll::-webkit-scrollbar-thumb { background: rgba(234, 179, 8, 0.5); border-radius: 10px; }
+        /* Custom Scrollbar */
+        .phone-scroll::-webkit-scrollbar, .modal-scroll::-webkit-scrollbar { width: 4px; }
+        .phone-scroll::-webkit-scrollbar-track, .modal-scroll::-webkit-scrollbar-track { background: rgba(30, 41, 59, 0.5); border-radius: 10px; }
+        .phone-scroll::-webkit-scrollbar-thumb, .modal-scroll::-webkit-scrollbar-thumb { background: rgba(234, 179, 8, 0.5); border-radius: 10px; }
         
         .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease-out, transform 0.7s ease-out; }
         .reveal.in { opacity: 1; transform: translateY(0); }
         details > summary { list-style: none; }
         details > summary::-webkit-details-marker { display: none; }
+        
+        /* Modal Transitions */
+        .modal-hidden { opacity: 0; pointer-events: none; transform: scale(0.95); transition: all 0.3s ease-out; }
+        .modal-visible { opacity: 1; pointer-events: auto; transform: scale(1); transition: all 0.3s ease-out; }
+        
+        /* Blog Graphic Patterns */
+        .dot-pattern { background-image: radial-gradient(rgba(255,255,255,0.1) 1px, transparent 1px); background-size: 16px 16px; }
     </style>
 </head>
-<body class="bg-navy-900 text-slate-100 antialiased selection:bg-gold-500 selection:text-navy-900 scroll-pt-24">
+<body class="bg-navy-900 text-slate-100 antialiased selection:bg-gold-500 selection:text-navy-900 scroll-pt-24 relative">
 
     <!-- NAV -->
-    <nav class="fixed top-0 left-0 w-full z-50 bg-navy-900/85 backdrop-blur-md border-b border-navy-600 transition-all">
+    <nav class="fixed top-0 left-0 w-full z-40 bg-navy-900/85 backdrop-blur-md border-b border-navy-600 transition-all">
         <div class="max-w-7xl mx-auto px-5 h-20 flex items-center justify-between">
-            <a href="#top" class="flex items-center gap-3 font-extrabold text-2xl tracking-tight hover:opacity-90 transition-opacity">
-                <span class="tp-badge-bg w-10 h-10 rounded-xl text-navy-800 flex items-center justify-center text-lg shadow-[0_6px_16px_rgba(234,179,8,0.25)]">TP</span>
-                <span>tekno<span class="text-gold-500">pers</span></span>
+            <a href="#top" class="flex items-center gap-3 hover:opacity-90 transition-opacity">
+                <!-- Orijinal Logo Tasarımı -->
+                <div class="relative w-[42px] h-[42px] bg-gold-400 rounded-xl flex items-center justify-center shadow-[0_4px_15px_rgba(234,179,8,0.2)] border border-gold-300/50 shrink-0">
+                    <span class="text-navy-900 font-black text-[22px] tracking-tighter ml-[-2px] mt-0.5">TP</span>
+                    <span class="absolute top-[6px] right-[6px] w-2.5 h-2.5 bg-emer-500 rounded-full shadow-[0_0_8px_rgba(16,185,129,0.8)]"></span>
+                </div>
+                <span class="font-extrabold text-2xl tracking-tight">tekno<span class="text-gold-500">pers</span></span>
             </a>
             
             <div class="hidden md:flex items-center gap-6 text-sm font-medium">
@@ -157,14 +165,13 @@
                 </div>
             </div>
 
-            <!-- Phone Mockup (Scrollable) -->
+            <!-- Phone Mockup -->
             <div class="relative max-w-[330px] mx-auto w-full lg:ml-auto reveal">
                 <div class="absolute inset-0 bg-gold-500/20 rounded-[44px] blur-3xl z-[-1]"></div>
                 
                 <div class="bg-navy-900 border-[6px] border-navy-600 rounded-[44px] h-[690px] shadow-[0_30px_60px_rgba(0,0,0,0.5)] overflow-hidden relative flex flex-col">
                     <div class="absolute inset-0 opacity-50 grid-bg z-0 pointer-events-none"></div>
                     
-                    <!-- Phone Top Bar -->
                     <div class="bg-navy-700 relative z-20 flex justify-between items-center px-4 py-3 border-b border-navy-600 text-slate-300 font-semibold text-sm">
                         <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4l10 10M14 4 4 14"/></svg>
                         <span>Teknopers</span>
@@ -175,10 +182,7 @@
                         </div>
                     </div>
                     
-                    <!-- Phone Content (Scrollable Area) -->
                     <div class="flex-1 relative z-10 overflow-y-auto px-4 py-5 pb-20 phone-scroll">
-                        
-                        <!-- Status Cards -->
                         <div class="flex justify-between text-center gap-1 mb-6 bg-navy-800/80 p-3 rounded-2xl border border-navy-600">
                             <div class="flex-1">
                                 <p class="text-[9px] font-bold text-emer-500 uppercase tracking-widest mb-1">● MESAİ</p>
@@ -195,16 +199,16 @@
                             </div>
                         </div>
 
-                        <!-- Brand in App -->
                         <div class="flex flex-col items-center mb-6">
-                            <div class="tp-badge-bg w-20 h-20 rounded-2xl text-navy-800 flex items-center justify-center text-3xl font-extrabold shadow-[0_0_40px_rgba(234,179,8,0.2)] relative">
-                                TP<span class="absolute top-2.5 right-2.5 w-3 h-3 rounded-full bg-emer-500 border-2 border-gold-300"></span>
+                            <!-- Orijinal Logo (Telefon İçi) -->
+                            <div class="relative w-[76px] h-[76px] bg-gold-400 rounded-2xl flex items-center justify-center shadow-[0_8px_25px_rgba(234,179,8,0.25)] border border-gold-300/50">
+                                <span class="text-navy-900 font-black text-[40px] tracking-tighter ml-[-2px] mt-1">TP</span>
+                                <span class="absolute top-[10px] right-[10px] w-[14px] h-[14px] bg-emer-500 rounded-full shadow-[0_0_10px_rgba(16,185,129,0.9)]"></span>
                             </div>
-                            <h2 class="text-2xl font-extrabold mt-3 tracking-tight">tekno<span class="text-gold-500">pers</span></h2>
+                            <h2 class="text-2xl font-extrabold mt-4 tracking-tight">tekno<span class="text-gold-500">pers</span></h2>
                             <span class="mt-2 bg-emer-900/30 border border-emer-900/50 px-3 py-1 rounded-full text-emer-500 text-[9px] font-bold tracking-widest">SİSTEM AKTİF</span>
                         </div>
 
-                        <!-- Action Buttons -->
                         <div class="grid grid-cols-2 gap-2 mb-3">
                             <button class="bg-yellow-900/30 border border-yellow-700 text-yellow-400 py-3 rounded-xl flex items-center justify-center gap-1.5 font-bold text-xs hover:bg-yellow-900/50 transition">
                                 MOLA (DONDUR)
@@ -217,19 +221,18 @@
                             📍 KONUM / TEYİT BİLDİR
                         </button>
 
-                        <!-- Menu Items List -->
                         <div class="space-y-2">
-                            <div class="bg-navy-700/90 p-4 rounded-2xl border border-navy-600 flex justify-between text-sm text-slate-300 hover:border-gold-500/50 cursor-pointer transition">
+                            <div class="bg-navy-700/90 p-4 rounded-2xl border border-navy-600 flex justify-between text-sm text-slate-300 hover:border-gold-500/50 transition cursor-pointer">
                                 <span>🕒 Mesai Geçmişim</span><span class="text-slate-500">›</span>
                             </div>
-                            <div class="bg-navy-700/90 p-4 rounded-2xl border border-navy-600 flex justify-between text-sm text-slate-300 hover:border-gold-500/50 cursor-pointer transition">
+                            <div class="bg-navy-700/90 p-4 rounded-2xl border border-navy-600 flex justify-between text-sm text-slate-300 hover:border-gold-500/50 transition cursor-pointer">
                                 <span>📄 Bekleyen Onaylarım</span><span class="text-slate-500">›</span>
                             </div>
-                            <div class="bg-navy-700/90 p-4 rounded-2xl border border-navy-600 flex justify-between text-sm text-slate-300 hover:border-gold-500/50 cursor-pointer transition">
+                            <div class="bg-navy-700/90 p-4 rounded-2xl border border-navy-600 flex justify-between text-sm text-slate-300 hover:border-gold-500/50 transition cursor-pointer">
                                 <span>✅ Atanan Görevlerim</span><span class="text-slate-500">›</span>
                             </div>
                             
-                            <!-- Equipment Expandable Panel -->
+                            <!-- Ekipman Panel -->
                             <div class="bg-navy-700/90 border border-navy-600 rounded-2xl overflow-hidden">
                                 <div class="p-4 flex justify-between items-center border-b border-navy-600 text-sm text-slate-300">
                                     <span class="flex items-center gap-2 text-gold-500 font-bold">🧰 Ekipman Zimmeti</span>
@@ -247,21 +250,16 @@
                                 </div>
                             </div>
                             
-                            <!-- Leave & Payroll -->
-                            <div class="bg-navy-700/90 p-4 rounded-2xl border border-navy-600 flex justify-between text-sm text-slate-300 hover:border-gold-500/50 cursor-pointer transition">
+                            <div class="bg-navy-700/90 p-4 rounded-2xl border border-navy-600 flex justify-between text-sm text-slate-300 hover:border-gold-500/50 transition cursor-pointer">
                                 <span>📅 İzin Talep Et</span><span class="text-slate-500">›</span>
                             </div>
-                            <div class="bg-navy-700/90 p-4 rounded-2xl border border-navy-600 flex justify-between text-sm text-slate-300 hover:border-gold-500/50 cursor-pointer transition">
+                            <div class="bg-navy-700/90 p-4 rounded-2xl border border-navy-600 flex justify-between text-sm text-slate-300 hover:border-gold-500/50 transition cursor-pointer">
                                 <span>📊 Bordro & Puantaj</span><span class="text-slate-500">›</span>
-                            </div>
-                            <div class="bg-navy-700/90 p-4 rounded-2xl border border-navy-600 flex justify-between text-sm text-slate-300 hover:border-gold-500/50 cursor-pointer transition">
-                                <span>⚠️ Disiplin Kayıtları</span><span class="text-slate-500">›</span>
                             </div>
                         </div>
 
                     </div>
 
-                    <!-- Fade Bottom Hint -->
                     <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-navy-900 to-transparent pointer-events-none flex justify-center items-end pb-3 z-20">
                         <span class="text-[10px] text-slate-300 animate-bob bg-navy-900/90 px-4 py-1.5 rounded-full border border-navy-600 font-medium shadow-lg">
                             Mouse ile aşağı kaydırın ▼
@@ -287,43 +285,36 @@
                         <h3 class="text-lg font-bold mb-2">Donanımsız Altyapı</h3>
                         <p class="text-slate-400 text-sm leading-relaxed">Ek cihaz veya kurulum yok. Telegram üzerinde anında devrede.</p>
                     </article>
-
                     <article class="bg-navy-900 border border-navy-600 rounded-2xl p-6 hover:border-gold-500/40 hover:-translate-y-1 transition-all reveal">
                         <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-emer-400 to-emer-600 text-white flex items-center justify-center mb-4 shadow-lg shadow-emer-500/40"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg></div>
                         <h3 class="text-lg font-bold mb-2">GPS Teyitli Mesai</h3>
                         <p class="text-slate-400 text-sm leading-relaxed">Personelin sahada olduğu GPS ile eşleştirilerek doğrulanır.</p>
                     </article>
-
                     <article class="bg-navy-900 border border-navy-600 rounded-2xl p-6 hover:border-gold-500/40 hover:-translate-y-1 transition-all reveal">
                         <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-gold-400 to-gold-600 text-navy-900 flex items-center justify-center mb-4 shadow-lg shadow-gold-500/40"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div>
                         <h3 class="text-lg font-bold mb-2">Görev Yönetimi</h3>
                         <p class="text-slate-400 text-sm leading-relaxed">Görev atama ve personelin "konuma vardım" bildirimi mesafe ile ölçülür.</p>
                     </article>
-
                     <article class="bg-navy-900 border border-navy-600 rounded-2xl p-6 hover:border-gold-500/40 hover:-translate-y-1 transition-all reveal">
                         <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-orange-400 to-orange-600 text-white flex items-center justify-center mb-4 shadow-lg shadow-orange-500/40"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path></svg></div>
                         <h3 class="text-lg font-bold mb-2">Ekipman Zimmeti</h3>
                         <p class="text-slate-400 text-sm leading-relaxed">Ekipman talebi onaylanır, kayıplar dijital olarak son bulur.</p>
                     </article>
-
                     <article class="bg-navy-900 border border-navy-600 rounded-2xl p-6 hover:border-gold-500/40 hover:-translate-y-1 transition-all reveal">
                         <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-400 to-purple-600 text-white flex items-center justify-center mb-4 shadow-lg shadow-purple-500/40"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg></div>
                         <h3 class="text-lg font-bold mb-2">İzin Yönetimi</h3>
                         <p class="text-slate-400 text-sm leading-relaxed">Tüm izinler uygulamadan istenir, yöneticiden saniyeler içinde onaylanır.</p>
                     </article>
-
                     <article class="bg-navy-900 border border-navy-600 rounded-2xl p-6 hover:border-gold-500/40 hover:-translate-y-1 transition-all reveal">
                         <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-indigo-400 to-indigo-600 text-white flex items-center justify-center mb-4 shadow-lg shadow-indigo-500/40"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg></div>
                         <h3 class="text-lg font-bold mb-2">Puantaj & Excel</h3>
                         <p class="text-slate-400 text-sm leading-relaxed">Mola, mesai, eksik gün; tek tuşla Excel veya PDF puantaj raporu.</p>
                     </article>
-
                     <article class="bg-navy-900 border border-navy-600 rounded-2xl p-6 hover:border-gold-500/40 hover:-translate-y-1 transition-all reveal">
                         <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-rose-400 to-rose-600 text-white flex items-center justify-center mb-4 shadow-lg shadow-rose-500/40"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div>
                         <h3 class="text-lg font-bold mb-2">Mola Tanımları</h3>
                         <p class="text-slate-400 text-sm leading-relaxed">Çay, yemek molaları ayarlanır, aşım yapanlar anlık listelenir.</p>
                     </article>
-
                     <article class="bg-navy-900 border border-navy-600 rounded-2xl p-6 hover:border-gold-500/40 hover:-translate-y-1 transition-all reveal">
                         <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-cyan-400 to-cyan-600 text-white flex items-center justify-center mb-4 shadow-lg shadow-cyan-500/40"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path></svg></div>
                         <h3 class="text-lg font-bold mb-2">Anlık Bildirimler</h3>
@@ -384,7 +375,7 @@
                             Aktif saha personeli: 
                             <span class="text-gold-500 text-3xl ml-2 tabular-nums" id="pcLabel">10</span>
                         </label>
-                        <input id="pc" type="range" min="1" max="50" value="10" aria-label="Saha Personeli Sayısı" class="w-full h-2 rounded-lg bg-navy-600 appearance-none cursor-pointer accent-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 focus:ring-offset-navy-900"/>
+                        <input id="pc" type="range" min="1" max="50" value="10" aria-label="Saha Personeli Sayısı" class="w-full h-2 rounded-lg bg-navy-600 appearance-none cursor-pointer accent-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500"/>
                         <div class="flex justify-between text-xs text-slate-400 mt-2 font-mono">
                             <span>1</span><span>50</span>
                         </div>
@@ -395,7 +386,7 @@
                                 Bu hesabı nasıl yapıyoruz?
                             </h4>
                             <p class="text-xs text-slate-400 leading-relaxed">
-                                Saha operasyonlarında günde ortalama <b>30 dakika</b> (ayda ~15 saat) personelin konum teyidi, telefon trafiği, mola ihlali ve manuel puantaj hataları sebebiyle boşa gider. Şeffaf bir projeksiyon için ortalama saatlik personel maliyeti taban fiyattan (<b>120₺</b> işveren maliyeti) baz alınmıştır.
+                                Saha operasyonlarında günde ortalama <b>30 dakika</b> (ayda ~15 saat) personelin konum teyidi, telefon trafiği, mola ihlali ve manuel puantaj hataları sebebiyle boşa gider. Şeffaf bir projeksiyon için ortalama saatlik maliyet taban fiyattan (<b>120₺</b> işveren maliyeti) baz alınmıştır.
                             </p>
                         </div>
                     </div>
@@ -414,121 +405,68 @@
             </div>
         </section>
 
-        <!-- FİYATLANDIRMA -->
-        <section id="fiyat" class="py-24 relative">
-            <div class="max-w-7xl mx-auto px-5">
-                <div class="text-center max-w-3xl mx-auto mb-16 reveal">
-                    <h2 class="text-3xl md:text-4xl font-extrabold mb-4">Şeffaf <span class="text-gold-500">Fiyatlandırma</span></h2>
-                    <p class="text-slate-400 text-lg">Gizli maliyet ve ek donanım yok. Ekibinize uygun yıllık lisansı seçin.</p>
-                </div>
-
-                <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto items-stretch">
-                    <!-- Basic -->
-                    <div class="bg-navy-900 border border-navy-600 rounded-[24px] p-8 flex flex-col reveal">
-                        <h3 class="text-xl font-bold mb-1">Başlangıç</h3>
-                        <p class="text-sm text-slate-500 mb-6">Küçük ekipler için</p>
-                        <div class="text-4xl font-extrabold mb-8">₺14.900<span class="text-sm text-slate-500 font-normal">/yıl</span></div>
-                        <ul class="space-y-3 mb-8 flex-1 text-sm text-slate-300">
-                            <li class="flex gap-2"><svg class="w-5 h-5 text-emer-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> 10 personele kadar</li>
-                            <li class="flex gap-2"><svg class="w-5 h-5 text-emer-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> GPS teyitli puantaj</li>
-                            <li class="flex gap-2"><svg class="w-5 h-5 text-emer-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Dijital ekipman zimmeti</li>
-                            <li class="flex gap-2"><svg class="w-5 h-5 text-emer-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Görev atama & temel raporlama</li>
-                        </ul>
-                        <a href="#" target="_blank" rel="noreferrer" class="cta-link block w-full text-center border border-navy-600 text-slate-300 hover:border-slate-400 hover:text-white font-bold py-3.5 rounded-xl transition-all">Başlayın</a>
-                    </div>
-
-                    <!-- Pro (Featured) -->
-                    <div class="bg-gradient-to-b from-gold-500/10 to-navy-900 border-2 border-gold-500/60 rounded-[24px] p-8 flex flex-col shadow-[0_0_30px_rgba(234,179,8,0.15)] relative md:-mt-4 md:mb-4 reveal z-10">
-                        <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gold-500 text-navy-900 text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wide">EN POPÜLER</div>
-                        <h3 class="text-xl font-bold mb-1 text-gold-500">Profesyonel</h3>
-                        <p class="text-sm text-slate-500 mb-6">Büyüyen işletmeler için</p>
-                        <div class="text-4xl font-extrabold mb-8">₺28.000<span class="text-sm text-slate-500 font-normal">/yıl</span></div>
-                        <ul class="space-y-3 mb-8 flex-1 text-sm text-slate-300">
-                            <li class="flex gap-2"><svg class="w-5 h-5 text-gold-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> 25 personele kadar</li>
-                            <li class="flex gap-2"><svg class="w-5 h-5 text-gold-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Başlangıçtaki her şey</li>
-                            <li class="flex gap-2"><svg class="w-5 h-5 text-gold-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> İzin & devamsızlık yönetimi</li>
-                            <li class="flex gap-2"><svg class="w-5 h-5 text-gold-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Detaylı performans & disiplin</li>
-                            <li class="flex gap-2"><svg class="w-5 h-5 text-gold-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Öncelikli destek</li>
-                        </ul>
-                        <a href="#" target="_blank" rel="noreferrer" class="cta-link block w-full text-center bg-gold-500 hover:bg-gold-400 text-navy-900 font-bold py-3.5 rounded-xl transition-all shadow-lg shadow-gold-500/20">Hemen Başlayın</a>
-                    </div>
-
-                    <!-- Enterprise -->
-                    <div class="bg-navy-900 border border-navy-600 rounded-[24px] p-8 flex flex-col reveal">
-                        <h3 class="text-xl font-bold mb-1">Kurumsal</h3>
-                        <p class="text-sm text-slate-500 mb-6">Büyük operasyonlar için</p>
-                        <div class="text-4xl font-extrabold mb-8">Özel<span class="text-sm text-slate-500 font-normal"> teklif</span></div>
-                        <ul class="space-y-3 mb-8 flex-1 text-sm text-slate-300">
-                            <li class="flex gap-2"><svg class="w-5 h-5 text-emer-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Sınırsız personel</li>
-                            <li class="flex gap-2"><svg class="w-5 h-5 text-emer-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Profesyoneldeki her şey</li>
-                            <li class="flex gap-2"><svg class="w-5 h-5 text-emer-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Özel entegrasyon & API</li>
-                            <li class="flex gap-2"><svg class="w-5 h-5 text-emer-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Atanmış müşteri temsilcisi</li>
-                        </ul>
-                        <a href="#" target="_blank" rel="noreferrer" class="cta-link block w-full text-center border border-navy-600 text-slate-300 hover:border-slate-400 hover:text-white font-bold py-3.5 rounded-xl transition-all">Teklif Alın</a>
-                    </div>
-                </div>
-                <p class="text-center text-xs text-slate-500 mt-8">Fiyatlara KDV dahil değildir. Tüm paketler güvenli bulut altyapısı ve Türkçe destek içerir.</p>
-            </div>
-        </section>
-
-        <!-- SEO BLOG SECTION -->
+        <!-- SEO BLOG SECTION WITH CSS GRADIENTS (NEVER BREAKS) -->
         <section id="blog" class="py-24 bg-navy-800 border-y border-navy-600">
             <div class="max-w-7xl mx-auto px-5">
                 <div class="text-center max-w-3xl mx-auto mb-16 reveal">
-                    <span class="inline-block py-1 px-3 rounded-full bg-blue-500/10 text-blue-400 text-xs font-bold uppercase tracking-wider mb-3">İçerik Merkezi</span>
-                    <h2 class="text-3xl md:text-4xl font-extrabold mb-4">Saha Yönetimi ve İK <span class="text-gold-500">Blogu</span></h2>
-                    <p class="text-slate-400 text-lg">Personel takip sistemi, puantaj hesaplama ve saha operasyonları üzerine uzman görüşleri.</p>
+                    <span class="inline-block py-1 px-3 rounded-full bg-blue-500/10 text-blue-400 text-xs font-bold uppercase tracking-wider mb-3">Sektör Uzmanı</span>
+                    <h2 class="text-3xl md:text-4xl font-extrabold mb-4">Puantaj ve <span class="text-gold-500">Saha Yönetimi</span></h2>
+                    <p class="text-slate-400 text-lg">Personel takip sistemi, puantaj hesaplama ve ekip yönetimi üzerine aradığınız çözümler.</p>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Blog 1 -->
-                    <article class="bg-navy-900 border border-navy-600 rounded-2xl overflow-hidden hover:border-gold-500/30 transition-colors group reveal">
-                        <div class="h-48 bg-navy-700 flex items-center justify-center border-b border-navy-600 relative overflow-hidden">
-                            <div class="absolute inset-0 bg-gradient-to-tr from-navy-800 to-navy-600 opacity-60"></div>
-                            <span class="text-slate-300 font-bold z-10 text-lg shadow-black drop-shadow-md">[Şantiye Görseli]</span>
+                    
+                    <!-- Blog 1: Şantiye (Kırılmaz Görsel Tasarımı) -->
+                    <article class="bg-navy-900 border border-navy-600 rounded-2xl overflow-hidden hover:border-gold-500/50 transition-colors group reveal flex flex-col cursor-pointer" onclick="openModal(1)">
+                        <div class="h-48 relative overflow-hidden bg-gradient-to-br from-blue-900/60 to-navy-800 flex items-center justify-center border-b border-navy-700">
+                            <div class="absolute inset-0 opacity-20 dot-pattern"></div>
+                            <svg class="w-16 h-16 text-blue-400/80 drop-shadow-lg group-hover:scale-110 transition-transform duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
                         </div>
-                        <div class="p-6">
+                        <div class="p-6 flex-1 flex flex-col">
                             <div class="flex items-center gap-3 mb-3">
-                                <span class="text-xs font-bold text-emer-400 bg-emer-400/10 px-2 py-1 rounded">Personel Takibi</span>
+                                <h1 class="text-xs font-bold text-emer-400 bg-emer-400/10 px-2 py-1 rounded">Şantiye Takibi</h1>
                                 <span class="text-xs text-slate-500">5 dk okuma</span>
                             </div>
-                            <h3 class="text-xl font-bold mb-3 group-hover:text-gold-500 transition-colors">Şantiyelerde Personel Takip Sistemi ile Kayıpları Nasıl Önlersiniz?</h3>
-                            <p class="text-slate-400 text-sm mb-4 line-clamp-2">Şantiye ortamında çalışanların giriş-çıkışlarını manuel takip etmek büyük maliyet kayıplarına yol açar.</p>
-                            <a href="#" class="text-gold-500 font-semibold text-sm flex items-center gap-1 hover:gap-2 transition-all">Devamını Oku &rarr;</a>
+                            <h3 class="text-xl font-bold mb-3 group-hover:text-gold-500 transition-colors">Şantiye Personel Takip Sistemi ile Maliyetleri %30 Düşürün</h3>
+                            <p class="text-slate-400 text-sm mb-4 line-clamp-2 flex-1">Şantiyelerde işçi giriş-çıkışlarını kart okuyucu veya parmak izi olmadan takip etmenin dijital yolları.</p>
+                            
+                            <span class="text-gold-500 font-semibold text-sm flex items-center gap-1 group-hover:gap-2 transition-all mt-auto self-start">Makaleyi Oku &rarr;</span>
                         </div>
                     </article>
 
-                    <!-- Blog 2 -->
-                    <article class="bg-navy-900 border border-navy-600 rounded-2xl overflow-hidden hover:border-gold-500/30 transition-colors group reveal" style="transition-delay: 100ms;">
-                        <div class="h-48 bg-navy-700 flex items-center justify-center border-b border-navy-600 relative overflow-hidden">
-                            <div class="absolute inset-0 bg-gradient-to-tr from-blue-900 to-navy-600 opacity-50"></div>
-                            <span class="text-slate-300 font-bold z-10 text-lg shadow-black drop-shadow-md">[Saha Ekibi Görseli]</span>
+                    <!-- Blog 2: Saha Ekibi (Kırılmaz Görsel Tasarımı) -->
+                    <article class="bg-navy-900 border border-navy-600 rounded-2xl overflow-hidden hover:border-gold-500/50 transition-colors group reveal flex flex-col cursor-pointer" onclick="openModal(2)" style="transition-delay: 100ms;">
+                        <div class="h-48 relative overflow-hidden bg-gradient-to-br from-emer-900/60 to-navy-800 flex items-center justify-center border-b border-navy-700">
+                            <div class="absolute inset-0 opacity-20 dot-pattern"></div>
+                            <svg class="w-16 h-16 text-emer-400/80 drop-shadow-lg group-hover:scale-110 transition-transform duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path></svg>
                         </div>
-                        <div class="p-6">
+                        <div class="p-6 flex-1 flex flex-col">
                             <div class="flex items-center gap-3 mb-3">
-                                <span class="text-xs font-bold text-blue-400 bg-blue-400/10 px-2 py-1 rounded">Saha Yönetimi</span>
+                                <h1 class="text-xs font-bold text-blue-400 bg-blue-400/10 px-2 py-1 rounded">Saha Yönetimi</h1>
                                 <span class="text-xs text-slate-500">4 dk okuma</span>
                             </div>
-                            <h3 class="text-xl font-bold mb-3 group-hover:text-gold-500 transition-colors">Saha Ekip Yönetiminde Mobil Mesai Takibinin Avantajları</h3>
-                            <p class="text-slate-400 text-sm mb-4 line-clamp-2">Teknik servis veya saha ekiplerinizin nerede olduğunu anlık bilmek neden önemlidir?</p>
-                            <a href="#" class="text-gold-500 font-semibold text-sm flex items-center gap-1 hover:gap-2 transition-all">Devamını Oku &rarr;</a>
+                            <h3 class="text-xl font-bold mb-3 group-hover:text-gold-500 transition-colors">Saha Ekip Yönetimi Programı: Konum ve Görev Doğrulama</h3>
+                            <p class="text-slate-400 text-sm mb-4 line-clamp-2 flex-1">Teknik servis ve satış ekiplerinin rotalarını GPS destekli mobil uygulama ile takip etmenin kolay yolları.</p>
+                            
+                            <span class="text-gold-500 font-semibold text-sm flex items-center gap-1 group-hover:gap-2 transition-all mt-auto self-start">Makaleyi Oku &rarr;</span>
                         </div>
                     </article>
 
-                    <!-- Blog 3 -->
-                    <article class="bg-navy-900 border border-navy-600 rounded-2xl overflow-hidden hover:border-gold-500/30 transition-colors group reveal" style="transition-delay: 200ms;">
-                        <div class="h-48 bg-navy-700 flex items-center justify-center border-b border-navy-600 relative overflow-hidden">
-                            <div class="absolute inset-0 bg-gradient-to-tr from-purple-900 to-navy-600 opacity-50"></div>
-                            <span class="text-slate-300 font-bold z-10 text-lg shadow-black drop-shadow-md">[Ofis Puantaj Görseli]</span>
+                    <!-- Blog 3: Puantaj (Kırılmaz Görsel Tasarımı) -->
+                    <article class="bg-navy-900 border border-navy-600 rounded-2xl overflow-hidden hover:border-gold-500/50 transition-colors group reveal flex flex-col cursor-pointer" onclick="openModal(3)" style="transition-delay: 200ms;">
+                        <div class="h-48 relative overflow-hidden bg-gradient-to-br from-purple-900/60 to-navy-800 flex items-center justify-center border-b border-navy-700">
+                            <div class="absolute inset-0 opacity-20 dot-pattern"></div>
+                            <svg class="w-16 h-16 text-purple-400/80 drop-shadow-lg group-hover:scale-110 transition-transform duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
                         </div>
-                        <div class="p-6">
+                        <div class="p-6 flex-1 flex flex-col">
                             <div class="flex items-center gap-3 mb-3">
-                                <span class="text-xs font-bold text-purple-400 bg-purple-400/10 px-2 py-1 rounded">Puantaj</span>
+                                <h1 class="text-xs font-bold text-purple-400 bg-purple-400/10 px-2 py-1 rounded">Puantaj Programı</h1>
                                 <span class="text-xs text-slate-500">6 dk okuma</span>
                             </div>
-                            <h3 class="text-xl font-bold mb-3 group-hover:text-gold-500 transition-colors">Puantaj Hesaplama Hatalarını Sıfıra İndirmenin Dijital Yolları</h3>
-                            <p class="text-slate-400 text-sm mb-4 line-clamp-2">Excel ile yapılan puantaj işlemleri insan hatasına açıktır. Dijital sisteme geçiş rehberi.</p>
-                            <a href="#" class="text-gold-500 font-semibold text-sm flex items-center gap-1 hover:gap-2 transition-all">Devamını Oku &rarr;</a>
+                            <h3 class="text-xl font-bold mb-3 group-hover:text-gold-500 transition-colors">Hatasız Puantaj Hesaplama ve Tek Tuşla Excel Aktarımı</h3>
+                            <p class="text-slate-400 text-sm mb-4 line-clamp-2 flex-1">Eksik gün ve mola kesintilerinin otomatik hesaplanıp Excel'e veya PDF'e aktarılması süreci.</p>
+                            
+                            <span class="text-gold-500 font-semibold text-sm flex items-center gap-1 group-hover:gap-2 transition-all mt-auto self-start">Makaleyi Oku &rarr;</span>
                         </div>
                     </article>
                 </div>
@@ -640,6 +578,58 @@
                 </div>
             </div>
         </section>
+
+        <!-- Fiyatlandırma -->
+        <section id="fiyat" class="py-24 relative">
+            <div class="max-w-7xl mx-auto px-5">
+                <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                    <h2 class="text-3xl md:text-4xl font-extrabold mb-4">Şeffaf <span class="text-gold-500">Fiyatlandırma</span></h2>
+                    <p class="text-slate-400 text-lg">Gizli maliyet ve ek donanım yok. Ekibinize uygun yıllık lisansı seçin.</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto items-stretch">
+                    <div class="bg-navy-900 border border-navy-600 rounded-[24px] p-8 flex flex-col reveal">
+                        <h3 class="text-xl font-bold mb-1">Başlangıç</h3>
+                        <p class="text-sm text-slate-500 mb-6">Küçük ekipler için</p>
+                        <div class="text-4xl font-extrabold mb-8">₺14.900<span class="text-sm text-slate-500 font-normal">/yıl</span></div>
+                        <ul class="space-y-3 mb-8 flex-1 text-sm text-slate-300">
+                            <li class="flex gap-2"><svg class="w-5 h-5 text-emer-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> 10 personele kadar</li>
+                            <li class="flex gap-2"><svg class="w-5 h-5 text-emer-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> GPS teyitli puantaj</li>
+                            <li class="flex gap-2"><svg class="w-5 h-5 text-emer-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Dijital ekipman zimmeti</li>
+                            <li class="flex gap-2"><svg class="w-5 h-5 text-emer-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Görev atama & raporlama</li>
+                        </ul>
+                        <a href="#" target="_blank" rel="noreferrer" class="cta-link block w-full text-center border border-navy-600 text-slate-300 hover:border-slate-400 hover:text-white font-bold py-3.5 rounded-xl transition-all">Başlayın</a>
+                    </div>
+
+                    <div class="bg-gradient-to-b from-gold-500/10 to-navy-900 border-2 border-gold-500/60 rounded-[24px] p-8 flex flex-col shadow-[0_0_30px_rgba(234,179,8,0.15)] relative md:-mt-4 md:mb-4 reveal z-10">
+                        <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gold-500 text-navy-900 text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wide">EN POPÜLER</div>
+                        <h3 class="text-xl font-bold mb-1 text-gold-500">Profesyonel</h3>
+                        <p class="text-sm text-slate-500 mb-6">Büyüyen işletmeler için</p>
+                        <div class="text-4xl font-extrabold mb-8">₺28.000<span class="text-sm text-slate-500 font-normal">/yıl</span></div>
+                        <ul class="space-y-3 mb-8 flex-1 text-sm text-slate-300">
+                            <li class="flex gap-2"><svg class="w-5 h-5 text-gold-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> 25 personele kadar</li>
+                            <li class="flex gap-2"><svg class="w-5 h-5 text-gold-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Başlangıçtaki her şey</li>
+                            <li class="flex gap-2"><svg class="w-5 h-5 text-gold-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> İzin & devamsızlık yönetimi</li>
+                            <li class="flex gap-2"><svg class="w-5 h-5 text-gold-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Detaylı performans & disiplin</li>
+                        </ul>
+                        <a href="#" target="_blank" rel="noreferrer" class="cta-link block w-full text-center bg-gold-500 hover:bg-gold-400 text-navy-900 font-bold py-3.5 rounded-xl transition-all shadow-lg shadow-gold-500/20">Hemen Başlayın</a>
+                    </div>
+
+                    <div class="bg-navy-900 border border-navy-600 rounded-[24px] p-8 flex flex-col reveal">
+                        <h3 class="text-xl font-bold mb-1">Kurumsal</h3>
+                        <p class="text-sm text-slate-500 mb-6">Büyük operasyonlar</p>
+                        <div class="text-4xl font-extrabold mb-8">Özel<span class="text-sm text-slate-500 font-normal"> teklif</span></div>
+                        <ul class="space-y-3 mb-8 flex-1 text-sm text-slate-300">
+                            <li class="flex gap-2"><svg class="w-5 h-5 text-emer-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Sınırsız personel</li>
+                            <li class="flex gap-2"><svg class="w-5 h-5 text-emer-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Özel entegrasyon & API</li>
+                            <li class="flex gap-2"><svg class="w-5 h-5 text-emer-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Öncelikli kurumsal destek</li>
+                        </ul>
+                        <a href="#" target="_blank" rel="noreferrer" class="cta-link block w-full text-center border border-navy-600 text-slate-300 hover:border-slate-400 hover:text-white font-bold py-3.5 rounded-xl transition-all">Teklif Alın</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
     </main>
 
     <!-- FOOTER -->
@@ -654,8 +644,12 @@
             
             <div class="mt-20 pt-8 border-t border-navy-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
                 <div class="flex items-center gap-3">
-                    <span class="tp-badge-bg w-7 h-7 rounded text-[10px] text-navy-900 font-bold flex items-center justify-center">TP</span>
-                    <b class="font-medium">Teknopers &copy; <span id="yr"></span></b>
+                    <!-- Orijinal Logo (Footer) -->
+                    <div class="relative w-8 h-8 bg-gold-400 rounded-lg flex items-center justify-center border border-gold-300/50 shrink-0">
+                        <span class="text-navy-900 font-black text-sm tracking-tighter ml-[-1px] mt-0.5">TP</span>
+                        <span class="absolute top-[4px] right-[4px] w-1.5 h-1.5 bg-emer-500 rounded-full"></span>
+                    </div>
+                    <b class="font-medium text-slate-300">Teknopers &copy; <span id="yr"></span></b>
                 </div>
                 <div class="flex gap-6">
                     <a href="#" class="hover:text-gold-500 transition-colors">Gizlilik Politikası</a>
@@ -664,6 +658,34 @@
             </div>
         </div>
     </footer>
+
+    <!-- (Gizli) Makale Okuma Ekranı (Modal) -->
+    <div id="articleModal" class="fixed inset-0 z-50 bg-navy-900/95 backdrop-blur-md modal-hidden flex items-center justify-center p-4">
+        <div class="bg-navy-800 border border-navy-600 w-full max-w-3xl max-h-[90vh] rounded-[24px] shadow-2xl flex flex-col relative overflow-hidden">
+            <!-- Modal Header -->
+            <div class="flex justify-between items-center p-5 border-b border-navy-700 bg-navy-900">
+                <div class="flex items-center gap-3">
+                    <!-- Orijinal Logo (Modal Header) -->
+                    <div class="relative w-8 h-8 bg-gold-400 rounded-lg flex items-center justify-center border border-gold-300/50 shrink-0">
+                        <span class="text-navy-900 font-black text-sm tracking-tighter ml-[-1px] mt-0.5">TP</span>
+                        <span class="absolute top-[4px] right-[4px] w-1.5 h-1.5 bg-emer-500 rounded-full"></span>
+                    </div>
+                    <span class="font-bold text-slate-200">Teknopers Blog</span>
+                </div>
+                <button onclick="closeModal()" class="text-slate-400 hover:text-white bg-navy-800 hover:bg-navy-700 p-2 rounded-full transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+            
+            <div class="p-6 md:p-8 overflow-y-auto modal-scroll text-slate-300 text-sm md:text-base leading-relaxed" id="modalContent">
+                <!-- İçerik JS ile buraya dolacak -->
+            </div>
+            
+            <div class="p-5 border-t border-navy-700 bg-navy-900 text-center">
+                <button onclick="closeModal()" class="bg-gold-500 hover:bg-gold-400 text-navy-900 font-bold py-2.5 px-8 rounded-xl transition-colors">Okumayı Bitir ve Kapat</button>
+            </div>
+        </div>
+    </div>
 
     <script>
         const TELEGRAM_LINK = "https://t.me/TeknoPers";
@@ -699,15 +721,12 @@
             savingsOutput.textContent = '₺' + totalSavings.toLocaleString('tr-TR');
         }
         
-        pcInput.addEventListener('input', calculateROI);
-        calculateROI(); 
+        if(pcInput) {
+            pcInput.addEventListener('input', calculateROI);
+            calculateROI(); 
+        }
 
-        const observerOptions = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.12
-        };
-
+        const observerOptions = { root: null, rootMargin: '0px', threshold: 0.12 };
         const observer = new IntersectionObserver((entries, obs) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -716,8 +735,75 @@
                 }
             });
         }, observerOptions);
-
         document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // --- BLOG MODAL SİSTEMİ ---
+        const articles = {
+            1: `
+                <h2 class="text-2xl md:text-3xl font-extrabold text-white mb-4">Şantiye Personel Takip Sistemi ile Maliyetleri %30 Düşürün</h2>
+                <div class="text-emer-400 font-semibold mb-6 pb-6 border-b border-navy-700">📌 Anahtar Kelimeler: Şantiye personel takip, puantaj hesaplama, şantiye yüz tanıma alternatifleri.</div>
+                <p class="mb-4">İnşaat sektöründe ve şantiye yönetiminde en büyük maliyet kaçaklarından biri <b>personel puantaj hatalarıdır</b>. Klasik sistemlerde (imza föyü, Excel tabloları veya pahalı donanımlar) personelin başkasının yerine imza atması (buddy punching) çok sık karşılaşılan bir durumdur.</p>
+                <p class="mb-4">Eskiden şantiyelerde yüz tanıma veya kart okuyucu cihazlar kurmak gerekirdi. Ancak şantiyenin tozu, elektriğin kesilmesi ve cihazların arızalanması bu sistemleri işlevsiz kılar.</p>
+                <h3 class="text-xl font-bold text-gold-500 mt-8 mb-3">Teknopers ile Donanımsız Çözüm</h3>
+                <p class="mb-4"><b>Teknopers</b>, şantiyeye hiçbir kablo veya cihaz çekmeden, işçilerin kendi akıllı telefonlarındaki Telegram uygulaması üzerinden mesai başlatmalarını sağlar. Sistem, mesai başlatıldığı an GPS üzerinden şantiye konumunu teyit eder.</p>
+                <ul class="list-disc pl-5 mb-6 space-y-2 text-slate-400">
+                    <li>Kart unutma veya cihaz bozulma derdi biter.</li>
+                    <li>Şantiye alanı dışından "çalışıyorum" bildirimi yapılamaz.</li>
+                    <li>Fazla mesailer ve molalar saniyesi saniyesine kayıt altına alınır.</li>
+                </ul>
+                <p>Maliyetleri optimize etmek ve şantiye verimliliğini artırmak için hemen teknolojik dönüşüme katılın.</p>
+            `,
+            2: `
+                <h2 class="text-2xl md:text-3xl font-extrabold text-white mb-4">Saha Ekip Yönetimi Programı: Konum ve Görev Doğrulama</h2>
+                <div class="text-blue-400 font-semibold mb-6 pb-6 border-b border-navy-700">📌 Anahtar Kelimeler: Saha ekip yönetimi, mobil ekip takip, teknik servis programı.</div>
+                <p class="mb-4">Teknik servisler, satış temsilcileri, temizlik ekipleri ve kuryeler... Sürekli hareket halinde olan <b>saha ekiplerini yönetmek</b> ofis çalışanlarını yönetmekten çok daha zordur.</p>
+                <p class="mb-4">Geleneksel WhatsApp gruplarında "Geldim", "Çıktım" gibi mesajlarla takip yapmak hem yöneticinin vaktini çalar hem de geriye dönük hesaplama (puantaj) yapmayı imkansız hale getirir.</p>
+                <h3 class="text-xl font-bold text-gold-500 mt-8 mb-3">Görev Bazlı Konum Takibi</h3>
+                <p class="mb-4">İyi bir <b>saha ekip yönetimi programı</b> personeli sürekli izlemek yerine, "görev odaklı" çalışmalıdır. Teknopers üzerinden personele bir müşteri konumu atanır.</p>
+                <p class="mb-4">Personel hedefe vardığında uygulamadan <i>"Konuma Vardım"</i> butonuna basar. Sistem arka planda personelin GPS verisini alır ve müşteri konumuyla arasındaki mesafeyi ölçer. Hedefteyse onaylar, değilse uyarı verir.</p>
+                <p>Bu sistem sayesinde gereksiz telefon trafiği biter, müşteriye zamanında hizmet verilir ve saha ekibinin performansı net verilerle (KPI) ölçülebilir hale gelir.</p>
+            `,
+            3: `
+                <h2 class="text-2xl md:text-3xl font-extrabold text-white mb-4">Hatasız Puantaj Hesaplama ve Tek Tuşla Excel Aktarımı</h2>
+                <div class="text-purple-400 font-semibold mb-6 pb-6 border-b border-navy-700">📌 Anahtar Kelimeler: Puantaj programı, otomatik puantaj hesaplama, puantaj excel indir.</div>
+                <p class="mb-4">Ay sonu geldiğinde insan kaynakları ve muhasebe departmanlarının kabusu başlar: <b>Puantaj Hesaplama</b>. Onlarca personelin giriş saatleri, çıkış saatleri, geç kalmaları, erken çıkmaları ve mola aşımlarını Excel'de manuel hesaplamak günlerce sürer.</p>
+                <h3 class="text-xl font-bold text-gold-500 mt-8 mb-3">Manuel Excel'in Gizli Maliyeti</h3>
+                <p class="mb-4">Manuel girilen puantaj verilerinde %5 ile %10 arasında insan hatası (human error) olduğu kanıtlanmıştır. Bir personelin 2 saatlik fazla mesaisini yanlış girmek veya geç kalmasını gözden kaçırmak, işletmeye her ay binlerce lira zarar ettirir.</p>
+                <h3 class="text-xl font-bold text-gold-500 mt-6 mb-3">Otomasyonun Gücü</h3>
+                <p class="mb-4">Teknopers bulut tabanlı <b>puantaj programı</b>, her personelin günlük hareketlerini saniye saniye kaydeder. Ay sonu geldiğinde yöneticinin yapması gereken tek şey tarih aralığı seçip "İndir" butonuna basmaktır.</p>
+                <ul class="list-disc pl-5 mb-6 space-y-2 text-slate-400">
+                    <li>Normal çalışma günleri tam yevmiye hesaplanır.</li>
+                    <li>Pazar ve resmi tatil mesaileri ayrı sütunda belirtilir.</li>
+                    <li>Sistem, hazır ve muhasebe programlarına uyumlu bir Excel (veya PDF) çıktısı verir.</li>
+                </ul>
+                <p>Muhasebenin iş yükünü %90 azaltın ve sıfır hata ile bordro dönemini kapatın.</p>
+            `
+        };
+
+        const modal = document.getElementById('articleModal');
+        const modalContent = document.getElementById('modalContent');
+
+        function openModal(articleId) {
+            modalContent.innerHTML = articles[articleId];
+            modal.classList.remove('modal-hidden');
+            modal.classList.add('modal-visible');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            modal.classList.remove('modal-visible');
+            modal.classList.add('modal-hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        modal.addEventListener('click', function(e) {
+            if(e.target === modal) {
+                closeModal();
+            }
+        });
     </script>
 </body>
 </html>
+
+
+```
