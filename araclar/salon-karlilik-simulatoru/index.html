@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ===== KAYBETME: Google Search Console doğrulaması ===== -->
+<meta name="google-site-verification" content="oL2ri1b4a6M4V8Gg3lxedLUdWtLHEjcz9VKLOJ43VOU" />
+<!-- ===== KAYBETME: Google Analytics 4 (gtag.js) — G-8GBQE6QZP8 ===== -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8GBQE6QZP8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-8GBQE6QZP8');
+</script>
+
+<title>Salon Kârlılık Simülatörü — Kuaför & Güzellik İşletme Hesabı 2026 | TEKNOPERS</title>
+<meta name="description" content="Kuaför / güzellik salonunuzun aylık kârını canlı simüle edin: müşteri, fiş, personel, kira ve prim kaydırıcılarını oynatın; ciro, net kâr, kâr marjı, başabaş ve 12 aylık projeksiyonu grafiklerle görün. Ücretsiz.">
+<link rel="canonical" href="https://teknopers.com.tr/araclar/salon-karlilik-simulatoru/">
+<meta property="og:site_name" content="TEKNOPERS">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:title" content="Salon Kârlılık Simülatörü — İşletme Paneli">
+<meta property="og:description" content="Kaydırıcıları oynat, salonunun aylık kârını ve 12 aylık projeksiyonunu canlı gör.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://teknopers.com.tr/araclar/salon-karlilik-simulatoru/">
+<meta property="og:image" content="https://teknopers.com.tr/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://teknopers.com.tr/og-image.png">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#0B1424">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F6F8FB; --paper:#FFFFFF; --ink:#0B1424; --ink2:#1C2A42; --slate:#4B5A70; --mut:#7A8AA0; --line:#E3E9F1; --line2:#D3DCE8;
+  --gold:#E5A800; --goldD:#B8860B; --goldL:#FFF4D6; --green:#10966E; --greenL:#E4F7F0; --wa:#1FAF5E; --navy:#0B1424; --rose:#C46A76; --teal:#0FA3A3; --blue:#2b6cb0;
+  --disp:'Sora',sans-serif; --body:'Figtree',sans-serif; --mono:'JetBrains Mono',monospace;
+  --r:18px; --sh:0 14px 40px rgba(11,20,36,.08);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;overflow-x:hidden}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);line-height:1.65;overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;z-index:-1;pointer-events:none;background:
+  linear-gradient(to right, rgba(11,20,36,.028) 1px, transparent 1px),
+  linear-gradient(to bottom, rgba(11,20,36,.028) 1px, transparent 1px);
+  background-size:34px 34px;
+  mask-image:linear-gradient(180deg,transparent 0,black 140px,black calc(100% - 120px),transparent 100%)}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+.eyebrow{font-family:var(--mono);font-size:12px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--goldD);display:inline-flex;align-items:center;gap:9px;margin-bottom:14px}
+.eyebrow::before{content:'';width:24px;height:3px;border-radius:2px;background:var(--gold)}
+h1{font-family:var(--disp);line-height:1.14;letter-spacing:-.018em;color:var(--ink);font-size:clamp(25px,4.8vw,37px);font-weight:800}
+h2{font-family:var(--disp);line-height:1.18;letter-spacing:-.015em;color:var(--ink);font-size:clamp(21px,3.6vw,27px);font-weight:700;margin-bottom:12px}
+h3{font-family:var(--disp);font-weight:700;font-size:15px;color:var(--ink)}
+:focus-visible{outline:2px solid var(--goldD);outline-offset:3px;border-radius:6px}
+
+nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.85);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav-in{max-width:1140px;margin:0 auto;padding:0 22px;height:70px;display:flex;align-items:center;gap:20px}
+.logo{display:flex;align-items:center;gap:11px;font-family:var(--disp);font-weight:800;font-size:19px;color:var(--ink)}
+.logo .lg{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,#FFCF3F,var(--gold));color:var(--navy);display:flex;align-items:center;justify-content:center;font-size:20px;box-shadow:0 4px 12px rgba(229,168,0,.35)}
+.nav-links{display:flex;gap:22px;margin-left:auto;font-size:14.5px;font-weight:600;color:var(--slate)}
+.nav-links a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-weight:700;font-size:15px;padding:13px 22px;border-radius:13px;border:1px solid transparent;transition:transform .15s ease,box-shadow .15s ease;cursor:pointer;text-align:center}
+.btn:active{transform:scale(.97)}
+.btn-wa{background:linear-gradient(135deg,#33D375,#17A052);color:#fff;box-shadow:0 10px 26px rgba(31,175,94,.32)}
+.btn-wa:hover{transform:translateY(-2px)}
+.btn-navy{background:var(--navy);color:#fff;box-shadow:0 10px 26px rgba(11,20,36,.22)}
+.btn-navy:hover{transform:translateY(-2px)}
+.nav-cta{padding:11px 20px;font-size:14px}
+@media(max-width:760px){.nav-links{display:none}}
+
+.top{padding:44px 0 6px;text-align:center}
+.top .sub{color:var(--slate);font-size:16.5px;max-width:660px;margin:14px auto 0}
+
+.dash{display:grid;grid-template-columns:1fr 1.15fr;gap:18px;margin-top:26px;align-items:start}
+@media(max-width:860px){.dash{grid-template-columns:1fr}}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--sh);padding:20px 20px}
+.card h3{margin-bottom:14px}
+
+/* sliders */
+.sl{margin-bottom:16px}
+.sl:last-child{margin-bottom:0}
+.sl .row{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:7px;gap:10px}
+.sl .lab{font-size:13.5px;font-weight:600;color:var(--ink2)}
+.sl .val{font-family:var(--mono);font-weight:700;font-size:14px;color:var(--goldD);white-space:nowrap}
+input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:6px;border-radius:6px;background:linear-gradient(90deg,var(--gold) 0%,var(--gold) var(--p,50%),#E7ECF3 var(--p,50%));outline:none}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:20px;height:20px;border-radius:50%;background:#fff;border:2px solid var(--gold);box-shadow:0 2px 6px rgba(11,20,36,.2);cursor:pointer}
+input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;background:#fff;border:2px solid var(--gold);cursor:pointer}
+.sl.num .row input{width:120px;font-family:var(--mono);font-size:13.5px;font-weight:700;text-align:right;border:1.5px solid var(--line2);border-radius:9px;padding:6px 8px;color:var(--ink)}
+.sl.num .row input:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 2px var(--goldL)}
+
+/* metrics */
+.metrics{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px}
+.m{border:1px solid var(--line);border-radius:13px;padding:13px 14px;background:#FBFCFE}
+.m .k{font-size:12px;color:var(--slate)}
+.m .v{font-family:var(--mono);font-weight:700;font-size:clamp(17px,4vw,21px);margin-top:3px;color:var(--ink)}
+.m.hero{grid-column:1 / -1;background:linear-gradient(135deg,#0B1424,#1C2A42);border-color:transparent}
+.m.hero .k{color:#B9C5D6}
+.m.hero .v{color:#FFD34D;font-size:clamp(22px,6vw,30px)}
+.m .v.pos{color:var(--green)} .m .v.neg{color:var(--rose)}
+
+.chartbox{margin-top:6px}
+.chartbox h3{margin-bottom:8px}
+.donutwrap{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.legend{flex:1;min-width:160px;display:flex;flex-direction:column;gap:6px}
+.legend .li{display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--ink2)}
+.legend .dot{width:11px;height:11px;border-radius:3px;flex:none}
+.legend .li .amt{margin-left:auto;font-family:var(--mono);font-weight:700;color:var(--ink)}
+.proj{margin-top:18px}
+.axis{font-size:10px;fill:var(--mut);font-family:var(--mono)}
+.growth{margin-top:10px}
+
+.cta{margin-top:34px;background:linear-gradient(135deg,#FFF9E8,#FFF4D6);border:1px solid #F0DFA6;border-radius:var(--r);padding:26px 24px;text-align:center}
+.cta h2{margin-bottom:8px}
+.cta p{color:var(--ink2);font-size:15.5px;max-width:560px;margin:0 auto 18px}
+.cta-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.content{padding:8px 0 20px}
+.content h2{margin-top:34px}
+.content p{color:var(--ink2);font-size:15.5px;margin-top:12px}
+.content strong{color:var(--ink)}
+.faq{margin-top:16px}
+.faq details{background:#fff;border:1px solid var(--line);border-radius:12px;padding:2px 18px;margin-top:10px}
+.faq summary{font-weight:600;color:var(--ink);cursor:pointer;padding:15px 0;list-style:none;font-size:15px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:'+';float:right;color:var(--gold);font-weight:800;font-size:20px}
+.faq details[open] summary::after{content:'–'}
+.faq details p{padding:0 0 15px;margin:0;color:var(--slate);font-size:14.5px}
+.disc{margin-top:14px;font-size:12px;color:var(--mut);text-align:center}
+
+footer{background:var(--navy);color:#B9C5D6;padding:44px 0 32px;margin-top:70px}
+.foot-in{max-width:1140px;margin:0 auto;padding:0 22px}
+footer .logo{color:#fff;margin-bottom:12px}
+footer p{font-size:14px;max-width:360px}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:24px;padding-top:20px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:13.5px}
+.foot-bottom a{color:#FFD34D}
+</style>
+<style id="mnav-fix">
+.mnav-btn{display:none}
+@media(max-width:880px){
+  .nav-cta{display:none!important}
+  .mnav-btn{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;margin-left:auto;border:1px solid #D3DCE8;border-radius:11px;background:#fff;color:#0B1424;font-size:20px;line-height:1;cursor:pointer;flex:none}
+  .nav-links{position:fixed!important;top:70px;left:0;right:0;display:none!important;flex-direction:column!important;align-items:stretch!important;gap:0!important;margin:0!important;background:#fff;border-top:1px solid #E3E9F1;border-bottom:1px solid #E3E9F1;box-shadow:0 14px 34px rgba(11,20,36,.14);padding:6px 0!important;z-index:400;max-height:calc(100vh - 70px);overflow-y:auto}
+  body.mnav-open .nav-links{display:flex!important}
+  .nav-links a{padding:13px 22px!important;text-align:center;width:100%;font-size:15px!important;color:#1C2A42!important}
+  .nav-links a.btn,.nav-links a.btn-gold,.nav-links a.btn-wa,.nav-links a.btn-navy{margin:8px 22px!important;width:auto!important;color:#fff!important}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-in">
+    <a class="logo" href="https://teknopers.com.tr"><span class="lg">T</span>TEKNOPERS</a>
+    <div class="nav-links">
+      <a href="https://teknopers.com.tr">Ana Sayfa</a>
+      <a href="/araclar/">Araçlar</a>
+      <a href="https://teknopers.com.tr/blog.html">Blog</a>
+    </div>
+    <a class="btn btn-wa nav-cta" href="https://wa.me/905434472226?text=Merhaba%2C%20TEKNOPERS%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener">WhatsApp'tan Yaz</a>
+  </div>
+</nav>
+
+<div class="top wrap">
+  <span class="eyebrow">Ücretsiz İşletme Simülatörü</span>
+  <h1>Salon Kârlılık Simülatörü</h1>
+  <p class="sub">Kaydırıcıları oynatın; kuaför / güzellik salonunuzun aylık cirosunu, net kârını, kâr marjını, başabaş noktasını ve 12 aylık projeksiyonunu canlı grafiklerle görün. "Ya müşteri artarsa, ya kira yükselirse?" — anında yanıtı.</p>
+</div>
+
+<main class="wrap">
+  <div class="dash">
+    <!-- SOL: girdiler -->
+    <section class="card">
+      <h3>İşletme değişkenleri</h3>
+      <div id="sliders"></div>
+    </section>
+
+    <!-- SAĞ: sonuç + grafik -->
+    <section class="card">
+      <div class="metrics" id="metrics"></div>
+
+      <div class="chartbox">
+        <h3>Gider dağılımı</h3>
+        <div class="donutwrap">
+          <div id="donut"></div>
+          <div class="legend" id="legend"></div>
+        </div>
+      </div>
+
+      <div class="proj">
+        <h3>12 aylık net kâr projeksiyonu</h3>
+        <div id="bars"></div>
+        <div class="sl growth">
+          <div class="row"><span class="lab">Aylık müşteri büyümesi</span><span class="val" id="gLbl">%3</span></div>
+          <input type="range" id="growth" min="-5" max="15" step="0.5" value="3">
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <p class="disc">Bu bir tahmin/simülasyon aracıdır; sonuçlar girdilerinize dayanır ve kesin muhasebe sonucu değildir.</p>
+
+  <!-- TEK CTA -->
+  <section class="cta">
+    <h2>Bu tablo tahmin; gerçeğini her gün görmek ister misiniz?</h2>
+    <p>TeknoPersSalon randevu, ciro, personel primi ve giderleri otomatik kaydeder; hangi hizmet kâr getiriyor, hangi personel ne üretiyor, ay sonu kârınız ne — tahmin değil gerçek veriyle gösterir. Simülatördeki bu paneli canlı işletmenizde yaşayın.</p>
+    <div class="cta-btns">
+      <a class="btn btn-wa" href="https://wa.me/905434472226?text=Merhaba%2C%20salonumun%20ciro%20ve%20k%C3%A2rl%C4%B1l%C4%B1%C4%9F%C4%B1n%C4%B1%20ger%C3%A7ek%20veriyle%20takip%20etmek%20istiyorum.%20TeknoPersSalon%20hakk%C4%B1nda%20bilgi%20alabilir%20miyim%3F" target="_blank" rel="noopener">💬 WhatsApp'tan Bilgi Al</a>
+      <a class="btn btn-navy" href="https://salon.teknopers.com.tr" target="_blank" rel="noopener">TeknoPersSalon'u İnceleyin →</a>
+    </div>
+  </section>
+
+  <!-- SEO -->
+  <section class="content">
+    <h2>Güzellik salonu ne kadar kazanır?</h2>
+    <p>Bir salonun ne kadar kazandığı, kapıdan giren müşteri sayısından çok daha fazlasına bağlıdır. Aylık ciro; günlük müşteri sayısı, müşteri başı ortalama harcama (fiş) ve ayda kaç gün açık olduğunuzla belirlenir. Kâr ise bu cirodan malzeme, personel maaşları, prim, kira ve diğer sabit giderler düşüldükten sonra kalan tutardır. Bu simülatör tüm bu değişkenleri kaydırıcılarla oynatmanıza ve kârın nasıl değiştiğini anında grafiklerle görmenize olanak tanır.</p>
+    <p>Salon işletmeciliğinde en sık yapılan hata, cironun yüksek olmasına bakıp gideri göz ardı etmektir. Örneğin günde 16 müşteriye 900 TL ortalama fişle hizmet veren bir salon ayda yaklaşık 375.000 TL ciro yapar; ancak üç personel, kira ve malzeme giderleri düşüldüğünde net kâr çok daha küçük bir rakama iner. Simülatördeki <strong>başabaş noktası</strong>, zarar etmemek için günde en az kaç müşteriye ihtiyacınız olduğunu gösterir — bu, salonunuzun "hayatta kalma çizgisidir".</p>
+    <p>Kârlılığı artırmanın üç yolu vardır: müşteri sayısını artırmak, müşteri başı harcamayı (ek hizmet/ürün satışıyla) yükseltmek veya gider yapısını iyileştirmek. Simülatörün 12 aylık projeksiyonu, aylık müşteri büyümesinin kâra etkisini gösterir; küçük ama istikrarlı bir büyümenin yıl sonunda ne kadar fark yarattığını görürsünüz. Gerçek kararlar için bu tahminleri kendi rakamlarınızla besleyin.</p>
+
+    <h2>Sık sorulan sorular</h2>
+    <div class="faq">
+      <details><summary>Salonda kâr marjı ne kadar olmalı?</summary>
+        <p>Sektör ve gider yapısına göre değişir; iyi yönetilen salonlarda net kâr marjı çoğunlukla %15–30 bandında hedeflenir. Personel ve kira giderleri yükseldikçe bu marj hızla erir, bu yüzden fiyatlama ve doluluk kritiktir.</p></details>
+      <details><summary>Başabaş noktası ne anlama gelir?</summary>
+        <p>Toplam giderinizi tam karşıladığınız, yani ne kâr ne zarar ettiğiniz ciro/müşteri seviyesidir. Bu noktanın altında zarar, üstünde kâr edersiniz. Simülatör bunu günde müşteri cinsinden gösterir.</p></details>
+      <details><summary>Müşteri başı harcamayı nasıl artırırım?</summary>
+        <p>Ek hizmet önerileri (bakım, maske), ürün satışı, paket ve üyelik sistemleriyle. Simülatörde "müşteri başı ortalama harcama" kaydırıcısını yükselterek etkisini görebilirsiniz.</p></details>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="foot-in">
+    <a class="logo" href="https://teknopers.com.tr"><span class="lg">T</span>TEKNOPERS</a>
+    <p>Türk KOBİ'leri için saha, depo, cari ve randevu yönetim sistemleri. İstanbul'dan, sahanın içinden.</p>
+    <div class="foot-bottom">
+      <span>© 2026 TEKNOPERS · teknopers.com.tr</span>
+      <span>WhatsApp: <a href="https://wa.me/905434472226" target="_blank" rel="noopener">0543 447 22 26</a></span>
+    </div>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org","@type":"WebApplication","name":"Salon Kârlılık Simülatörü",
+  "url":"https://teknopers.com.tr/araclar/salon-karlilik-simulatoru/","applicationCategory":"BusinessApplication",
+  "operatingSystem":"Web","inLanguage":"tr-TR","offers":{"@type":"Offer","price":"0","priceCurrency":"TRY"},
+  "description":"Kuaför ve güzellik salonları için interaktif kârlılık simülatörü: ciro, net kâr, kâr marjı, başabaş ve 12 aylık projeksiyon grafikleri."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"Salonda kâr marjı ne kadar olmalı?","acceptedAnswer":{"@type":"Answer","text":"Sektöre ve gider yapısına göre değişir; iyi yönetilen salonlarda net kâr marjı çoğunlukla %15-30 bandında hedeflenir."}},
+    {"@type":"Question","name":"Başabaş noktası nedir?","acceptedAnswer":{"@type":"Answer","text":"Toplam gideri tam karşıladığınız, ne kâr ne zarar ettiğiniz ciro/müşteri seviyesidir. Altında zarar, üstünde kâr edilir."}}
+  ]
+}
+</script>
+
+<script>
+const KEY='teknopers_karlilik_v1';
+const $=(id)=>document.getElementById(id);
+const tl=(x)=>new Intl.NumberFormat('tr-TR',{style:'currency',currency:'TRY',maximumFractionDigits:0}).format(Math.round(x||0));
+const tlk=(x)=>{ const a=Math.abs(x); if(a>=1e6)return (x/1e6).toLocaleString('tr-TR',{maximumFractionDigits:1})+'M ₺'; if(a>=1e3)return Math.round(x/1e3)+'B ₺'; return Math.round(x)+' ₺'; };
+
+// tanım: [key, etiket, min, max, step, varsayılan, tip('slider'|'para'|'yuzde'), birim]
+const DEFS=[
+ ['musteri','Günlük ortalama müşteri',0,50,1,16,'slider','kişi'],
+ ['fis','Müşteri başı ortalama harcama',100,5000,50,900,'para','₺'],
+ ['acik','Ayda açık gün',18,31,1,26,'slider','gün'],
+ ['personel','Personel sayısı',0,20,1,3,'slider','kişi'],
+ ['pmaliyet','Personel başı aylık maliyet',0,120000,1000,40000,'para','₺'],
+ ['prim','Prim (ciro üzerinden)',0,40,1,10,'yuzde','%'],
+ ['malzeme','Malzeme / değişken maliyet',0,60,1,20,'yuzde','%'],
+ ['kira','Aylık kira',0,400000,5000,80000,'para','₺'],
+ ['diger','Diğer sabit gider (fatura, muhasebe, yazılım)',0,150000,2500,25000,'para','₺']
+];
+let S={}; DEFS.forEach(d=>S[d[0]]=d[5]); S.growth=3;
+
+function fmtVal(d,v){ if(d[6]==='para')return tl(v); if(d[6]==='yuzde')return '%'+v; return v+' '+d[7]; }
+
+function buildSliders(){
+  $('sliders').innerHTML=DEFS.map(d=>{
+    const [k,lab,mn,mx,st,,tip]=d, v=S[k], p=((v-mn)/(mx-mn)*100).toFixed(1);
+    return `<div class="sl" data-k="${k}">
+      <div class="row"><span class="lab">${lab}</span><span class="val" id="v-${k}">${fmtVal(d,v)}</span></div>
+      <input type="range" id="r-${k}" min="${mn}" max="${mx}" step="${st}" value="${v}" style="--p:${p}%">
+    </div>`;
+  }).join('');
+  DEFS.forEach(d=>{ const k=d[0]; $('r-'+k).addEventListener('input',e=>{
+    S[k]=parseFloat(e.target.value);
+    $('v-'+k).textContent=fmtVal(d,S[k]);
+    e.target.style.setProperty('--p',((S[k]-d[2])/(d[3]-d[2])*100)+'%');
+    calc(); save();
+  }); });
+  $('growth').addEventListener('input',e=>{ S.growth=parseFloat(e.target.value); $('gLbl').textContent='%'+S.growth; e.target.style.setProperty('--p',((S.growth+5)/20*100)+'%'); calc(); save(); });
+  $('growth').style.setProperty('--p',((S.growth+5)/20*100)+'%');
+}
+
+function model(m){
+  const ciro=m.musteri*m.acik*m.fis;
+  const malzeme=ciro*m.malzeme/100;
+  const prim=ciro*m.prim/100;
+  const personel=m.personel*m.pmaliyet;
+  const sabit=personel+m.kira+m.diger;
+  const gider=sabit+malzeme+prim;
+  const kar=ciro-gider;
+  const marj=ciro>0?kar/ciro*100:0;
+  const cmR=1-(m.malzeme+m.prim)/100;
+  const bbCiro=cmR>0?sabit/cmR:Infinity;
+  const bbMus=(m.acik*m.fis)>0&&isFinite(bbCiro)?bbCiro/(m.acik*m.fis):0;
+  return {ciro,malzeme,prim,personel,kira:m.kira,diger:m.diger,sabit,gider,kar,marj,bbMus,bbCiro};
+}
+
+function donut(segs){
+  const total=segs.reduce((a,s)=>a+s.val,0)||1;
+  const R=64,C=2*Math.PI*R,cx=80,cy=80,sw=26; let acc=0,c='';
+  segs.forEach(s=>{ if(s.val<=0)return; const len=s.val/total*C;
+    c+=`<circle cx="${cx}" cy="${cy}" r="${R}" fill="none" stroke="${s.color}" stroke-width="${sw}" stroke-dasharray="${len.toFixed(2)} ${(C-len).toFixed(2)}" stroke-dashoffset="${(-acc).toFixed(2)}" transform="rotate(-90 ${cx} ${cy})"/>`;
+    acc+=len; });
+  return `<svg viewBox="0 0 160 160" width="160" height="160" role="img" aria-label="Gider dağılımı">${c}
+    <text x="${cx}" y="${cy-6}" text-anchor="middle" style="font:700 11px var(--mono,monospace);fill:#7A8AA0">Gider</text>
+    <text x="${cx}" y="${cy+14}" text-anchor="middle" style="font:800 16px var(--disp,sans-serif);fill:#0B1424" id="dc"></text></svg>`;
+}
+
+function bars(vals){
+  const W=380,H=150,pad=18,n=vals.length,bw=(W-pad*2)/n*0.62,step=(W-pad*2)/n;
+  const mx=Math.max(1,...vals.map(v=>Math.abs(v))), anyNeg=vals.some(v=>v<0);
+  const base=anyNeg?H/2:H-16, scale=(anyNeg?(H/2-14):(H-30))/mx;
+  let r='';
+  vals.forEach((v,i)=>{ const x=pad+i*step+(step-bw)/2; const h=Math.abs(v)*scale; const y=v>=0?base-h:base;
+    const col=v>=0?'#10966E':'#C46A76';
+    r+=`<rect x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="${bw.toFixed(1)}" height="${Math.max(1,h).toFixed(1)}" rx="2" fill="${col}"/>`;
+    if(i%2===0||n<=12) r+=`<text x="${(x+bw/2).toFixed(1)}" y="${H-3}" text-anchor="middle" class="axis">${i+1}</text>`;
+  });
+  r+=`<line x1="${pad}" y1="${base}" x2="${W-pad}" y2="${base}" stroke="#D3DCE8" stroke-width="1"/>`;
+  return `<svg viewBox="0 0 ${W} ${H}" width="100%" style="max-width:420px" role="img" aria-label="12 aylık kâr projeksiyonu">${r}</svg>`;
+}
+
+function calc(){
+  const R=model(S);
+  // metrikler
+  const karCls=R.kar>=0?'pos':'neg';
+  $('metrics').innerHTML=
+    `<div class="m hero"><div class="k">Aylık net kâr</div><div class="v">${tl(R.kar)}</div></div>`+
+    `<div class="m"><div class="k">Aylık ciro</div><div class="v">${tl(R.ciro)}</div></div>`+
+    `<div class="m"><div class="k">Kâr marjı</div><div class="v ${karCls}">%${R.marj.toFixed(1)}</div></div>`+
+    `<div class="m"><div class="k">Başabaş (müşteri/gün)</div><div class="v">${isFinite(R.bbMus)?Math.ceil(R.bbMus):'—'}</div></div>`+
+    `<div class="m"><div class="k">Yıllık net kâr</div><div class="v ${karCls}">${tl(R.kar*12)}</div></div>`;
+  // donut
+  const segs=[
+    {ad:'Personel',val:R.personel,color:'#2b6cb0'},
+    {ad:'Kira',val:R.kira,color:'#E5A800'},
+    {ad:'Malzeme',val:R.malzeme,color:'#10966E'},
+    {ad:'Prim',val:R.prim,color:'#0FA3A3'},
+    {ad:'Diğer',val:R.diger,color:'#94A3B8'}
+  ];
+  $('donut').innerHTML=donut(segs);
+  const dc=$('dc'); if(dc) dc.textContent=tlk(R.gider);
+  const tot=R.gider||1;
+  $('legend').innerHTML=segs.map(s=>`<div class="li"><span class="dot" style="background:${s.color}"></span>${s.ad}<span class="amt">${tl(s.val)} · %${(s.val/tot*100).toFixed(0)}</span></div>`).join('');
+  // projeksiyon
+  const g=S.growth/100, cmR=1-(S.malzeme+S.prim)/100, vals=[];
+  for(let i=0;i<12;i++){ const mus=S.musteri*Math.pow(1+g,i); const ciro=mus*S.acik*S.fis; const kar=ciro*cmR-R.sabit; vals.push(kar); }
+  $('bars').innerHTML=bars(vals);
+}
+
+function save(){ try{ localStorage.setItem(KEY,JSON.stringify(S)); }catch(e){} }
+function load(){ try{ const o=JSON.parse(localStorage.getItem(KEY)||'null'); if(o){ S=Object.assign(S,o); } }catch(e){} }
+
+(function(){ load(); buildSliders(); calc(); })();
+</script>
+<script id="mnav-js">
+(function(){
+  var bar=document.querySelector('.nav-in')||document.querySelector('.wrap.nav')||document.querySelector('.nav')||document.querySelector('nav');
+  var links=document.querySelector('.nav-links');
+  if(!bar||!links||bar===links)return;
+  var b=document.createElement('button');
+  b.className='mnav-btn';b.type='button';b.setAttribute('aria-label','Menü');b.setAttribute('aria-expanded','false');b.innerHTML='\u2630';
+  bar.appendChild(b);
+  function close(){document.body.classList.remove('mnav-open');b.innerHTML='\u2630';b.setAttribute('aria-expanded','false');}
+  b.addEventListener('click',function(e){e.stopPropagation();var o=document.body.classList.toggle('mnav-open');b.innerHTML=o?'\u2715':'\u2630';b.setAttribute('aria-expanded',o?'true':'false');});
+  links.querySelectorAll('a').forEach(function(a){a.addEventListener('click',close);});
+  window.addEventListener('scroll',function(){if(document.body.classList.contains('mnav-open'))close();},{passive:true});
+})();
+</script>
+</body>
+</html>
