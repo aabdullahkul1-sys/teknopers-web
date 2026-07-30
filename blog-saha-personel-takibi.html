@@ -2,6 +2,8 @@
 <html lang="tr">
 <head>
 <meta charset="UTF-8">
+<meta name="google-site-verification" content="oL2ri1b4a6M4V8Gg3lxedLUdWtLHEjcz9VKLOJ43VOU" />
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Saha Personeli Takibi ve GPS ile Mesai Doğrulama | TEKNOPERS</title>
 <meta name="description" content="Saha personeli takibi nasıl yapılır? GPS ile mesai doğrulama, geofence, konumlu görev atama ve KVKK çerçevesi. Şantiye ve mobil ekipler için pratik rehber.">
@@ -332,6 +334,17 @@ footer{border-top:1px solid var(--line);padding:56px 0 30px;background:var(--bg2
 window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
 gtag('js',new Date());gtag('config','G-8GBQE6QZP8');
 </script>
+<style id="mnav-fix">
+.mnav-btn{display:none}
+@media(max-width:880px){
+  .nav-cta{display:none!important}
+  .mnav-btn{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;margin-left:auto;border:1px solid #D3DCE8;border-radius:11px;background:#fff;color:#0B1424;font-size:20px;line-height:1;cursor:pointer;flex:none}
+  .nav-links{position:fixed!important;top:70px;left:0;right:0;display:none!important;flex-direction:column!important;align-items:stretch!important;gap:0!important;margin:0!important;background:#fff;border-top:1px solid #E3E9F1;border-bottom:1px solid #E3E9F1;box-shadow:0 14px 34px rgba(11,20,36,.14);padding:6px 0!important;z-index:400;max-height:calc(100vh - 70px);overflow-y:auto}
+  body.mnav-open .nav-links{display:flex!important}
+  .nav-links a{padding:13px 22px!important;text-align:center;width:100%;font-size:15px!important;color:#1C2A42!important}
+  .nav-links a.btn,.nav-links a.btn-gold,.nav-links a.btn-wa,.nav-links a.btn-navy{margin:8px 22px!important;width:auto!important;color:#fff!important}
+}
+</style>
 </head>
 <body>
 <header>
@@ -442,6 +455,20 @@ gtag('js',new Date());gtag('config','G-8GBQE6QZP8');
   mm.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){mm.classList.remove('open');});});
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.1});
   document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+</script>
+<script id="mnav-js">
+(function(){
+  var bar=document.querySelector('.nav-in')||document.querySelector('.wrap.nav')||document.querySelector('.nav')||document.querySelector('nav');
+  var links=document.querySelector('.nav-links');
+  if(!bar||!links||bar===links)return;
+  var b=document.createElement('button');
+  b.className='mnav-btn';b.type='button';b.setAttribute('aria-label','Menü');b.setAttribute('aria-expanded','false');b.innerHTML='\u2630';
+  bar.appendChild(b);
+  function close(){document.body.classList.remove('mnav-open');b.innerHTML='\u2630';b.setAttribute('aria-expanded','false');}
+  b.addEventListener('click',function(e){e.stopPropagation();var o=document.body.classList.toggle('mnav-open');b.innerHTML=o?'\u2715':'\u2630';b.setAttribute('aria-expanded',o?'true':'false');});
+  links.querySelectorAll('a').forEach(function(a){a.addEventListener('click',close);});
+  window.addEventListener('scroll',function(){if(document.body.classList.contains('mnav-open'))close();},{passive:true});
+})();
 </script>
 </body>
 </html>
