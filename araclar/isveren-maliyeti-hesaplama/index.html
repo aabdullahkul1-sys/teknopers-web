@@ -307,12 +307,41 @@ footer p{font-size:14px;max-width:360px}
 <!-- Structured data: SSS -->
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"FAQPage",
-  "mainEntity":[
-    {"@type":"Question","name":"İşveren maliyeti brüt maaşın yüzde kaçı?","acceptedAnswer":{"@type":"Answer","text":"Teşviksiz durumda brüt ücretin üzerine yaklaşık %23,75 eklenir (SGK işveren %21,75 + işsizlik %2). İndirim uygulanan işyerlerinde bu oran düşer."}},
-    {"@type":"Question","name":"2026 asgari ücretli bir çalışanın işverene maliyeti ne kadar?","acceptedAnswer":{"@type":"Answer","text":"Teşviksiz durumda aylık 40.874,63 TL'dir. İmalat dışı 2 puan indirimle 40.214,03 TL, imalat 5 puan indirimle 39.223,13 TL olur."}},
-    {"@type":"Question","name":"SGK tavanı işveren maliyetini nasıl etkiler?","acceptedAnswer":{"@type":"Answer","text":"SGK primleri 2026 için 247.725 TL olan prime esas kazanç tavanına kadar hesaplanır. Brüt ücret tavanı aşarsa primler tavan üzerinden hesaplanır."}}
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "İşveren maliyeti brüt maaşın yüzde kaçı?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Teşviksiz durumda brüt ücretin üzerine yaklaşık %23,75 eklenir (SGK işveren %21,75 + işsizlik %2). İndirim uygulanan işyerlerinde bu oran düşer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Yol ve yemek yardımı bu hesaba dahil mi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hayır. Bu araç yalnızca brüt ücret ve SGK/işsizlik işveren primlerini hesaplar. Yol, yemek, özel sağlık sigortası gibi yan haklar ek maliyet olarak ayrıca eklenir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "SGK tavanı işveren maliyetini nasıl etkiler?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SGK primleri, 2026 için 247.725 TL olan prime esas kazanç tavanına kadar hesaplanır. Brüt ücret tavanı aşarsa, primler tavan tutarı üzerinden hesaplanır."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "AGİ maliyeti düşürür mü?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AGİ (Asgari Geçim İndirimi) 2022'de kaldırıldı, işveren maliyeti hesabında yer almaz. Bunun yerine asgari ücretli çalışanlar için gelir ve damga vergisi istisnası uygulanır."
+      }
+    }
   ]
 }
 </script>
