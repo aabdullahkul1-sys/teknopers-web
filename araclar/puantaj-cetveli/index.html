@@ -30,6 +30,9 @@
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://teknopers.com.tr/og-image.png">
+<meta property="og:image:alt" content="TEKNOPERS ücretsiz puantaj cetveli aracı">
+<meta name="twitter:title" content="Ücretsiz Puantaj Cetveli (2026) — Online Doldur, Yazdır, Excel'e Aktar">
+<meta name="twitter:description" content="Personel puantajını online tutun; çalışılan günü otomatik hesaplayın, yazdırın veya Excel'e aktarın. Üyelik yok.">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -37,7 +40,9 @@
 <meta name="theme-color" content="#0B1424">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap"></noscript>
 <style>
 :root{
   --bg:#F6F8FB; --paper:#FFFFFF; --ink:#0B1424; --ink2:#1C2A42; --slate:#4B5A70; --mut:#7A8AA0; --line:#E3E9F1; --line2:#D3DCE8;
@@ -115,6 +120,7 @@ td.day:hover{outline:2px solid var(--gold);outline-offset:-2px}
 .s-R{background:#FBEEF0;color:#a23b4b}
 .s-X{background:#F7DADA;color:#9b1c1c}
 .s-HT{background:#EEF2F7;color:#9aa7ba}
+.s-RT{background:#E8ECFA;color:#5566B5}
 .col-tot{background:#FBFCFE;font-family:var(--mono);font-weight:700;min-width:52px}
 .col-tot.head{background:#F3F6FA}
 td.rm{width:30px;cursor:pointer;color:var(--mut)}
@@ -249,6 +255,7 @@ footer p{font-size:14px;max-width:360px}
     <span><i class="dot s-R">R</i> Raporlu</span>
     <span><i class="dot s-X">X</i> Devamsız</span>
     <span><i class="dot s-HT">HT</i> Hafta tatili</span>
+    <span><i class="dot s-RT">RT</i> Resmi tatil</span>
     <span class="no-print" style="border:none;background:none;color:var(--mut)">Bir hücreye dokununca durum değişir</span>
   </div>
 
@@ -262,23 +269,100 @@ footer p{font-size:14px;max-width:360px}
     </div>
   </section>
 
+  <style>
+  .content h3{margin-top:26px;font-size:17px;color:var(--ink)}
+  .factbox{background:linear-gradient(180deg,#FFFDF5,#fff);border:1px solid #F0E4BE;border-left:4px solid var(--gold);border-radius:14px;padding:18px 20px;margin-top:22px}
+  .factbox h3{margin:0 0 10px;font-size:16px;color:var(--ink)}
+  .factbox ul{margin:0;padding-left:18px}
+  .factbox li{color:var(--ink2);font-size:14.5px;margin:6px 0}
+  .factbox li b{color:var(--ink)}
+  .factbox .note{font-size:12.5px;color:var(--mut);margin-top:10px}
+  .codetab{width:100%;border-collapse:collapse;margin-top:12px;font-size:14px}
+  .codetab th,.codetab td{border:1px solid var(--line);padding:8px 10px;text-align:left;color:var(--ink2)}
+  .codetab th{background:#F6F8FB;color:var(--ink);font-weight:700}
+  .codetab td:first-child{font-family:var(--mono);font-weight:700;color:var(--ink);white-space:nowrap;width:78px}
+  .content a{color:#8C6708;font-weight:600;text-underline-offset:2px}
+  ul.rel-links{margin-top:12px;padding-left:18px}
+  ul.rel-links li{color:var(--ink2);font-size:14.5px;margin:7px 0}
+  </style>
   <!-- SEO METNİ -->
   <section class="content narrow" style="margin:0 auto">
-    <h2>Puantaj cetveli nedir, nasıl doldurulur?</h2>
-    <p>Puantaj cetveli, bir işyerinde çalışanların ay boyunca hangi günler çalıştığını, izinli, raporlu veya devamsız olduğunu gösteren çizelgedir. İşveren için bordronun, SGK gün bildiriminin ve hak ediş hesabının temelidir. Yukarıdaki araçla cetveli dijital olarak doldurabilirsiniz: ay ve yılı seçin, "Personel ekle" ile çalışanları girin, ardından her gün hücresine dokunarak durumu değiştirin. Hafta sonları otomatik "hafta tatili" olarak işaretlenir, hafta içi günler varsayılan olarak "tam gün" gelir; siz yalnızca istisnaları (izin, rapor, devamsızlık) işaretlersiniz.</p>
-    <p>Araç, her personel için <strong>çalışılan günü</strong> otomatik toplar (tam gün 1, yarım gün 0,5 sayılır) ve izin, rapor, devamsızlık günlerini ayrı ayrı gösterir. İşiniz bittiğinde <strong>"Yazdır / PDF"</strong> ile çıktı alabilir veya <strong>"Excel'e aktar"</strong> ile CSV olarak indirip bilgisayarınızda saklayabilirsiniz. Girdiğiniz veriler tarayıcınızda otomatik kaydedilir; sayfayı kapatıp açsanız da kaybolmaz.</p>
-    <p>Kağıt veya Excel puantajın en büyük sorunu, ay sonunda toplamların elle yapılması ve hataya açık olmasıdır. Saha, temizlik, güvenlik gibi çok lokasyonlu ekiplerde bu iş iyice zorlaşır. TEKNOPERS bu noktada devreye girer: geliş-gidişi GPS'li kaydeder, puantajı otomatik oluşturur ve bordro tabanına bağlar.</p>
+    <h2>Puantaj cetveli nedir, ne işe yarar?</h2>
+    <p>Puantaj cetveli, bir işyerinde çalışanların ay boyunca hangi gün çalıştığını, hangi gün izinli, raporlu, devamsız ya da tatilde olduğunu gün gün gösteren çizelgedir. "Puantaj" kelimesi Fransızca <em>pointage</em> (kayıt tutma) sözcüğünden gelir; bu kaydı tutan kişiye geleneksel olarak <strong>puantör</strong> denir. Cetvel, işveren için üç şeyin temelidir: <strong>bordro</strong> (maaş hak edişi), <strong>SGK prim gün bildirimi</strong> ve bir uyuşmazlık halinde <strong>ispat</strong>. Kısaca puantaj çalışılan <em>günü/süreyi</em> gösterir; bordro ise bu veriye dayanarak hesaplanan <em>ödemeyi</em>.</p>
+
+    <h2>Puantaj tutmak zorunlu mu?</h2>
+    <p>Evet. İşverenin çalışma sürelerini belgelemesi kanuni bir yükümlülüktür. Dayanağı 4857 sayılı İş Kanunu'nun 67. maddesi ve buna dayanan Çalışma Süreleri Yönetmeliği'nin 9. maddesidir: <em>"İşveren, işçilerin çalışma sürelerini uygun araçlarla belgelemek zorundadır."</em> Fazla mesai için Fazla Çalışma Yönetmeliği'nin 10. maddesi ayrıca işverene, fazla çalışma saatlerini gösteren <strong>imzalı bir belgeyi işçinin özlük dosyasında saklama</strong> zorunluluğu getirir. Özlük dosyası tutmak da (m.75) zorunludur; puantaj bu dosyanın bir parçasıdır. Belgeleme yapmayan işverene idari para cezası uygulanabilir.</p>
+
+    <h2>İşveren neden dikkat etmeli? Dava ve SGK riski</h2>
+    <p>Puantaj sadece bir form değil; işverenin <strong>en güçlü savunma belgesidir</strong>. Yargıtay'ın yerleşik uygulamasına göre, işçinin <strong>imzasını taşıyan</strong> düzenli bir puantaj varsa, fazla çalışma iddiası ancak yazılı belgeyle çürütülebilir; puantaj varken salt tanık beyanıyla sonuca gidilemez. Buna karşılık <strong>imzasız</strong> ya da tutarsız, sonradan doldurulmuş bir puantaj işçi lehine yorumlanır ve işveren aleyhine döner. Ayrıca ay içinde 30 günden az çalışan sigortalıların eksik gün nedeni SGK'ya bildirilir; 1-9 çalışanı olan işyerleri bu nedeni <strong>"07 - Puantaj Kayıtları"</strong> olarak kodladığında, ekteki puantajda <strong>sigortalı imzası zorunludur</strong>; imza yoksa bildirim geçersiz sayılır ve primler re'sen tahakkuk ettirilebilir. Sonuç: cetveli düzenli tutmak <em>ve</em> imzalatmak şarttır.</p>
+
+    <div class="factbox">
+      <h3>Puantajla ilgili 2026 rakamları</h3>
+      <ul>
+        <li><b>Haftalık çalışma:</b> en çok 45 saat · <b>günlük:</b> en çok 11 saat · <b>gece:</b> en çok 7,5 saat</li>
+        <li><b>Fazla mesai:</b> 45 saati aşan her saat %50 zamlı (1,5 kat); yılda en çok 270 saat</li>
+        <li><b>Hafta tatili:</b> çalışılmasa da ücretli; tatilde çalışılırsa Yargıtay uygulamasına göre toplam 2,5 yevmiye</li>
+        <li><b>Resmi/genel tatil (UBGT):</b> çalışılmazsa ücretli; çalışılırsa toplam 2 yevmiye</li>
+        <li><b>Bordro mantığı:</b> ay 30 gün, aylık 225 saat kabul edilir</li>
+        <li><b>Asgari ücret (1 Ocak 2026):</b> brüt 33.030 TL, net 28.075,50 TL</li>
+      </ul>
+      <p class="note">Rakamlar 1 Ocak 2026 itibarıyladır; asgari ücret yıl içinde güncellenebilir.</p>
+    </div>
+
+    <h2>Puantaj cetveli nasıl doldurulur?</h2>
+    <p>Yukarıdaki araçla adım adım: <strong>(1)</strong> ay ve yılı seçin; <strong>(2)</strong> "Personel ekle" ile çalışanları girin; <strong>(3)</strong> her gün hücresine dokunarak durumu değiştirin. Hafta sonları otomatik <em>hafta tatili</em>, hafta içi günler varsayılan <em>tam gün</em> gelir; siz yalnızca istisnaları (izin, rapor, devamsızlık, yarım gün) işaretlersiniz. Ay sonunda araç, her personel için <strong>çalışılan günü</strong> otomatik toplar (tam gün 1, yarım gün 0,5) ve izin, rapor, devamsızlık günlerini ayrı gösterir. İşiniz bitince <strong>"Yazdır / PDF"</strong> veya <strong>"Excel'e aktar"</strong> ile çıktı alırsınız. Veriler tarayıcınızda saklanır, sayfayı kapatsanız da kaybolmaz. Üyelik veya e-posta gerekmez.</p>
+
+    <h3>Puantajda kullanılan işaretler (kısaltmalar)</h3>
+    <p>Türkiye'de hukuken zorunlu <strong>tek bir standart kısaltma yoktur</strong>; kodlar işyerine ve sektöre göre değişir. Önemli olan, cetvelde bir "kod açıklama (lejant)" bulunmasıdır. Yaygın kullanılanlar:</p>
+    <table class="codetab">
+      <thead><tr><th>Kod</th><th>Anlamı</th></tr></thead>
+      <tbody>
+        <tr><td>T / Ç</td><td>Tam gün çalışıldı</td></tr>
+        <tr><td>Y</td><td>Yarım gün</td></tr>
+        <tr><td>HT</td><td>Hafta tatili</td></tr>
+        <tr><td>RT</td><td>Resmi / genel tatil (UBGT)</td></tr>
+        <tr><td>Yİ</td><td>Yıllık ücretli izin</td></tr>
+        <tr><td>İ</td><td>İzinli (mazeret / idari)</td></tr>
+        <tr><td>Üİ</td><td>Ücretsiz izin</td></tr>
+        <tr><td>R</td><td>Raporlu (istirahat)</td></tr>
+        <tr><td>X / D</td><td>Devamsız (gelmedi)</td></tr>
+        <tr><td>FM</td><td>Fazla mesai (ayrı saat sütunu)</td></tr>
+      </tbody>
+    </table>
+    <p>Bu araçtaki kodlar: T, Y, İ, R, X (devamsız), HT (hafta tatili) ve RT (<a href="https://teknopers.com.tr/araclar/resmi-tatiller/">resmi tatil</a>). Farklı bir düzen kullanıyorsanız çıktıya kendi lejantınızı ekleyebilirsiniz.</p>
+
+    <h3>Hangi sektörlerde daha kritik?</h3>
+    <p>Çok personelli ve saha ağırlıklı işlerde puantaj hayatidir. <strong>İnşaat / şantiye:</strong> kalıpçı, demirci, duvarcı gibi ekipler çoğunlukla yevmiyeli çalışır; gece ve pazar yevmiyeleri ayrı takip edilir, taşeron puantajları ay sonunda SGK primleriyle karşılaştırılır. <strong>Güvenlik:</strong> 7/24 vardiya ve yüksek fazla mesai nedeniyle kayıt titiz tutulmalıdır. <strong>Temizlik:</strong> çok lokasyonlu ekiplerde kimin nerede kaç gün çalıştığı puantajsız takip edilemez. Bu işlerde kağıt ya da basit Excel, ay sonunda topluca doldurulduğunda hata üretir; verinin günlük tutulması ve imzalatılması önerilir.</p>
+    <p>Kağıt/Excel puantajın bu yükünü sıfırlamak isterseniz, <a href="https://teknopers.com.tr">TEKNOPERS</a> geliş-gidişi GPS'li dijital puantajla otomatik tutar, çalışılan gün ve fazla mesaiyi kendisi hesaplar ve bordro tabanına bağlar.</p>
+
+    <h3>İlgili araçlar ve rehberler</h3>
+    <ul class="rel-links">
+      <li><a href="https://teknopers.com.tr/araclar/fazla-mesai-hesaplama/">Fazla Mesai Hesaplama</a> — 45 saati aşan çalışmanın %50 zamlı ücreti</li>
+      <li><a href="https://teknopers.com.tr/araclar/resmi-tatiller/">2026 Resmi Tatiller</a> — puantajda "RT" işaretlenecek günler</li>
+      <li><a href="https://teknopers.com.tr/araclar/yillik-izin-hesaplama/">Yıllık İzin Hesaplama</a> — kıdeme göre izin günü</li>
+      <li><a href="https://teknopers.com.tr/araclar/net-brut-maas-hesaplama/">Net–Brüt Maaş Hesaplama</a> — puantajdan bordroya giden adım</li>
+      <li><a href="https://teknopers.com.tr/blog-puantaj-nasil-tutulur.html">Rehber: Puantaj Nasıl Tutulur?</a></li>
+      <li><a href="https://teknopers.com.tr/blog-pdks-nedir.html">Rehber: PDKS Nedir?</a></li>
+    </ul>
 
     <h2>Sık sorulan sorular</h2>
     <div class="faq">
-      <details><summary>Puantaj cetvelinde hangi kısaltmalar kullanılır?</summary>
-        <p>Bu araçta: T (tam gün), Y (yarım gün), İ (izinli), R (raporlu), X (devamsız), HT (hafta tatili). İşyerleri farklı kısaltmalar da kullanabilir; önemli olan bir lejantla açıklanmasıdır.</p></details>
-      <details><summary>Çalışılan gün nasıl hesaplanıyor?</summary>
+      <details><summary>Puantaj tutmak zorunlu mu?</summary>
+        <p>Evet. İşverenin çalışma sürelerini belgelemesi 4857 sayılı İş Kanunu m.67 ve Çalışma Süreleri Yönetmeliği m.9 gereği zorunludur; fazla mesai için imzalı belge saklamak da (Fazla Çalışma Yönetmeliği m.10) gerekir. Denetimlerde ve SGK eksik gün bildiriminde puantaj istenebilir, tutmayan işverene idari para cezası uygulanabilir.</p></details>
+      <details><summary>Puantajı kim tutar ve kim imzalar?</summary>
+        <p>Geleneksel olarak puantör; bugün İK/bordro sorumlusu veya PDKS sistemleri tutar. Cetvel puantör tarafından tutulur, çalışan tarafından imzalanır. Özellikle ıslak imza, belgenin dava ve SGK'daki ispat gücünü belirleyici ölçüde artırır.</p></details>
+      <details><summary>Puantaj ile bordro arasındaki fark nedir?</summary>
+        <p>Puantaj çalışılan günü/süreyi gösterir; bordro ise bu veriye dayanarak hesaplanan ödemeyi (brüt, kesinti, net) gösterir. Bordro puantajdan üretilir; bu yüzden puantajın doğruluğu bordronun da doğruluğunu belirler.</p></details>
+      <details><summary>Hafta tatili puantajda nasıl gösterilir?</summary>
+        <p>Genellikle 'HT' koduyla. Haftalık çalışmasını tamamlayan işçi, çalışmasa dahi hafta tatili ücretine hak kazanır. Hafta tatilinde çalışıldıysa ek ücret hesabı için ayrıca işaretlenir; Yargıtay uygulamasına göre bu durumda toplam 2,5 yevmiye ödenir.</p></details>
+      <details><summary>Raporlu (istirahatli) gün puantaja nasıl işlenir?</summary>
+        <p>'R' koduyla işlenir; istirahat raporu SGK'ya bildirilir ve iş göremezlik ödeneği devreye girer. Raporlu günler, hafta tatiline hak kazanmada çalışılmış gibi kabul edilir.</p></details>
+      <details><summary>Fazla mesai puantaja nasıl yazılır?</summary>
+        <p>Normal çalışma kodundan ayrı, saat olarak (ör. 1,5) yazılır. Fazla mesai yönetici onayıyla girilmeli ve çalışana imzalatılmalıdır; Fazla Çalışma Yönetmeliği m.10 imzalı belge saklamayı zorunlu kılar. Haftalık 45 saati aşan çalışma %50 zamlı ödenir, yılda en çok 270 saat olabilir.</p></details>
+      <details><summary>Bu araçta çalışılan gün nasıl hesaplanıyor?</summary>
         <p>Tam gün (T) 1, yarım gün (Y) 0,5 olarak sayılır; izin, rapor, devamsızlık ve hafta tatili çalışılan güne dahil edilmez. Araç bu toplamı her satırda otomatik gösterir.</p></details>
-      <details><summary>Verilerim kayboluyor mu?</summary>
-        <p>Hayır. Girdiğiniz cetvel tarayıcınızda otomatik saklanır. Ancak farklı cihaz/tarayıcıda görünmez; kalıcı ve ekipçe erişilebilir kayıt için TEKNOPERS gibi bir sistem gerekir.</p></details>
-      <details><summary>Yazdırırken tablo taşıyor, ne yapmalıyım?</summary>
-        <p>Yazdırma penceresinde "Yatay (landscape)" düzeni seçin. Araç zaten yatay A4'e göre ayarlıdır; personel sayısı çoksa birden fazla sayfaya bölünebilir.</p></details>
+      <details><summary>Üyelik veya e-posta gerekiyor mu, verilerim kayboluyor mu?</summary>
+        <p>Hayır, üyelik veya e-posta gerekmez; araç tamamen ücretsizdir. Girdiğiniz cetvel tarayıcınızda otomatik saklanır, sayfayı kapatsanız da kaybolmaz. Ancak farklı cihaz/tarayıcıda görünmez; kalıcı ve ekipçe erişilebilir kayıt için TEKNOPERS gibi bir sistem gerekir.</p></details>
     </div>
   </section>
 </main>
@@ -307,11 +391,102 @@ footer p{font-size:14px;max-width:360px}
   "description":"Ücretsiz online puantaj cetveli. Personel ekleyip günleri işaretleyin, çalışılan günü otomatik hesaplayın, yazdırın veya Excel'e aktarın."
 }
 </script>
+<!-- Structured data: Breadcrumb -->
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-    {"@type":"Question","name":"Puantaj cetvelinde hangi kısaltmalar kullanılır?","acceptedAnswer":{"@type":"Answer","text":"Yaygın olarak T (tam gün), Y (yarım gün), İ (izinli), R (raporlu), X (devamsız), HT (hafta tatili) kullanılır ve bir lejantla açıklanır."}},
-    {"@type":"Question","name":"Puantajda çalışılan gün nasıl hesaplanır?","acceptedAnswer":{"@type":"Answer","text":"Tam gün 1, yarım gün 0,5 sayılır; izin, rapor, devamsızlık ve hafta tatili çalışılan güne dahil edilmez."}}
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Ana Sayfa",
+      "item": "https://teknopers.com.tr/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Araçlar",
+      "item": "https://teknopers.com.tr/araclar/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Puantaj Cetveli",
+      "item": "https://teknopers.com.tr/araclar/puantaj-cetveli/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Puantaj tutmak zorunlu mu?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Evet. İşverenin çalışma sürelerini belgelemesi 4857 sayılı İş Kanunu m.67 ve Çalışma Süreleri Yönetmeliği m.9 gereği zorunludur; fazla mesai için imzalı belge saklamak da (Fazla Çalışma Yönetmeliği m.10) gerekir. Denetimlerde ve SGK eksik gün bildiriminde puantaj istenebilir, tutmayan işverene idari para cezası uygulanabilir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Puantajı kim tutar ve kim imzalar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Geleneksel olarak puantör; bugün İK/bordro sorumlusu veya PDKS sistemleri tutar. Cetvel puantör tarafından tutulur, çalışan tarafından imzalanır. Özellikle ıslak imza, belgenin dava ve SGK'daki ispat gücünü belirleyici ölçüde artırır."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Puantaj ile bordro arasındaki fark nedir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Puantaj çalışılan günü/süreyi gösterir; bordro ise bu veriye dayanarak hesaplanan ödemeyi (brüt, kesinti, net) gösterir. Bordro puantajdan üretilir; bu yüzden puantajın doğruluğu bordronun da doğruluğunu belirler."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hafta tatili puantajda nasıl gösterilir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Genellikle 'HT' koduyla. Haftalık çalışmasını tamamlayan işçi, çalışmasa dahi hafta tatili ücretine hak kazanır. Hafta tatilinde çalışıldıysa ek ücret hesabı için ayrıca işaretlenir; Yargıtay uygulamasına göre bu durumda toplam 2,5 yevmiye ödenir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Raporlu (istirahatli) gün puantaja nasıl işlenir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "'R' koduyla işlenir; istirahat raporu SGK'ya bildirilir ve iş göremezlik ödeneği devreye girer. Raporlu günler, hafta tatiline hak kazanmada çalışılmış gibi kabul edilir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Fazla mesai puantaja nasıl yazılır?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Normal çalışma kodundan ayrı, saat olarak (ör. 1,5) yazılır. Fazla mesai yönetici onayıyla girilmeli ve çalışana imzalatılmalıdır; Fazla Çalışma Yönetmeliği m.10 imzalı belge saklamayı zorunlu kılar. Haftalık 45 saati aşan çalışma %50 zamlı ödenir, yılda en çok 270 saat olabilir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Bu araçta çalışılan gün nasıl hesaplanıyor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tam gün (T) 1, yarım gün (Y) 0,5 olarak sayılır; izin, rapor, devamsızlık ve hafta tatili çalışılan güne dahil edilmez. Araç bu toplamı her satırda otomatik gösterir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Üyelik veya e-posta gerekiyor mu, verilerim kayboluyor mu?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hayır, üyelik veya e-posta gerekmez; araç tamamen ücretsizdir. Girdiğiniz cetvel tarayıcınızda otomatik saklanır, sayfayı kapatsanız da kaybolmaz. Ancak farklı cihaz/tarayıcıda görünmez; kalıcı ve ekipçe erişilebilir kayıt için TEKNOPERS gibi bir sistem gerekir."
+      }
+    }
   ]
 }
 </script>
@@ -319,8 +494,8 @@ footer p{font-size:14px;max-width:360px}
 <script>
 const AYLAR=['Ocak','Şubat','Mart','Nisan','Mayıs','Haziran','Temmuz','Ağustos','Eylül','Ekim','Kasım','Aralık'];
 const GUN_KISA=['Paz','Pzt','Sal','Çar','Per','Cum','Cmt']; // getDay() 0..6
-const CYCLE=['T','Y','İ','R','X','HT','']; // dokunma sırası
-const CLS={ 'T':'s-T','Y':'s-Y','İ':'s-i','R':'s-R','X':'s-X','HT':'s-HT','':'' };
+const CYCLE=['T','Y','İ','R','X','HT','RT','']; // dokunma sırası
+const CLS={ 'T':'s-T','Y':'s-Y','İ':'s-i','R':'s-R','X':'s-X','HT':'s-HT','RT':'s-RT','':'' };
 const KEY='teknopers_puantaj_v1';
 const $=(id)=>document.getElementById(id);
 
@@ -431,20 +606,6 @@ function csv(){
 })();
 </script>
 
-<!-- EK SEO UZMANLIK METNİ -->
-<section style="max-width: 800px; margin: 40px auto; padding: 20px; font-family: sans-serif; color: #333; line-height: 1.6; background: #fdfdfd; border-radius: 8px; border: 1px solid #eaeaea;">
-    <h2 style="font-size: 1.4rem; color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 5px;">Puantaj Cetveli Nedir ve Neden Önemlidir?</h2>
-    <p style="font-size: 0.95rem;">Puantaj cetveli, bir işletmede görev yapan personellerin günlük bazda işe gelip gelmediğini, fazla mesailerini, mola sürelerini, yıllık izin veya hastalık raporlarını gün gün kayıt altına alan hayati bir İK aracıdır. Özellikle bordrolama dönemlerinde, maaş hak edişlerinin ve SGK prim gün sayılarının (Aylık Prim ve Hizmet Belgesi) hatasız hesaplanabilmesi için puantaj verisinin doğruluğu şarttır.</p>
-    <h3 style="font-size: 1.2rem; color: #2c3e50; margin-top: 25px;">2026 Puantaj Kayıtlarında Dikkat Edilmesi Gerekenler</h3>
-    <p style="font-size: 0.95rem;">Bir puantaj kaydında işveren açısından risk barındıran en önemli konu, kayıtların gerçeği yansıtması ve anlaşmazlık durumunda yasal delil niteliği taşımasıdır.</p>
-    <ul style="font-size: 0.95rem;">
-        <li><strong>Eksik Gün Nedenleri:</strong> Personel işe gelmediğinde bunun nedeninin (ücretsiz izin, sağlık raporu, mazeretsiz devamsızlık) puantaja doğru kodlarla işlenmesi gerekir.</li>
-        <li><strong>Fazla Mesai Takibi:</strong> İş Kanunu'na göre haftalık 45 saati aşan çalışmalar puantajda net olarak görülmelidir.</li>
-        <li><strong>Hafta Tatili Hak Edişi:</strong> Haftanın iş günlerinde tam çalışan personel, kesintisiz 24 saatlik hafta tatiline ve bu tatilin ücretine hak kazanır. Puantaj bunu açıkça belgelemelidir.</li>
-    </ul>
-    <h3 style="font-size: 1.2rem; color: #2c3e50; margin-top: 25px;">Manuelden Dijitale Geçiş</h3>
-    <p style="font-size: 0.95rem;">Günümüzde kağıt veya basit Excel tabloları yerine PDKS (Personel Devam Kontrol Sistemi) yazılımları tercih edilmektedir. Yüz tanıma, parmak izi veya <strong>GPS destekli mobil puantaj</strong> sistemleri sayesinde, personel hataları ve veri manipülasyonu engellenerek işveren maliyetleri minimize edilir.</p>
-</section>
 
 </body>
 </html>
