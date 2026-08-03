@@ -322,12 +322,41 @@ footer p{font-size:14px;max-width:360px}
 <!-- Structured data: SSS -->
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"FAQPage",
-  "mainEntity":[
-    {"@type":"Question","name":"Fazla mesai ücreti nasıl hesaplanır?","acceptedAnswer":{"@type":"Answer","text":"Normal saatlik ücret bulunur (aylık brüt maaş ÷ 225), %50 zam eklenir (1,5 kat) ve fazla çalışılan saat sayısıyla çarpılır."}},
-    {"@type":"Question","name":"Bir işçiye yılda en fazla kaç saat fazla mesai yaptırılabilir?","acceptedAnswer":{"@type":"Answer","text":"İş Kanunu'na göre yıllık fazla çalışma süresi 270 saati aşamaz."}},
-    {"@type":"Question","name":"Haftalık 45 saatin altında sözleşme varsa ücret nasıl hesaplanır?","acceptedAnswer":{"@type":"Answer","text":"Sözleşmeli haftalık süre 45 saatin altındaysa, 45 saate kadar olan çalışma fazla süreli çalışmadır ve %25 zamlı (1,25 kat) ödenir."}}
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Fazla mesai ücreti brüt mü net mi hesaplanır?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Fazla mesai ücreti brüt saatlik ücret üzerinden hesaplanır. Bu araç size ödemeniz gereken brüt tutarı verir; personelin eline geçecek net tutar, bordrodaki SGK ve gelir vergisi kesintilerinden sonra oluşur."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Saatlik ücret aylık maaştan nasıl bulunur?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Aylık brüt maaş 225'e bölünür. Bunun nedeni, haftalık 45 saatlik yasal çalışmanın günde 7,5 saate, ayda ise 30 × 7,5 = 225 saate denk gelmesidir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Bir işçiye yılda en fazla kaç saat fazla mesai yaptırabilirim?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "İş Kanunu'na göre yıllık fazla çalışma süresi 270 saati aşamaz. Bu sınırın üzerine çıkmak yasal risk oluşturur."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Pazar ve resmi tatil çalışması fazla mesai midir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hafta tatili ve resmi tatil çalışmalarının ücretlendirilmesi ayrı kurallara tabidir ve bu araçtaki fazla mesai hesabından farklıdır. Bu tür durumlar için ayrıca bordro hesabı yapılmalıdır."
+      }
+    }
   ]
 }
 </script>
