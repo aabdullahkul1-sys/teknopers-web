@@ -5,10 +5,31 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
 <meta name="theme-color" content="#0f141e">
 
+<!-- ===== KAYBETME: Google Search Console doğrulaması (ana sitedekiyle aynı) ===== -->
+<meta name="google-site-verification" content="oL2ri1b4a6M4V8Gg3lxedLUdWtLHEjcz9VKLOJ43VOU" />
+
+<!-- ===== KAYBETME: Google Analytics 4 (gtag.js) — G-8GBQE6QZP8 ===== -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8GBQE6QZP8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-8GBQE6QZP8');
+</script>
+
+<!-- ===== Yazı tipi (render engellemez): Outfit'i asenkron yükle ===== -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&display=swap"></noscript>
+
 <!-- SEO — bu üç satırı kendi yayın adresine göre düzenle -->
 <title>Patron Simülasyonu — Saha Ekibini Yönet, Şirketini Büyüt | TEKNOPERS</title>
 <meta name="description" content="Ücretsiz işletme simülasyonu: temizlik, teknik servis, nakliye veya ajans şirketi kur. Personel ata, enerji ve bütçeni yönet, seviye atla, olaylarla mücadele et ve piyasada 1 numara ol. TEKNOPERS'ten ücretsiz saha yönetim oyunu.">
 <link rel="canonical" href="https://teknopers.com.tr/araclar/patron-simulasyonu/">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
 
 <!-- Paylaşım kartı (Open Graph) — sosyal medyada link atınca güzel görünür -->
 <meta property="og:type" content="website">
@@ -96,7 +117,7 @@
 </script>
 
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&display=swap');
+  /* Outfit yazı tipi sayfa basliginda asenkron yukleniyor (render engellenmez) */
 
   :root {
     --bg-main: #0f141e; --bg-surface: #1e293b; --bg-card: #27354f;
