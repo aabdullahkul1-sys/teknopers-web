@@ -306,12 +306,41 @@ footer p{font-size:14px;max-width:360px}
 <!-- Structured data: SSS -->
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"FAQPage",
-  "mainEntity":[
-    {"@type":"Question","name":"Brütten kesilen vergiler nelerdir?","acceptedAnswer":{"@type":"Answer","text":"SGK işçi payı %14, işsizlik işçi payı %1, gelir vergisi ve damga vergisi (binde 7,59). Asgari ücret kadarlık gelir ve damga vergisi istisnadır."}},
-    {"@type":"Question","name":"Net maaş yıl içinde neden değişir?","acceptedAnswer":{"@type":"Answer","text":"Gelir vergisi kümülatif matrah üzerinden alınır. Biriken matrah üst dilime geçtiğinde oran artar ve net azalır."}},
-    {"@type":"Question","name":"2026 SGK tavanı ne kadardır?","acceptedAnswer":{"@type":"Answer","text":"2026 SGK prime esas kazanç tavanı 247.725 TL'dir. SGK primleri bu tutara kadar hesaplanır."}}
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Brütten kesilen vergiler nelerdir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SGK işçi payı %14, işsizlik sigortası işçi payı %1, gelir vergisi (matrah üzerinden artan oranlı) ve damga vergisi (binde 7,59). Asgari ücret kadarlık gelir ve damga vergisi ise istisnadır."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Net maaş yıl içinde neden değişir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Gelir vergisi kümülatif matrah üzerinden alınır. Yıl boyunca biriken matrah üst dilime geçtiğinde vergi oranı artar; bu yüzden özellikle yüksek maaşlarda sonbahar ve kış aylarında net azalır."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "SGK tavanı maaşı nasıl etkiler?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SGK ve işsizlik primleri 2026 için 247.725 TL olan tavana kadar hesaplanır. Bu tutarın üzerindeki brüt kısımdan SGK kesilmez, ancak gelir vergisi kesilmeye devam eder."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Asgari ücretin neti neden vergisiz gibi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Asgari ücret düzeyindeki gelir ve damga vergisi kanunen istisna edildiği için asgari ücretliden bu iki kalem kesilmez; yalnızca SGK ve işsizlik payı kesilir."
+      }
+    }
   ]
 }
 </script>
