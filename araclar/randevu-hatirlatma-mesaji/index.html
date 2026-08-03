@@ -247,6 +247,18 @@ footer p{font-size:14px;max-width:360px}
         <p>Bu araç mesajı hazırlar; toplu ve otomatik gönderim için randevu sistemine ihtiyaç vardır. TeknoPersSalon randevu saatine göre hatırlatmaları otomatik gönderir.</p></details>
     </div>
   </section>
+<section class="content narrow" style="margin-top:8px">
+    <h2>Müşteri İletişiminde Randevu Mesajlarının Gücü</h2>
+    <p>Güzellik merkezleri, diş klinikleri, diyetisyenler ve spor salonları için boşa giden her randevu saati, geri dönüşü olmayan bir ciro kaybıdır. Sektör dilinde "No-Show" olarak adlandırılan habersiz gelmeme durumlarını engellemenin en profesyonel ve etkili yolu, müşterilere zamanında gönderilen hatırlatma mesajlarıdır.</p>
+    <h3>Mesaj Çeşitleri ve Gönderim Zamanlaması</h3>
+    <ul>
+        <li><strong>Randevu Onay Mesajı:</strong> Müşteri randevuyu aldığı an gönderilmelidir. Güven verir ve takvime kaydedilmesini teşvik eder.</li>
+        <li><strong>24 Saat Öncesi Hatırlatma:</strong> İşletmeler için en kritik mesajdır. Müşterinin planı değiştiyse iptal veya erteleme şansı tanır, böylece boşalan saate yedek müşteri alınabilir.</li>
+        <li><strong>Hizmet Sonrası Teşekkür:</strong> İşlemden birkaç saat veya bir gün sonra atılan "Bizi tercih ettiğiniz için teşekkürler" mesajı müşteri sadakatini (loyalty) artırır ve Google yorumlarına yönlendirmek için harika bir fırsattır.</li>
+    </ul>
+    <h3>SMS mi, WhatsApp mı?</h3>
+    <p>SMS mesajlarında Türkçe karakter kullanımı (ş, ğ, ı vb.) mesaj boyutunu Unicode formatına çekerek 160 karakter sınırını 70 karaktere düşürür ve maliyetleri katlar. WhatsApp mesajları ise hem ücretsizdir hem de konum linki veya fotoğraf paylaşımına olanak tanıdığı için modern işletmelerin bir numaralı tercihidir. Otomatik CRM sistemleri bu süreci insan müdahalesi olmadan yönetir.</p>
+</section>
 </main>
 
 <footer>
@@ -270,9 +282,41 @@ footer p{font-size:14px;max-width:360px}
 </script>
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-    {"@type":"Question","name":"Randevu hatırlatma mesajı ne zaman gönderilmeli?","acceptedAnswer":{"@type":"Answer","text":"En etkili zaman randevudan 1 gün öncesidir; ayrıca randevu oluşturulduğunda onay mesajı gönderilebilir."}},
-    {"@type":"Question","name":"Türkçe karakter SMS maliyetini neden artırır?","acceptedAnswer":{"@type":"Answer","text":"ş, ğ, ı, İ gibi karakterler mesajı Unicode formatına çevirir ve SMS sınırı 160'tan 70 karaktere düşer, bu da mesajın birden fazla SMS olarak faturalanmasına yol açabilir."}}
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Randevu hatırlatma mesajı ne zaman gönderilmeli?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "En etkili zaman randevudan 1 gün (24 saat) öncesidir. Bazı işletmeler ayrıca randevu oluşturulduğunda bir onay mesajı ve randevudan birkaç saat önce ikinci bir kısa hatırlatma gönderir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "SMS mi WhatsApp mı daha iyi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SMS'in açılma oranı yüksektir ve telefon rehberi gerektirmez; WhatsApp ise ücretsiz olabilir, emoji ve daha uzun metne izin verir ancak müşterinin numaranızı görmesi/onay vermesi gerekir. Çoğu işletme ikisini birlikte kullanır."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Türkçe karakter SMS maliyetini neden artırıyor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Standart SMS 160 karakterdir; ancak ş, ğ, ı, İ gibi karakterler mesajı Unicode formatına çevirir ve sınır 70 karaktere düşer. Bu da tek mesajın birden fazla SMS olarak faturalanmasına yol açabilir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Bu mesajları toplu ve otomatik gönderebilir miyim?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Bu araç mesajı hazırlar; toplu ve otomatik gönderim için randevu sistemine ihtiyaç vardır. TeknoPersSalon randevu saatine göre hatırlatmaları otomatik gönderir."
+      }
+    }
   ]
 }
 </script>
@@ -394,19 +438,7 @@ function load(){ try{ const o=JSON.parse(localStorage.getItem(KEY)||'null'); if(
 })();
 </script>
 
-<!-- EK SEO UZMANLIK METNİ -->
-<section style="max-width: 800px; margin: 40px auto; padding: 20px; font-family: sans-serif; color: #333; line-height: 1.6; background: #fdfdfd; border-radius: 8px; border: 1px solid #eaeaea;">
-    <h2 style="font-size: 1.4rem; color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 5px;">Müşteri İletişiminde Randevu Mesajlarının Gücü</h2>
-    <p style="font-size: 0.95rem;">Güzellik merkezleri, diş klinikleri, diyetisyenler ve spor salonları için boşa giden her randevu saati, geri dönüşü olmayan bir ciro kaybıdır. Sektör dilinde "No-Show" olarak adlandırılan habersiz gelmeme durumlarını engellemenin en profesyonel ve etkili yolu, müşterilere zamanında gönderilen hatırlatma mesajlarıdır.</p>
-    <h3 style="font-size: 1.2rem; color: #2c3e50; margin-top: 25px;">Mesaj Çeşitleri ve Gönderim Zamanlaması</h3>
-    <ul style="font-size: 0.95rem;">
-        <li><strong>Randevu Onay Mesajı:</strong> Müşteri randevuyu aldığı an gönderilmelidir. Güven verir ve takvime kaydedilmesini teşvik eder.</li>
-        <li><strong>24 Saat Öncesi Hatırlatma:</strong> İşletmeler için en kritik mesajdır. Müşterinin planı değiştiyse iptal veya erteleme şansı tanır, böylece boşalan saate yedek müşteri alınabilir.</li>
-        <li><strong>Hizmet Sonrası Teşekkür:</strong> İşlemden birkaç saat veya bir gün sonra atılan "Bizi tercih ettiğiniz için teşekkürler" mesajı müşteri sadakatini (loyalty) artırır ve Google yorumlarına yönlendirmek için harika bir fırsattır.</li>
-    </ul>
-    <h3 style="font-size: 1.2rem; color: #2c3e50; margin-top: 25px;">SMS mi, WhatsApp mı?</h3>
-    <p style="font-size: 0.95rem;">SMS mesajlarında Türkçe karakter kullanımı (ş, ğ, ı vb.) mesaj boyutunu Unicode formatına çekerek 160 karakter sınırını 70 karaktere düşürür ve maliyetleri katlar. WhatsApp mesajları ise hem ücretsizdir hem de konum linki veya fotoğraf paylaşımına olanak tanıdığı için modern işletmelerin bir numaralı tercihidir. Otomatik CRM sistemleri bu süreci insan müdahalesi olmadan yönetir.</p>
-</section>
+
 
 </body>
 </html>
