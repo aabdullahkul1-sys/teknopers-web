@@ -15,19 +15,26 @@
 </script>
 <title>TEKNOPERS — Personel, Stok, Cari ve Randevu Yönetim Sistemi | Türk KOBİ'leri için</title>
 <meta name="description" content="GPS'li puantaj, Türk bordro mantığıyla hak ediş, onaylı stok, cari takip; kuaför, diş kliniği, diyetisyen, pilates, dövme ve veteriner için randevu + paket sistemi. Sabit fiyat, kurulum 1 gün. WhatsApp'tan yazın, birlikte kuralım.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="TEKNOPERS">
+<meta name="keywords" content="personel takip programı, GPS puantaj, PDKS, saha personel takibi, cari takip programı, stok takip, randevu programı, kuaför randevu programı, diş kliniği randevu, KOBİ yönetim yazılımı">
+<link rel="dns-prefetch" href="https://www.googletagmanager.com">
+<link rel="dns-prefetch" href="https://ai.teknopers.com.tr">
 <meta property="og:title" content="TEKNOPERS — İşletmenizi tek ekrandan yönetin">
 <meta property="og:description" content="Personelden kasaya, randevudan stoğa. Sabit fiyat, 1 günde kurulum.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://teknopers.com.tr">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap"></noscript>
 <style>
 :root{
-  --bg:#F6F8FB; --paper:#FFFFFF; --ink:#0B1424; --ink2:#1C2A42; --slate:#4B5A70; --mut:#7A8AA0; --line:#E3E9F1; --line2:#D3DCE8;
-  --gold:#E5A800; --goldD:#B8860B; --goldL:#FFF4D6; --rose:#C46A76; --roseL:#FBEEF0; --green:#10966E; --greenL:#E4F7F0; --wa:#1FAF5E;
+  --bg:#F6F8FB; --paper:#FFFFFF; --ink:#0B1424; --ink2:#1C2A42; --slate:#4B5A70; --mut:#5C6B82; --line:#E3E9F1; --line2:#D3DCE8;
+  --gold:#E5A800; --goldD:#8C6708; --goldL:#FFF4D6; --rose:#C46A76; --roseT:#AD4E5B; --roseL:#FBEEF0; --green:#0C7E5C; --greenL:#E4F7F0; --wa:#1FAF5E;
   --navy:#0B1424;
-  --disp:'Sora',sans-serif; --body:'Figtree',sans-serif; --mono:'JetBrains Mono',monospace;
+  --disp:'Sora','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif; --body:'Figtree','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif; --mono:'JetBrains Mono','SFMono-Regular',ui-monospace,Consolas,'Liberation Mono',monospace;
   --r:18px; --sh:0 14px 40px rgba(11,20,36,.08); --sh2:0 22px 60px rgba(11,20,36,.12);
 }
 *{margin:0;padding:0;box-sizing:border-box}
@@ -126,10 +133,10 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,
 .sec-card{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:18px 16px;box-shadow:var(--sh);display:flex;flex-direction:column;gap:5px}
 .sec-card .se{font-size:26px;line-height:1}
 .sec-card b{font-family:var(--disp);font-size:15.5px;color:var(--ink);letter-spacing:-.01em}
-.sec-card i{font-style:normal;font-family:var(--mono);font-size:11.5px;color:var(--rose);letter-spacing:.02em}
+.sec-card i{font-style:normal;font-family:var(--mono);font-size:11.5px;color:var(--roseT);letter-spacing:.02em}
 .sec-card u{text-decoration:none;font-size:12.5px;color:var(--mut);line-height:1.5}
 .sec-note{text-align:center;font-size:14.5px;color:var(--slate);margin:-14px 0 34px;line-height:1.6}
-.sec-note b{color:var(--rose)}
+.sec-note b{color:var(--roseT)}
 @media(max-width:920px){.grid3{grid-template-columns:repeat(2,1fr)}
   .sec-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:620px){.grid3{grid-template-columns:1fr}
@@ -173,13 +180,13 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,
 .price{font-family:var(--mono);font-weight:700;font-size:46px;letter-spacing:-.02em;line-height:1;color:var(--ink)}
 .price small{font-size:15px;color:var(--mut);font-weight:500;font-family:var(--body)}
 .pnote{font-family:var(--mono);font-size:12.5px;margin:12px 0 24px;min-height:18px;font-weight:700}
-.pcard.gold .pnote{color:var(--goldD)}.pcard.rose .pnote{color:var(--rose)}
+.pcard.gold .pnote{color:var(--goldD)}.pcard.rose .pnote{color:var(--roseT)}
 .plist{list-style:none;margin-bottom:28px;flex:1}
 .plist li{font-size:14.5px;padding:8px 0 8px 32px;position:relative;color:var(--ink2);border-bottom:1px dashed var(--line)}
 .plist li:last-child{border-bottom:none}
 .plist li::before{content:'✓';position:absolute;left:2px;font-weight:800;font-family:var(--mono)}
 .pcard.gold .plist li::before{color:var(--goldD)}
-.pcard.rose .plist li::before{color:var(--rose)}
+.pcard.rose .plist li::before{color:var(--roseT)}
 .kdv{font-size:12px;color:var(--mut);text-align:center;margin-top:28px}
 
 /* ---------- ADIMLAR & SSS ---------- */
@@ -204,7 +211,7 @@ details .a{padding:0 22px 20px;color:var(--slate);font-size:14.5px}
 footer{background:var(--navy);color:#B9C5D6;padding:52px 0 36px;margin-top:96px}
 .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px;margin-bottom:32px}
 @media(max-width:720px){.foot-grid{grid-template-columns:1fr}}
-footer h4{font-family:var(--disp);color:#fff;font-size:14px;margin-bottom:13px}
+footer h3{font-family:var(--disp);color:#fff;font-size:14px;margin-bottom:13px}
 footer a{display:block;padding:4px 0;font-size:14px}
 footer a:hover{color:#FFD34D}
 footer .logo{color:#fff}
@@ -229,6 +236,120 @@ footer .logo{color:#fff}
   .logo{font-size:17px}
   .chip{font-size:11.5px;padding:7px 11px}
 }
+
+/* ============================================================
+   HERO v2 — iki kolon + otomatik oynayan ÜRÜN TURU (saf CSS)
+   ============================================================ */
+@property --acc{syntax:'<color>';inherits:true;initial-value:#E5A800}
+.hero{padding:150px 0 74px}
+.hero-grid2{display:grid;grid-template-columns:1.04fr .96fr;gap:56px;align-items:center;max-width:1180px;margin:0 auto}
+.hx-l{max-width:600px}
+.hx-l h1{font-size:clamp(33px,4.7vw,55px);font-weight:800;margin:18px 0 20px;line-height:1.1}
+.hx-l .sub{font-size:18px;margin-bottom:28px;color:var(--slate);max-width:560px}
+.hx-l .hero-ctas{margin-bottom:24px}
+@media(max-width:980px){
+  .hero{padding:118px 0 56px}
+  .hero-grid2{grid-template-columns:1fr;gap:44px;text-align:center}
+  .hx-l{max-width:none}
+  .hx-l .sub{margin-left:auto;margin-right:auto}
+  .hx-l .hero-ctas,.hx-l .trust{justify-content:center}
+}
+/* ---- ürün turu "videosu" ---- */
+.demo{position:relative;width:min(328px,80vw);margin:0 auto;animation:accCycle 16s infinite}
+.demo::before{content:'';position:absolute;inset:-14% -18% -8%;z-index:0;border-radius:50%;
+  background:radial-gradient(circle at 50% 42%,var(--acc),transparent 60%);filter:blur(46px);opacity:.5}
+.phone{position:relative;z-index:1;border-radius:42px;padding:11px;background:linear-gradient(150deg,#EDF1F8,#D9E2EF);
+  border:1px solid #fff;box-shadow:0 34px 74px rgba(11,20,36,.24),0 6px 16px rgba(11,20,36,.1)}
+.screen{position:relative;border-radius:32px;overflow:hidden;color:#EAF0FA;background:linear-gradient(180deg,#101D31,#0A1320);
+  aspect-ratio:9/17.6;display:flex;flex-direction:column}
+.sbar{display:flex;justify-content:space-between;align-items:center;padding:13px 20px 6px;font-family:var(--mono);font-size:11px;color:#93A6C0;flex:none}
+.sbar .live{display:inline-flex;align-items:center;gap:6px;color:var(--acc);font-weight:700}
+.sbar .live i{width:7px;height:7px;border-radius:50%;background:currentColor;animation:pl 1.8s infinite}
+.ahead{display:flex;align-items:center;gap:9px;padding:8px 18px 11px;flex:none;border-bottom:1px solid rgba(255,255,255,.06)}
+.ahead .lg{width:27px;height:27px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-family:var(--disp);font-weight:800;font-size:13px;color:#0B1424;background:var(--acc)}
+.ahead .t{font-size:13px;font-weight:700;font-family:var(--disp);line-height:1.15}
+.ahead .t span{display:block;font-family:var(--mono);font-size:9px;color:#7789A4;font-weight:500;letter-spacing:.08em}
+.stage{position:relative;flex:1}
+.scene{position:absolute;inset:0;padding:14px 16px;opacity:0;display:flex;flex-direction:column;gap:9px}
+.s1{opacity:1;animation:sc1 16s infinite}
+.s2{animation:sc2 16s infinite}
+.s3{animation:sc3 16s infinite}
+.s4{animation:sc4 16s infinite}
+.drow{background:#182742;border:1px solid rgba(255,255,255,.05);border-radius:13px;padding:11px 12px;display:flex;align-items:center;gap:10px}
+.drow .av{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,#33507E,#22385C);display:flex;align-items:center;justify-content:center;font-family:var(--disp);font-weight:800;font-size:12.5px;color:#CFE0F5;flex:none}
+.drow .m{flex:1;min-width:0}
+.drow .m b{display:block;font-size:12.5px;color:#EAF0FA;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.drow .m i{font-style:normal;font-size:10.5px;color:#8397B2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block}
+.drow .r{font-family:var(--mono);font-size:11.5px;font-weight:700;text-align:right;white-space:nowrap}
+.tag-ok{color:#5FE0AD}
+.tag-acc{color:var(--acc)}
+.dpill{display:flex;align-items:center;gap:8px;background:rgba(95,224,173,.1);border:1px solid rgba(95,224,173,.22);border-radius:11px;padding:9px 12px;font-size:10.8px;color:#B7F0D8;line-height:1.3}
+.dpill.wa{background:rgba(37,211,102,.1);border-color:rgba(37,211,102,.24);color:#BEF3CF}
+.dpill .dot{width:7px;height:7px;border-radius:50%;background:#5FE0AD;flex:none;animation:pl 1.9s infinite}
+.dbig{background:#16233c;border:1px solid rgba(255,255,255,.05);border-radius:14px;padding:14px 14px}
+.dbig .lbl{font-family:var(--mono);font-size:9px;letter-spacing:.05em;text-transform:uppercase;color:#7789A4;margin-bottom:6px}
+.dbig .num{font-family:var(--mono);font-weight:700;font-size:29px;letter-spacing:-.02em;color:#fff;line-height:1}
+.dbig .num .cur{color:var(--acc)}
+.dmini{display:flex;gap:7px}
+.dmini span{flex:1;background:#152238;border-radius:9px;padding:7px 8px;font-family:var(--mono);font-size:9px;color:#98AAC4;text-align:center;line-height:1.3}
+.dmini span b{display:block;color:#D6E2F2;font-size:11px;margin-top:2px}
+.dcap{flex:none;padding:9px 16px 6px;font-size:11px;color:#AFC0D8;min-height:36px;position:relative}
+.dcap p{position:absolute;left:16px;right:16px;top:9px;opacity:0;line-height:1.35}
+.dcap .c1{opacity:1;animation:sc1 16s infinite}
+.dcap .c2{animation:sc2 16s infinite}
+.dcap .c3{animation:sc3 16s infinite}
+.dcap .c4{animation:sc4 16s infinite}
+.scrub{display:flex;gap:5px;padding:0 16px 14px;flex:none}
+.scrub i{flex:1;height:3px;border-radius:3px;background:rgba(255,255,255,.12);overflow:hidden}
+.scrub i::after{content:'';display:block;height:100%;width:0;border-radius:3px;background:var(--acc);animation-duration:16s;animation-iteration-count:infinite;animation-timing-function:linear}
+.scrub i:nth-child(1)::after{animation-name:f1}
+.scrub i:nth-child(2)::after{animation-name:f2}
+.scrub i:nth-child(3)::after{animation-name:f3}
+.scrub i:nth-child(4)::after{animation-name:f4}
+@keyframes sc1{0%{opacity:0;transform:translateY(12px)}3%{opacity:1;transform:none}22%{opacity:1;transform:none}25%{opacity:0;transform:translateY(-8px)}100%{opacity:0}}
+@keyframes sc2{0%,25%{opacity:0;transform:translateY(12px)}28%{opacity:1;transform:none}47%{opacity:1;transform:none}50%{opacity:0;transform:translateY(-8px)}100%{opacity:0}}
+@keyframes sc3{0%,50%{opacity:0;transform:translateY(12px)}53%{opacity:1;transform:none}72%{opacity:1;transform:none}75%{opacity:0;transform:translateY(-8px)}100%{opacity:0}}
+@keyframes sc4{0%,75%{opacity:0;transform:translateY(12px)}78%{opacity:1;transform:none}97%{opacity:1;transform:none}100%{opacity:0}}
+@keyframes f1{0%{width:0}22%{width:100%}100%{width:100%}}
+@keyframes f2{0%,25%{width:0}47%{width:100%}100%{width:100%}}
+@keyframes f3{0%,50%{width:0}72%{width:100%}100%{width:100%}}
+@keyframes f4{0%,75%{width:0}97%{width:100%}100%{width:100%}}
+@keyframes accCycle{0%{--acc:#E5A800}46%{--acc:#E5A800}50%{--acc:#C46A76}71%{--acc:#C46A76}75%{--acc:#0C7E5C}96%{--acc:#0C7E5C}100%{--acc:#E5A800}}
+/* ============ konumlandırma bandı ============ */
+.band-in{max-width:1140px;margin:0 auto;padding:20px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px 30px;flex-wrap:wrap;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:linear-gradient(180deg,#fff,#FBFCFE)}
+.band-lead{font-family:var(--disp);font-weight:700;font-size:clamp(17px,2.4vw,21px);color:var(--ink);letter-spacing:-.01em}
+.band-lead b{color:var(--goldD)}
+.band-pts{display:flex;gap:8px 18px;flex-wrap:wrap;font-family:var(--mono);font-size:12px;color:var(--slate);align-items:center}
+.band-pts span{display:inline-flex;align-items:center;gap:8px}
+.band-pts span::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--gold)}
+@media(max-width:640px){.band-in{justify-content:center;text-align:center}.band-lead{width:100%}}
+/* ============ size özel çözüm ============ */
+.custom-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:38px 0 34px}
+@media(max-width:900px){.custom-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.custom-grid{grid-template-columns:1fr}}
+.ccard{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:22px 20px;box-shadow:var(--sh);position:relative;overflow:hidden}
+.ccard::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--rose))}
+.ccard .ci{font-size:24px;margin-bottom:12px;display:block}
+.ccard h3{font-size:16px;font-weight:700;margin-bottom:7px}
+.ccard p{font-size:13.5px;color:var(--slate);line-height:1.55}
+
+
+/* ===== Müşteri yorumları ===== */
+.tst-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:10px}
+@media(max-width:900px){.tst-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.tst-grid{grid-template-columns:1fr}}
+.tst{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:22px 20px;box-shadow:var(--sh);display:flex;flex-direction:column;gap:15px;position:relative}
+.tst .tag{align-self:flex-start;font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:4px 9px;border-radius:999px}
+.tst.gold .tag{color:var(--goldD);background:var(--goldL)}
+.tst.rose .tag{color:var(--roseT);background:var(--roseL)}
+.tst .q{color:var(--ink2);font-size:14.5px;line-height:1.55;flex:1}
+.tst .who{display:flex;align-items:center;gap:11px;margin-top:2px}
+.tst .av{width:40px;height:40px;border-radius:11px;display:flex;align-items:center;justify-content:center;font-family:var(--disp);font-weight:800;font-size:14px;color:#fff;flex:none}
+.tst.gold .av{background:linear-gradient(135deg,#F0C24B,var(--gold))}
+.tst.rose .av{background:linear-gradient(135deg,#E7A3AD,var(--rose))}
+.tst .who b{display:block;font-size:14px;color:var(--ink);font-family:var(--disp)}
+.tst .who span{font-size:12.5px;color:var(--slate)}
+
 img,svg,video{max-width:100%;height:auto}
 </style>
 <link rel="canonical" href="https://teknopers.com.tr/">
@@ -242,14 +363,184 @@ img,svg,video{max-width:100%;height:auto}
 <meta property="og:image" content="https://teknopers.com.tr/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="TEKNOPERS — Türk KOBİ'leri için personel, stok, cari ve randevu yönetim sistemi">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TEKNOPERS — İşletmenizi tek ekrandan yönetin">
+<meta name="twitter:description" content="Personelden kasaya, randevudan stoğa. Sabit fiyat, 1 günde kurulum.">
 <meta name="twitter:image" content="https://teknopers.com.tr/og-image.png">
+<meta name="twitter:image:alt" content="TEKNOPERS uygulama ekranı">
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@graph":[
-    {"@type":"Organization","@id":"https://teknopers.com.tr/#org","name":"TEKNOPERS","url":"https://teknopers.com.tr/","logo":"https://teknopers.com.tr/icon-512.png","image":"https://teknopers.com.tr/og-image.png","description":"Türk KOBİ'leri için personel, puantaj, cari ve randevu yönetim sistemleri.","areaServed":{"@type":"Country","name":"Türkiye"},"contactPoint":{"@type":"ContactPoint","contactType":"customer support","telephone":"+90-543-447-22-26","availableLanguage":"Turkish"}},
-    {"@type":"WebSite","@id":"https://teknopers.com.tr/#website","url":"https://teknopers.com.tr/","name":"TEKNOPERS","inLanguage":"tr-TR","publisher":{"@id":"https://teknopers.com.tr/#org"}}
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://teknopers.com.tr/#org",
+      "name": "TEKNOPERS",
+      "url": "https://teknopers.com.tr/",
+      "logo": "https://teknopers.com.tr/icon-512.png",
+      "image": "https://teknopers.com.tr/og-image.png",
+      "description": "Türk KOBİ'leri için personel, puantaj, cari ve randevu yönetim sistemleri.",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Türkiye"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "telephone": "+90-543-447-22-26",
+        "availableLanguage": "Turkish"
+      },
+      "slogan": "İşletmeler için yazılım çözümü üretiyoruz.",
+      "knowsAbout": [
+        "Personel takip yazılımı",
+        "PDKS",
+        "Puantaj ve bordro",
+        "Stok ve depo yönetimi",
+        "Cari hesap takibi",
+        "Randevu yönetim sistemi",
+        "İşletmeye özel yazılım geliştirme"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://teknopers.com.tr/#website",
+      "url": "https://teknopers.com.tr/",
+      "name": "TEKNOPERS",
+      "inLanguage": "tr-TR",
+      "publisher": {
+        "@id": "https://teknopers.com.tr/#org"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://teknopers.com.tr/#webpage",
+      "url": "https://teknopers.com.tr/",
+      "name": "TEKNOPERS — Personel, Stok, Cari ve Randevu Yönetim Sistemi",
+      "isPartOf": {
+        "@id": "https://teknopers.com.tr/#website"
+      },
+      "about": {
+        "@id": "https://teknopers.com.tr/#org"
+      },
+      "primaryImageOfPage": "https://teknopers.com.tr/og-image.png",
+      "inLanguage": "tr-TR",
+      "description": "Türk KOBİ'leri için GPS'li puantaj, mevzuata uygun hak ediş, onaylı stok, cari takip ve sektörel randevu + paket sistemi."
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://teknopers.com.tr/#app-sirket",
+      "name": "TEKNOPERS Şirket Takip Sistemi",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, Android, iOS",
+      "url": "https://teknopers.com.tr/",
+      "inLanguage": "tr-TR",
+      "publisher": {
+        "@id": "https://teknopers.com.tr/#org"
+      },
+      "description": "Saha ekibi olan işletmeler için GPS'li puantaj, Türk bordrosuna uygun hak ediş, onaylı stok, fotoğraftan fatura okuma, satış ve cari takip.",
+      "featureList": "GPS'li puantaj, mevzuata uygun hak ediş, izin ve mesai yönetimi, onaylı stok ve depo, fotoğraftan fatura okuma, satış ve cari takip, PDF+Excel rapor, cihaz kilidi ve roller",
+      "offers": {
+        "@type": "Offer",
+        "price": "2500",
+        "priceCurrency": "TRY",
+        "description": "Aylık, işletme başına — kullanıcı başına ücret yok",
+        "url": "https://teknopers.com.tr/#fiyat",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://teknopers.com.tr/#app-salon",
+      "name": "TeknoPersSalon — Randevu ve Müşteri Yönetimi",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, Android, iOS",
+      "url": "https://salon.teknopers.com.tr/",
+      "inLanguage": "tr-TR",
+      "publisher": {
+        "@id": "https://teknopers.com.tr/#org"
+      },
+      "description": "Kuaför, diş kliniği, diyetisyen, pilates, dövme stüdyosu ve veteriner için online randevu linki, otomatik hatırlatma, seanslı paket satışı, kasa ve net kazanç.",
+      "featureList": "Akıllı randevu takvimi, müşteriye özel randevu linki, otomatik WhatsApp hatırlatma, seanslı paket takibi, kasa + gider + net kazanç, personel primi, çoklu şube, sektörel arayüz dili",
+      "offers": {
+        "@type": "Offer",
+        "price": "1500",
+        "priceCurrency": "TRY",
+        "description": "Aylık, işletme başına — sınırsız randevu ve müşteri",
+        "url": "https://teknopers.com.tr/#fiyat",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://teknopers.com.tr/#faq",
+      "inLanguage": "tr-TR",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Uygulama indirmek gerekiyor mu?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hayır. Link telefonun ana ekranına eklenir ve uygulama gibi çalışır (Android ve iPhone). Bilgisayarda da aynı adresten, geniş ekran düzeniyle açılır. Market, güncelleme, sürüm derdi yoktur — yenilikler kendiliğinden gelir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Personel sayısı arttıkça ücret artar mı?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hayır. Fiyat işletme başınadır; personel ve kayıt sayısı fiyatı değiştirmez. Randevu tarafında şube ekledikçe kurulum yine bizden, fiyatı birlikte konuşuruz."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Verilerim güvende mi? Vazgeçersem ne olur?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Her işletmenin verisi kendi alanında yalıtılmıştır; tüm trafik şifrelidir, kritik işlemler kayıt altındadır, KVKK rıza kayıtları sistemde tutulur. Ayrılmak isterseniz kayıtlarınız PDF/Excel olarak size teslim edilir ve sistemden silinir — bu, hizmet sözleşmenize madde olarak yazılır."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Personel başkasının yerine giriş yapabilir mi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hayır. Şirket takip sisteminde her personel ilk giriş yaptığı telefona kilitlenir; ayrıca giriş-çıkışlar GPS konumuyla teyit edilir. Kartını arkadaşına verme devri bu sistemde kapalıdır."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "WhatsApp hatırlatmaları için ek ücret var mı?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tek dokunuşla gönderilen WhatsApp hatırlatmaları ücretsizdir. Tam otomatik gönderim isterseniz WhatsApp'ın resmî Cloud sistemine bağlarız; onun küçük mesaj ücretleri Meta tarifesine tabidir, kurulumunda yanınızda oluruz."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "İnternet kesilirse ne olur?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Uygulama son ekranları çevrimdışı da gösterir; yaptığınız işlemler internet gelince otomatik gönderilir. Saha ve randevu gerçeğine göre tasarlandı."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://teknopers.com.tr/#service-ozel",
+      "name": "İşletmeye özel yazılım geliştirme",
+      "serviceType": "Özel yazılım / kurumsal çözüm geliştirme",
+      "provider": {
+        "@id": "https://teknopers.com.tr/#org"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Türkiye"
+      },
+      "inLanguage": "tr-TR",
+      "description": "Hazır ürünlere sığmayan ihtiyaçlar için sektöre özel iş akışı, mevcut sistemlere entegrasyon, özel rapor/panel ve yapay zekâ destekli araç geliştirme."
+    }
   ]
 }
 </script>
@@ -274,6 +565,7 @@ img,svg,video{max-width:100%;height:auto}
       <a href="araclar/">Araçlar</a>
       <a href="#sirket">Şirket Takip</a>
       <a href="#salon">Salon Programı</a>
+      <a href="#ozel">Size Özel</a>
       <a href="#fark">Neden Biz</a>
       <a href="#fiyat">Fiyatlar</a>
       <a href="#sss">SSS</a>
@@ -283,13 +575,14 @@ img,svg,video{max-width:100%;height:auto}
   </div>
 </nav>
 
+<main id="icerik">
 <!-- ================= HERO ================= -->
-<header class="hero">
-  <div class="wrap hero-one">
-    <div>
-      <span class="eyebrow">Türk KOBİ'leri için · Telefondan yönetilir</span>
-      <h1>Defteri kapatın.<br>İşletmeniz <span class="mark">tek ekranda<svg viewBox="0 0 300 14" preserveAspectRatio="none"><path d="M4 10 C 60 2, 150 12, 296 5"/></svg></span> toplansın.</h1>
-      <p class="sub">Personel giriş-çıkışından hak edişe, stoktan cari hesaba, randevudan seans paketine — iki uygulama, tek WhatsApp mesajıyla kurulur. Muhasebe programı değil; <b style="color:var(--ink)">patronun günlük programı.</b></p>
+<header class="hero" id="hero">
+  <div class="wrap hero-grid2">
+    <div class="hx-l">
+      <span class="eyebrow">İşletmeler için yazılım çözümü · Telefondan yönetilir</span>
+      <h1>İşletmenizi <span class="mark">hayalinizdeki gibi<svg viewBox="0 0 300 14" preserveAspectRatio="none"><path d="M4 10 C 60 2, 150 12, 296 5"/></svg></span> yönetin.</h1>
+      <p class="sub">Defteri kapatın; personelden kasaya, randevudan cariye her şey tek ekranda toplansın. Muhasebe programı değil — <b style="color:var(--ink)">patronun günlük programı.</b> Kurar, öğretir, yanınızda dururuz.</p>
       <div class="hero-ctas">
         <a class="btn btn-wa" href="https://wa.me/905434472226?text=Merhaba%2C%20i%C5%9Fletmem%20i%C3%A7in%20TEKNOPERS%20kurulumu%20hakk%C4%B1nda%20g%C3%B6r%C3%BC%C5%9Fmek%20istiyorum." target="_blank" rel="noopener">💬 WhatsApp'tan Başlayalım</a>
         <a class="btn btn-ghost" href="#fiyat">Fiyatları Gör</a>
@@ -300,9 +593,54 @@ img,svg,video{max-width:100%;height:auto}
         <span class="chip"><b>✓</b> Veriler sizin — dışa aktarılabilir</span>
       </div>
     </div>
-
+    <div class="hx-r">
+      <div class="demo" aria-hidden="true">
+        <div class="phone">
+          <div class="screen">
+            <div class="sbar"><span>9:41</span><span class="live"><i></i>canlı ürün turu</span></div>
+            <div class="ahead"><span class="lg">T</span><span class="t">TEKNOPERS<span>TEK EKRANDA İŞLETME</span></span></div>
+            <div class="stage">
+              <div class="scene s1">
+                <div class="drow"><span class="av">AY</span><span class="m"><b>Ahmet Yılmaz</b><i>Duvarcı ustası · Kadıköy şantiye</i></span><span class="r tag-ok">08:02 ✓</span></div>
+                <div class="dpill"><span class="dot"></span>Konum işyeriyle eşleşti — GPS ile doğrulandı</div>
+                <div class="drow"><span class="av">MK</span><span class="m"><b>Mahmut Kaya</b><i>Kalıpçı · aynı şantiye</i></span><span class="r tag-ok">08:05 ✓</span></div>
+              </div>
+              <div class="scene s2">
+                <div class="dbig"><div class="lbl">Ahmet Y. · bu ay · brüt hak ediş</div><div class="num"><span class="cur">₺</span>27.450</div></div>
+                <div class="dmini"><span>Çalışma<b>26 gün</b></span><span>Fazla mesai<b>+8 sa</b></span><span>Raporlu<b>−1 gün</b></span></div>
+                <div class="dpill"><span class="dot"></span>Puantajdan mevzuata uygun otomatik hesap</div>
+              </div>
+              <div class="scene s3">
+                <div class="drow"><span class="av">MK</span><span class="m"><b>14:30 — Merve K.</b><i>Saç kesimi + fön · 45 dk</i></span><span class="r tag-acc">Onaylandı</span></div>
+                <div class="dpill wa"><span class="dot" style="background:#25D366"></span>WhatsApp hatırlatması gönderildi</div>
+                <div class="drow"><span class="av">SÖ</span><span class="m"><b>15:30 — Seda Ö.</b><i>Lazer paketi · 4/6 seans</i></span><span class="r tag-ok">Seans düştü</span></div>
+              </div>
+              <div class="scene s4">
+                <div class="dbig"><div class="lbl">Gün sonu · cebinize kalan</div><div class="num"><span class="cur">₺</span>8.900</div></div>
+                <div class="dmini"><span>Tahsilat<b>₺12.400</b></span><span>Gider<b>−₺3.500</b></span></div>
+                <div class="dpill"><span class="dot"></span>Gün kapandı — net kazanç hazır</div>
+              </div>
+            </div>
+            <div class="dcap">
+              <p class="c1">Personel sahada giriş yaptı, konumu doğrulandı.</p>
+              <p class="c2">Puantajdan hak ediş kendiliğinden hesaplandı.</p>
+              <p class="c3">Randevu takvime düştü, hatırlatma gitti.</p>
+              <p class="c4">Gün kapandı — cebinize kalanı görüyorsunuz.</p>
+            </div>
+            <div class="scrub"><i></i><i></i><i></i><i></i></div>
+          </div>
+        </div>
       </div>
+    </div>
+  </div>
 </header>
+
+<section class="band" aria-label="Ne yapıyoruz">
+  <div class="band-in">
+    <p class="band-lead">İşletmeler için <b>yazılım çözümü</b> üretiyoruz.</p>
+    <div class="band-pts"><span>Sahadan salona tek ekran</span><span>Sabit fiyat, sürpriz yok</span><span>1 günde kurulum</span></div>
+  </div>
+</section>
 
 <!-- ================= ÜRÜN 1 ================= -->
 <section id="sirket" class="gold-sec sec-alt">
@@ -333,7 +671,7 @@ img,svg,video{max-width:100%;height:auto}
 <section id="salon" class="rose-sec">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="prod-badge" style="border-color:rgba(196,106,118,.45);color:var(--rose)"><span class="bx" style="background:linear-gradient(135deg,#E7A3AD,var(--rose));color:#fff">S</span>TeknoPersSalon · Randevuyla çalışan her işletme</span>
+      <span class="prod-badge" style="border-color:rgba(196,106,118,.45);color:var(--roseT)"><span class="bx" style="background:linear-gradient(135deg,#E7A3AD,var(--rose));color:#fff">S</span>TeknoPersSalon · Randevuyla çalışan her işletme</span>
       <h2>Randevu defteri çöpe.<br>İşletme telefonda, müşteri linkte.</h2>
       <p class="sub">Kuaför, diş kliniği, diyetisyen, pilates stüdyosu, dövme stüdyosu ve veteriner kliniği için: müşteriniz kendi linkinden randevusunu alır, sistem hatırlatır, seansları sayar, kasanızı tutar. Siz işinize bakarsınız. <b>Sistem sizin sektörünüzün diliyle kurulur</b> — diş kliniğinde "hasta" ve "tedavi", diyetisyende "danışan" ve "seans" yazar.</p>
     </div>
@@ -363,6 +701,26 @@ img,svg,video{max-width:100%;height:auto}
   </div>
 </section>
 
+<!-- ================= SİZE ÖZEL ================= -->
+<section id="ozel" class="sec-alt">
+  <div class="wrap">
+    <div class="sec-head reveal" style="text-align:center">
+      <span class="eyebrow" style="justify-content:center">Size özel çözüm</span>
+      <h2>İki üründen fazlası:<br>işinize göre yazılım.</h2>
+      <p class="sub" style="margin:0 auto">İşiniz hazır iki ürüne tam oturmuyorsa, ihtiyacınıza göre kurar ya da sıfırdan geliştiririz. İlke aynı kalır: telefondan yönetilir, veriniz sizde durur, fiyat baştan bellidir.</p>
+    </div>
+    <div class="custom-grid reveal">
+      <div class="ccard"><span class="ci">🧩</span><h3>Sektörünüze özel akış</h3><p>Ekrandaki kelimeler, hizmet listesi ve iş akışı sizin işinize göre kurulur — hazır kalıba sığmak zorunda değilsiniz.</p></div>
+      <div class="ccard"><span class="ci">🔗</span><h3>Var olan sisteme bağlanma</h3><p>Kullandığınız muhasebe, e-fatura ya da cihazlarla konuşacak köprüler kurar; iki sistemi tek akışta buluştururuz.</p></div>
+      <div class="ccard"><span class="ci">📊</span><h3>Size özel rapor ve panel</h3><p>Patron gözüyle görmek istediğiniz özet neyse onu panele koyarız; kararı tahminle değil rakamla verirsiniz.</p></div>
+      <div class="ccard"><span class="ci">🤖</span><h3>Yapay zekâ destekli araçlar</h3><p>Fatura okuma, akıllı asistan, otomatik hatırlatma… Tekrar eden işi yazılıma devredip asıl işinize bakarsınız.</p></div>
+    </div>
+    <div style="text-align:center">
+      <a class="btn btn-navy" href="https://wa.me/905434472226?text=Merhaba%2C%20i%C5%9Fletmeme%20%C3%B6zel%20bir%20yaz%C4%B1l%C4%B1m%20%C3%A7%C3%B6z%C3%BCm%C3%BC%20hakk%C4%B1nda%20g%C3%B6r%C3%BC%C5%9Fmek%20istiyorum." target="_blank" rel="noopener">İhtiyacınızı Anlatın →</a>
+    </div>
+  </div>
+</section>
+
 <!-- ================= NEDEN BİZ ================= -->
 <section id="fark" class="sec-alt">
   <div class="wrap">
@@ -379,6 +737,45 @@ img,svg,video{max-width:100%;height:auto}
   </div>
 </section>
 
+<!-- ================= YORUMLAR ================= -->
+<section id="yorumlar">
+  <div class="wrap">
+    <div class="sec-head reveal" style="text-align:center">
+      <span class="eyebrow" style="justify-content:center">Kullanan işletmeler</span>
+      <h2>Sahadan ve salondan geri bildirimler</h2>
+      <p class="sub" style="margin:0 auto">Farklı sektörlerden işletmeler TEKNOPERS'i deneyip ne dedi:</p>
+    </div>
+    <div class="tst-grid reveal">
+      <div class="tst rose">
+        <span class="tag">Kuaför & Güzellik</span>
+        <p class="q">Randevuları telefondan takip etmek ve WhatsApp hatırlatmalarını tek tuşla göndermek işimi çok kolaylaştırdı. Gelmeyen müşteri sayısı belirgin azaldı; kurulumda da yalnız bırakmadılar.</p>
+        <div class="who"><span class="av">L</span><div><b>L.</b><span>Kuaför &amp; güzellik salonu · Bakırköy</span></div></div>
+      </div>
+      <div class="tst rose">
+        <span class="tag">Güzellik Merkezi</span>
+        <p class="q">Seans paketlerini ve müşteri geçmişini tek ekranda görmek harika oldu. Defterle uğraşmayı bıraktık; her şey düzenli ve elimizin altında.</p>
+        <div class="who"><span class="av">D</span><div><b>D. B.</b><span>Güzellik merkezi · İstanbul</span></div></div>
+      </div>
+      <div class="tst gold">
+        <span class="tag">Temizlik</span>
+        <p class="q">Farklı lokasyonlardaki ekibin giriş-çıkışını GPS ile görebilmek en büyük derdimizi çözdü. Ay sonu puantaj artık elle uğraşmadan kendiliğinden çıkıyor.</p>
+        <div class="who"><span class="av">T</span><div><b>Temizlik firması</b><span>İşletme sahibi · İstanbul</span></div></div>
+      </div>
+      <div class="tst gold">
+        <span class="tag">İnşaat · Şantiye</span>
+        <p class="q">Şantiyede kim ne zaman geldi, net görüyoruz. Yevmiye ve hak ediş hesabı elle uğraşmadan hazır oluyor; kağıt puantaj derdi bitti.</p>
+        <div class="who"><span class="av">Ş</span><div><b>Şantiye şefi</b><span>İnşaat · saha ekibi</span></div></div>
+      </div>
+      <div class="tst gold">
+        <span class="tag">Üretim Atölyesi</span>
+        <p class="q">Atölyede personel takibi ve hak ediş için basit, anlaşılır bir sistem arıyorduk. Her şeyi telefondan yönetmek tam bize göre oldu.</p>
+        <div class="who"><span class="av">A</span><div><b>Ayakkabı atölyesi</b><span>Üretim atölyesi · İstanbul</span></div></div>
+      </div>
+    </div>
+    <p class="reveal" style="text-align:center;color:var(--mut);font-size:12.5px;margin-top:18px">Pilot ve demo kullanıcılarının geri bildirimlerinden derlenmiştir.</p>
+  </div>
+</section>
+
 <!-- ================= FİYAT ================= -->
 <section id="fiyat">
   <div class="wrap" style="text-align:center">
@@ -387,9 +784,9 @@ img,svg,video{max-width:100%;height:auto}
       <h2>İki ürün, iki net fiyat.</h2>
       <p class="sub" style="margin:0 auto">Kurulum, eğitim ve destek fiyata dahil. Kullanıcı ve kayıt başına ek ücret yok.</p>
     </div>
-    <div class="toggle reveal" role="tablist">
-      <button class="on" id="tgAy" onclick="setPlan('ay')">Aylık</button>
-      <button id="tgYil" onclick="setPlan('yil')">Yıllık<span class="save">daha avantajlı</span></button>
+    <div class="toggle reveal" role="group" aria-label="Ödeme dönemi seçin">
+      <button type="button" class="on" id="tgAy" onclick="setPlan('ay')" aria-pressed="true">Aylık</button>
+      <button type="button" id="tgYil" onclick="setPlan('yil')" aria-pressed="false">Yıllık<span class="save">daha avantajlı</span></button>
     </div>
     <div class="price-grid" style="text-align:left">
       <div class="pcard gold reveal">
@@ -460,7 +857,7 @@ img,svg,video{max-width:100%;height:auto}
 </section>
 
 <!-- ================= FINAL CTA ================= -->
-<section style="padding-top:0">
+<section id="kapanis" style="padding-top:0">
   <div class="wrap">
     <div class="final reveal">
       <span class="eyebrow" style="justify-content:center;color:#FFD34D">Tek mesaj uzaktasınız</span>
@@ -470,6 +867,7 @@ img,svg,video{max-width:100%;height:auto}
     </div>
   </div>
 </section>
+</main>
 
 <footer>
   <div class="wrap">
@@ -479,13 +877,13 @@ img,svg,video{max-width:100%;height:auto}
         <p style="margin-top:12px;max-width:320px;font-size:14px">Türk KOBİ'leri için saha, depo, cari ve randevu yönetim sistemleri. İstanbul'dan, sahanın içinden.</p>
       </div>
       <div>
-        <h4>Ürünler</h4>
+        <h3>Ürünler</h3>
         <a href="#sirket">Şirket Takip Sistemi</a>
         <a href="#salon">Salon Programı</a>
         <a href="#fiyat">Fiyatlar</a>
       </div>
       <div>
-        <h4>Kaynaklar</h4>
+        <h3>Kaynaklar</h3>
         <a href="blog-pdks-nedir.html">PDKS nedir?</a>
         <a href="blog-puantaj-nasil-tutulur.html">Puantaj nasıl tutulur?</a>
         <a href="blog-fazla-mesai-yillik-izin.html">Fazla mesai ve yıllık izin</a>
@@ -516,9 +914,29 @@ function setPlan(p){
   document.getElementById('nSalon').textContent=f.nl;
   document.getElementById('tgAy').classList.toggle('on',p==='ay');
   document.getElementById('tgYil').classList.toggle('on',p==='yil');
+  document.getElementById('tgAy').setAttribute('aria-pressed', p==='ay' ? 'true' : 'false');
+  document.getElementById('tgYil').setAttribute('aria-pressed', p==='yil' ? 'true' : 'false');
 }
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.12});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+/* ---- Dönüşüm takibi: WhatsApp + önemli CTA tıklamaları (GA4) ----
+   Not: GA4 panelinde "whatsapp_click" olayını Anahtar Etkinlik (dönüşüm) olarak işaretle;
+   böylece hangi bölümün müşteri getirdiğini görürsün. */
+(function(){
+  function loc(el){var s=el.closest('section,header,footer,nav');return (s&&s.id)?s.id:(s?s.tagName.toLowerCase():'diger');}
+  function track(name,params){if(typeof gtag==='function'){gtag('event',name,params);}}
+  document.addEventListener('click',function(e){
+    var a=e.target.closest&&e.target.closest('a');if(!a)return;
+    var href=a.getAttribute('href')||'';
+    if(href.indexOf('wa.me')>-1||href.indexOf('api.whatsapp')>-1){
+      track('whatsapp_click',{cta_location:loc(a),link_text:(a.textContent||'').trim().slice(0,60),transport_type:'beacon'});
+    }else if(href.indexOf('#fiyat')>-1){
+      track('view_pricing_click',{cta_location:loc(a)});
+    }
+  },true);
+  ['tgAy','tgYil'].forEach(function(id){var b=document.getElementById(id);if(b)b.addEventListener('click',function(){track('pricing_toggle',{plan:id==='tgAy'?'aylik':'yillik'});});});
+})();
 </script>
 <script src="https://ai.teknopers.com.tr/embed.js" async></script>
 <script id="mnav-js">
