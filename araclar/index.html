@@ -32,7 +32,9 @@
 <meta name="theme-color" content="#0B1424">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Figtree:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Figtree:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Figtree:wght@400;500;600;700&display=swap"></noscript>
 <style>
 :root{--bg:#F6F8FB;--paper:#FFFFFF;--ink:#0B1424;--ink2:#1C2A42;--slate:#4B5A70;--mut:#7A8AA0;--line:#E3E9F1;--line2:#D3DCE8;--gold:#E5A800;--goldD:#B8860B;--goldL:#FFF4D6;--navy:#0B1424;--disp:'Sora',sans-serif;--body:'Figtree',sans-serif;--r:18px;--sh:0 14px 40px rgba(11,20,36,.08)}
 *{margin:0;padding:0;box-sizing:border-box}
@@ -174,6 +176,116 @@ footer p{font-size:14px;max-width:360px}
   "@context":"https://schema.org","@type":"CollectionPage","name":"İşletme & İK Hesaplama Araçları",
   "url":"https://teknopers.com.tr/araclar/","inLanguage":"tr-TR",
   "description":"İşverenler, salonlar ve KOBİ'ler için 13 ücretsiz hesaplama ve planlama aracı. Tüm hesaplamalar 2026 güncel yasal değerlere göre yapılır."
+}
+</script>
+<!-- Structured data: Breadcrumb + Araç Listesi -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Ana Sayfa",
+          "item": "https://teknopers.com.tr/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Araçlar",
+          "item": "https://teknopers.com.tr/araclar/"
+        }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "name": "TEKNOPERS Ücretsiz Araçlar",
+      "numberOfItems": 13,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "url": "https://teknopers.com.tr/araclar/fazla-mesai-hesaplama/",
+          "name": "Fazla Mesai Ücreti Hesaplama"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "url": "https://teknopers.com.tr/araclar/yillik-izin-hesaplama/",
+          "name": "Yıllık İzin Günü Hesaplama"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "url": "https://teknopers.com.tr/araclar/kidem-tazminati-hesaplama/",
+          "name": "Kıdem Tazminatı Hesaplama"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "url": "https://teknopers.com.tr/araclar/ihbar-tazminati-hesaplama/",
+          "name": "İhbar Tazminatı Hesaplama"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "url": "https://teknopers.com.tr/araclar/isveren-maliyeti-hesaplama/",
+          "name": "Çalışanın İşverene Maliyeti Hesaplama"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "url": "https://teknopers.com.tr/araclar/net-brut-maas-hesaplama/",
+          "name": "Net Brüt Maaş Hesaplama"
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "url": "https://teknopers.com.tr/araclar/puantaj-cetveli/",
+          "name": "Puantaj Cetveli"
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "url": "https://teknopers.com.tr/araclar/personel-prim-hesaplama/",
+          "name": "Kuaför & Salon Personel Prim Hesaplama"
+        },
+        {
+          "@type": "ListItem",
+          "position": 9,
+          "url": "https://teknopers.com.tr/araclar/salon-acma-maliyeti/",
+          "name": "Salon Açma Maliyeti & Başabaş Hesaplayıcı"
+        },
+        {
+          "@type": "ListItem",
+          "position": 10,
+          "url": "https://teknopers.com.tr/araclar/randevu-hatirlatma-mesaji/",
+          "name": "Randevu Hatırlatma Mesajı Oluşturucu"
+        },
+        {
+          "@type": "ListItem",
+          "position": 11,
+          "url": "https://teknopers.com.tr/araclar/resmi-tatiller/",
+          "name": "Resmi Tatiller, Köprü ve İş Günü Hesaplama"
+        },
+        {
+          "@type": "ListItem",
+          "position": 12,
+          "url": "https://teknopers.com.tr/araclar/salon-karlilik-simulatoru/",
+          "name": "Salon Kârlılık Simülatörü"
+        },
+        {
+          "@type": "ListItem",
+          "position": 13,
+          "url": "https://teknopers.com.tr/araclar/patron-simulasyonu/",
+          "name": "Patron Simülasyonu"
+        }
+      ]
+    }
+  ]
 }
 </script>
 <script id="mnav-js">
