@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://teknopers.com.tr/sitemap.xml
+Sitemap: https://teknopers.com.tr/sitemap-sorular.xml

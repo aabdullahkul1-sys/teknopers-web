@@ -1,5 +1,10 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    { "source": "/soru/:slug", "destination": "/api/soru?slug=:slug" },
+    { "source": "/sorular", "destination": "/api/soru?slug=__liste__" },
+    { "source": "/sitemap-sorular.xml", "destination": "/api/sitemap" }
+  ],
   "headers": [
     {
       "source": "/(.*)",
