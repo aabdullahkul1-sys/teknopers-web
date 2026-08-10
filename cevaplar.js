@@ -964,7 +964,289 @@ Yükümlülükler işletmenin büyüklüğüne ve tuttuğu veriye göre değişi
 2. "[İsim] Bey/Hanım, [gün] [saat] randevunuz onaylandı. Değişiklik için bu numaradan bize ulaşabilirsiniz."
 3. "Randevunuza 2 saat kaldı. [Salon] sizi bekliyor. Adres: [konum bağlantısı]"
 
-Kişiye **ismiyle** hitap etmek ve kolay bir iptal seçeneği sunmak no-show oranını düşürür. Hazır şablon üretmek için aşağıdaki randevu hatırlatma aracını kullanabilirsin.`
+Kişiye **ismiyle** hitap etmek ve kolay bir iptal seçeneği sunmak no-show oranını düşürür. Hazır şablon üretmek için aşağıdaki randevu hatırlatma aracını kullanabilirsin.`,
+
+'parmak-izi-ile-mesai-takibi-yasak-mi':
+`Parmak izi, yüz tanıma gibi biyometrik sistemlerle mesai takibi, KVKK açısından **yüksek riskli** kabul edilir. Kişisel Verileri Koruma Kurulu, çalışanın **açık rızası olsa dahi** bu tür sistemleri çoğu durumda hukuka uygun bulmamaktadır.
+
+## Neden bu kadar riskli?
+
+1. Parmak izi ve yüz geometrisi **özel nitelikli ve geri döndürülemez** veridir; bir şifre gibi değiştirilemez.
+2. İşçi ile işveren arasındaki güç dengesizliği nedeniyle, çalışanın verdiği rızanın **özgür iradeyi** yansıtmadığı kabul edilebilir.
+3. Daha az müdahaleci alternatifler (mobil uygulama, kart, konum doğrulama) varken biyometrik veri işlemek **ölçülülük ilkesine** aykırı görülebilir.
+
+Bu ihlaller, işletmeler için **milyonlarca liraya varan** idari para cezası riski doğurur.
+
+En güvenli yol, biyometrik veri hiç işlemeyen bir sisteme geçmektir: TEKNOPERS, personelin kendi telefonundan konum doğrulamalı giriş yapmasını sağlar, hiçbir biyometrik veri saklamaz. Not: Spesifik karar ve güncel ceza tutarları için bir hukuk uzmanına danışın.`,
+
+'baskasinin-yerine-kart-basmak-tazminat-hakki-var-mi':
+`Evet. İşyerinde bulunmayan bir çalışanın yerine başkasının kart basması ("buddy punching"), Yargıtay içtihatlarına göre **doğruluk ve bağlılığa aykırı** ağır bir ihlaldir ve genellikle **haklı fesih** (tazminatsız işten çıkarma) sebebi sayılır.
+
+## Bilinmesi gerekenler
+
+1. İşyerinde olmayan birini çalışıyor gibi göstermek, işvereni yanıltmadır; çalışmayan birine ücret ödenmesi başlı başına zarar kabul edilir.
+2. Yüksek mahkeme, bu eylemde işverenin ekstra somut bir zarara uğramasını çoğu kez **şart koşmaz**.
+3. Sadece kartını veren değil, **arkadaşının yerine kartı okutan** çalışan da aynı oranda kusurlu bulunabilir.
+
+Ancak bu hakkı kullanabilmek için suistimalin **dijital ve kesin delille** ispatlanması gerekir. TEKNOPERS'in "Cihaz Bağı" özelliği, hesabı tek telefona kilitleyerek bu hileyi teknik olarak imkânsız hâle getirir. Kesin hukuki değerlendirme için bir iş hukuku uzmanına danışın.`,
+
+'150-personelli-fabrikada-mesai-nasil-takip-edilir':
+`150 personelli bir fabrikada mesai takibinin en güvenli yolu, cihaz gerektirmeyen **konum doğrulamalı mobil PDKS**'tir. Personel kendi telefonundan giriş yapar; sistem konumu ve saati kaydeder, puantaj otomatik oluşur.
+
+## Neden cihazsız yöntem?
+
+1. **KVKK riski yok:** biyometrik cihaz (parmak izi/yüz tanıma) yüksek ceza riski taşır; mobil konum doğrulama bu riski taşımaz.
+2. **Kart hilesi yok:** hesap tek telefona kilitlendiği için başkasının yerine giriş yapılamaz.
+3. **Donanım maliyeti yok:** yüzlerce kişilik tesiste cihaz alma, kurma ve bakım gideri ortadan kalkar.
+4. **Vardiya ve fazla mesai** otomatik hesaplanır; ay sonu 150 kişilik bordro Excel hatası olmadan hazırlanır.
+
+Kalabalık tesislerde elle veya kartla takip hem yavaş hem hataya açıktır. TEKNOPERS bu ölçekteki fabrikalar için tasarlanmıştır. Puantaj cetvelini denemek için aşağıdaki aracı kullanabilirsin.`,
+
+'whatsapp-ile-musteri-verisi-paylasmak-yasal-mi':
+`Müşteri veya müvekkile ait kişisel verileri (kimlik, sağlık, dava/işlem bilgisi) WhatsApp gibi sunucuları yurt dışında olan platformlar üzerinden paylaşmak **KVKK açısından risklidir** ve ihlal oluşturabilir.
+
+## Neden riskli?
+
+1. Veri sorumlusu, kişisel veriyi **uygun güvenlik düzeyinde** korumakla yükümlüdür; WhatsApp'ta erişim kayıtları tutulamaz, veri çıkışı kontrol edilemez.
+2. Kişisel verinin **yurt dışına aktarımı** için ek şartlar gerekir; sunucuların yurt dışında olması bu yükümlülüğü doğurur.
+3. Ekran görüntüsüyle veri sızdırılması engellenemez; işten ayrılan personel tüm geçmişi yanında götürür.
+
+Özel nitelikli veriler söz konusu olduğunda, güvenli olmayan üçüncü taraf platformlara yükleme, ağır sonuçlar doğurabilir.
+
+Doğru yol, iletişimi izole ve yetkilendirilmiş bir sisteme taşımaktır: TEKNOPERS görevleri büroya özel şifreli ekrandan atar. Kesin hukuki değerlendirme için bir uzmana danışın.`,
+
+'evrak-zimmet-tutanagi-nasil-tutulur':
+`Evrak zimmet tutanağı, bir belgenin kime, ne zaman ve hangi durumda teslim edildiğini kayıt altına alan belgedir. Amaç, evrakın izini kaybetmemek ve olası bir kayıpta sorumluyu netleştirmektir.
+
+## İçermesi gerekenler
+
+1. **Evrakın tanımı** (ne olduğu, dosya/no).
+2. **Teslim eden ve teslim alan** kişi.
+3. **Tarih ve saat.**
+4. **İmza veya dijital onay.**
+5. Mümkünse teslim anının **fotoğrafı**.
+
+Kağıt tutanaklar kaybolur ve sonradan doldurulabilir. En güvenlisi, teslim anında fotoğraf, konum ve zaman damgasıyla dijital kayıt almaktır. TEKNOPERS'in zimmet modülü bunu saniyeler içinde yapar; evrak ve ekipman teslimi fotoğraflı ve onaylı biçimde kayda geçer.`,
+
+'ekipman-zimmet-takibi-nasil-yapilir':
+`Ekipman (demirbaş) zimmet takibi, laptop, telefon, araç, alet gibi kıymetlerin kimde olduğunu kayıt altına almaktır. Böylece kayıp durumunda sorumlu bulunur ve personel çıkışında iade kontrol edilebilir.
+
+## Nasıl yapılır?
+
+1. Her demirbaşı **kayıt altına al** (ad, seri no, değer).
+2. Teslim anında **kime, ne zaman** verildiğini yaz.
+3. Teslimi **fotoğraf ve onayla** belgele.
+4. **Kimde ne var** listesini güncel tut.
+5. İade edilmeyen zimmetleri işaretle; çıkışta kontrol et.
+
+Sözlü teslim ve kağıt defter kayba ve haksız suçlamaya açıktır. TEKNOPERS'in zimmet modülü, teslim anını fotoğraf + konum + zaman damgası + dijital onayla kayda geçirir ve tüm zimmetleri tek listede gösterir.`,
+
+'taseron-personel-takibi-nasil-yapilir':
+`Taşeron personel takibinin en pratik yolu, her işçinin telefonundan **konum doğrulamalı giriş-çıkış** yapması ve puantajın **taşeron/ekip bazlı** ayrılmasıdır.
+
+## Nasıl yapılır?
+
+1. Taşeronları ve ekipleri sisteme tanımla.
+2. İşçiler şantiyede/lokasyonda telefondan giriş yapar; GPS konumu kaydedilir.
+3. Puantaj **taşeron bazında** otomatik oluşur; her taşeronun hakedişi ayrı görünür.
+4. Fazla mesai ve devamsızlık otomatik hesaplanır.
+
+Taşeron ekiplerinin karıştığı sahalarda kağıt föy kaybolur ve hakediş ihtilafı çıkar. Konumlu-saatli dijital kayıt hem doğru hem de olası davada delildir. TEKNOPERS bunu cihaz olmadan sağlar. Puantaj cetvelini denemek için aşağıdaki aracı kullanabilirsin.`,
+
+'depo-stok-sayimi-nasil-yapilir':
+`Depo stok sayımı, sistemdeki kayıtlı miktar ile raftaki **fiili miktarı** karşılaştırmaktır. En hızlı ve hatasız yöntem barkod okutarak yapılan sayımdır.
+
+## Adımlar
+
+1. Sayım öncesi giriş-çıkışları **güncelle**.
+2. Ürünleri **barkod okutarak** say (elle listeye göre çok daha hızlı ve hatasız).
+3. Sistemdeki miktar ile fiili miktarı **karşılaştır**.
+4. **Farkları** (fire, kayıp, hatalı giriş) tespit et ve nedenini araştır.
+5. Düzeltmeleri işle, sayım raporunu sakla.
+
+Elle sayım uzun sürer ve hata payı yüksektir. TEKNOPERS'te barkodla sayım yaparak fiili stoğu saniyeler içinde karşılaştırabilir, kritik seviye uyarısıyla da stok bitmeden haberdar olabilirsin.`,
+
+'ocr-ile-fatura-okuma-nedir':
+`OCR (Optik Karakter Tanıma) ile fatura okuma, bir faturanın **fotoğrafını çekerek** üzerindeki bilgileri (tedarikçi, tutar, KDV, kalemler) otomatik olarak sisteme aktarmaktır. Elle veri girişini ortadan kaldırır.
+
+## Ne sağlar?
+
+1. Fatura fotoğrafı saniyeler içinde **okunur ve kaydedilir**.
+2. Tutar ve KDV **tedarikçi cari hesabına** işlenir.
+3. Kalemler **stoğa** eklenebilir; KDV dahil/hariç fiyatlandırma yapılır.
+4. Kağıt fiş ve irsaliye kaybolma derdi azalır.
+
+Manuel giriş hem yavaştır hem hatalıdır. TEKNOPERS'in OCR destekli modülü, fatura fotoğrafını okuyarak ön muhasebe ve stok iş yükünü ciddi biçimde azaltır. Denemek için WhatsApp'tan yazabilirsin.`,
+
+'teklif-nasil-hazirlanir':
+`Profesyonel bir teklif; ürün/hizmet kalemlerini, birim fiyatları, toplam tutarı, geçerlilik süresini ve ödeme koşullarını net biçimde içerir. Hızlı hazırlanması, kaçan siparişi önler.
+
+## İçermesi gerekenler
+
+1. **Müşteri ve firma** bilgileri.
+2. **Kalemler:** ürün/hizmet, miktar, birim fiyat, tutar.
+3. **KDV ve genel toplam.**
+4. **Geçerlilik süresi** ve ödeme/teslim koşulları.
+5. Teklif no ve tarih (takip için).
+
+Teklifi Excel veya kağıtla hazırlamak yavaştır ve takibi zordur. TEKNOPERS'te fiyat listesinden dakikalar içinde teklif hazırlar, gönderir ve durumunu (bekliyor/onaylandı) takip edebilirsin. Onaylanan teklif doğrudan siparişe ve cariye dönüşür.`,
+
+'vergi-ve-e-belge-takibi-nasil-yapilir':
+`Vergi ve e-belge takibi, mükelleflerin beyanname ve elektronik belge (e-fatura, e-arşiv, e-defter) yükümlülüklerini son ödeme tarihlerine göre izlemektir. Amaç, hiçbir tarihi kaçırmamaktır.
+
+## Nasıl yapılır?
+
+1. Her mükellef için **yükümlülük türlerini** ve son tarihlerini tanımla.
+2. Yaklaşan tarihler için **otomatik hatırlatma** kur.
+3. Gelen/eksik e-belgeleri **mükellef bazında** işaretle.
+4. Sorumlu personeli **göreve ata**, tamamlananı kapat.
+
+Onlarca mükellefi elle takvimde izlemek risklidir; bir tarih kaçması ceza doğurur. TEKNOPERS, takibi kişiye değil sisteme bağlar: mükellef, görev ve son tarih tek panelde görünür. Güncel mevzuat ve tarihler için mali müşavir bilgisiyle çalışın.`,
+
+'on-muhasebede-takip-disiplini-nasil-saglanir':
+`Ön muhasebede takip disiplini; her işin bir **sorumlusu**, bir **son tarihi** ve bir **durumu** olmasıyla sağlanır. Dağınık takip, unutulan tahsilat ve kaçan tarih demektir.
+
+## Nasıl sağlanır?
+
+1. İşleri (fatura, tahsilat, beyan, evrak) **göreve** dönüştür.
+2. Her göreve **sorumlu ve son tarih** ata.
+3. Yaklaşan tarihlerde **otomatik hatırlatma** al.
+4. Tamamlananı kapat, bekleyeni **tek ekranda** izle.
+5. Vadesi geçen alacak ve eksik evrakı **listele**.
+
+Excel ve kağıt not, kişiye bağımlıdır ve o kişi olmayınca kopar. TEKNOPERS, ön muhasebe akışını görev ve hatırlatmayla disipline eder.`,
+
+'mukellef-evrak-takibi-nasil-yapilir':
+`Mükellef evrak takibi, hangi mükelleften hangi evrakın (fatura, dekont, bordro, sözleşme) geldiğini ve hangisinin eksik olduğunu izlemektir. Evrak trafiğinin yoğun olduğu ofislerde kritiktir.
+
+## Nasıl yapılır?
+
+1. Her mükellef için **beklenen evrak listesi** oluştur.
+2. Gelen evrakı **teslim kaydıyla** işaretle (kim, ne zaman getirdi).
+3. **Eksik evrakı** görünür kıl ve mükellefe hatırlat.
+4. Evrakı ilgili döneme ve göreve bağla.
+
+Kağıt üzerinde "geldi mi gelmedi mi" tartışması hem zaman hem hata kaynağıdır. TEKNOPERS'in evrak/zimmet mantığı, teslimi fotoğraf ve kayıtla belgeler; eksik evrak tek bakışta görünür.`,
+
+'e-fatura-ile-e-arsiv-arasindaki-fark-nedir':
+`E-fatura ve e-arşiv fatura, ikisi de elektronik faturadır; temel fark **kime kesildiğidir**. E-fatura, karşı tarafın da **e-fatura sistemine kayıtlı** olduğu durumlarda (mükelleften mükellefe) kesilir. E-arşiv fatura ise **e-fatura kullanıcısı olmayanlara** ve nihai tüketicilere kesilir.
+
+## Özet fark
+
+1. **E-fatura:** alıcı da e-fatura kullanıcısıdır; belge sistem üzerinden alıcıya iletilir.
+2. **E-arşiv:** alıcı e-fatura kullanıcısı değildir; belge elektronik düzenlenir, alıcıya e-posta/çıktı ile verilir.
+3. Her ikisi de yasal olarak geçerli elektronik belgedir; kağıt fatura yerine geçer.
+
+Hangi belgenin ne zaman kesileceği ve güncel zorunluluk sınırları GİB düzenlemelerine tabidir; kesin durum için mali müşavirinize danışın.`,
+
+'muhasebe-ofisi-icin-takip-programi-nasil-olmali':
+`Bir mali müşavir/muhasebe ofisi programı; **mükellef bazlı görev, son tarih ve evrak takibi** ile personel görev dağılımını tek ekranda toplamalıdır. Çünkü ofis aynı anda yüzlerce mükellefin işini yürütür.
+
+## Olması gerekenler
+
+1. **Mükellef bazlı takip:** her mükellefin yükümlülüğü ve son tarihi.
+2. **Görev atama:** hangi personel, hangi mükellefin işini yapıyor.
+3. **Otomatik hatırlatma:** yaklaşan beyan/ödeme tarihleri.
+4. **Evrak takibi:** gelen/eksik evrak, teslim kaydı.
+5. **İzole iletişim:** müvekkil/mükellef verisi WhatsApp yerine güvenli sistemde.
+
+TEKNOPERS bu takibi kişiye değil sisteme bağlar; tarih, evrak ve sorumluluk kaybolmaz. Denemek için WhatsApp'tan yazabilirsin.`,
+
+'restoran-personeli-vardiya-takibi-nasil-yapilir':
+`Restoran, kafe ve otel gibi işletmelerde personel yoğun ve değişken vardiyalarla çalışır; en pratik yol telefondan **konum doğrulamalı giriş-çıkış** ve otomatik vardiya/fazla mesai hesabıdır.
+
+## Nasıl yapılır?
+
+1. Vardiyaları (sabah/akşam/gece) ve kişi ihtiyacını tanımla.
+2. Personel işbaşında telefondan giriş yapar; konum ve saat kaydedilir.
+3. Fazla mesai ve gece çalışması **otomatik** hesaplanır.
+4. Part-time ve tam zamanlı ayrı izlenir.
+
+Yoğun serviste kağıt föy ve sözlü takip karışır. TEKNOPERS, vardiya ve puantajı tek ekrana taşır; ay sonu bordro hatasız çıkar. Puantaj cetvelini denemek için aşağıdaki aracı kullanabilirsin.`,
+
+'part-time-personel-mesai-takibi-nasil-yapilir':
+`Part-time (kısmi süreli) personelde mesai, **saat bazında** takip edilir; giriş-çıkış saatleri kaydedilir ve ücret çalışılan saate göre hesaplanır.
+
+## Nasıl yapılır?
+
+1. Personeli **part-time** olarak tanımla, saatlik ücretini gir.
+2. Her mesaide telefondan giriş-çıkış yapılır; süre otomatik hesaplanır.
+3. Ay sonunda **toplam saat** ve hak ediş otomatik çıkar.
+4. Fazla çalışma varsa ayrıca işlenir.
+
+Part-time takibinde en sık hata, saatlerin elle toplanmasıdır. TEKNOPERS giriş-çıkışı saatiyle kaydeder ve toplamı otomatik verir; öğrenci/yarı zamanlı ekiplerde idealdir. Aşağıdaki puantaj aracını kullanabilirsin.`,
+
+'sofor-ve-saha-personeli-nasil-takip-edilir':
+`Şoför ve saha personeli sürekli hareket hâlinde olduğundan, takip telefondan **konum doğrulamalı giriş-çıkış** ve teslimat/görev kaydıyla yapılır.
+
+## Nasıl yapılır?
+
+1. Personel işbaşında ve teslimat noktasında telefondan **konum bildirir**.
+2. Hangi görev/teslimat, kaçta yapıldı kaydedilir.
+3. Zimmetli **araç ve ekipman** takip edilir.
+4. Mesai ve fazla çalışma otomatik hesaplanır.
+
+Sahadaki ekibi telefonla arayarak denetlemek sürdürülemez. TEKNOPERS, konumlu giriş ve görev kaydıyla "kim, nerede, ne yaptı" sorusunu net yanıtlar. Puantaj aracını aşağıdan kullanabilirsin.`,
+
+'arac-zimmet-takibi-nasil-yapilir':
+`Araç zimmet takibi, bir aracın (plaka) hangi personele, hangi kilometrede ve hangi durumda teslim edildiğini kayıt altına almaktır. Filo ve nakliyede kritiktir.
+
+## Nasıl yapılır?
+
+1. Aracı **plaka ve bilgileriyle** tanımla.
+2. Teslimde **kime, ne zaman, kaç km'de** verildiğini yaz; fotoğrafla belgele.
+3. İadede km ve durumu **karşılaştır**.
+4. Kimde hangi araç var **tek listede** görünür.
+
+Sözlü teslim, hasar ve yakıt anlaşmazlığına yol açar. TEKNOPERS'in zimmet modülü aracı fotoğraf, konum ve onayla kayda geçirir; iade takibini kolaylaştırır. Denemek için WhatsApp'tan yazabilirsin.`,
+
+'markette-stok-takibi-nasil-yapilir':
+`Markette stok takibi, ürünlerin giriş-çıkışını ve raf miktarını izlemektir. Çok sayıda ürün olduğundan en hızlı yöntem **barkodla** çalışmaktır.
+
+## Nasıl yapılır?
+
+1. Ürünleri **barkodla** tanımla (alış/satış fiyatı ile).
+2. Satış ve mal girişinde barkod okut; stok **otomatik** güncellensin.
+3. **Kritik seviye uyarısı** ile biten ürünü zamanında sipariş et.
+4. Sayımda barkod okutarak fiili stoğu **karşılaştır**.
+
+Elle stok takibi markette imkânsıza yakındır; kaçak ve raf boşluğu fark edilmez. TEKNOPERS barkodlu stokla giriş-çıkışı hızlandırır ve farkı görünür kılar. Denemek için WhatsApp'tan yazabilirsin.`,
+
+'perakende-kasa-ve-vardiya-nasil-yonetilir':
+`Perakende işletmede kasa ve vardiya yönetimi; günlük gelir-giderin kaydı, nakit/kart ayrımı ve personelin vardiya bazlı takibiyle sağlanır.
+
+## Nasıl yapılır?
+
+1. Her satışı **anında** kaydet; nakit ve kartı ayır.
+2. Gün sonunda **beklenen kasa** ile fiili kasayı karşılaştır.
+3. Personeli **vardiya** bazlı izle; giriş-çıkış ve fazla mesai otomatik.
+4. Gün sonu **raporunu** al (ciro, ödeme türü, personel).
+
+Kasa açığı ve vardiya karmaşası, takipsiz işletmenin sessiz zararıdır. TEKNOPERS kasa, stok ve personel takibini tek ekranda birleştirir. Denemek için WhatsApp'tan yazabilirsin.`,
+
+'50-200-personelli-atolyede-mesai-takibi-nasil-yapilir':
+`50 ila 200 personelli bir atölye veya orta ölçekli üretim tesisinde mesai takibinin en pratik yolu, cihaz gerektirmeyen **konum doğrulamalı mobil PDKS**'tir. Bu ölçekte biyometrik cihaz hem pahalı hem KVKK açısından risklidir; kart sistemi ise "başkasının yerine basma" hilesine açıktır.
+
+## Nasıl yapılır?
+
+1. **Bölüm/istasyonları** ve vardiyaları sisteme tanımla.
+2. Personel işbaşında telefondan giriş yapar; GPS konumu ve saat kaydedilir.
+3. **Cihaz Bağı** ile hesap tek telefona kilitlenir, kart hilesi engellenir.
+4. Vardiya, fazla mesai ve taşeron bazlı hakediş **otomatik** hesaplanır.
+
+Bu ölçekte elle veya kartla takip hem yavaş hem hataya açıktır. TEKNOPERS, orta ölçekli üretim için donanım maliyeti ve yasal riski sıfırlar. Puantaj cetvelini denemek için aşağıdaki aracı kullanabilirsin.`,
+
+'cok-istasyonlu-uretimde-personel-takibi-nasil-yapilir':
+`Çok istasyonlu (çok tezgâhlı) üretimde personel farklı noktalarda çalıştığından, takip **bölüm/istasyon bazlı** ve konum doğrulamalı yapılmalıdır.
+
+## Nasıl yapılır?
+
+1. Üretim hattını **bölüm ve istasyonlara** ayır.
+2. Personel çalıştığı noktada telefondan giriş yapar; konumu doğrulanır.
+3. Hangi personel, hangi istasyonda, ne kadar çalıştı **görünür** olur.
+4. Vardiya ve fazla mesai otomatik hesaplanır, bordroya baz olur.
+
+Sabit bir kapı cihazı yalnızca girişi kaydeder; üretim içindeki dağılımı göstermez. Konumlu mobil takip, "kim nerede çalışıyor" sorusunu net yanıtlar. TEKNOPERS bunu cihaz olmadan sağlar; puantaj aracını aşağıdan kullanabilirsin.`
 
 };
 

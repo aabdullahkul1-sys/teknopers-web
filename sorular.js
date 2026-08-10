@@ -118,7 +118,36 @@ var SORULAR = [
   q('on-muhasebe-programi-nedir','Ön muhasebe programı nedir?','KOBİ Dijitalleşme',null,null),
   q('fatura-ve-tahsilat-takibi-nasil-yapilir','Fatura ve tahsilat takibi nasıl yapılır?','KOBİ Dijitalleşme',null,null),
   q('barkod-ile-stok-takibi-nasil-yapilir','Barkod ile stok takibi nasıl yapılır?','KOBİ Dijitalleşme',null,null),
-  q('kvkk-kucuk-isletmeler-icin-ne-gerektirir','KVKK küçük işletmeler için ne gerektirir?','KOBİ Dijitalleşme',null,null)
+  q('kvkk-kucuk-isletmeler-icin-ne-gerektirir','KVKK küçük işletmeler için ne gerektirir?','KOBİ Dijitalleşme',null,null),
+
+  // ── YASAL & SEKTÖREL (çözüm sayfalarıyla bağlı) ──
+  { slug:'parmak-izi-ile-mesai-takibi-yasak-mi', soru:'Parmak izi ile mesai takibi yasak mı?', kategori:'Yasal & Personel', blog:B.pdks[0], blogAd:B.pdks[1], cozum:'fabrika-icin-cihazsiz-pdks-ve-personel-takibi', cozumAd:'Fabrika için cihazsız PDKS çözümü' },
+  { slug:'baskasinin-yerine-kart-basmak-tazminat-hakki-var-mi', soru:'Başkasının yerine kart basmak tazminatsız işten çıkarma sebebi mi?', kategori:'Yasal & Personel', cozum:'fabrika-icin-cihazsiz-pdks-ve-personel-takibi', cozumAd:'Fabrika için cihazsız PDKS çözümü' },
+  { slug:'150-personelli-fabrikada-mesai-nasil-takip-edilir', soru:'150 personelli fabrikada mesai nasıl takip edilir?', kategori:'Puantaj & Personel Takibi', arac:A.puantaj[0], aracAd:A.puantaj[1], cozum:'fabrika-icin-cihazsiz-pdks-ve-personel-takibi', cozumAd:'Fabrika için cihazsız PDKS çözümü' },
+  { slug:'whatsapp-ile-musteri-verisi-paylasmak-yasal-mi', soru:'WhatsApp ile müşteri veya müvekkil verisi paylaşmak yasal mı?', kategori:'Yasal & Personel', cozum:'hukuk-burolari-icin-gorev-atama-ve-evrak-zimmet-sistemi', cozumAd:'Hukuk büroları için görev atama ve zimmet' },
+  { slug:'evrak-zimmet-tutanagi-nasil-tutulur', soru:'Evrak zimmet tutanağı nasıl tutulur?', kategori:'KOBİ Dijitalleşme', cozum:'isletmeler-icin-ekipman-ve-evrak-zimmet-takibi', cozumAd:'Ekipman ve evrak zimmet takibi' },
+  { slug:'ekipman-zimmet-takibi-nasil-yapilir', soru:'Ekipman (demirbaş) zimmet takibi nasıl yapılır?', kategori:'KOBİ Dijitalleşme', cozum:'isletmeler-icin-ekipman-ve-evrak-zimmet-takibi', cozumAd:'Ekipman ve evrak zimmet takibi' },
+  { slug:'taseron-personel-takibi-nasil-yapilir', soru:'Taşeron personel takibi nasıl yapılır?', kategori:'Puantaj & Personel Takibi', arac:A.puantaj[0], aracAd:A.puantaj[1], cozum:'insaat-santiyeleri-icin-personel-taseron-ve-zimmet-takibi', cozumAd:'İnşaat şantiyeleri için personel ve zimmet' },
+  { slug:'depo-stok-sayimi-nasil-yapilir', soru:'Depo stok sayımı nasıl yapılır?', kategori:'KOBİ Dijitalleşme', cozum:'depo-ve-lojistik-icin-stok-ve-demirbas-zimmet-yonetimi', cozumAd:'Depo ve lojistik için stok ve zimmet' },
+  { slug:'ocr-ile-fatura-okuma-nedir', soru:'OCR ile fatura okuma nedir?', kategori:'KOBİ Dijitalleşme', cozum:'depo-ve-lojistik-icin-stok-ve-demirbas-zimmet-yonetimi', cozumAd:'Depo ve lojistik için stok ve zimmet' },
+  { slug:'teklif-nasil-hazirlanir', soru:'Müşteriye teklif nasıl hazırlanır?', kategori:'KOBİ Dijitalleşme', cozum:'uretim-ve-toptan-icin-teklif-cari-ve-stok-yonetimi', cozumAd:'Üretim ve toptan için teklif, cari ve stok' },
+
+  // ── MUHASEBE & VERGI / E-BELGE (kampanya) ──
+  { slug:'vergi-ve-e-belge-takibi-nasil-yapilir', soru:'Vergi ve e-belge takibi nasıl yapılır?', kategori:'Muhasebe & Vergi', cozum:'mali-musavir-ve-muhasebe-ofisleri-icin-evrak-ve-surec-takibi', cozumAd:'Mali müşavir ve muhasebe ofisleri için evrak ve süreç takibi' },
+  { slug:'on-muhasebede-takip-disiplini-nasil-saglanir', soru:'Ön muhasebede takip disiplini nasıl sağlanır?', kategori:'Muhasebe & Vergi', cozum:'mali-musavir-ve-muhasebe-ofisleri-icin-evrak-ve-surec-takibi', cozumAd:'Mali müşavir ve muhasebe ofisleri için evrak ve süreç takibi' },
+  { slug:'mukellef-evrak-takibi-nasil-yapilir', soru:'Mükellef evrak takibi nasıl yapılır?', kategori:'Muhasebe & Vergi', cozum:'mali-musavir-ve-muhasebe-ofisleri-icin-evrak-ve-surec-takibi', cozumAd:'Mali müşavir ve muhasebe ofisleri için evrak ve süreç takibi' },
+  { slug:'e-fatura-ile-e-arsiv-arasindaki-fark-nedir', soru:'E-fatura ile e-arşiv arasındaki fark nedir?', kategori:'Muhasebe & Vergi', cozum:'uretim-ve-toptan-icin-teklif-cari-ve-stok-yonetimi', cozumAd:'Üretim ve toptan için teklif, cari ve stok' },
+  { slug:'muhasebe-ofisi-icin-takip-programi-nasil-olmali', soru:'Mali müşavir ve muhasebe ofisi için takip programı nasıl olmalı?', kategori:'Muhasebe & Vergi', cozum:'mali-musavir-ve-muhasebe-ofisleri-icin-evrak-ve-surec-takibi', cozumAd:'Mali müşavir ve muhasebe ofisleri için evrak ve süreç takibi' },
+
+  // ── OTEL/RESTORAN · NAKLİYE · MARKET (yeni sektörler) ──
+  { slug:'restoran-personeli-vardiya-takibi-nasil-yapilir', soru:'Restoran personeli vardiya takibi nasıl yapılır?', kategori:'Puantaj & Personel Takibi', arac:A.puantaj[0], aracAd:A.puantaj[1], cozum:'otel-restoran-ve-kafeler-icin-personel-ve-vardiya-takibi', cozumAd:'Otel, restoran ve kafeler için personel ve vardiya takibi' },
+  { slug:'part-time-personel-mesai-takibi-nasil-yapilir', soru:'Part-time personel mesai takibi nasıl yapılır?', kategori:'Puantaj & Personel Takibi', arac:A.puantaj[0], aracAd:A.puantaj[1], cozum:'otel-restoran-ve-kafeler-icin-personel-ve-vardiya-takibi', cozumAd:'Otel, restoran ve kafeler için personel ve vardiya takibi' },
+  { slug:'sofor-ve-saha-personeli-nasil-takip-edilir', soru:'Şoför ve saha personeli nasıl takip edilir?', kategori:'Puantaj & Personel Takibi', arac:A.puantaj[0], aracAd:A.puantaj[1], cozum:'nakliye-kargo-ve-filo-icin-saha-personel-ve-arac-zimmet-takibi', cozumAd:'Nakliye, kargo ve filo için personel ve araç zimmet' },
+  { slug:'arac-zimmet-takibi-nasil-yapilir', soru:'Araç zimmet takibi nasıl yapılır?', kategori:'KOBİ Dijitalleşme', cozum:'nakliye-kargo-ve-filo-icin-saha-personel-ve-arac-zimmet-takibi', cozumAd:'Nakliye, kargo ve filo için personel ve araç zimmet' },
+  { slug:'markette-stok-takibi-nasil-yapilir', soru:'Markette stok takibi nasıl yapılır?', kategori:'KOBİ Dijitalleşme', cozum:'market-ve-perakende-icin-stok-ve-personel-yonetimi', cozumAd:'Market ve perakende için stok ve personel yönetimi' },
+  { slug:'perakende-kasa-ve-vardiya-nasil-yonetilir', soru:'Perakende işletmede kasa ve vardiya nasıl yönetilir?', kategori:'KOBİ Dijitalleşme', cozum:'market-ve-perakende-icin-stok-ve-personel-yonetimi', cozumAd:'Market ve perakende için stok ve personel yönetimi' },
+  { slug:'50-200-personelli-atolyede-mesai-takibi-nasil-yapilir', soru:'50-200 personelli atölyede mesai takibi nasıl yapılır?', kategori:'Puantaj & Personel Takibi', arac:A.puantaj[0], aracAd:A.puantaj[1], cozum:'atolye-ve-orta-olcekli-uretim-icin-mesai-ve-vardiya-takibi', cozumAd:'Atölye ve orta ölçekli üretim için mesai ve vardiya takibi' },
+  { slug:'cok-istasyonlu-uretimde-personel-takibi-nasil-yapilir', soru:'Çok istasyonlu üretimde personel takibi nasıl yapılır?', kategori:'Puantaj & Personel Takibi', arac:A.puantaj[0], aracAd:A.puantaj[1], cozum:'atolye-ve-orta-olcekli-uretim-icin-mesai-ve-vardiya-takibi', cozumAd:'Atölye ve orta ölçekli üretim için mesai ve vardiya takibi' }
 ];
 
 module.exports = { SORULAR: SORULAR };
