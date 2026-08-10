@@ -86,7 +86,8 @@ module.exports = async function (req, res) {
       slug: slug, soru: soru, cevap: cevap,
       ilgili: ilgiliBul(slug, 6),
       arac: kayit && kayit.arac, aracAd: kayit && kayit.aracAd,
-      blog: kayit && kayit.blog, blogAd: kayit && kayit.blogAd
+      blog: kayit && kayit.blog, blogAd: kayit && kayit.blogAd,
+      cozum: kayit && kayit.cozum, cozumAd: kayit && kayit.cozumAd
     });
 
     res.statusCode = 200;
