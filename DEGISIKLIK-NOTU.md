@@ -1,29 +1,21 @@
-# TEKNOPERS — Tam Güncelleme (Ana sayfa + Motor sayfaları)
+# TEKNOPERS — Tam Güncelleme v3 (özgünleştirme + sitemap)
 
-## Bu pakette ne var
-Ana sayfa (önceki adım) + /urun, /cozum, /soru motor sayfaları artık AYNI özgün kimlikte:
-soğuk beyaz zemin (krem değil), Bricolage Grotesque başlık, mono etiketler,
-lacivert + altın (şirket) / **gül (salon)** ikili aksan. "Claude şablonu" hissi kalktı.
+## Bu turda ne değişti
+1. Arka plandaki silik ızgara çizgileri + köşe parıltıları KALDIRILDI (hem ana sayfa hem motor).
+   Temiz, iddialı zemin; ayırt edicilik tipografi + ikili aksan + telefon imzasında.
+2. Ürün sayfalarındaki tekrarlayan "her yöne evrilir" bloğu artık ÜRÜNE ÖZEL
+   (aileye göre 3 farklı anlatı + ürün adı enjekte → 13 sayfanın hiçbiri aynı metin değil).
+   "İçindeki özellikler" ve "Hangi sektörler için?" introlarına da ürün adı işlendi.
+3. sitemap.xml (ana sayfa tarihi bugüne çekildi) + robots.txt pakete eklendi.
 
-- Salon ürün ve salon çözüm sayfaları otomatik GÜL temasına geçer (`body.tema-salon`).
-- Şirket ürün/çözüm ve tüm liste sayfaları ALTIN temada kalır.
-- Nav (kutulu "T" logosu) ve footer ana sayfayla birebir; footer /urun/ sayfalarına link verir (SEO iç bağlantı).
-- Font Sora → Bricolage Grotesque; tüm navy #0B1220'ye eşitlendi.
+## GitHub'a yükle (üzerine yaz)
+index.html · urunler.js · cevaplar.js · vercel.json · sitemap.xml · robots.txt
+lib/seo-motor.js · lib/urun-motor.js · lib/cozum-motor.js
+> api/*, sorular.js, cozumler.js, blog, araclar → DEĞİŞMEDİ.
 
-## GitHub'a yüklenecek dosyalar (mevcutların ÜZERİNE)
-| Dosya | Konum |
-|---|---|
-| index.html | kök |
-| urunler.js | kök |
-| cevaplar.js | kök |
-| vercel.json | kök (2 adet 301 yönlendirme içerir) |
-| lib/seo-motor.js | lib/ |
-| lib/urun-motor.js | lib/ |
-| lib/cozum-motor.js | lib/ |
+## Search Console
+Sitemaps'e ekle: sitemap.xml ve sitemap-sorular.xml
+Deploy sonrası /sitemap-sorular.xml → 127 URL görmelisin.
 
-> Değişmeyen dosyalara (api/*, sorular.js, cozumler.js, blog, araclar…) DOKUNMA.
-
-## Notlar
-- Render fonksiyonlarının ürettiği class isimleri korundu; yalnız görünüm (renk/font/stil) değişti.
-- Salon teması: `seo-motor.js`'te `body.tema-salon{--gold:...gül...}` — tek noktadan tüm alt kullanımları döndürür.
-- Sayfa üretimi Node fonksiyonlarıyla olduğu için önizlemeler statik HTML olarak ekte; canlıda Vercel üretir.
+## İnce içerik
+ince-icerik-raporu.md ayrı ektedir. Kritik ince sayfa yok; 67 "sınırda" soru genişletilebilir.
