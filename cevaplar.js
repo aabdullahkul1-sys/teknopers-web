@@ -914,7 +914,7 @@ Elle defterde bakiye karışır, tahsilat unutulur. Dijital cari, kimden ne alac
 4. Stok takibi.
 5. Basit raporlar (ciro, alacak, kâr).
 
-Ön muhasebe işi günlük kontrol etmeni sağlar; resmi beyannameler için yine mali müşavirinle çalışırsın. TEKNOPERS ön muhasebe ihtiyaçlarını karşılar. WhatsApp'tan deneyebilirsin.`,
+TEKNOPERS Ön Muhasebe, işini günü gününe kontrol etmen için birebir çalışır: cari, fatura, kasa, gider ve tahsilat tek ekranda toplanır. İşin büyüdükçe küçük eklemelerle her yöne evrilir. Denemek için WhatsApp'tan yazabilirsin.`,
 
 'fatura-ve-tahsilat-takibi-nasil-yapilir':
 `Fatura ve tahsilat takibi, kestiğin faturaların ödenip ödenmediğini ve vadesi gelenleri izlemektir. Amaç, alacağın takipte kalması ve nakit akışının bozulmamasıdır.

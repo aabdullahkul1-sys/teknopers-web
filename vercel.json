@@ -1,23 +1,71 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/urun/on-muhasebe-cari-teklif-programi",
+      "destination": "/urun/on-muhasebe-programi",
+      "permanent": true
+    },
+    {
+      "source": "/urun/salon-randevu-yonetim-programi",
+      "destination": "/urun/kuafor-ve-berber-randevu-programi",
+      "permanent": true
+    }
+  ],
   "rewrites": [
-    { "source": "/urun/:slug", "destination": "/api/urun?slug=:slug" },
-    { "source": "/urunler", "destination": "/api/urun?slug=__liste__" },
-    { "source": "/cozum/:slug", "destination": "/api/cozum?slug=:slug" },
-    { "source": "/cozumler", "destination": "/api/cozum?slug=__liste__" },
-    { "source": "/soru/:slug", "destination": "/api/soru?slug=:slug" },
-    { "source": "/sorular", "destination": "/api/soru?slug=__liste__" },
-    { "source": "/sitemap-sorular.xml", "destination": "/api/sitemap" }
+    {
+      "source": "/urun/:slug",
+      "destination": "/api/urun?slug=:slug"
+    },
+    {
+      "source": "/urunler",
+      "destination": "/api/urun?slug=__liste__"
+    },
+    {
+      "source": "/cozum/:slug",
+      "destination": "/api/cozum?slug=:slug"
+    },
+    {
+      "source": "/cozumler",
+      "destination": "/api/cozum?slug=__liste__"
+    },
+    {
+      "source": "/soru/:slug",
+      "destination": "/api/soru?slug=:slug"
+    },
+    {
+      "source": "/sorular",
+      "destination": "/api/soru?slug=__liste__"
+    },
+    {
+      "source": "/sitemap-sorular.xml",
+      "destination": "/api/sitemap"
+    }
   ],
   "headers": [
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "Strict-Transport-Security", "value": "max-age=63072000; includeSubDomains; preload" },
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
-        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=(), interest-cohort=()" }
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=63072000; includeSubDomains; preload"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=(), interest-cohort=()"
+        }
       ]
     }
   ]
