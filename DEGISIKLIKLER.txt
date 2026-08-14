@@ -1,0 +1,39 @@
+TEKNOPERS — Bu paketteki değişiklikler (Ağustos 2026, güncel)
+=============================================================
+
+1) YAPISAL VERİ (SEO Schema) — 13 araç sayfası
+   araclar/*/index.html : eski WebApplication+FAQPage blokları tek @graph ile
+   değiştirildi (Organization + BreadcrumbList + zengin WebApplication + publisher
+   bağı + mevcut SSS korundu). patron-simulasyonu: VideoGame şemasına
+   Organization+publisher. Puantaj & Fazla Mesai: birer tanım SSS'i eklendi.
+
+2) GÖRSEL/PALET TEMİZLİĞİ
+   araclar/fazla-mesai-hesaplama : palet-dışı yinelenen blok kaldırıldı; bayram/
+     tatil (m.47) yerli .content'e taşındı.
+   araclar/{isveren-maliyeti,kidem-tazminati,net-brut-maas,salon-karlilik} :
+     palet-dışı bloklar yerli stile çekilip main içine taşındı.
+   ortaklik.html : mavi orphan kutu kaldırıldı; 2 araç bağlantısı "İlgili sayfalar"
+     gridine yerli kart olarak eklendi.
+
+3) LANSMAN KAMPANYASI (1 yıl 1.000 TL) — CANLI BAĞLANDI
+   index.html :
+     - #fiyat bölümüne kampanya kartı (Shopier CTA + gün sayacı + kalıcı 1/4
+       yenileme + referans şartı). Gerçek fiyat çıpa olarak korundu.
+     - Shopier linki BAĞLI: https://www.shopier.com/Teknopers/49879869
+     - Kampanya link önizlemesi (OG/Twitter): og-kampanya.png + kampanya başlık/
+       açıklama (DM paylaşımı için).
+     - Süreli teklif şeması: iki ürüne kampanya fiyatı + priceValidUntil + InStock.
+   lib/seo-motor.js : tüm dinamik sayfalara (ürün/çözüm/soru) kampanya şeridi.
+   og-kampanya.png : KÖK dizinde (1200x630 link önizleme görseli).
+
+   >>> KAMPANYA TARİHİNİ değiştirince İKİ yerde güncelle:
+       (a) index.html içinde KAMPANYA.bitisISO / bitisMetin
+       (b) index.html şemasında 2 adet priceValidUntil
+   >>> Kampanya bitince: seo-motor.js'te şerit satırını sil; index head'deki OG'yi
+       yorumdaki eski değerlere döndür.
+
+DEĞİŞMEYENLER (bilinçli): ürün/çözüm taban fiyatları (2.500/1.500) = çıpa.
+urun-motor.js / cozum-motor.js / cevaplar.js dokunulmadı.
+
+NOT: Shopier ürün kapağı (kare görsel) siteye ait değildir, Shopier'e ayrıca
+yüklenir; bu yüzden bu pakete dahil edilmedi.
