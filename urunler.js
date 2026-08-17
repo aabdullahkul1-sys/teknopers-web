@@ -11,7 +11,12 @@ var URUNLER = [
 
 // ───────── SAHA & PERSONEL ─────────
 {
-  slug:"pdks-personel-takip-sistemi", ad:"PDKS ve Personel Takip", etiket:"Şirket Takip · Saha",
+  slug:"pdks-personel-takip-sistemi",
+  sss: [
+    { s: "Cihazsız PDKS, kart veya parmak izi cihazından ne farkı var?", c: "Donanım ve bakım maliyeti yoktur; personel kendi telefonundan konum doğrulamalı giriş yapar. Giriş cihaza kilitlendiği ve GPS ile teyit edildiği için 'kartını arkadaşına verme' hilesi kapalıdır." },
+    { s: "Fiyat personel sayısına göre artar mı?", c: "Hayır. Fiyat işletme başınadır; personel ve kayıt sayısı fiyatı değiştirmez, kullanıcı başına ücret yoktur." },
+    { s: "İnternetin olmadığı sahada çalışır mı?", c: "Uygulama işlemleri çevrimdışı kaydeder; bağlantı gelince otomatik olarak senkronlar, veri kaybı olmaz." }
+  ], ad:"PDKS ve Personel Takip", etiket:"Şirket Takip · Saha",
   keyword:"Cihazsız PDKS ve Personel Takip Programı", urunTuru:"sirket", ikon:"⏱️", aile:"Saha & Personel",
   hero:["Parmak izi ve kart cihazına gerek kalmadan, personelin kendi telefonundan konum doğrulamalı mesai takibi. KVKK uyumlu, kart hilesine kapalı, sıfır donanım."],
   altOzellikler:[
@@ -29,7 +34,12 @@ var URUNLER = [
   ctaBaslik:"Mesai riskini sisteme devredin", ctaMetin:"Cihazsız PDKS demosu için bize yazın."
 },
 {
-  slug:"zimmet-takip-sistemi", ad:"Zimmet Takip", etiket:"Şirket Takip · Zimmet",
+  slug:"zimmet-takip-sistemi",
+  sss: [
+    { s: "Zimmet kaydı hukuken işe yarar mı?", c: "Onaylı zimmet kaydı bir ekipman, araç veya evrağın en son kimde olduğunu tarihiyle belgeler; kayıp, hasar veya haksız suçlamada işverenin en güçlü savunmasıdır." },
+    { s: "İşten ayrılışta eksik teslim nasıl görülür?", c: "Personelin üzerindeki tüm zimmetler tek ekranda listelenir; teslim edilmeyen kalem net görünür ve ilişik kesme buna göre yapılır." },
+    { s: "Hangi varlıklar takip edilebilir?", c: "Cihaz, araç, alet, iş kıyafeti, telefon veya evrak — teslim edilen her şey personel bazında kaydedilir." }
+  ], ad:"Zimmet Takip", etiket:"Şirket Takip · Zimmet",
   keyword:"Ekipman ve Evrak Zimmet Takip Programı", urunTuru:"sirket", ikon:"🔐", aile:"Saha & Personel",
   hero:["Laptop, telefon, araç, kıymetli evrak… Kimde ne var? Teslimi fotoğraf, konum ve dijital onayla kayıt altına alın."],
   altOzellikler:[
@@ -47,7 +57,12 @@ var URUNLER = [
   ctaBaslik:"Kimde ne var, artık net", ctaMetin:"Dijital zimmet modülünü görmek için bize yazın."
 },
 {
-  slug:"gorev-atama-ve-saha-yonetimi", ad:"Görev Atama ve Saha Yönetimi", etiket:"Şirket Takip · Saha",
+  slug:"gorev-atama-ve-saha-yonetimi",
+  sss: [
+    { s: "Saha ekibine görev nasıl atanır?", c: "Her görev sorumlu personel ve son tarihle atanır; personel telefonundan görür, tamamlandı olarak işaretler ve konumla teyit edilir." },
+    { s: "Görevin gerçekten yapıldığı nasıl doğrulanır?", c: "Tamamlanma anı zaman ve konum damgasıyla kaydedilir; isterseniz fotoğraf ve not eklenir, denetlenemeyen iş sorunu biter." },
+    { s: "Ayrı bir ücreti var mı?", c: "Şirket Takip Sistemi paketine dahildir; işletme başına, kullanıcı başına ücret yoktur." }
+  ], ad:"Görev Atama ve Saha Yönetimi", etiket:"Şirket Takip · Saha",
   keyword:"Görev Atama ve Saha Ekip Yönetimi Programı", urunTuru:"sirket", ikon:"🗂️", aile:"Saha & Personel",
   hero:["Ekibe görevi WhatsApp'tan değil, izole ve konum damgalı bir sistemden atayın. Kim, neyi, nerede, ne zaman yaptı tek panelde."],
   altOzellikler:[
@@ -65,7 +80,12 @@ var URUNLER = [
   ctaBaslik:"Sahayı ve ofisi tek panelden yönetin", ctaMetin:"Görev atama ve saha yönetimini görmek için bize yazın."
 },
 {
-  slug:"atolye-ve-orta-olcekli-uretim-icin-pdks", ad:"Atölye ve Orta Ölçekli Üretim için PDKS", etiket:"Şirket Takip · Üretim",
+  slug:"atolye-ve-orta-olcekli-uretim-icin-pdks",
+  sss: [
+    { s: "50-200 kişilik atölyede pahalı cihaz gerekmez mi?", c: "Hayır. Personel telefonundan konumlu giriş yapar; biyometrik cihaz maliyeti olmadan vardiya ve fazla mesai otomatik hesaplanır." },
+    { s: "Hangi istasyonda kim çalıştı görülür mü?", c: "Evet. Giriş istasyona bağlandığından üretim içindeki dağılım ve verim tek ekranda görünür." },
+    { s: "Taşeron hakedişi ayrışır mı?", c: "Ekip ve taşeron bazlı puantaj otomatik oluşur; her ekibin hakedişi ayrı çıkar ve SGK günleriyle karşılaştırılabilir." }
+  ], ad:"Atölye ve Orta Ölçekli Üretim için PDKS", etiket:"Şirket Takip · Üretim",
   keyword:"50-200 Personelli Atölye ve Üretim için Cihazsız PDKS", urunTuru:"sirket", ikon:"🏭", aile:"Saha & Personel",
   hero:["50-200 personelli atölye ve orta ölçekli üretim için cihazsız, KVKK uyumlu mesai takibi. Pahalı biyometrik cihaz ve kart hilesi olmadan, çok istasyonlu."],
   altOzellikler:[
@@ -85,7 +105,12 @@ var URUNLER = [
 
 // ───────── STOK, SATIŞ & ÖN MUHASEBE ─────────
 {
-  slug:"depo-stok-yonetim-programi", ad:"Depo ve Stok Yönetim", etiket:"Şirket Takip · Depo",
+  slug:"depo-stok-yonetim-programi",
+  sss: [
+    { s: "Barkod için ek cihaz almam gerekir mi?", c: "Hayır. Personelin telefonu barkod okuyucu olarak çalışır; ek donanım maliyeti yoktur." },
+    { s: "Kritik stok uyarısı var mı?", c: "Evet. Ürün belirlediğiniz kritik seviyeye inince sistem otomatik sipariş uyarısı verir, popüler ürün rafta bitmez." },
+    { s: "Sayım ne kadar hızlanır?", c: "Barkod okutmayla sayım elle listeye göre kat kat hızlanır, insan hatası düşer ve sayım farkı anında raporlanır." }
+  ], ad:"Depo ve Stok Yönetim", etiket:"Şirket Takip · Depo",
   keyword:"Barkodlu Depo ve Stok Takip Programı", urunTuru:"sirket", ikon:"📦", aile:"Stok, Satış & Ön Muhasebe",
   hero:["Barkodla saniyede stok giriş-çıkışı, OCR ile fatura okuma ve kritik seviye uyarısı. Depo farklarını görünür kılın."],
   altOzellikler:[
@@ -103,7 +128,12 @@ var URUNLER = [
   ctaBaslik:"Depo zararını görünür kılın", ctaMetin:"Barkodlu stok ve OCR fatura sistemini görmek için bize yazın."
 },
 {
-  slug:"satis-teklif-ve-cari-programi", ad:"Satış, Teklif ve Cari", etiket:"Şirket Takip · Satış",
+  slug:"satis-teklif-ve-cari-programi",
+  sss: [
+    { s: "Teklif hazırlamak ne kadar sürer?", c: "Ürün ve fiyatlar tanımlı olduğundan teklif dakikalar içinde oluşur ve tek tıkla PDF veya WhatsApp ile gönderilir." },
+    { s: "Cari alacak takibi nasıl kolaylaşır?", c: "Her satış ve tahsilat carihe işlenir; vadesi gelen ve geçen alacaklar otomatik listelenir, unutulan tahsilat kalmaz." },
+    { s: "Stok ile satış birbirine bağlı mı?", c: "Evet. Onaylanan siparişte ürün stoktan otomatik düşer; elde olmayanı satma sorunu ortadan kalkar." }
+  ], ad:"Satış, Teklif ve Cari", etiket:"Şirket Takip · Satış",
   keyword:"Antetli Teklif, Cari ve Satış Yönetim Programı", urunTuru:"sirket", ikon:"🧾", aile:"Stok, Satış & Ön Muhasebe",
   hero:["Antetli profesyonel teklif, sipariş yönetimi ve cari (borç-alacak) takibi bir arada. Satışı stok ve tahsilatla tek ekrandan yürütün."],
   altOzellikler:[
@@ -121,7 +151,12 @@ var URUNLER = [
   ctaBaslik:"Teklif–cari–tahsilat tek ekranda", ctaMetin:"Satış ve teklif yönetimini görmek için bize yazın."
 },
 {
-  slug:"on-muhasebe-programi", ad:"Ön Muhasebe", etiket:"Şirket Takip · Ön Muhasebe",
+  slug:"on-muhasebe-programi",
+  sss: [
+    { s: "Resmi beyanname veriyor mu?", c: "Bu bir ön muhasebe programıdır; gelir-gider, cari, kasa ve fatura takibini yapar. Resmi beyanı mali müşavirinizle yürütürsünüz ve verileri müşavire aktarmak kolaydır." },
+    { s: "e-Fatura ve e-Arşiv ile çalışır mı?", c: "Kullandığınız e-belge sistemlerine köprü kurulabilir; iki sistem tek akışta buluşur." },
+    { s: "Fiyatı nasıl?", c: "Şirket Takip Sistemi paketine dahildir; işletme başına, sınırsız personel, kullanıcı başına ücret yok." }
+  ], ad:"Ön Muhasebe", etiket:"Şirket Takip · Ön Muhasebe",
   keyword:"Ön Muhasebe Programı — Cari, Fatura, Kasa", urunTuru:"sirket", ikon:"📒", aile:"Stok, Satış & Ön Muhasebe",
   hero:["İşletmenizin günlük para akışını — cari, fatura, kasa, gider, tahsilat — eksiksiz yöneten ön muhasebe sistemi. Günü gününe kontrol, tek ekranda."],
   altOzellikler:[
@@ -141,7 +176,12 @@ var URUNLER = [
 
 // ───────── SEKTÖREL RANDEVU (SALON) ─────────
 {
-  slug:"kuafor-ve-berber-randevu-programi", ad:"Kuaför ve Berber Randevu Programı", etiket:"Salon & Randevu",
+  slug:"kuafor-ve-berber-randevu-programi",
+  sss: [
+    { s: "Online randevu özelliği var mı?", c: "Evet. Müşteri uygun saati kendisi seçer, randevu takvime düşer ve size bildirilir; telefon trafiği belirgin azalır." },
+    { s: "Fiyat personel veya koltuk sayısına göre mi artar?", c: "Hayır. Fiyat işletme başınadır; personel sayısı fiyatı değiştirmez." },
+    { s: "No-show'u azaltır mı?", c: "Randevu öncesi otomatik hatırlatma gelmeme oranını düşürür; boşalan saat için erken haber alırsınız." }
+  ], ad:"Kuaför ve Berber Randevu Programı", etiket:"Salon & Randevu",
   keyword:"Kuaför ve Berber Randevu Programı", urunTuru:"salon", ikon:"💈", aile:"Sektörel Randevu · Salon",
   hero:["Çakışmasız online randevu, otomatik WhatsApp hatırlatma ve müşteri geçmişi. No-show'u düşürün, düzenli müşteriyi geri getirin."],
   altOzellikler:[
@@ -159,7 +199,12 @@ var URUNLER = [
   ctaBaslik:"Koltuğu boş bırakmayın", ctaMetin:"Kuaför randevu sistemini görmek için bize yazın."
 },
 {
-  slug:"guzellik-ve-estetik-randevu-programi", ad:"Güzellik ve Estetik Randevu Programı", etiket:"Salon & Randevu",
+  slug:"guzellik-ve-estetik-randevu-programi",
+  sss: [
+    { s: "Paket ve seans takibi var mı?", c: "Evet. Müşteriye satılan paket sisteme işlenir; her ziyarette kalan seans otomatik düşer ve bitişe yakın yenileme hatırlatılır." },
+    { s: "Personel primi hesaplanır mı?", c: "Her işlemin hangi personel tarafından yapıldığı kayıtlıdır; ay sonu ciro ve prim otomatik çıkar." },
+    { s: "Kabin veya personel çakışması engellenir mi?", c: "Evet. Kabin ve personel bazlı takvim aynı anda iki randevuyu engeller." }
+  ], ad:"Güzellik ve Estetik Randevu Programı", etiket:"Salon & Randevu",
   keyword:"Güzellik Salonu ve Estetik Randevu Programı", urunTuru:"salon", ikon:"💅", aile:"Sektörel Randevu · Salon",
   hero:["Lazer, cilt bakımı gibi çok seanslı hizmetlerde paket takibi, otomatik hatırlatma ve müşteri geçmişi. Personel primi ve kasa bir arada."],
   altOzellikler:[
@@ -177,7 +222,12 @@ var URUNLER = [
   ctaBaslik:"Paket ve randevuyu tek ekrana taşıyın", ctaMetin:"Güzellik merkezi programını görmek için bize yazın."
 },
 {
-  slug:"dis-klinigi-randevu-programi", ad:"Diş Kliniği Randevu Programı", etiket:"Salon & Randevu",
+  slug:"dis-klinigi-randevu-programi",
+  sss: [
+    { s: "Randevunun yanında hasta ve tedavi takibi var mı?", c: "Evet. Hasta kartında tedavi geçmişi, çok seanslı tedavide kalan seans ve tedavi bakiyesi tutulur." },
+    { s: "Hasta verisi KVKK'ya uygun saklanır mı?", c: "Sağlık verisi yetkili erişimle korunur; aydınlatma ve rıza akışı sistemle birlikte gelir." },
+    { s: "Hekim ve koltuk çakışması önlenir mi?", c: "Evet. Hekim ve koltuk bazlı takvim çakışmayı engeller, gün planı net olur." }
+  ], ad:"Diş Kliniği Randevu Programı", etiket:"Salon & Randevu",
   keyword:"Diş Kliniği Randevu ve Hasta Takip Programı", urunTuru:"salon", ikon:"🦷", aile:"Sektörel Randevu · Salon",
   hero:["Çok seanslı tedavilerde hasta geçmişi, kalan seans ve otomatik hatırlatma. No-show kaybını WhatsApp hatırlatmasıyla düşürün."],
   altOzellikler:[
@@ -195,7 +245,12 @@ var URUNLER = [
   ctaBaslik:"Boş koltuğu doldurun", ctaMetin:"Diş kliniği randevu sistemini görmek için bize yazın."
 },
 {
-  slug:"veteriner-klinik-randevu-programi", ad:"Veteriner Klinik Randevu Programı", etiket:"Salon & Randevu",
+  slug:"veteriner-klinik-randevu-programi",
+  sss: [
+    { s: "Aşı hatırlatma sistemi var mı?", c: "Evet. Aşı ve kontrol tarihine göre hayvan sahibine otomatik WhatsApp/SMS hatırlatma gider; tekrar ziyaretler kaçmaz." },
+    { s: "Hayvan ve sahip bilgisi birlikte mi tutulur?", c: "Her hasta kartı sahibiyle eşleşir; tedavi geçmişi ve iletişim tek yerdedir, kayıt karışmaz." },
+    { s: "İlaç stoğu takip edilir mi?", c: "Klinikte kullanılan ilaç ve malzeme stok modülüyle takip edilir, kritik seviyede uyarı gelir." }
+  ], ad:"Veteriner Klinik Randevu Programı", etiket:"Salon & Randevu",
   keyword:"Veteriner Kliniği Randevu ve Hasta Takip Programı", urunTuru:"salon", ikon:"🐾", aile:"Sektörel Randevu · Salon",
   hero:["Hayvan ve sahip kaydını birlikte tutun, aşı ve kontrol hatırlatmalarını otomatikleştirin, no-show kaybını düşürün."],
   altOzellikler:[
@@ -213,7 +268,12 @@ var URUNLER = [
   ctaBaslik:"Aşı hatırlatmasıyla hastayı geri getirin", ctaMetin:"Veteriner randevu sistemini görmek için bize yazın."
 },
 {
-  slug:"diyetisyen-danisan-takip-programi", ad:"Diyetisyen ve Danışan Takip Programı", etiket:"Salon & Randevu",
+  slug:"diyetisyen-danisan-takip-programi",
+  sss: [
+    { s: "Danışan ölçüm ve ilerleme takibi var mı?", c: "Evet. Kilo, ölçü ve vücut analizi geçmişi tarih tarih tutulur ve grafikle gösterilir; danışan sonucu görünce bağlılık artar." },
+    { s: "Paket takibi nasıl yapılır?", c: "Örneğin 8 görüşmelik paket sisteme işlenir; her görüşmede kalan otomatik düşer ve bitişte yenileme hatırlatılır." },
+    { s: "Danışan verisi güvenli mi?", c: "Danışan verisi yetkili erişimle korunur ve KVKK aydınlatma/rıza akışıyla yönetilir." }
+  ], ad:"Diyetisyen ve Danışan Takip Programı", etiket:"Salon & Randevu",
   keyword:"Diyetisyen Randevu ve Danışan Takip Programı", urunTuru:"salon", ikon:"🥗", aile:"Sektörel Randevu · Salon",
   hero:["Danışanın kilo/ölçü ilerlemesini, paket kullanımını ve randevularını tek ekranda takip edin. No-show'u otomatik hatırlatmayla düşürün."],
   altOzellikler:[
@@ -231,7 +291,12 @@ var URUNLER = [
   ctaBaslik:"Danışanın ilerlemesini görünür kılın", ctaMetin:"Diyetisyen takip sistemini görmek için bize yazın."
 },
 {
-  slug:"pilates-studyo-uyelik-programi", ad:"Pilates ve Stüdyo Üyelik Programı", etiket:"Salon & Randevu",
+  slug:"pilates-studyo-uyelik-programi",
+  sss: [
+    { s: "Üyelik ve kalan ders takibi var mı?", c: "Evet. Her üyeye tanımlı paketten katıldığı ders otomatik düşer; kalan ders ve üyelik bitiş tarihi görünür." },
+    { s: "Kontenjan yönetimi var mı?", c: "Her dersin kontenjanı tanımlıdır; dolan derse yeni kayıt engellenir ve bekleme listesi yönetilebilir." },
+    { s: "Yenileme oranını artırır mı?", c: "Üyelik bitişi önceden otomatik hatırlatıldığından yenileme belirgin artar." }
+  ], ad:"Pilates ve Stüdyo Üyelik Programı", etiket:"Salon & Randevu",
   keyword:"Pilates ve Spor Stüdyosu Üyelik ve Ders Programı", urunTuru:"salon", ikon:"🧘", aile:"Sektörel Randevu · Salon",
   hero:["Ders takvimi, üyelik/paket takibi ve yoklama tek ekranda. Üyelik bitişini hatırlatarak yenilemeyi artırın."],
   altOzellikler:[

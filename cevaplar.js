@@ -322,52 +322,52 @@ TEKNOPERS cihazsız, GPS'li ve sabit fiyatlıdır; yüz okuma veya kartlı cihaz
 Kağıt imza föyü ve telefonla arama yöntemleri hataya ve suistimale açıktır. TEKNOPERS, saha ekipleri için bu takibi cihazsız ve tek ekranda sunar. Ayrıntı için saha personel takibi rehberimize bakabilirsin.`,
 
 'insaat-santiyesinde-personel-takibi-nasil-yapilir':
-`Şantiyede personel takibinin en doğru yolu, her işçinin telefonundan **konum doğrulamalı giriş-çıkış** yapmasıdır. Böylece kim, hangi şantiyede, saat kaçta işe başladı net olur.
+`Şantiyede personel takibinin iki gerçeği vardır: işçiler farklı noktalara dağılır ve çoğu **yevmiyeli/taşeron** çalışır. Kağıt föy hem kaybolur hem de ay sonu hakediş tartışmasına yol açar.
 
-## Nasıl kurulur?
+## Nasıl yapılır?
 
-1. Şantiyeleri sisteme tanımla.
-2. İşçiler telefondan giriş/çıkış yapar; GPS konumu kaydedilir.
-3. Puantaj otomatik dolar, fazla mesai hesaplanır.
-4. Taşeron/ekip bazlı raporlama alınır.
+1. **Konumlu-saatli giriş:** işçi şantiye alanındayken telefonundan mesai başlatır.
+2. **Taşeron bazlı puantaj:** her ekip ayrı; hakediş ekip bazında otomatik toplanır.
+3. **Zimmet:** verilen alet ve ekipman kayda geçer, iade takip edilir.
+4. **SGK uyumu:** puantaj prim günleriyle karşılaştırılır.
 
-Şantiyede kağıt föy kaybolur, imza taklit edilebilir; konumlu dijital kayıt hem doğrudur hem de olası bir davada kanıt niteliği taşır. TEKNOPERS bunu cihaz olmadan sağlar.`,
+Konumlu ve imzalı kayıt hem doğru hesaplama sağlar hem de olası davada delildir. Şantiye için [inşaat çözümünü](https://teknopers.com.tr/cozum/insaat-santiyeleri-icin-personel-taseron-ve-zimmet-takibi) ve ücretsiz [Puantaj Cetveli](https://teknopers.com.tr/araclar/puantaj-cetveli/) aracını inceleyebilirsiniz.`,
 
 'temizlik-personeli-takip-programi-nasil-olmali':
-`Temizlik personeli birden çok lokasyonda dağınık çalıştığından, program telefondan **konum doğrulamalı giriş-çıkış** ve lokasyon bazlı takip sunmalıdır.
+`Temizlik şirketinde personel farklı binalara dağıldığı için asıl soru "kim, hangi lokasyonda, kaç saat çalıştı"dır. Program bu görünürlüğü sağlamalı ve müşteriye ispatlanabilir olmalıdır.
 
-## Olması gerekenler
+## Nasıl olmalı?
 
-1. Her personel gittiği adreste telefondan giriş yapar; GPS konumu doğrular.
-2. Hangi bina/müşteri, hangi saat aralığı çalışıldı görünür.
-3. Vardiya ve rotasyon planı.
-4. Fazla mesai ve devamsızlık otomatik.
+1. **Konum doğrulamalı giriş-çıkış:** personel gittiği binada telefonundan mesai başlatır.
+2. **Lokasyon bazlı kayıt:** hangi ekip hangi müşteride kaç saat çalıştı otomatik ayrışır.
+3. **Anlık takip:** eksik giden veya erken ayrılan personel yöneticiye anında görünür.
+4. **Müşteri ispatı:** aylık lokasyon bazlı rapor, verilen hizmet saatinin belgesidir.
 
-Böylece "geldi mi, kaçta geldi" tartışması biter. TEKNOPERS cihazsızdır ve çok lokasyonlu ekipler için uygundur.`,
+Bu, kağıt föyle mümkün olmayan bir netlik ve fatura/hakediş anlaşmazlığına son verir. Temizlik için [mobil PDKS ve saha çözümünü](https://teknopers.com.tr/cozum/temizlik-sirketleri-icin-mobil-pdks-ve-saha-takibi) inceleyebilirsiniz.`,
 
 'guvenlik-personeli-devriye-takibi-nasil-yapilir':
-`Güvenlik personelinin nöbet ve devriye takibi, belirli noktalarda telefondan **konum doğrulamalı kayıt** (tur kontrol) ile yapılır.
+`Güvenlikte iki şey ispatlanabilir olmalıdır: **görevlinin noktada olduğu** ve **devriye turlarının atıldığı**. Aksi halde müşteriye hizmet kanıtlanamaz ve boş kalan vardiya fark edilmez.
 
-## Yöntem
+## Nasıl yapılır?
 
-1. Nöbet/kontrol noktalarını ve saatlerini tanımla.
-2. Personel her turda noktada telefondan giriş yapar; konum ve saat kaydedilir.
-3. Kaçırılan tur veya gecikme raporu alınır.
-4. Vardiya planı ve fazla mesai birlikte yönetilir.
+1. **Vardiya kapsaması:** her nokta için sabah/akşam/gece çizelgesi kurulur, açık kalan vardiya görünür.
+2. **Devriye turu:** görevli noktaları telefonuyla (QR/NFC/konum) tarayarak tur kaydı bırakır.
+3. **Atlanan tur uyarısı:** yapılmayan tur yöneticiye anında bildirilir.
+4. **Müşteri raporu:** o gece hangi turların kaçta atıldığı zaman-konum damgasıyla raporlanır.
 
-Kağıt devriye defteri sonradan denetlenemez; konumlu dijital kayıt hem caydırıcıdır hem de raporlanabilir. TEKNOPERS bu takibi cihaz olmadan sunar.`,
+Bu kayıtlar hem hizmet ispatı hem de olası bir olayda delildir. Güvenlik için [devriye ve nokta kontrol çözümünü](https://teknopers.com.tr/cozum/guvenlik-sirketleri-icin-devriye-ve-nokta-kontrol) inceleyebilirsiniz.`,
 
 'gps-ile-personel-giris-cikis-takibi-nasil-yapilir':
-`GPS'li giriş-çıkış takibinde personel, işe başlarken ve biterken kendi telefonundan butona basar; sistem o anki konumu ve saati kaydeder. Böylece PDKS cihazına gerek kalmaz.
+`GPS ile giriş-çıkış takibi, personelin mesaisini **doğru konumdayken** başlatıp bitirdiğini teyit etmeye dayanır. Böylece "işyerine gelmeden giriş yapma" veya başkasının yerine giriş engellenir.
 
-## Nasıl çalışır?
+## Nasıl yapılır?
 
-1. Personelin telefonuna uygulama/bağlantı tanımlanır.
-2. İşyeri konumu belirlenir.
-3. Giriş/çıkışta konum doğrulanır; belirlenen alanın dışındaysa uyarı verilir.
-4. Puantaj ve fazla mesai otomatik hesaplanır.
+1. **İşyeri/şantiye alanı tanımlanır:** giriş yalnızca bu alan içindeyken kabul edilir.
+2. **Konumlu mesai başlatma:** personel telefonundan giriş yapar, konum damgalanır.
+3. **Sahte konum bariyeri:** sahte GPS uygulamaları engellenir.
+4. **Puantaja işleme:** giriş-çıkış otomatik puantaja ve fazla mesaiye yansır.
 
-Avantajı: cihaz maliyeti yoktur, saha ekiplerinde çalışır ve suistimal zordur. Ayrıntı için PDKS nedir rehberine bakabilirsin.`,
+Konum yalnızca mesai başlat/bitir anında ve iş amacıyla alınır; sürekli takip yapılmaz, KVKK aydınlatma ve rıza akışıyla yürür. Cihazsız GPS'li takip için TEKNOPERS'in [PDKS ürününü](https://teknopers.com.tr/urun/pdks-personel-takip-sistemi) inceleyebilirsiniz.`,
 
 'cihazsiz-pdks-nedir':
 `PDKS (Personel Devam Kontrol Sistemi), çalışanların giriş-çıkışını kaydeden sistemdir. **Cihazsız PDKS**, parmak izi/yüz okuma/kart cihazı olmadan, personelin kendi telefonundan konum doğrulamalı giriş yapmasıyla çalışan modern yöntemdir.
@@ -382,66 +382,64 @@ Avantajı: cihaz maliyeti yoktur, saha ekiplerinde çalışır ve suistimal zord
 Cihazlı PDKS tek kapıda işe yarar; cihazsız PDKS her yerde çalışır. TEKNOPERS cihazsız PDKS sunar. Ayrıntı için PDKS nedir rehberine bakabilirsin.`,
 
 'parmak-izi-cihazi-olmadan-mesai-takibi-nasil-olur':
-`Parmak izi cihazı olmadan mesai takibi, personelin telefonundan **konum doğrulamalı giriş-çıkış** yapmasıyla olur. Cihaz almaya gerek kalmaz.
+`Parmak izi veya kart cihazı olmadan mesai takibi, personelin **kendi telefonundan konum doğrulamalı** giriş yapmasıyla olur. Bu yaklaşım hem donanım maliyetini kaldırır hem de hijyen ve kuyruk sorununu çözer.
 
-## Nasıl?
+## Nasıl çalışır?
 
-1. İşyeri konumu tanımlanır.
-2. Personel telefondan giriş/çıkış yapar; GPS konumu ve saat kaydedilir.
-3. Belirlenen alanın dışındaki girişler işaretlenir.
-4. Puantaj, fazla mesai ve devamsızlık otomatik hesaplanır.
+1. **Telefondan giriş:** personel uygulamadan, işyeri alanındayken mesai başlatır.
+2. **Cihaz bağı:** giriş ilk telefona kilitlenir; kart devri gibi "yerine giriş" engellenir.
+3. **GPS teyidi:** konum doğrulamasıyla giriş güvence altına alınır.
+4. **Otomatik puantaj:** giriş-çıkış, mola ve fazla mesai kendiliğinden hesaplanır.
 
-Hijyen (ortak temas yok), maliyet (cihaz yok) ve saha uyumu açısından avantajlıdır. TEKNOPERS bunu sağlar. Ayrıntı için PDKS nedir rehberine bakabilirsin.`,
+Sabit bir kart cihazına göre daha esnek, daha ucuz ve hileye daha kapalıdır. Ücretsiz denemek için [Puantaj Cetveli](https://teknopers.com.tr/araclar/puantaj-cetveli/) aracını, tam çözüm için [PDKS ürününü](https://teknopers.com.tr/urun/pdks-personel-takip-sistemi) inceleyebilirsiniz.`,
 
 'personel-gec-kalma-raporu-nasil-alinir':
-`Geç kalma raporu, her personelin işe giriş saatini beklenen mesai başlangıcıyla karşılaştırarak alınır. Dijital sistemde bu otomatiktir.
+`Geç kalma raporu, personelin işe başlama saatine göre **kaç kez ve ne kadar** geç kaldığını gösterir. Bu, hem adil bir değerlendirme hem de gerekirse tutanak için dayanak sağlar.
 
-## Nasıl?
+## Nasıl alınır?
 
-1. Mesai başlangıç saatini tanımla.
-2. Sistem her girişte gecikmeyi (dakika) hesaplar.
-3. Personel/tarih bazlı toplam gecikme raporu üretilir.
-4. Sık geç kalanlar listelenir.
+1. **Vardiya saati tanımı:** her personelin/vardiyanın başlama saati tanımlanır.
+2. **Konumlu giriş kaydı:** fiilî giriş saati otomatik kaydedilir.
+3. **Geç kalma hesabı:** giriş ile vardiya saati arasındaki fark rapora işlenir.
+4. **Dönemsel rapor:** ay içinde kim, kaç kez, toplam kaç dakika geç kaldı listelenir.
 
-Elle takip zordur ve tartışma yaratır; konumlu-saatli dijital kayıt nesnel bir rapor verir. TEKNOPERS geç kalma ve devamsızlığı otomatik raporlar.`,
+Bu rapor otomatik oluştuğunda değerlendirme rakama dayanır, "sürekli geç geliyor" tartışması nesnelleşir. Giriş-çıkışı ve raporları otomatik tutmak için TEKNOPERS'in [PDKS ürününü](https://teknopers.com.tr/urun/pdks-personel-takip-sistemi) inceleyebilirsiniz.`,
 
 'vardiya-plani-nasil-yapilir':
-`Vardiya planı, personeli gün ve saat dilimlerine (sabah/akşam/gece) dengeli dağıtan çizelgedir. İyi bir plan yasal dinlenme sürelerine uyar ve kimsenin üst üste ağır vardiyada kalmamasını sağlar.
+`Vardiya planı, personelin hangi gün hangi zaman diliminde çalışacağını gösteren çizelgedir. İyi bir plan iki şeyi dengeler: **her vardiyada yeterli personel** ve **yasal sınırlara uyum** (gece 7,5 saat, haftalık 45 saat).
 
-## Adımlar
+## Nasıl yapılır?
 
-1. **İhtiyaç:** her vardiyada kaç kişi gerekli?
-2. Personeli ve kısıtlarını (izin, tercih) listele.
-3. Haftalık çizelgeyi oluştur; gece vardiyası sonrası yeterli dinlenme bırak.
-4. Fazla mesai ve hafta tatilini gözet.
-5. Herkese bildir.
+1. **Vardiya türleri:** sabah/akşam/gece gibi dilimler ve her birinde gereken kişi sayısı belirlenir.
+2. **Dengeli dağıtım:** kişi başı gece ve fazla mesai yükü dengelenir, kimse üst üste geceye kalmaz.
+3. **Kapsama kontrolü:** hiçbir gün bir vardiya boş kalmamalı.
+4. **İzin ve rapor:** çizelgeye işlenmeli, açık kalan saat yedeklenmeli.
 
-Çakışma ve boşlukları önlemek için dijital çizelge pratiktir. TEKNOPERS vardiya ile puantajı birlikte yönetir.`,
+Bu planı hızlıca kurmak ve günlük kapsamayı görmek için ücretsiz [Vardiya Çizelgesi](https://teknopers.com.tr/araclar/vardiya-cizelgesi/) aracını kullanabilirsiniz.`,
 
 'personel-izin-takibi-nasil-yapilir':
-`İzin takibi, her personelin hak ettiği yıllık izin ile kullandığı izni karşılaştırarak **kalan izni** göstermektir. Kıdeme göre hak edilen gün (14/20/26) baz alınır.
+`İzin takibinin amacı, her personelin **hak ettiği, kullandığı ve kalan** iznini net tutmak ve talep sürecini kayıt altına almaktır. Elle tutulan izin, "kaç günüm kaldı" tartışmasına ve hatalı bakiyeye yol açar.
 
-## Nasıl?
+## Nasıl yapılır?
 
-1. Her personelin işe giriş tarihini gir; kıdem, dolayısıyla hak edilen izin belli olur.
-2. Kullanılan izinleri işle.
-3. Kalan izin otomatik hesaplanır.
-4. İzin talep ve onay akışını yürüt.
+1. **Hak hesabı:** işe giriş tarihine ve kıdeme göre yıllık izin hakkı otomatik hesaplanır.
+2. **Talep ve onay:** personel izin talep eder, yönetici onaylar; süreç kayıtlı olur.
+3. **Bakiye:** kullanılan ve kalan izin her an görünür, puantajla tutarlı yürür.
+4. **Belge:** onaylı izin kaydı, olası bir uyuşmazlıkta belgedir.
 
-Elle tutulan izin defteri karışır; dijital takip kalan izni anlık gösterir. Kalan izni hesaplamak için aşağıdaki yıllık izin aracını kullanabilirsin.`,
+Yıllık izin hakkını görmek için ücretsiz [Yıllık İzin Hesaplama](https://teknopers.com.tr/araclar/yillik-izin-hesaplama/) aracını, izni personel takibiyle birlikte yürütmek için [PDKS ürününü](https://teknopers.com.tr/urun/pdks-personel-takip-sistemi) inceleyebilirsiniz.`,
 
 'kucuk-isletmeler-icin-personel-takip-programi':
-`Küçük işletme için ideal personel programı; kurulumu kolay, cihaz gerektirmeyen, telefondan konum doğrulamalı giriş sunan ve sabit fiyatlı olmalıdır.
+`Küçük işletmede birkaç kişilik ekip için pahalı bir sistem gerekmez; amaç, **kim ne zaman geldi-gitti** ve **ay sonu ne kadar çalıştı** sorusunu zahmetsiz yanıtlamaktır.
 
-## Nelere dikkat?
+## Nasıl olmalı?
 
-1. **Cihaz şart mı?** Olmasın — telefon yeter.
-2. Puantaj, izin, fazla mesai otomatik mi?
-3. Rapor alınabiliyor mu?
-4. **Fiyat** kişi başı mı, sabit mi? Küçük ekipte sabit fiyat avantajdır.
-5. Kullanımı basit mi?
+1. **Telefondan giriş:** personel kendi telefonundan konum teyidiyle mesai başlatır; kart cihazı gerekmez.
+2. **Otomatik puantaj:** giriş-çıkış, izin ve fazla mesai otomatik toplanır.
+3. **Basit izin takibi:** yıllık izin hakkı, kullanılan ve kalan izin görünür.
+4. **Hakediş:** ay sonu çalışılan gün ve hakediş tek tıkla çıkar.
 
-TEKNOPERS küçük işletmeler için cihazsız, sabit fiyatlı ve telefon tabanlıdır. Ayrıntı için PDKS nedir rehberine bakabilirsin.`,
+Fiyat işletme başınadır; personel sayısı arttıkça ücret artmaz. Ücretsiz başlamak için [Puantaj Cetveli](https://teknopers.com.tr/araclar/puantaj-cetveli/) aracını, tam çözüm için [PDKS ürününü](https://teknopers.com.tr/urun/pdks-personel-takip-sistemi) inceleyebilirsiniz.`,
 
 'yillik-izin-ucreti-fesihte-nasil-odenir':
 `İş sözleşmesi sona erdiğinde, çalışanın kullanmadığı yıllık izin günleri ücrete çevrilerek ödenir (4857 sayılı İş Kanunu m.59). Formül: **(son brüt aylık ücret ÷ 30) × kullanılmayan izin günü**.
@@ -531,16 +529,16 @@ Brüt 33.030 TL → işçi SGK kesintisi yaklaşık 4.955 TL, işveren payı yak
 Prim, brüt asgari ücretin altında ve SGK tavanının üstünde farklı hesaplanır. Kesin hesap için mali müşavirinize (SMMM) danışın. İşveren maliyeti aracını kullanabilirsin.`,
 
 'sgk-ise-giris-bildirgesi-nasil-verilir':
-`İşe giriş bildirgesi, bir çalışanı işe başlamadan **en geç bir gün önce** SGK'ya bildirmektir. e-Bildirge veya e-Devlet üzerinden yapılır.
+`SGK işe giriş bildirgesi, bir çalışanın **işe başlamadan önce** SGK'ya bildirilmesidir. Bu bildirim yapılmadan personel çalıştırmak idari para cezası doğurur.
 
-## Adımlar
+## Genel adımlar
 
-1. İşyerinin SGK işyeri sicil numarası ve e-Bildirge şifresi olmalı.
-2. SGK e-Bildirge sistemine gir.
-3. "Sigortalı İşe Giriş" bölümünden çalışanın TC, ad ve işe başlama tarihini gir.
-4. Onayla ve çıktısını sakla.
+1. **Zamanlama:** bildirge, kural olarak işçinin işe başlamasından **en geç bir gün önce** verilir.
+2. **Kanal:** bildirim SGK'nın e-Sigorta (işveren) sistemi üzerinden elektronik yapılır.
+3. **Bilgiler:** işçinin kimlik, işe giriş tarihi ve meslek bilgisi girilir.
+4. **Belge saklama:** onaylı bildirge özlük dosyasında tutulur.
 
-İnşaat gibi bazı işlerde bildirim süresi farklı olabilir. Geç bildirim idari para cezası doğurur. Süreç ve istisnalar için mali müşavirinize (SMMM) danışın.`,
+Böylece hem yasal yükümlülük yerine gelir hem de olası bir denetimde kayıt hazır olur. Güncel süre ve ceza tutarları için SGK mevzuatını veya mali müşavirinizi teyit edin. Personel özlük ve giriş-çıkış takibini birlikte yürütmek için TEKNOPERS'in [PDKS ürününü](https://teknopers.com.tr/urun/pdks-personel-takip-sistemi) inceleyebilirsiniz.`,
 
 'isten-cikis-kodlari-nelerdir':
 `İşten çıkış kodu, SGK'ya bir çalışanın işten ayrılma sebebini bildiren numaradır. Seçilen kod, işçinin kıdem/ihbar tazminatı ve işsizlik maaşı hakkını doğrudan etkiler.
@@ -581,16 +579,15 @@ Yanlış kod, işçinin işsizlik maaşını ve tazminatını etkilediği için 
 Belirsiz prim motivasyonu düşürür. TEKNOPERS prim ve performansı takip etmene yardımcı olur. Tutar için personel prim aracını kullanabilirsin.`,
 
 'deneme-suresi-en-fazla-ne-kadar-olabilir':
-`İş sözleşmesinde deneme süresi en fazla **2 aydır**. Toplu iş sözleşmesiyle bu süre **4 aya** kadar uzatılabilir (4857 sayılı İş Kanunu m.15).
+`4857 sayılı İş Kanunu'na göre iş sözleşmelerinde deneme süresi **en çok 2 ay** olarak kararlaştırılabilir; toplu iş sözleşmesiyle bu süre **4 aya** kadar uzatılabilir.
 
 ## Bilinmesi gerekenler
 
-1. Deneme süresi içinde taraflar sözleşmeyi **bildirimsiz ve tazminatsız** feshedebilir.
-2. Ancak işçinin **çalıştığı günlerin ücreti ve SGK primleri** tam olarak ödenir.
-3. Deneme süresi sözleşmede **yazılı** belirtilmelidir; yazılmazsa geçersiz sayılır.
-4. Deneme süresi kıdeme dahildir.
+1. **Süre içinde fesih:** taraflar deneme süresi içinde sözleşmeyi ihbar süresi olmaksızın ve tazminatsız feshedebilir.
+2. **Ücret ve haklar:** işçinin çalıştığı günlerin ücreti ve diğer hakları (SGK primi dâhil) saklıdır.
+3. **Yazılı olması:** deneme süresi ancak sözleşmede kararlaştırılmışsa geçerlidir.
 
-Özel durumlar için mali müşavirinize (SMMM) veya bir iş hukuku uzmanına danışın.`,
+Yani deneme süresi işverene esneklik tanır ama işçinin çalışılan güne ait haklarını ortadan kaldırmaz. Bu genel bir bilgilendirmedir; somut durumda güncel mevzuatı ve bir hukukçuyu teyit edin. Personel giriş ve özlük takibini kolaylaştırmak için TEKNOPERS'in [PDKS ürününü](https://teknopers.com.tr/urun/pdks-personel-takip-sistemi) inceleyebilirsiniz.`,
 
 'is-sozlesmesi-turleri-nelerdir':
 `İş sözleşmeleri; süre, çalışma biçimi ve düzenlenişine göre türlere ayrılır. En temel ayrım, sözleşmenin belirli mi belirsiz süreli mi olduğudur.
@@ -634,43 +631,42 @@ Prim günü emeklilik ve sağlık haklarını etkilediğinden doğru bildirim ö
 TEKNOPERS Salon bunların tümünü tek ekranda sunar; kurulum dakikalar sürer. Denemek için WhatsApp'tan yazabilirsin. Ayrıntı için no-show rehberine bakabilirsin.`,
 
 'kuafor-randevu-programi-nasil-secilir':
-`İyi bir kuaför randevu programında şunlar olmalı: çakışmasız takvim, otomatik WhatsApp/SMS hatırlatma, personel bazlı görünüm, müşteri geçmişi ve kasa takibi.
+`Kuaför randevu programı seçerken salonun günlük akışını kolaylaştıran özelliklere bakın: **online randevu**, **hatırlatma**, **müşteri kartı** ve **kasa**.
 
-## Seçerken sor
+## Seçerken nelere bakılmalı?
 
-1. **Otomatik hatırlatma** var mı? No-show'u en çok bu düşürür.
-2. Personel ve hizmet süreleri ayarlanıyor mu?
-3. Müşteri geçmişi ve harcaması tutuluyor mu?
-4. Kasa ve gün sonu raporu var mı?
-5. **Fiyat** koltuk başı mı, sabit mi?
+1. **Online randevu:** müşteri uygun saati kendi seçebilmeli, telefon trafiği azalmalı.
+2. **Otomatik hatırlatma:** no-show'u düşürmeli.
+3. **Müşteri geçmişi:** ziyaret, tercih ve harcama tutulmalı; sadakat için hatırlatma yapılabilmeli.
+4. **Personel primi ve gün sonu:** ciro ve prim otomatik hesaplanmalı.
+5. **Telefondan yönetim ve sabit fiyat:** personel sayısı ücreti artırmamalı.
 
-TEKNOPERS Salon bunları sabit fiyatla sunar. WhatsApp'tan deneyebilirsin. Ayrıntı için no-show rehberine bakabilirsin.`,
+Bu kriterleri karşılayan bir sistem hem zaman kazandırır hem de müşteriyi geri getirir. Detay için TEKNOPERS'in [kuaför ve berber çözümünü](https://teknopers.com.tr/cozum/kuafor-ve-berberler-icin-online-randevu-ve-crm) inceleyebilirsiniz.`,
 
 'guzellik-salonu-randevu-programi-ozellikleri':
-`Güzellik salonu randevu programında bulunması gereken temel özellikler: çakışmasız randevu takvimi, otomatik hatırlatma, seans/paket takibi, personel primi ve kasa yönetimi.
+`Güzellik salonu randevu programında aranması gereken özellikler, salonun iki gelir kaynağını korur: **dolu takvim** ve **paket satışı**.
 
-## Olmazsa olmazlar
+## Olması gereken özellikler
 
-1. **Randevu takvimi:** personel ve hizmete göre, çakışma engelli.
-2. **Otomatik hatırlatma:** WhatsApp/SMS ile no-show önleme.
-3. **Paket/seans takibi:** kalan seansları otomatik say.
-4. **Müşteri kartı:** geçmiş işlemler, harcama, notlar.
-5. **Kasa ve rapor:** gün sonu, gelir, personel primi.
+1. **Personel ve kabin bazlı takvim:** çakışma engellenir, gün planı net olur.
+2. **Otomatik hatırlatma ve onay:** no-show düşer, koltuk boş kalmaz.
+3. **Paket/seans takibi:** satılan paketten kalan seans otomatik düşer, yenileme hatırlatılır.
+4. **Personel primi ve kasa:** her işlemin personeli kayıtlı; ciro ve prim otomatik çıkar.
+5. **Müşteri kartı (KVKK):** geçmiş işlem ve tercih yetkili erişimle tutulur.
 
-TEKNOPERS Salon bu özelliklerin tümünü içerir. Denemek için WhatsApp'tan yazabilirsin.`,
+Bu özellikler bir arada olduğunda salon hem randevuyu hem de sadakati yönetir. Detay için TEKNOPERS'in [güzellik ve estetik çözümünü](https://teknopers.com.tr/cozum/guzellik-ve-estetik-merkezleri-icin-randevu-ve-seans-programi) inceleyebilirsiniz.`,
 
 'berber-randevu-uygulamasi-nasil-olmali':
-`Berber için randevu uygulaması basit ve hızlı olmalıdır: birkaç dokunuşla randevu, otomatik hatırlatma ve müşteri geçmişi. Karmaşık uygulamalar yoğun berberde işi yavaşlatır.
+`Berber için randevu uygulaması sade olmalı: **hızlı randevu**, **otomatik hatırlatma** ve **basit kasa**. Karmaşık bir sistem, tek koltuklu bir dükkanda zaman kaybettirir.
 
-## İdeal özellikler
+## Nasıl olmalı?
 
-1. Hızlı randevu girişi (hem personel hem müşteri girebilsin).
-2. WhatsApp/SMS hatırlatma → gelmeyen müşteri azalır.
-3. Sık gelen müşterilerin geçmişi ve tercihleri.
-4. Kasa ve günlük ciro.
-5. Sabit fiyat.
+1. **Online/telefon randevu:** müşteri uygun saati kendisi seçebilmeli, telefon trafiği azalmalı.
+2. **Hatırlatma:** randevu öncesi mesajla gelmeme oranı düşmeli.
+3. **Müşteri kartı:** düzenli müşterinin tercihi ve geçmişi tutulmalı.
+4. **Kasa ve gün sonu:** günlük ciro ve varsa personel primi otomatik çıkmalı.
 
-TEKNOPERS Salon berberler için sade ve hızlıdır. WhatsApp'tan deneyebilirsin. Ayrıntı için no-show rehberine bakabilirsin.`,
+Telefondan yönetilebilmeli ve fiyat işletme başına olmalı. Berber ve kuaför için [online randevu ve CRM çözümünü](https://teknopers.com.tr/cozum/kuafor-ve-berberler-icin-online-randevu-ve-crm) inceleyebilir, hatırlatmaları [Randevu Hatırlatma aracıyla](https://teknopers.com.tr/araclar/randevu-hatirlatma-mesaji/) hemen deneyebilirsiniz.`,
 
 'online-randevu-sistemi-nasil-calisir':
 `Online randevu sistemi, müşterinin bir bağlantı üzerinden uygun saati seçip randevu almasını sağlar; işletme takvimi anlık güncellenir ve çakışma olmaz.
@@ -750,16 +746,16 @@ Kendi bütçeni kalem kalem görmek için salon açma maliyeti aracını kullana
 Gereksinimler ilçe belediyesine göre küçük farklar gösterir; başvurmadan önce bağlı olduğun belediyeye danış. Açılış bütçen için salon açma maliyeti aracını kullanabilirsin.`,
 
 'guzellik-salonu-ruhsati-nasil-alinir':
-`Güzellik salonu ruhsatı (işyeri açma ve çalışma ruhsatı), bağlı olunan belediyeye başvurularak alınır. Mekânın sağlık, hijyen ve imar şartlarını karşılaması gerekir.
+`Güzellik salonu açarken işyeri açma ve çalışma ruhsatı, bağlı bulunduğunuz belediyeden alınır. Süreç ilçeye göre küçük farklar gösterse de ana adımlar benzerdir.
 
-## Adımlar
+## Genel adımlar
 
-1. Vergi dairesinde mükellefiyet aç, sicil kaydını yaptır.
-2. Belediyeye ruhsat başvurusu yap (kira sözleşmesi/tapu, kimlik, ustalık belgesi ile).
-3. Mekân; sağlık, hijyen ve yangın şartları için denetlenir.
-4. Uygunsa ruhsat düzenlenir.
+1. **İşletme kaydı:** vergi dairesi kaydı ve gerekli meslek belgeleri tamamlanır.
+2. **Başvuru:** belediyeye işyeri açma ve çalışma ruhsatı başvurusu yapılır.
+3. **Uygunluk:** mekânın sağlık, yangın ve imar koşullarına uygunluğu denetlenir.
+4. **Belgeler:** kira sözleşmesi, ustalık/yeterlilik belgeleri ve kimlik evrakı sunulur.
 
-Sınıflandırma ve istenen evrak ilçeye göre değişebilir; net liste için bağlı belediyene danış. Açılış bütçesi için salon açma maliyeti aracını kullanabilirsin.`,
+Güncel liste ve ücretler için mutlaka bağlı olduğunuz belediyeyi ve meslek odasını teyit edin. Salon açılış maliyetini planlamak için ücretsiz [Salon Açma Maliyeti Hesaplama](https://teknopers.com.tr/araclar/salon-acma-maliyeti/) aracını kullanabilirsiniz.`,
 
 'salon-personeli-primi-nasil-belirlenir':
 `Salon personeli primi genellikle yapılan iş veya getirilen ciro üzerinden belirlenir. Kuaför/güzellik sektöründe en yaygın model, personelin ürettiği cironun bir yüzdesidir.
@@ -787,17 +783,16 @@ Adil ve şeffaf olması personeli motive eder. Prim ücretin bir parçasıysa SG
 Elle defterde hata ve kaçak olur; dijital kasa gün sonu raporunu otomatik verir. TEKNOPERS Salon kasa ve raporu birlikte tutar.`,
 
 'salon-gun-sonu-raporu-nasil-alinir':
-`Gün sonu raporu; o günkü toplam ciroyu, işlem sayısını, nakit/kart dağılımını ve personel bazlı üretimi tek ekranda gösterir. Dijital sistemde tek dokunuşla alınır.
+`Salonda gün sonu raporu, o günün **cirosunu, işlem sayısını ve personel performansını** tek ekranda görmenizi sağlar; kasa ile tahsilatın tutarlılığını da kontrol eder.
 
-## İçermesi gerekenler
+## Neleri içermeli?
 
-1. Günlük toplam ciro.
-2. Nakit / kart / diğer ödeme dağılımı.
-3. İşlem ve randevu sayısı.
-4. Personel bazlı ciro ve prim.
-5. Gider ve net kasa.
+1. **Ciro ve işlem:** gün içi toplam gelir ve yapılan işlem sayısı.
+2. **Personel bazlı dağılım:** her personelin cirosu ve prim esası.
+3. **Ödeme türü:** nakit, kart ve varsa paket kullanımı ayrışmalı.
+4. **Kasa kontrolü:** beklenen ile sayılan kasa arasındaki fark görünmeli.
 
-Elle çıkarmak zaman alır ve hatalıdır; sistemli takip, günü kapatırken saniyede rapor verir. TEKNOPERS Salon gün sonu raporunu otomatik üretir.`,
+Bu rapor otomatik oluştuğunda gün sonu kapanışı dakikalar sürer ve fark erken yakalanır. Randevu, kasa ve personeli birlikte yöneten bir sistemde bu rapor hazırdır; TEKNOPERS'in salon çözümlerini inceleyebilirsiniz.`,
 
 'dis-klinigi-randevu-programi-nasil-secilir':
 `Diş kliniği randevu programı; tedavilerin uzun ve çok seanslı olması nedeniyle güçlü bir takvim ve hatırlatma özelliği istemelidir. Hasta geçmişi ve tedavi takibi de önemlidir.
@@ -826,82 +821,76 @@ TEKNOPERS klinik modülü bu ihtiyaçları karşılar. Ayrıntı için diş klin
 Danışan ilerlemesini görmek hem sonuç hem sadakat getirir. TEKNOPERS randevu ve paket takibini birlikte sunar. Ayrıntı için seans paketi takibi rehberine bakabilirsin.`,
 
 'pilates-studyosu-uyelik-takip-programi':
-`Pilates stüdyosu için program, ders takvimi ile birlikte **üyelik/paket** takibine odaklanmalıdır: üyenin kalan ders sayısı, üyelik bitiş tarihi ve yoklama.
+`Pilates ve reformer stüdyosunda asıl mesele **üyelik ve kalan ders takibi** ile **kontenjan yönetimidir**. Elle tutulan liste, "dersim var mıydı, kaç dersim kaldı" karışıklığına yol açar.
 
-## Olması gerekenler
+## Nasıl yapılır?
 
-1. Grup ve özel ders takvimi, kontenjan yönetimi.
-2. Üyelik ve paket takibi (kalan ders, bitiş tarihi).
-3. Yoklama (derse kim geldi).
-4. Otomatik hatırlatma ve yenileme uyarısı.
-5. Ödeme ve cari takibi.
+1. **Paket/üyelik tanımı:** her üyeye ders paketi tanımlanır.
+2. **Yoklama ve düşüm:** katıldığı ders paketten otomatik düşer; kalan ders ve bitiş tarihi görünür.
+3. **Kontenjan:** her dersin kontenjanı tanımlıdır; dolan derse kayıt engellenir, bekleme yönetilir.
+4. **Yenileme hatırlatma:** üyelik bitişi önceden hatırlatılır, yenileme artar.
 
-Üyelik bitişini önceden hatırlatmak yenilemeyi artırır. TEKNOPERS paket ve randevuyu birlikte tutar. Ayrıntı için seans paketi takibi rehberine bakabilirsin.`,
+Bu yapı hem karışıklığı bitirir hem de yenileme gelirini korur. Detay için TEKNOPERS'in [pilates ve spor stüdyosu çözümünü](https://teknopers.com.tr/cozum/pilates-ve-spor-studyolari-icin-uyelik-sistemi) inceleyebilirsiniz.`,
 
 'dovme-studyosu-randevu-sistemi-nasil-kurulur':
-`Dövme stüdyosunda seanslar uzun ve genellikle kaporalı olduğundan, randevu sistemi **kapora/ön ödeme** ve net süre yönetimini desteklemelidir.
+`Dövme ve piercing stüdyosunda randevular uzun sürelidir ve çoğu zaman **kapora** ile alınır; bu yüzden sistemin randevuyu, sanatçı takvimini ve müşteri iletişimini bir arada tutması gerekir.
 
-## Adımlar
+## Nasıl kurulur?
 
-1. Sanatçı bazlı takvim, uzun seanslara uygun.
-2. Kapora ile randevu (no-show'u ve boş günü önler).
-3. Müşteri kartı: tasarım notları, geçmiş işler.
-4. Otomatik hatırlatma.
-5. Kasa ve gelir takibi.
+1. **Sanatçı bazlı takvim:** her sanatçının uygunluğu ayrı; uzun seanslar çakışmadan planlanır.
+2. **Kapora ve onay:** randevu kapora ile netleşir, gelmeme riski düşer.
+3. **Otomatik hatırlatma:** seans öncesi hatırlatma ile no-show azalır.
+4. **Müşteri kartı:** geçmiş çalışmalar, notlar ve iletişim tek yerde tutulur.
 
-Kaporalı randevu ve hatırlatma dolu takvimi korur. TEKNOPERS Salon bunu sunar. Ayrıntı için no-show rehberine bakabilirsin.`,
+Bakım talimatı gibi mesajlar da otomatikleştirilebilir. Hatırlatma şablonları için [Randevu Hatırlatma aracını](https://teknopers.com.tr/araclar/randevu-hatirlatma-mesaji/), randevu ve müşteri takibini birlikte yürütmek için TEKNOPERS'in salon çözümünü inceleyebilirsiniz.`,
 
 'veteriner-klinigi-randevu-programi-nasil-olmali':
-`Veteriner kliniği programı, hasta (hayvan) ve sahip kaydını birlikte tutmalıdır; ayrıca **aşı/kontrol hatırlatması** kritik bir özelliktir.
+`Veteriner kliniğinde randevu programı, muayeneyi planlamanın ötesinde **hasta geçmişini** ve **aşı/kontrol hatırlatmasını** yönetmelidir; asıl tekrar gelir buradadır.
 
-## Olması gerekenler
+## Nasıl olmalı?
 
-1. Randevu takvimi ve hatırlatma.
-2. Hasta kartı: tür, ırk, geçmiş tedavi, aşı takvimi.
-3. Sahip bilgisi ve iletişim.
-4. Otomatik aşı/kontrol hatırlatması (geri dönüşü artırır).
-5. Ödeme, cari ve ilaç stoğu.
+1. **Randevu takvimi:** muayene ve işlemler çakışmadan planlanmalı.
+2. **Hayvan + sahip kartı:** tedavi geçmişi sahibiyle eşleşmeli, kayıt karışmamalı.
+3. **Aşı/kontrol hatırlatma:** tarihe göre sahibe otomatik mesaj gitmeli, tekrar ziyaret kaçmamalı.
+4. **İlaç stoğu ve tahsilat:** klinik malzemesi ve ödeme tek ekranda takip edilmeli.
 
-Aşı hatırlatması hem hayvan sağlığını korur hem düzenli ziyaret sağlar. TEKNOPERS randevu, müşteri ve hatırlatmayı birlikte sunar. Ayrıntı için no-show rehberine bakabilirsin.`,
+Bu yapı hem hasta bakımını iyileştirir hem de düzenli geliri korur. Detay için TEKNOPERS'in [veteriner çözümünü](https://teknopers.com.tr/cozum/veteriner-klinikleri-icin-randevu-ve-hasta-takip-sistemi) inceleyebilir, hatırlatmaları [Randevu Hatırlatma aracıyla](https://teknopers.com.tr/araclar/randevu-hatirlatma-mesaji/) deneyebilirsiniz.`,
 
 'masaj-salonu-randevu-uygulamasi-nasil-secilir':
-`Masaj/SPA salonu uygulaması, oda ve terapist bazlı çakışmasız takvim ile paket/seans takibi sunmalıdır. Seanslar uzun olduğundan hatırlatma önemlidir.
+`Masaj ve SPA işletmesinde randevu uygulaması seçerken üç şeye bakın: **personel/oda çakışmasını** engellemesi, **no-show'u** azaltması ve **paket/seans** takibi yapabilmesi.
 
-## Nelere dikkat?
+## Nelere dikkat edilmeli?
 
-1. Terapist ve oda bazlı takvim.
-2. Otomatik hatırlatma (no-show'u düşürür).
-3. Paket/seans takibi (örneğin 10 seans).
-4. Müşteri tercihleri ve geçmişi.
-5. Kasa ve gün sonu raporu.
+1. **Oda ve terapist bazlı takvim:** aynı anda iki randevu ya da dolu oda çakışması engellenmeli.
+2. **Otomatik hatırlatma:** randevu öncesi WhatsApp/SMS ile gelmeme oranı düşürülmeli.
+3. **Paket takibi:** seanslı paketlerde kalan seans otomatik sayılmalı.
+4. **Müşteri kartı ve KVKK:** geçmiş, tercih ve iletişim yetkili erişimle tutulmalı.
 
-TEKNOPERS Salon bu ihtiyaçları tek ekranda karşılar. Ayrıntı için seans paketi takibi rehberine bakabilirsin.`,
+Uygulama telefondan yönetilebilmeli ve fiyat işletme başına olmalı; personel sayısı ücreti artırmamalı. Hatırlatma mesajlarını hemen denemek için [Randevu Hatırlatma aracını](https://teknopers.com.tr/araclar/randevu-hatirlatma-mesaji/), bütünleşik çözüm için TEKNOPERS'in [güzellik ve estetik çözümünü](https://teknopers.com.tr/cozum/guzellik-ve-estetik-merkezleri-icin-randevu-ve-seans-programi) inceleyebilirsiniz.`,
 
 'kucuk-isletmeler-icin-stok-takip-programi':
-`Küçük işletme için stok programı basit olmalıdır: ürün giriş-çıkışı, kalan miktar, kritik seviye uyarısı ve barkodla hızlı işlem. Karmaşık kurumsal sistemlere gerek yoktur.
+`Küçük işletmede stok takibi karmaşık olmak zorunda değil; amaç, **elde ne var, ne bitmek üzere** sorusunu her an yanıtlayabilmektir. Defterle tutulan stok hem güncel kalmaz hem de kayıp göstermez.
 
-## Olması gerekenler
+## Nasıl olmalı?
 
-1. **Ürün kartı:** ad, birim, alış/satış fiyatı.
-2. **Giriş-çıkış ve kalan miktar** (anlık).
-3. **Kritik stok uyarısı** (bitmeden haber verir).
-4. **Barkod** ile hızlı ekleme/çıkarma.
-5. Basit rapor: en çok satan, azalan stok.
+1. **Basit ürün kartı:** her ürün barkodla tanımlanır, telefonla okutulur.
+2. **Giriş-çıkış:** alım ve satışta stok otomatik güncellenir.
+3. **Kritik seviye uyarısı:** ürün azalınca sistem uyarır, popüler ürün rafta bitmez.
+4. **Sayım ve fark:** düzenli sayımla kayıp ve fire erken görünür.
 
-TEKNOPERS stok, cari ve satışı tek ekranda birlikte tutar. Denemek için WhatsApp'tan yazabilirsin.`,
+Ek cihaz gerekmez; personelin telefonu barkod okuyucu olur, böylece maliyet düşük kalır. Küçük işletme için [depo ve stok programını](https://teknopers.com.tr/urun/depo-stok-yonetim-programi) inceleyebilirsiniz.`,
 
 'cari-hesap-takibi-nasil-yapilir':
-`Cari hesap takibi, müşteri ve tedarikçilerle olan **borç-alacak** durumunu izlemektir: kim sana ne kadar borçlu, sen kime ne kadar borçlusun.
+`Cari hesap takibi, **kimden ne kadar alacağınız ve kime ne kadar borçlu olduğunuzu** her an net görmektir. Defterle tutulan cari, vadesi geçen alacağı ve unutulan tahsilatı gizler.
 
-## Nasıl?
+## Nasıl yapılır?
 
-1. Her müşteri/tedarikçi için cari kart aç.
-2. Her satış, tahsilat ve ödemeyi işle.
-3. Bakiye otomatik güncellensin (borç/alacak).
-4. Vadesi geçen alacakları takip et.
-5. Ekstre (hesap dökümü) alabil.
+1. **Müşteri/tedarikçi kartı:** her cari için ayrı hesap açılır.
+2. **Otomatik işleme:** her satış, alım ve tahsilat carihe düşer; bakiye kendiliğinden güncellenir.
+3. **Vade takibi:** vadesi gelen ve geçen alacaklar otomatik listelenir.
+4. **Ekstre:** müşteriye tek tıkla hesap ekstresi gönderilir.
 
-Elle defterde bakiye karışır, tahsilat unutulur. Dijital cari, kimden ne alacağını net gösterir. TEKNOPERS cari ve tahsilatı birlikte tutar. WhatsApp'tan deneyebilirsin.`,
+Böylece "bu müşteri ne kadar borçlu, vadesi ne zaman" sorusu anında yanıtlanır ve tahsilat disiplini oturur. Cari, teklif ve satışı birlikte yürütmek için [satış, teklif ve cari programını](https://teknopers.com.tr/urun/satis-teklif-ve-cari-programi) inceleyebilirsiniz.`,
 
 'on-muhasebe-programi-nedir':
 `Ön muhasebe programı; bir işletmenin günlük para akışını (satış, tahsilat, ödeme, fatura, stok, cari) takip eden yazılımdır. Resmi muhasebeden (mali müşavirin tuttuğu) farklı olarak işin günlük işleyişini yönetir.
@@ -917,30 +906,28 @@ Elle defterde bakiye karışır, tahsilat unutulur. Dijital cari, kimden ne alac
 TEKNOPERS Ön Muhasebe, işini günü gününe kontrol etmen için birebir çalışır: cari, fatura, kasa, gider ve tahsilat tek ekranda toplanır. İşin büyüdükçe küçük eklemelerle her yöne evrilir. Denemek için WhatsApp'tan yazabilirsin.`,
 
 'fatura-ve-tahsilat-takibi-nasil-yapilir':
-`Fatura ve tahsilat takibi, kestiğin faturaların ödenip ödenmediğini ve vadesi gelenleri izlemektir. Amaç, alacağın takipte kalması ve nakit akışının bozulmamasıdır.
+`Fatura ve tahsilat takibinin amacı, **kesilen faturanın ödenip ödenmediğini** ve vadesini gözden kaçırmamaktır. Takip edilmeyen fatura, geciken ve unutulan tahsilata dönüşür.
 
-## Nasıl?
+## Nasıl yapılır?
 
-1. Her faturayı cariyle ilişkilendir (kim, ne kadar, vade).
-2. Tahsil edildikçe işaretle.
-3. Vadesi geçen ödenmemiş faturaları listele.
-4. Müşteriye hatırlatma yap.
-5. Nakit akışı raporu al.
+1. **Fatura kaydı:** kesilen her fatura carihe ve ilgili müşteriye bağlanır.
+2. **Tahsilat işleme:** yapılan ödeme carihe düşer, bakiye güncellenir.
+3. **Vade takibi:** vadesi gelen ve geçen faturalar otomatik listelenir.
+4. **Hatırlatma:** geciken ödeme için müşteriye ekstre veya hatırlatma gönderilir.
 
-Takip edilmeyen fatura, unutulan alacak demektir. TEKNOPERS fatura, cari ve tahsilatı birlikte tutar. WhatsApp'tan deneyebilirsin.`,
+Böylece nakit akışı görünür olur ve tahsilat disiplini oturur. Fatura, cari ve tahsilatı birlikte yürütmek için [satış, teklif ve cari programını](https://teknopers.com.tr/urun/satis-teklif-ve-cari-programi) inceleyebilirsiniz.`,
 
 'barkod-ile-stok-takibi-nasil-yapilir':
-`Barkodla stok takibi, ürünleri barkod okutarak hızlı ve hatasız giriş-çıkış yapmaktır. Elle ürün arama derdi biter, sayım hızlanır.
+`Barkodla stok takibi, ürünlerin giriş-çıkış ve sayımını **okutarak** yapmaktır; elle liste tutmaya göre hem çok daha hızlı hem de çok daha az hatalıdır.
 
-## Nasıl çalışır?
+## Nasıl yapılır?
 
-1. Her ürüne barkod tanımla (mevcut barkod ya da kendin bas).
-2. Mal girişinde okut → stok artar.
-3. Satış/çıkışta okut → stok düşer.
-4. Sayımda okutarak fiili stoğu karşılaştır.
-5. Kritik seviye uyarısı al.
+1. **Ürünü tanımla:** her ürüne barkod atanır (mevcut barkod da kullanılabilir).
+2. **Telefonla okut:** giriş, çıkış ve sayımda ürün telefon kamerasıyla okutulur; ek cihaz gerekmez.
+3. **Anlık güncelleme:** okutulan miktar stoğa işlenir, elle aktarma hatası olmaz.
+4. **Kritik uyarı ve sayım farkı:** azalan ürün uyarılır, sayım farkı anında raporlanır.
 
-Barkod, özellikle çok ürünlü işletmede hata ve zaman kaybını azaltır. TEKNOPERS barkodlu stok giriş/çıkışını destekler. WhatsApp'tan deneyebilirsin.`,
+Böylece stok her an güncel kalır ve kayıp erken yakalanır. Barkodlu stok ve zimmeti birlikte yürütmek için [depo ve stok yönetim programını](https://teknopers.com.tr/urun/depo-stok-yonetim-programi) inceleyebilirsiniz.`,
 
 'kvkk-kucuk-isletmeler-icin-ne-gerektirir':
 `KVKK (Kişisel Verilerin Korunması Kanunu), müşteri ve çalışan verisi tutan her işletmeyi bağlar — küçük işletmeler dahil. Temel gereklilik: veriyi hukuka uygun toplamak, güvenli saklamak ve gerektiğinde aydınlatma/rıza almaktır.
@@ -991,16 +978,16 @@ En güvenli yol, biyometrik veri hiç işlemeyen bir sisteme geçmektir: TEKNOPE
 Ancak bu hakkı kullanabilmek için suistimalin **dijital ve kesin delille** ispatlanması gerekir. TEKNOPERS'in "Cihaz Bağı" özelliği, hesabı tek telefona kilitleyerek bu hileyi teknik olarak imkânsız hâle getirir. Kesin hukuki değerlendirme için bir iş hukuku uzmanına danışın.`,
 
 '150-personelli-fabrikada-mesai-nasil-takip-edilir':
-`150 personelli bir fabrikada mesai takibinin en güvenli yolu, cihaz gerektirmeyen **konum doğrulamalı mobil PDKS**'tir. Personel kendi telefonundan giriş yapar; sistem konumu ve saati kaydeder, puantaj otomatik oluşur.
+`150 kişilik bir fabrikada kart veya parmak izi cihazı hem pahalıdır hem de sabah girişte kuyruk oluşturur; ayrıca kart devri ("arkadaşına verme") sorununu tam çözmez.
 
-## Neden cihazsız yöntem?
+## Cihazsız yaklaşım
 
-1. **KVKK riski yok:** biyometrik cihaz (parmak izi/yüz tanıma) yüksek ceza riski taşır; mobil konum doğrulama bu riski taşımaz.
-2. **Kart hilesi yok:** hesap tek telefona kilitlendiği için başkasının yerine giriş yapılamaz.
-3. **Donanım maliyeti yok:** yüzlerce kişilik tesiste cihaz alma, kurma ve bakım gideri ortadan kalkar.
-4. **Vardiya ve fazla mesai** otomatik hesaplanır; ay sonu 150 kişilik bordro Excel hatası olmadan hazırlanır.
+1. **Telefondan konumlu giriş:** her personel kendi telefonundan, fabrika sahasındayken mesai başlatır.
+2. **Cihaz bağı:** giriş ilk telefona kilitlenir, başkasının yerine giriş engellenir.
+3. **Bölüm/hat bazında puantaj:** çalışma otomatik ayrışır, vardiya ve fazla mesai kendiliğinden hesaplanır.
+4. **Anlık görünürlük:** kim içeride, kim geç kaldı, hangi hatta kaç kişi var yönetici anında görür.
 
-Kalabalık tesislerde elle veya kartla takip hem yavaş hem hataya açıktır. TEKNOPERS bu ölçekteki fabrikalar için tasarlanmıştır. Puantaj cetvelini denemek için aşağıdaki aracı kullanabilirsin.`,
+Donanım kurulumu olmadığı için genellikle 1 günde devreye girer. Kalabalık üretim için [fabrika çözümünü](https://teknopers.com.tr/cozum/fabrika-icin-cihazsiz-pdks-ve-personel-takibi) ve ücretsiz [Puantaj Cetveli](https://teknopers.com.tr/araclar/puantaj-cetveli/) aracını inceleyebilirsiniz.`,
 
 'whatsapp-ile-musteri-verisi-paylasmak-yasal-mi':
 `Müşteri veya müvekkile ait kişisel verileri (kimlik, sağlık, dava/işlem bilgisi) WhatsApp gibi sunucuları yurt dışında olan platformlar üzerinden paylaşmak **KVKK açısından risklidir** ve ihlal oluşturabilir.
@@ -1042,66 +1029,64 @@ Kağıt tutanaklar kaybolur ve sonradan doldurulabilir. En güvenlisi, teslim an
 Sözlü teslim ve kağıt defter kayba ve haksız suçlamaya açıktır. TEKNOPERS'in zimmet modülü, teslim anını fotoğraf + konum + zaman damgası + dijital onayla kayda geçirir ve tüm zimmetleri tek listede gösterir.`,
 
 'taseron-personel-takibi-nasil-yapilir':
-`Taşeron personel takibinin en pratik yolu, her işçinin telefonundan **konum doğrulamalı giriş-çıkış** yapması ve puantajın **taşeron/ekip bazlı** ayrılmasıdır.
+`Taşeron personel takibinin özü, her ekibin çalışmasını **ayrı ve belgelenebilir** tutmaktır. Karışık tutulan puantaj, ay sonu "kim kaç gün çalıştı" tartışmasına ve hakediş anlaşmazlığına yol açar.
 
 ## Nasıl yapılır?
 
-1. Taşeronları ve ekipleri sisteme tanımla.
-2. İşçiler şantiyede/lokasyonda telefondan giriş yapar; GPS konumu kaydedilir.
-3. Puantaj **taşeron bazında** otomatik oluşur; her taşeronun hakedişi ayrı görünür.
-4. Fazla mesai ve devamsızlık otomatik hesaplanır.
+1. **Ekip bazlı tanım:** her taşeron ve ekip ayrı tanımlanır; işçiler o ekibe bağlanır.
+2. **Konumlu-saatli puantaj:** işçi sahadayken mesai başlatır; kayıt hem doğru hem imzalı olur.
+3. **Ekip bazlı hakediş:** puantaj otomatik olarak taşerona göre toplanır, her ekibin gün × yevmiye hakedişi ayrı çıkar.
+4. **SGK karşılaştırma:** taşeron puantajı SGK prim günleriyle tutarlı yürür.
 
-Taşeron ekiplerinin karıştığı sahalarda kağıt föy kaybolur ve hakediş ihtilafı çıkar. Konumlu-saatli dijital kayıt hem doğru hem de olası davada delildir. TEKNOPERS bunu cihaz olmadan sağlar. Puantaj cetvelini denemek için aşağıdaki aracı kullanabilirsin.`,
+Konumlu ve imzalı kayıt, olası bir davada işverenin en güçlü delilidir. İnşaat ve şantiye için [taşeron ve zimmet çözümünü](https://teknopers.com.tr/cozum/insaat-santiyeleri-icin-personel-taseron-ve-zimmet-takibi) inceleyebilirsiniz.`,
 
 'depo-stok-sayimi-nasil-yapilir':
-`Depo stok sayımı, sistemdeki kayıtlı miktar ile raftaki **fiili miktarı** karşılaştırmaktır. En hızlı ve hatasız yöntem barkod okutarak yapılan sayımdır.
+`Depo sayımının iki düşmanı vardır: **yavaşlık** ve **insan hatası**. Elle listeyle yapılan sayım hem uzun sürer hem de fark nereden çıktı belirsiz kalır.
+
+## Nasıl yapılır?
+
+1. **Barkodla okutma:** her ürün telefonla okutulur; ek cihaz gerekmez, sayım kat kat hızlanır.
+2. **Anlık güncelleme:** okutulan miktar stoğa işlenir, elle aktarma hatası olmaz.
+3. **Fark raporu:** sistem stoğu ile fiili sayım arasındaki fark anında görünür.
+4. **Kayıp/fire analizi:** düzenli sayımla hangi üründe sürekli fark olduğu ortaya çıkar.
+
+Böylece sayım hem hızlanır hem de güvenilir olur, kayıp erken yakalanır. Depo sayımı ve zimmeti birlikte yürütmek için [depo ve stok yönetim programını](https://teknopers.com.tr/urun/depo-stok-yonetim-programi) inceleyebilirsiniz.`,
+
+'ocr-ile-fatura-okuma-nedir':
+`OCR ile fatura okuma, kağıt veya PDF bir faturanın fotoğrafından **tarih, tutar, KDV ve kalem** gibi bilgilerin otomatik okunup sisteme aktarılmasıdır. Amaç, elle veri girişini ve bundan doğan hataları ortadan kaldırmaktır.
+
+## Nasıl çalışır?
+
+1. **Görüntü alınır:** fatura telefonla fotoğraflanır veya PDF yüklenir.
+2. **Alanlar okunur:** yazılım tarih, tutar, vergi ve satıcı bilgisini ayıklar.
+3. **Kontrol edilir:** okunan veriler kullanıcıya gösterilir, gerekirse düzeltilir.
+4. **Kaydedilir:** onaylanan fatura carihe ve gider kaydına işlenir.
+
+Böylece yüzlerce faturayı elle girmek yerine dakikalar içinde işlersiniz. TEKNOPERS bu tür yapay zekâ destekli araçları iş akışına ekleyebilir; [ön muhasebe programını](https://teknopers.com.tr/urun/on-muhasebe-programi) inceleyebilirsiniz.`,
+
+'teklif-nasil-hazirlanir':
+`Profesyonel bir teklif hem hızlı hazırlanmalı hem de sonradan takip edilebilmelidir. Elle hazırlanan teklif hem zaman alır hem de "hangi müşteriye ne teklif ettim, onayladı mı" sorusunu belirsiz bırakır.
 
 ## Adımlar
 
-1. Sayım öncesi giriş-çıkışları **güncelle**.
-2. Ürünleri **barkod okutarak** say (elle listeye göre çok daha hızlı ve hatasız).
-3. Sistemdeki miktar ile fiili miktarı **karşılaştır**.
-4. **Farkları** (fire, kayıp, hatalı giriş) tespit et ve nedenini araştır.
-5. Düzeltmeleri işle, sayım raporunu sakla.
+1. **Ürün ve fiyatları tanımlayın:** sistemde tanımlı olunca teklif dakikalar içinde oluşur.
+2. **Müşteri ve kalemleri seçin:** miktar ve indirimle birlikte toplam otomatik hesaplanır.
+3. **Tek tıkla gönderin:** teklif PDF veya WhatsApp ile iletilir.
+4. **Takip edin:** onaylanan teklif siparişe döner, stoktan düşer ve carihe işlenir.
 
-Elle sayım uzun sürer ve hata payı yüksektir. TEKNOPERS'te barkodla sayım yaparak fiili stoğu saniyeler içinde karşılaştırabilir, kritik seviye uyarısıyla da stok bitmeden haberdar olabilirsin.`,
-
-'ocr-ile-fatura-okuma-nedir':
-`OCR (Optik Karakter Tanıma) ile fatura okuma, bir faturanın **fotoğrafını çekerek** üzerindeki bilgileri (tedarikçi, tutar, KDV, kalemler) otomatik olarak sisteme aktarmaktır. Elle veri girişini ortadan kaldırır.
-
-## Ne sağlar?
-
-1. Fatura fotoğrafı saniyeler içinde **okunur ve kaydedilir**.
-2. Tutar ve KDV **tedarikçi cari hesabına** işlenir.
-3. Kalemler **stoğa** eklenebilir; KDV dahil/hariç fiyatlandırma yapılır.
-4. Kağıt fiş ve irsaliye kaybolma derdi azalır.
-
-Manuel giriş hem yavaştır hem hatalıdır. TEKNOPERS'in OCR destekli modülü, fatura fotoğrafını okuyarak ön muhasebe ve stok iş yükünü ciddi biçimde azaltır. Denemek için WhatsApp'tan yazabilirsin.`,
-
-'teklif-nasil-hazirlanir':
-`Profesyonel bir teklif; ürün/hizmet kalemlerini, birim fiyatları, toplam tutarı, geçerlilik süresini ve ödeme koşullarını net biçimde içerir. Hızlı hazırlanması, kaçan siparişi önler.
-
-## İçermesi gerekenler
-
-1. **Müşteri ve firma** bilgileri.
-2. **Kalemler:** ürün/hizmet, miktar, birim fiyat, tutar.
-3. **KDV ve genel toplam.**
-4. **Geçerlilik süresi** ve ödeme/teslim koşulları.
-5. Teklif no ve tarih (takip için).
-
-Teklifi Excel veya kağıtla hazırlamak yavaştır ve takibi zordur. TEKNOPERS'te fiyat listesinden dakikalar içinde teklif hazırlar, gönderir ve durumunu (bekliyor/onaylandı) takip edebilirsin. Onaylanan teklif doğrudan siparişe ve cariye dönüşür.`,
+Böylece teklif → sipariş → tahsilat tek akışta yürür, hiçbir teklif havada kalmaz. Bu akış için TEKNOPERS'in [satış, teklif ve cari programını](https://teknopers.com.tr/urun/satis-teklif-ve-cari-programi) inceleyebilirsiniz.`,
 
 'vergi-ve-e-belge-takibi-nasil-yapilir':
-`Vergi ve e-belge takibi, mükelleflerin beyanname ve elektronik belge (e-fatura, e-arşiv, e-defter) yükümlülüklerini son ödeme tarihlerine göre izlemektir. Amaç, hiçbir tarihi kaçırmamaktır.
+`Vergi ve e-belge takibinde amaç, **son tarihleri kaçırmamak** ve **belgeleri düzenli tutmaktır**. Gecikmiş bir beyan ceza, kaybolmuş bir belge ise ihtilaf demektir.
 
 ## Nasıl yapılır?
 
-1. Her mükellef için **yükümlülük türlerini** ve son tarihlerini tanımla.
-2. Yaklaşan tarihler için **otomatik hatırlatma** kur.
-3. Gelen/eksik e-belgeleri **mükellef bazında** işaretle.
-4. Sorumlu personeli **göreve ata**, tamamlananı kapat.
+1. **Takvim ve hatırlatma:** KDV, muhtasar ve diğer beyan tarihleri sisteme girilir, yaklaşınca hatırlatır.
+2. **e-Fatura/e-Arşiv düzeni:** kesilen ve gelen belgeler carihe ve sürece bağlanır.
+3. **Eksik belge kontrolü:** hangi mükellef veya işlem için belge eksik, tek ekranda görünür.
+4. **Müşavire aktarım:** kayıtlar dışa aktarılarak resmi beyan mali müşavirle yürütülür.
 
-Onlarca mükellefi elle takvimde izlemek risklidir; bir tarih kaçması ceza doğurur. TEKNOPERS, takibi kişiye değil sisteme bağlar: mükellef, görev ve son tarih tek panelde görünür. Güncel mevzuat ve tarihler için mali müşavir bilgisiyle çalışın.`,
+Ön muhasebe düzeyinde bu takibi TEKNOPERS'in [ön muhasebe programı](https://teknopers.com.tr/urun/on-muhasebe-programi) ile tutar, resmi beyanı müşavirinizle yürütürsünüz. Güncel oran ve süreler için mevzuatı teyit edin.`,
 
 'on-muhasebede-takip-disiplini-nasil-saglanir':
 `Ön muhasebede takip disiplini; her işin bir **sorumlusu**, bir **son tarihi** ve bir **durumu** olmasıyla sağlanır. Dağınık takip, unutulan tahsilat ve kaçan tarih demektir.
@@ -1140,29 +1125,28 @@ Kağıt üzerinde "geldi mi gelmedi mi" tartışması hem zaman hem hata kaynağ
 Hangi belgenin ne zaman kesileceği ve güncel zorunluluk sınırları GİB düzenlemelerine tabidir; kesin durum için mali müşavirinize danışın.`,
 
 'muhasebe-ofisi-icin-takip-programi-nasil-olmali':
-`Bir mali müşavir/muhasebe ofisi programı; **mükellef bazlı görev, son tarih ve evrak takibi** ile personel görev dağılımını tek ekranda toplamalıdır. Çünkü ofis aynı anda yüzlerce mükellefin işini yürütür.
+`Bir mali müşavirlik/muhasebe ofisinde asıl risk hesap hatası değil, **süre ve evrak takibinin kaçmasıdır**: bir beyanname atlanırsa ceza doğar, bir belge kaybolursa mükellefle sorun yaşanır.
 
-## Olması gerekenler
+## Nasıl olmalı?
 
-1. **Mükellef bazlı takip:** her mükellefin yükümlülüğü ve son tarihi.
-2. **Görev atama:** hangi personel, hangi mükellefin işini yapıyor.
-3. **Otomatik hatırlatma:** yaklaşan beyan/ödeme tarihleri.
-4. **Evrak takibi:** gelen/eksik evrak, teslim kaydı.
-5. **İzole iletişim:** müvekkil/mükellef verisi WhatsApp yerine güvenli sistemde.
+1. **Mükellef bazlı süreç:** her mükellefin beyanname ve bildirim süreçleri göreve bağlanmalı, sorumlusu belli olmalı.
+2. **Süre hatırlatma:** beyan ve bildirim son tarihleri otomatik hatırlatılmalı, gecikme riski kalmamalı.
+3. **Evrak zimmeti:** gelen-giden her belge mükellefe ve sürece bağlanmalı; hangi evrağın eksik olduğu tek ekranda görünmeli.
+4. **İş yükü görünürlüğü:** hangi personelin hangi mükellefte ne işi olduğu raporlanmalı.
 
-TEKNOPERS bu takibi kişiye değil sisteme bağlar; tarih, evrak ve sorumluluk kaybolmaz. Denemek için WhatsApp'tan yazabilirsin.`,
+Böylece hem ceza doğuran gecikmeler önlenir hem de ofis içi iş dağılımı netleşir. Bu akışı kurmak için TEKNOPERS'in [mali müşavir çözümünü](https://teknopers.com.tr/cozum/mali-musavir-ve-muhasebe-ofisleri-icin-evrak-ve-surec-takibi) inceleyebilirsiniz.`,
 
 'restoran-personeli-vardiya-takibi-nasil-yapilir':
-`Restoran, kafe ve otel gibi işletmelerde personel yoğun ve değişken vardiyalarla çalışır; en pratik yol telefondan **konum doğrulamalı giriş-çıkış** ve otomatik vardiya/fazla mesai hesabıdır.
+`Restoran, kafe ve otelde vardiya takibinin iki zorluğu vardır: yoğun/sakin saatlere göre değişen kapasite ve çok sayıda part-time çalışan. Doğru sistem hem yeterli personelin olmasını hem de fazla mesainin kontrolünü sağlar.
 
 ## Nasıl yapılır?
 
-1. Vardiyaları (sabah/akşam/gece) ve kişi ihtiyacını tanımla.
-2. Personel işbaşında telefondan giriş yapar; konum ve saat kaydedilir.
-3. Fazla mesai ve gece çalışması **otomatik** hesaplanır.
-4. Part-time ve tam zamanlı ayrı izlenir.
+1. **Vardiya çizelgesi** yoğun öğünlere göre kurulur; her servis için kaç kişi gerektiği baştan planlanır.
+2. **Konum doğrulamalı giriş-çıkış** ile part-time çalışanın fiilî saati net tutulur; eksik veya fazla ödeme olmaz.
+3. **Kapsama açığı** (boş kalan vardiya) önceden görünür ve yedeklenir.
+4. **Fazla mesai ve hakediş** otomatik hesaplanır, bordroya baz olur.
 
-Yoğun serviste kağıt föy ve sözlü takip karışır. TEKNOPERS, vardiya ve puantajı tek ekrana taşır; ay sonu bordro hatasız çıkar. Puantaj cetvelini denemek için aşağıdaki aracı kullanabilirsin.`,
+Kağıt çizelge, bir çalışanın üst üste kapanışa kaldığını ya da bir servisin eksik personelle geçtiğini çoğu zaman gizler. Vardiyayı planlamak için ücretsiz [Vardiya Çizelgesi](https://teknopers.com.tr/araclar/vardiya-cizelgesi/) aracını kullanabilir, personel saatini ve hakedişi otomatik yürütmek için TEKNOPERS'in restoran çözümünü inceleyebilirsiniz.`,
 
 'part-time-personel-mesai-takibi-nasil-yapilir':
 `Part-time (kısmi süreli) personelde mesai, **saat bazında** takip edilir; giriş-çıkış saatleri kaydedilir ve ücret çalışılan saate göre hesaplanır.
@@ -1177,16 +1161,16 @@ Yoğun serviste kağıt föy ve sözlü takip karışır. TEKNOPERS, vardiya ve 
 Part-time takibinde en sık hata, saatlerin elle toplanmasıdır. TEKNOPERS giriş-çıkışı saatiyle kaydeder ve toplamı otomatik verir; öğrenci/yarı zamanlı ekiplerde idealdir. Aşağıdaki puantaj aracını kullanabilirsin.`,
 
 'sofor-ve-saha-personeli-nasil-takip-edilir':
-`Şoför ve saha personeli sürekli hareket hâlinde olduğundan, takip telefondan **konum doğrulamalı giriş-çıkış** ve teslimat/görev kaydıyla yapılır.
+`Şoför ve saha personelinin ortak sorunu **denetlenemeyen mesai**dir: kim, nerede, ne zaman çalışmaya başladı çoğu zaman belirsizdir. Bu hem maliyet hem güven sorunudur.
 
-## Nasıl yapılır?
+## Nasıl takip edilir?
 
-1. Personel işbaşında ve teslimat noktasında telefondan **konum bildirir**.
-2. Hangi görev/teslimat, kaçta yapıldı kaydedilir.
-3. Zimmetli **araç ve ekipman** takip edilir.
-4. Mesai ve fazla çalışma otomatik hesaplanır.
+1. **Konumlu mesai başlatma:** personel sahadaki işine telefonundan konum teyidiyle başlar.
+2. **Araç zimmeti:** her araç bir şoföre kaydedilir; kilometre, teslim ve iade takip edilir.
+3. **Fazla mesai:** saha süresi otomatik puantaja işlenir, elle föy tutulmaz.
+4. **İhtilaf çözümü:** hasar, yakıt veya "sahaya gitti mi" tartışması kayıtla çözülür.
 
-Sahadaki ekibi telefonla arayarak denetlemek sürdürülemez. TEKNOPERS, konumlu giriş ve görev kaydıyla "kim, nerede, ne yaptı" sorusunu net yanıtlar. Puantaj aracını aşağıdan kullanabilirsin.`,
+Böylece hem mesai doğru hesaplanır hem de araç ve teslim sorumluluğu netleşir. Şoför ve filo için [nakliye, kargo ve filo çözümünü](https://teknopers.com.tr/cozum/nakliye-kargo-ve-filo-icin-saha-personel-ve-arac-zimmet-takibi) inceleyebilirsiniz.`,
 
 'arac-zimmet-takibi-nasil-yapilir':
 `Araç zimmet takibi, bir aracın (plaka) hangi personele, hangi kilometrede ve hangi durumda teslim edildiğini kayıt altına almaktır. Filo ve nakliyede kritiktir.
@@ -1213,40 +1197,40 @@ Sözlü teslim, hasar ve yakıt anlaşmazlığına yol açar. TEKNOPERS'in zimme
 Elle stok takibi markette imkânsıza yakındır; kaçak ve raf boşluğu fark edilmez. TEKNOPERS barkodlu stokla giriş-çıkışı hızlandırır ve farkı görünür kılar. Denemek için WhatsApp'tan yazabilirsin.`,
 
 'perakende-kasa-ve-vardiya-nasil-yonetilir':
-`Perakende işletmede kasa ve vardiya yönetimi; günlük gelir-giderin kaydı, nakit/kart ayrımı ve personelin vardiya bazlı takibiyle sağlanır.
+`Perakende ve markette iki şey aynı anda yönetilmelidir: **kasa devri** ve **personel vardiyası**. İkisi birbirine bağlanmazsa açık/fazla kimin vardiyasında oldu belirsiz kalır.
 
-## Nasıl yapılır?
+## Nasıl yönetilir?
 
-1. Her satışı **anında** kaydet; nakit ve kartı ayır.
-2. Gün sonunda **beklenen kasa** ile fiili kasayı karşılaştır.
-3. Personeli **vardiya** bazlı izle; giriş-çıkış ve fazla mesai otomatik.
-4. Gün sonu **raporunu** al (ciro, ödeme türü, personel).
+1. **Vardiya kaydı:** her personelin giriş-çıkışı ve hangi vardiyada olduğu tutulur.
+2. **Kasa açılış-kapanış:** her vardiyada kasa devri kaydedilir; açık veya fazla net görünür ve sorumluluk vardiyaya bağlanır.
+3. **Stok bağı:** satış stoktan düştüğü için gün sonu kasa ile stok tutarlılığı kontrol edilir.
+4. **Gün sonu raporu:** ciro, kasa farkı ve personel performansı tek ekranda çıkar.
 
-Kasa açığı ve vardiya karmaşası, takipsiz işletmenin sessiz zararıdır. TEKNOPERS kasa, stok ve personel takibini tek ekranda birleştirir. Denemek için WhatsApp'tan yazabilirsin.`,
+Bu yapı, "kasa neden açık verdi, hangi vardiyada oldu" tartışmasını bitirir. Perakende için stok + personel + kasayı birlikte yürüten [market ve perakende çözümünü](https://teknopers.com.tr/cozum/market-ve-perakende-icin-stok-ve-personel-yonetimi) inceleyebilirsiniz.`,
 
 '50-200-personelli-atolyede-mesai-takibi-nasil-yapilir':
-`50 ila 200 personelli bir atölye veya orta ölçekli üretim tesisinde mesai takibinin en pratik yolu, cihaz gerektirmeyen **konum doğrulamalı mobil PDKS**'tir. Bu ölçekte biyometrik cihaz hem pahalı hem KVKK açısından risklidir; kart sistemi ise "başkasının yerine basma" hilesine açıktır.
+`50-200 kişilik atölyede biyometrik cihaz yatırımı hem maliyetli hem de bakım gerektirir; ayrıca çok vardiyalı ortamda tek kapı cihazı istasyon dağılımını göstermez.
 
-## Nasıl yapılır?
+## Cihazsız ve istasyon bazlı
 
-1. **Bölüm/istasyonları** ve vardiyaları sisteme tanımla.
-2. Personel işbaşında telefondan giriş yapar; GPS konumu ve saat kaydedilir.
-3. **Cihaz Bağı** ile hesap tek telefona kilitlenir, kart hilesi engellenir.
-4. Vardiya, fazla mesai ve taşeron bazlı hakediş **otomatik** hesaplanır.
+1. **Telefondan konumlu giriş:** personel sahadayken mesai başlatır, pahalı cihaz gerekmez.
+2. **İstasyon takibi:** giriş istasyona bağlanır; hangi hatta kim çalıştı ve verim görünür.
+3. **Vardiya ve rotasyon:** çizelge hat bazında kurulur, kimse üst üste geceye kalmaz.
+4. **Taşeron hakedişi:** ekip bazlı puantaj otomatik ayrışır.
 
-Bu ölçekte elle veya kartla takip hem yavaş hem hataya açıktır. TEKNOPERS, orta ölçekli üretim için donanım maliyeti ve yasal riski sıfırlar. Puantaj cetvelini denemek için aşağıdaki aracı kullanabilirsin.`,
+Böylece hem mesai doğru hesaplanır hem de üretim içi darboğaz görünür olur. Detay için [atölye ve orta ölçekli üretim çözümüne](https://teknopers.com.tr/cozum/atolye-ve-orta-olcekli-uretim-icin-mesai-ve-vardiya-takibi) bakabilirsiniz.`,
 
 'cok-istasyonlu-uretimde-personel-takibi-nasil-yapilir':
-`Çok istasyonlu (çok tezgâhlı) üretimde personel farklı noktalarda çalıştığından, takip **bölüm/istasyon bazlı** ve konum doğrulamalı yapılmalıdır.
+`Çok istasyonlu üretimde tek bir kapı cihazı yetmez; asıl soru "kim, hangi istasyonda, ne kadar çalıştı"dır. Bu görünmeyince verim ve maliyet ölçülemez.
 
 ## Nasıl yapılır?
 
-1. Üretim hattını **bölüm ve istasyonlara** ayır.
-2. Personel çalıştığı noktada telefondan giriş yapar; konumu doğrulanır.
-3. Hangi personel, hangi istasyonda, ne kadar çalıştı **görünür** olur.
-4. Vardiya ve fazla mesai otomatik hesaplanır, bordroya baz olur.
+1. **Konumlu giriş** ile personel sahaya girişini telefonundan başlatır; pahalı biyometrik cihaz gerekmez.
+2. **İstasyon bazlı kayıt:** çalışma istasyona bağlanır, üretim içindeki dağılım görünür olur.
+3. **Vardiya ve fazla mesai** otomatik puantaja işlenir; hat kesintisiz dönerken rotasyon yönetilir.
+4. **Taşeron hakedişi** ekip bazında ayrışır, SGK günleriyle karşılaştırılır.
 
-Sabit bir kapı cihazı yalnızca girişi kaydeder; üretim içindeki dağılımı göstermez. Konumlu mobil takip, "kim nerede çalışıyor" sorusunu net yanıtlar. TEKNOPERS bunu cihaz olmadan sağlar; puantaj aracını aşağıdan kullanabilirsin.`,
+Böylece hangi hattın ne kadar insan-saat tükettiği ve nerede darboğaz olduğu rakamla görünür. 50-200 kişilik üretim için [atölye ve orta ölçekli üretim çözümünü](https://teknopers.com.tr/cozum/atolye-ve-orta-olcekli-uretim-icin-mesai-ve-vardiya-takibi) inceleyebilirsiniz.`,
 
 'yevmiye-nasil-hesaplanir':
 `Yevmiye, bir işçinin bir günlük çalışması karşılığı aldığı ücrettir. İnşaat, tarım, temizlik gibi işlerde ücret çoğu zaman aylık değil yevmiye (gündelik) olarak belirlenir.
