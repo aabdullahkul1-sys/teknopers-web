@@ -15,9 +15,9 @@
   gtag('config', 'G-8GBQE6QZP8');
 </script>
 
-<title>Ücretsiz Puantaj Cetveli ve 2026 Mesai Takibi | TeknoPers</title>
-<meta name="keywords" content="puantaj cetveli, ücretsiz puantaj, personel takip çizelgesi, mesai takip excel, 2026 puantaj örneği">
-<meta name="description" content="Personelinizin aylık çalışma günlerini, fazla mesailerini ve izinlerini ücretsiz puantaj cetveli ile online olarak tutup Excel'e aktarın.">
+<title>Ücretsiz Puantaj Cetveli + Hakediş Hesaplama (Yevmiye ve Aylık, 2026) | TeknoPers</title>
+<meta name="keywords" content="puantaj cetveli, ücretsiz puantaj, hakediş hesaplama, yevmiye hesaplama, günlük ücret hesaplama, işçi hakediş, puantaj örneği 2026, mesai takip excel">
+<meta name="description" content="Ücretsiz puantaj cetveli: personelin çalışma günü ve izinlerini online tutun; yevmiyeyi girin, aylık hakedişi otomatik hesaplayın, yazdırın veya Excel'e aktarın.">
 <link rel="canonical" href="https://teknopers.com.tr/araclar/puantaj-cetveli/">
 <meta property="og:site_name" content="TEKNOPERS">
 <meta property="og:locale" content="tr_TR">
@@ -123,6 +123,19 @@ td.day:hover{outline:2px solid var(--gold);outline-offset:-2px}
 .s-RT{background:#E8ECFA;color:#5566B5}
 .col-tot{background:#FBFCFE;font-family:var(--mono);font-weight:700;min-width:52px}
 .col-tot.head{background:#F3F6FA}
+.col-pay{background:var(--goldL)!important;min-width:78px}
+th.col-pay{background:var(--goldL)!important;white-space:nowrap}
+td.col-pay input.yvInput{width:72px;border:1px solid var(--line2);border-radius:8px;padding:4px 6px;font:600 13px var(--mono);text-align:right;background:#fff}
+td.col-pay input.yvInput:focus{border-color:var(--gold);outline:none;box-shadow:0 0 0 3px var(--goldL)}
+td.pay{white-space:nowrap;color:var(--ink)}
+.bar2{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:2px 0 16px;font-size:14px;color:var(--slate)}
+.bar2 .chk{display:inline-flex;align-items:center;gap:8px;cursor:pointer;font-weight:600}
+.bar2 .chk input{width:17px;height:17px;accent-color:var(--goldD)}
+.bar2 .sep{width:1px;height:22px;background:var(--line2)}
+.bar2 input[type=number]{border:1px solid var(--line2);border-radius:8px;padding:6px 8px;font:600 13px var(--mono)}
+.bar2 .seg{display:inline-flex;align-items:center;gap:6px;cursor:pointer;font-weight:600}
+.bar2 .seg input{width:16px;height:16px;accent-color:var(--goldD)}
+#htOdeWrap{display:inline-flex;align-items:center;gap:12px}
 td.rm{width:30px;cursor:pointer;color:var(--mut)}
 td.rm:hover{color:var(--rose)}
 tfoot td{background:#F3F6FA;font-weight:700;font-family:var(--mono);padding:8px 6px}
@@ -173,6 +186,9 @@ footer p{font-size:14px;max-width:360px}
   thead th{position:static}
   .col-ad,td.col-ad{position:static}
   td.day{height:26px}
+  .bar2{display:none!important}
+  .col-pay{background:transparent!important}
+  td.col-pay input.yvInput{border:none;background:transparent;padding:0}
   .legend{display:flex!important;margin-top:8px;page-break-inside:avoid}
 }
 </style>
@@ -205,7 +221,7 @@ footer p{font-size:14px;max-width:360px}
 <div class="top wrap">
   <span class="eyebrow">Ücretsiz İşveren Aracı</span>
   <h1>Puantaj Cetveli</h1>
-  <p class="sub">Aylık puantajı online doldurun: personeli ekleyin, günleri tek tıkla işaretleyin, çalışılan günü otomatik hesaplayın. Sonra yazdırın veya Excel'e aktarın.</p>
+  <p class="sub">Aylık puantajı online doldurun: personeli ekleyin, günleri tek tıkla işaretleyin, yevmiyeyi veya aylık maaşı girin; çalışılan günü ve hakedişi otomatik hesaplayın. Sonra yazdırın veya Excel'e aktarın.</p>
 </div>
 
 <main class="wrap">
@@ -230,6 +246,17 @@ footer p{font-size:14px;max-width:360px}
       <button class="btn btn-ghost btn-sm" id="btnCsv">⬇️ Excel'e aktar</button>
       <button class="btn btn-ghost btn-sm" id="btnClear">🗑️ Temizle</button>
     </div>
+  </div>
+
+  <div class="bar2 no-print">
+    <span class="chk" style="cursor:default"><b>Hesaplama:</b></span>
+    <label class="seg"><input type="radio" name="mod" value="yevmiye" id="modY"> Yevmiye (günlük)</label>
+    <label class="seg"><input type="radio" name="mod" value="aylik" id="modA"> Aylık maaş</label>
+    <span id="htOdeWrap"><span class="sep"></span><label class="chk"><input type="checkbox" id="htOde"> Hafta tatili + resmi tatili ekle</label></span>
+    <span class="sep"></span>
+    <label for="hepYv" id="hepLbl">Hepsine aynı yevmiye</label>
+    <input type="number" id="hepYv" min="0" step="1" inputmode="numeric" placeholder="₺" style="width:90px">
+    <button class="btn btn-ghost btn-sm" id="btnHep">Uygula</button>
   </div>
 
   <!-- CETVEL -->
@@ -345,8 +372,30 @@ footer p{font-size:14px;max-width:360px}
       <li><a href="https://teknopers.com.tr/blog-pdks-nedir.html">Rehber: PDKS Nedir?</a></li>
     </ul>
 
+    <h3>Bu araca uygun sektör çözümleri</h3>
+    <ul class="rel-links">
+      <li><a href="https://teknopers.com.tr/cozum/insaat-santiyeleri-icin-personel-taseron-ve-zimmet-takibi">İnşaat şantiyeleri için personel, taşeron ve zimmet takibi</a></li>
+      <li><a href="https://teknopers.com.tr/cozum/temizlik-sirketleri-icin-mobil-pdks-ve-saha-takibi">Temizlik şirketleri için mobil PDKS ve saha takibi</a></li>
+      <li><a href="https://teknopers.com.tr/cozum/guvenlik-sirketleri-icin-devriye-ve-nokta-kontrol">Güvenlik şirketleri için devriye ve nokta kontrol</a></li>
+      <li><a href="https://teknopers.com.tr/cozum/otel-restoran-ve-kafeler-icin-personel-ve-vardiya-takibi">Otel, restoran ve kafeler için personel ve vardiya takibi</a></li>
+      <li><a href="https://teknopers.com.tr/cozum/atolye-ve-orta-olcekli-uretim-icin-mesai-ve-vardiya-takibi">Atölye ve orta ölçekli üretim için mesai ve vardiya takibi</a></li>
+    </ul>
+
+    <h3>İlgili sorular</h3>
+    <ul class="rel-links">
+      <li><a href="https://teknopers.com.tr/soru/isci-hakedisi-nasil-hesaplanir">İşçi hakedişi nasıl hesaplanır?</a></li>
+      <li><a href="https://teknopers.com.tr/soru/yevmiye-nasil-hesaplanir">Yevmiye (günlük ücret) nasıl hesaplanır?</a></li>
+      <li><a href="https://teknopers.com.tr/soru/taseron-personel-takibi-nasil-yapilir">Taşeron personel takibi nasıl yapılır?</a></li>
+      <li><a href="https://teknopers.com.tr/soru/150-personelli-fabrikada-mesai-nasil-takip-edilir">150 personelli fabrikada mesai nasıl takip edilir?</a></li>
+      <li><a href="https://teknopers.com.tr/soru/sgk-eksik-gun-bildirimi-nasil-yapilir">SGK eksik gün bildirimi (07 puantaj) nasıl yapılır?</a></li>
+    </ul>
+
     <h2>Sık sorulan sorular</h2>
     <div class="faq">
+      <details>
+  <summary>Puantaj nedir?</summary>
+  <p>Puantaj, bir personelin ay boyunca hangi günler çalıştığını, hangi günler izinli, raporlu veya devamsız olduğunu gün gün gösteren çizelgedir. Tam gün, yarım gün, hafta tatili ve fazla mesai bu çizelgede kodlanır; bordro da bu veriye dayanarak hesaplanır. Kısacası puantaj, "kim kaç gün çalıştı?" sorusunun resmî cevabıdır.</p>
+</details>
       <details><summary>Puantaj tutmak zorunlu mu?</summary>
         <p>Evet. İşverenin çalışma sürelerini belgelemesi 4857 sayılı İş Kanunu m.67 ve Çalışma Süreleri Yönetmeliği m.9 gereği zorunludur; fazla mesai için imzalı belge saklamak da (Fazla Çalışma Yönetmeliği m.10) gerekir. Denetimlerde ve SGK eksik gün bildiriminde puantaj istenebilir, tutmayan işverene idari para cezası uygulanabilir.</p></details>
       <details><summary>Puantajı kim tutar ve kim imzalar?</summary>
@@ -359,6 +408,8 @@ footer p{font-size:14px;max-width:360px}
         <p>'R' koduyla işlenir; istirahat raporu SGK'ya bildirilir ve iş göremezlik ödeneği devreye girer. Raporlu günler, hafta tatiline hak kazanmada çalışılmış gibi kabul edilir.</p></details>
       <details><summary>Fazla mesai puantaja nasıl yazılır?</summary>
         <p>Normal çalışma kodundan ayrı, saat olarak (ör. 1,5) yazılır. Fazla mesai yönetici onayıyla girilmeli ve çalışana imzalatılmalıdır; Fazla Çalışma Yönetmeliği m.10 imzalı belge saklamayı zorunlu kılar. Haftalık 45 saati aşan çalışma %50 zamlı ödenir, yılda en çok 270 saat olabilir.</p></details>
+      <details><summary>Puantajdan hakediş nasıl hesaplanır? (Yevmiye ve aylık farkı)</summary>
+        <p>Ücret türüne göre iki farklı hesap vardır; araçta üstten <strong>Yevmiye</strong> veya <strong>Aylık maaş</strong> seçersiniz. <strong>Yevmiyeli (günlük ücret):</strong> hakediş = <em>çalışılan gün × yevmiye</em>. Her fiilen çalışılan gün ödenir; ay 31 gün çekiyorsa 31. gün de sayılır. İsterseniz "hafta tatili + resmi tatili ekle" ile ücretli tatilleri dahil edebilirsiniz. <strong>Aylık maaşlı:</strong> bordroda ay <em>daima 30 gün</em> kabul edilir; tam çalışan işçi ayın 28/30/31 çekmesinden bağımsız olarak <em>tam maaşını</em> alır (31. gün ayrıca eklenmez). Devamsızlık olursa günlük ücret (<em>maaş ÷ 30</em>) üzerinden kesinti yapılır; ödenmeyen günü devamsız (X) işaretleyin. Sonuç <strong>brüt/kaba</strong> tutardır; SGK primi ve gelir vergisi için <a href="https://teknopers.com.tr/araclar/net-brut-maas-hesaplama/">Net–Brüt Maaş</a> aracını kullanın.</p></details>
       <details><summary>Bu araçta çalışılan gün nasıl hesaplanıyor?</summary>
         <p>Tam gün (T) 1, yarım gün (Y) 0,5 olarak sayılır; izin, rapor, devamsızlık ve hafta tatili çalışılan güne dahil edilmez. Araç bu toplamı her satırda otomatik gösterir.</p></details>
       <details><summary>Üyelik veya e-posta gerekiyor mu, verilerim kayboluyor mu?</summary>
@@ -378,87 +429,73 @@ footer p{font-size:14px;max-width:360px}
   </div>
 </footer>
 
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"WebApplication",
-  "name":"Puantaj Cetveli",
-  "url":"https://teknopers.com.tr/araclar/puantaj-cetveli/",
-  "applicationCategory":"BusinessApplication",
-  "operatingSystem":"Web",
-  "inLanguage":"tr-TR",
-  "offers":{"@type":"Offer","price":"0","priceCurrency":"TRY"},
-  "description":"Ücretsiz online puantaj cetveli. Personel ekleyip günleri işaretleyin, çalışılan günü otomatik hesaplayın, yazdırın veya Excel'e aktarın."
-}
-</script>
+<!-- Yapisal veri (JSON-LD): kurulus + kirinti + uygulama + SSS -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "Puantaj tutmak zorunlu mu?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Evet. İşverenin çalışma sürelerini belgelemesi 4857 sayılı İş Kanunu m.67 ve Çalışma Süreleri Yönetmeliği m.9 gereği zorunludur; fazla mesai için imzalı belge saklamak da (Fazla Çalışma Yönetmeliği m.10) gerekir. Denetimlerde ve SGK eksik gün bildiriminde puantaj istenebilir, tutmayan işverene idari para cezası uygulanabilir."
-      }
+      "@type": "Organization",
+      "@id": "https://teknopers.com.tr/#org",
+      "name": "TEKNOPERS",
+      "url": "https://teknopers.com.tr/",
+      "logo": "https://teknopers.com.tr/icon-512.png",
+      "sameAs": [
+        "https://www.instagram.com/teknopers.saha",
+        "https://www.linkedin.com/company/teknopers/",
+        "https://www.facebook.com/share/1DnvkpxuM1/"
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Puantajı kim tutar ve kim imzalar?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Geleneksel olarak puantör; bugün İK/bordro sorumlusu veya PDKS sistemleri tutar. Cetvel puantör tarafından tutulur, çalışan tarafından imzalanır. Özellikle ıslak imza, belgenin dava ve SGK'daki ispat gücünü belirleyici ölçüde artırır."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://teknopers.com.tr/" },
+        { "@type": "ListItem", "position": 2, "name": "Araçlar", "item": "https://teknopers.com.tr/araclar/" },
+        { "@type": "ListItem", "position": 3, "name": "Puantaj Cetveli", "item": "https://teknopers.com.tr/araclar/puantaj-cetveli/" }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Puantaj ile bordro arasındaki fark nedir?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Puantaj çalışılan günü/süreyi gösterir; bordro ise bu veriye dayanarak hesaplanan ödemeyi (brüt, kesinti, net) gösterir. Bordro puantajdan üretilir; bu yüzden puantajın doğruluğu bordronun da doğruluğunu belirler."
-      }
+      "@type": "WebApplication",
+      "@id": "https://teknopers.com.tr/araclar/puantaj-cetveli/#app",
+      "name": "Ücretsiz Puantaj Cetveli",
+      "url": "https://teknopers.com.tr/araclar/puantaj-cetveli/",
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "İnsan Kaynakları / Puantaj",
+      "operatingSystem": "Web",
+      "browserRequirements": "JavaScript etkin modern bir tarayıcı gerekir",
+      "inLanguage": "tr-TR",
+      "isAccessibleForFree": true,
+      "dateModified": "2026-07-01",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "TRY" },
+      "featureList": [
+        "Aylık puantaj cetvelini online doldurma",
+        "Tam gün, yarım gün, izin, rapor ve hafta tatili kodlaması",
+        "Çalışılan günü satır satır otomatik toplama",
+        "Yevmiye veya aylık maaş girip her personelin hakedişini otomatik hesaplama (yevmiyede 31. gün sayılır, aylıkta ay 30 gün kabul edilir)",
+        "Yazdırma ve PDF olarak kaydetme",
+        "Excel'e (CSV) aktarma",
+        "Üyelik ve e-posta gerektirmez; veriler tarayıcıda saklanır"
+      ],
+      "screenshot": "https://teknopers.com.tr/og-image.png",
+      "publisher": { "@id": "https://teknopers.com.tr/#org" },
+      "provider": { "@id": "https://teknopers.com.tr/#org" },
+      "description": "Ücretsiz online puantaj cetveli. Personel ekleyip günleri işaretleyin, çalışılan günü otomatik hesaplayın, yazdırın veya Excel'e aktarın."
     },
     {
-      "@type": "Question",
-      "name": "Hafta tatili puantajda nasıl gösterilir?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Genellikle 'HT' koduyla. Haftalık çalışmasını tamamlayan işçi, çalışmasa dahi hafta tatili ücretine hak kazanır. Hafta tatilinde çalışıldıysa ek ücret hesabı için ayrıca işaretlenir; Yargıtay uygulamasına göre bu durumda toplam 2,5 yevmiye ödenir."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Raporlu (istirahatli) gün puantaja nasıl işlenir?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "'R' koduyla işlenir; istirahat raporu SGK'ya bildirilir ve iş göremezlik ödeneği devreye girer. Raporlu günler, hafta tatiline hak kazanmada çalışılmış gibi kabul edilir."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Fazla mesai puantaja nasıl yazılır?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Normal çalışma kodundan ayrı, saat olarak (ör. 1,5) yazılır. Fazla mesai yönetici onayıyla girilmeli ve çalışana imzalatılmalıdır; Fazla Çalışma Yönetmeliği m.10 imzalı belge saklamayı zorunlu kılar. Haftalık 45 saati aşan çalışma %50 zamlı ödenir, yılda en çok 270 saat olabilir."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Bu araçta çalışılan gün nasıl hesaplanıyor?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Tam gün (T) 1, yarım gün (Y) 0,5 olarak sayılır; izin, rapor, devamsızlık ve hafta tatili çalışılan güne dahil edilmez. Araç bu toplamı her satırda otomatik gösterir."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Üyelik veya e-posta gerekiyor mu, verilerim kayboluyor mu?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Hayır, üyelik veya e-posta gerekmez; araç tamamen ücretsizdir. Girdiğiniz cetvel tarayıcınızda otomatik saklanır, sayfayı kapatsanız da kaybolmaz. Ancak farklı cihaz/tarayıcıda görünmez; kalıcı ve ekipçe erişilebilir kayıt için TEKNOPERS gibi bir sistem gerekir."
-      }
+      "@type": "FAQPage",
+      "@id": "https://teknopers.com.tr/araclar/puantaj-cetveli/#faq",
+      "mainEntity": [
+        { "@type": "Question", "name": "Puantaj nedir?", "acceptedAnswer": { "@type": "Answer", "text": "Puantaj, bir personelin ay boyunca hangi günler çalıştığını, hangi günler izinli, raporlu veya devamsız olduğunu gün gün gösteren çizelgedir. Tam gün, yarım gün, hafta tatili ve fazla mesai bu çizelgede kodlanır; bordro da bu veriye dayanarak hesaplanır. Kısacası puantaj, 'kim kaç gün çalıştı?' sorusunun resmî cevabıdır." } },
+        { "@type": "Question", "name": "Puantaj tutmak zorunlu mu?", "acceptedAnswer": { "@type": "Answer", "text": "Evet. İşverenin çalışma sürelerini belgelemesi 4857 sayılı İş Kanunu m.67 ve Çalışma Süreleri Yönetmeliği m.9 gereği zorunludur; fazla mesai için imzalı belge saklamak da (Fazla Çalışma Yönetmeliği m.10) gerekir. Denetimlerde ve SGK eksik gün bildiriminde puantaj istenebilir, tutmayan işverene idari para cezası uygulanabilir." } },
+        { "@type": "Question", "name": "Puantajı kim tutar ve kim imzalar?", "acceptedAnswer": { "@type": "Answer", "text": "Geleneksel olarak puantör; bugün İK/bordro sorumlusu veya PDKS sistemleri tutar. Cetvel puantör tarafından tutulur, çalışan tarafından imzalanır. Özellikle ıslak imza, belgenin dava ve SGK'daki ispat gücünü belirleyici ölçüde artırır." } },
+        { "@type": "Question", "name": "Puantaj ile bordro arasındaki fark nedir?", "acceptedAnswer": { "@type": "Answer", "text": "Puantaj çalışılan günü/süreyi gösterir; bordro ise bu veriye dayanarak hesaplanan ödemeyi (brüt, kesinti, net) gösterir. Bordro puantajdan üretilir; bu yüzden puantajın doğruluğu bordronun da doğruluğunu belirler." } },
+        { "@type": "Question", "name": "Hafta tatili puantajda nasıl gösterilir?", "acceptedAnswer": { "@type": "Answer", "text": "Genellikle 'HT' koduyla. Haftalık çalışmasını tamamlayan işçi, çalışmasa dahi hafta tatili ücretine hak kazanır. Hafta tatilinde çalışıldıysa ek ücret hesabı için ayrıca işaretlenir; Yargıtay uygulamasına göre bu durumda toplam 2,5 yevmiye ödenir." } },
+        { "@type": "Question", "name": "Raporlu (istirahatli) gün puantaja nasıl işlenir?", "acceptedAnswer": { "@type": "Answer", "text": "'R' koduyla işlenir; istirahat raporu SGK'ya bildirilir ve iş göremezlik ödeneği devreye girer. Raporlu günler, hafta tatiline hak kazanmada çalışılmış gibi kabul edilir." } },
+        { "@type": "Question", "name": "Fazla mesai puantaja nasıl yazılır?", "acceptedAnswer": { "@type": "Answer", "text": "Normal çalışma kodundan ayrı, saat olarak (ör. 1,5) yazılır. Fazla mesai yönetici onayıyla girilmeli ve çalışana imzalatılmalıdır; Fazla Çalışma Yönetmeliği m.10 imzalı belge saklamayı zorunlu kılar. Haftalık 45 saati aşan çalışma %50 zamlı ödenir, yılda en çok 270 saat olabilir." } },
+        { "@type": "Question", "name": "Puantajdan hakediş nasıl hesaplanır (yevmiye ve aylık farkı)?", "acceptedAnswer": { "@type": "Answer", "text": "Ücret türüne göre iki hesap vardır. Yevmiyeli: hakediş = çalışılan gün × yevmiye; her fiilen çalışılan gün ödenir, ay 31 gün çekiyorsa 31. gün de sayılır. Aylık maaşlı: bordroda ay daima 30 gün kabul edilir; tam çalışan işçi ayın 28/30/31 çekmesinden bağımsız tam maaşını alır, 31. gün ayrıca eklenmez, devamsızlıkta maaş ÷ 30 üzerinden kesinti yapılır. Araç seçilen türe göre otomatik hesaplar. Tutar brüttür." } },
+        { "@type": "Question", "name": "Bu araçta çalışılan gün nasıl hesaplanıyor?", "acceptedAnswer": { "@type": "Answer", "text": "Tam gün (T) 1, yarım gün (Y) 0,5 olarak sayılır; izin, rapor, devamsızlık ve hafta tatili çalışılan güne dahil edilmez. Araç bu toplamı her satırda otomatik gösterir." } },
+        { "@type": "Question", "name": "Üyelik veya e-posta gerekiyor mu, verilerim kayboluyor mu?", "acceptedAnswer": { "@type": "Answer", "text": "Hayır, üyelik veya e-posta gerekmez; araç tamamen ücretsizdir. Girdiğiniz cetvel tarayıcınızda otomatik saklanır, sayfayı kapatsanız da kaybolmaz. Ancak farklı cihaz/tarayıcıda görünmez; kalıcı ve ekipçe erişilebilir kayıt için TEKNOPERS gibi bir sistem gerekir." } }
+      ]
     }
   ]
 }
@@ -472,7 +509,7 @@ const CLS={ 'T':'s-T','Y':'s-Y','İ':'s-i','R':'s-R','X':'s-X','HT':'s-HT','RT':
 const KEY='teknopers_puantaj_v1';
 const $=(id)=>document.getElementById(id);
 
-let state={ isyeri:'', ay:new Date().getMonth()+1, yil:new Date().getFullYear(), rows:[] };
+let state={ isyeri:'', ay:new Date().getMonth()+1, yil:new Date().getFullYear(), mod:'yevmiye', htOde:false, rows:[] };
 
 function gunSayisi(y,a){ return new Date(y,a,0).getDate(); }
 function haftaSonu(y,a,g){ const d=new Date(y,a-1,g).getDay(); return d===0||d===6; }
@@ -480,7 +517,7 @@ function haftaSonu(y,a,g){ const d=new Date(y,a-1,g).getDay(); return d===0||d==
 function yeniSatir(ad){
   const y=state.yil,a=state.ay,n=gunSayisi(y,a),g={};
   for(let d=1;d<=n;d++){ g[d]= haftaSonu(y,a,d)?'HT':'T'; }
-  return {ad:ad||'', gunler:g};
+  return {ad:ad||'', yevmiye:0, gunler:g};
 }
 function ayDegisti(){
   const y=state.yil,a=state.ay,n=gunSayisi(y,a);
@@ -489,6 +526,20 @@ function ayDegisti(){
 
 function calisilan(r){ let t=0; Object.values(r.gunler).forEach(v=>{ if(v==='T')t+=1; else if(v==='Y')t+=0.5; }); return t; }
 function say(r,s){ return Object.values(r.gunler).filter(v=>v===s).length; }
+function odenenGun(r){ let g=calisilan(r); if(state.htOde){ g+=say(r,'HT')+say(r,'RT'); } return g; }
+function kesintiGunu(r){ return say(r,'X') + say(r,'Y')*0.5; } // aylıkta ödenmeyen: devamsız tam + yarım günün eksik yarısı
+function hakedis(r){
+  const birim=+r.yevmiye||0;
+  if(state.mod==='aylik'){ const gunluk=birim/30; return Math.max(0, birim - gunluk*kesintiGunu(r)); }
+  return odenenGun(r)*birim; // yevmiye: çalışılan gün × yevmiye (31. gün de sayılır)
+}
+function updateModUI(){
+  const aylik=state.mod==='aylik';
+  const w=document.getElementById('htOdeWrap'); if(w) w.style.display=aylik?'none':'';
+  const hl=document.getElementById('hepLbl'); if(hl) hl.textContent=aylik?'Hepsine aynı maaş':'Hepsine aynı yevmiye';
+  const hy=document.getElementById('hepYv'); if(hy) hy.placeholder=aylik?'aylık ₺':'₺';
+}
+function tl(x){ return (Math.round(x)||0).toLocaleString('tr-TR')+' ₺'; }
 function fmt(x){ return Number.isInteger(x)?x:x.toFixed(1).replace('.',','); }
 
 function render(){
@@ -496,20 +547,22 @@ function render(){
   // başlık
   let h='<tr><th class="col-ad">Personel</th>';
   for(let d=1;d<=n;d++){ const wknd=haftaSonu(y,a,d); h+=`<th class="${wknd?'wknd':''}">${d}<span class="wk">${GUN_KISA[new Date(y,a-1,d).getDay()]}</span></th>`; }
-  h+='<th class="col-tot head">Çalış.</th><th class="col-tot head">İzin</th><th class="col-tot head">Rapor</th><th class="col-tot head">Yok</th><th class="no-print"></th></tr>';
+  const birimBaslik = state.mod==='aylik' ? 'Aylık maaş ₺' : 'Yevmiye ₺';
+  h+='<th class="col-tot head">Çalış.</th><th class="col-tot head">İzin</th><th class="col-tot head">Rapor</th><th class="col-tot head">Yok</th><th class="col-tot head col-pay">'+birimBaslik+'</th><th class="col-tot head col-pay">Hakediş ₺</th><th class="no-print"></th></tr>';
   $('thead').innerHTML=h;
   // satırlar
   let b='';
   state.rows.forEach((r,ri)=>{
     b+=`<tr><td class="col-ad"><input value="${(r.ad||'').replace(/"/g,'&quot;')}" data-ri="${ri}" class="adInput" placeholder="Ad Soyad"></td>`;
     for(let d=1;d<=n;d++){ const v=r.gunler[d]||''; b+=`<td class="day ${CLS[v]}" data-ri="${ri}" data-d="${d}">${v}</td>`; }
-    b+=`<td class="col-tot" id="tot-${ri}">${fmt(calisilan(r))}</td><td class="col-tot">${say(r,'İ')}</td><td class="col-tot">${say(r,'R')}</td><td class="col-tot">${say(r,'X')}</td>`;
+    b+=`<td class="col-tot" id="tot-${ri}">${fmt(calisilan(r))}</td><td class="col-tot">${say(r,'İ')}</td><td class="col-tot">${say(r,'R')}</td><td class="col-tot">${say(r,'X')}</td><td class="col-tot col-pay"><input class="yvInput" data-ri="${ri}" type="number" min="0" step="1" inputmode="numeric" value="${r.yevmiye||''}" placeholder="0"></td><td class="col-tot col-pay pay" id="pay-${ri}">${tl(hakedis(r))}</td>`;
     b+=`<td class="rm no-print" data-rm="${ri}" title="Satırı sil">✕</td></tr>`;
   });
   $('tbody').innerHTML=b;
   // toplam satırı
   let toplamCalis=0; state.rows.forEach(r=>toplamCalis+=calisilan(r));
-  $('tfoot').innerHTML = state.rows.length? `<tr><td class="col-ad">TOPLAM (${state.rows.length} kişi)</td><td colspan="${n}"></td><td class="col-tot">${fmt(toplamCalis)}</td><td colspan="4" class="no-print"></td></tr>`:'';
+  let toplamHak=0; state.rows.forEach(r=>toplamHak+=hakedis(r));
+  $('tfoot').innerHTML = state.rows.length? `<tr><td class="col-ad">TOPLAM (${state.rows.length} kişi)</td><td colspan="${n}"></td><td class="col-tot">${fmt(toplamCalis)}</td><td colspan="3"></td><td class="col-tot col-pay"></td><td class="col-tot col-pay pay">${tl(toplamHak)}</td><td class="no-print"></td></tr>`:'';
   $('sheetTitle').textContent = `Puantaj Cetveli — ${AYLAR[a-1]} ${y}${state.isyeri? ' · '+state.isyeri:''}`;
   bind();
   save();
@@ -525,6 +578,14 @@ function bind(){
     const tds=c.parentElement.querySelectorAll('.col-tot');
     tds[1].textContent=say(state.rows[ri],'İ'); tds[2].textContent=say(state.rows[ri],'R'); tds[3].textContent=say(state.rows[ri],'X');
     let tc=0; state.rows.forEach(r=>tc+=calisilan(r)); const ft=$('tfoot').querySelector('.col-tot'); if(ft) ft.textContent=fmt(tc);
+    const pc=$('pay-'+ri); if(pc) pc.textContent=tl(hakedis(state.rows[ri]));
+    let thp=0; state.rows.forEach(r=>thp+=hakedis(r)); const ftp=$('tfoot').querySelector('.pay'); if(ftp) ftp.textContent=tl(thp);
+    save();
+  });
+  document.querySelectorAll('.yvInput').forEach(inp=>inp.oninput=()=>{
+    const ri=+inp.dataset.ri; state.rows[ri].yevmiye=+inp.value||0;
+    const pc=$('pay-'+ri); if(pc) pc.textContent=tl(hakedis(state.rows[ri]));
+    let th=0; state.rows.forEach(r=>th+=hakedis(r)); const ft=$('tfoot').querySelector('.pay'); if(ft) ft.textContent=tl(th);
     save();
   });
   document.querySelectorAll('.adInput').forEach(inp=>inp.oninput=()=>{ state.rows[+inp.dataset.ri].ad=inp.value; save(); });
@@ -541,9 +602,9 @@ function load(){
 
 function csv(){
   const y=state.yil,a=state.ay,n=gunSayisi(y,a);
-  let head=['Personel']; for(let d=1;d<=n;d++) head.push(d); head.push('Calisilan','Izin','Rapor','Devamsiz');
+  let head=['Personel']; for(let d=1;d<=n;d++) head.push(d); head.push('Calisilan','Izin','Rapor','Devamsiz','Yevmiye','Hakedis');
   let lines=[head.join(';')];
-  state.rows.forEach(r=>{ let row=['"'+(r.ad||'').replace(/"/g,'""')+'"']; for(let d=1;d<=n;d++) row.push(r.gunler[d]||''); row.push(fmt(calisilan(r)),say(r,'İ'),say(r,'R'),say(r,'X')); lines.push(row.join(';')); });
+  state.rows.forEach(r=>{ let row=['"'+(r.ad||'').replace(/"/g,'""')+'"']; for(let d=1;d<=n;d++) row.push(r.gunler[d]||''); row.push(fmt(calisilan(r)),say(r,'İ'),say(r,'R'),say(r,'X'),(+r.yevmiye||0),Math.round(hakedis(r))); lines.push(row.join(';')); });
   const blob=new Blob(['\ufeff'+lines.join('\r\n')],{type:'text/csv;charset=utf-8'});
   const url=URL.createObjectURL(blob),link=document.createElement('a');
   link.href=url; link.download=`puantaj-${AYLAR[a-1].toLowerCase()}-${y}.csv`; link.click(); URL.revokeObjectURL(url);
@@ -561,6 +622,11 @@ function csv(){
   $('btnPrint').onclick=()=>window.print();
   $('btnCsv').onclick=csv;
   $('btnClear').onclick=()=>{ if(confirm('Tüm cetvel temizlensin mi?')){ state.rows=[yeniSatir(''),yeniSatir(''),yeniSatir('')]; render(); } };
+  $('htOde').checked=!!state.htOde;
+  $('htOde').onchange=()=>{ state.htOde=$('htOde').checked; render(); };
+  document.querySelectorAll('input[name="mod"]').forEach(radio=>{ radio.checked=(radio.value===state.mod); radio.onchange=()=>{ if(radio.checked){ state.mod=radio.value; updateModUI(); render(); } }; });
+  $('btnHep').onclick=()=>{ const v=+$('hepYv').value||0; state.rows.forEach(r=>r.yevmiye=v); render(); };
+  updateModUI();
   render();
 })();
 </script>
