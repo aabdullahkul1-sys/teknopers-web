@@ -22,7 +22,8 @@ var A = {
   tatil:      ['/araclar/resmi-tatiller/','Resmî Tatiller Takvimi'],
   randevu:    ['/araclar/randevu-hatirlatma-mesaji/','Randevu Hatırlatma Mesajı'],
   salonmal:   ['/araclar/salon-acma-maliyeti/','Salon Açma Maliyeti Hesapla'],
-  salonkar:   ['/araclar/salon-karlilik-simulatoru/','Salon Kârlılık Simülatörü']
+  salonkar:   ['/araclar/salon-karlilik-simulatoru/','Salon Kârlılık Simülatörü'],
+  vardiya:    ['/araclar/vardiya-cizelgesi/','Vardiya Çizelgesi Aracı']
 };
 var B = {
   pdks:    ['/blog-pdks-nedir.html','PDKS nedir?'],
@@ -54,7 +55,7 @@ var SORULAR = [
   q('cihazsiz-pdks-nedir','Cihazsız PDKS nedir?','Puantaj & Personel Takibi',A.puantaj,B.pdks),
   q('parmak-izi-cihazi-olmadan-mesai-takibi-nasil-olur','Parmak izi cihazı olmadan mesai takibi nasıl olur?','Puantaj & Personel Takibi',A.puantaj,B.pdks),
   q('personel-gec-kalma-raporu-nasil-alinir','Personel geç kalma raporu nasıl alınır?','Puantaj & Personel Takibi',A.puantaj,B.puantaj),
-  q('vardiya-plani-nasil-yapilir','Vardiya planı nasıl yapılır?','Puantaj & Personel Takibi',A.puantaj,null),
+  q('vardiya-plani-nasil-yapilir','Vardiya planı nasıl yapılır?','Puantaj & Personel Takibi',A.vardiya,null),
   q('personel-izin-takibi-nasil-yapilir','Personel izin takibi nasıl yapılır?','Puantaj & Personel Takibi',A.izin,B.mesai),
   q('kucuk-isletmeler-icin-personel-takip-programi','Küçük işletmeler için personel takip programı nasıl olmalı?','Puantaj & Personel Takibi',A.puantaj,B.pdks),
 
@@ -147,7 +148,24 @@ var SORULAR = [
   { slug:'markette-stok-takibi-nasil-yapilir', soru:'Markette stok takibi nasıl yapılır?', kategori:'KOBİ Dijitalleşme', cozum:'market-ve-perakende-icin-stok-ve-personel-yonetimi', cozumAd:'Market ve perakende için stok ve personel yönetimi' },
   { slug:'perakende-kasa-ve-vardiya-nasil-yonetilir', soru:'Perakende işletmede kasa ve vardiya nasıl yönetilir?', kategori:'KOBİ Dijitalleşme', cozum:'market-ve-perakende-icin-stok-ve-personel-yonetimi', cozumAd:'Market ve perakende için stok ve personel yönetimi' },
   { slug:'50-200-personelli-atolyede-mesai-takibi-nasil-yapilir', soru:'50-200 personelli atölyede mesai takibi nasıl yapılır?', kategori:'Puantaj & Personel Takibi', arac:A.puantaj[0], aracAd:A.puantaj[1], cozum:'atolye-ve-orta-olcekli-uretim-icin-mesai-ve-vardiya-takibi', cozumAd:'Atölye ve orta ölçekli üretim için mesai ve vardiya takibi' },
-  { slug:'cok-istasyonlu-uretimde-personel-takibi-nasil-yapilir', soru:'Çok istasyonlu üretimde personel takibi nasıl yapılır?', kategori:'Puantaj & Personel Takibi', arac:A.puantaj[0], aracAd:A.puantaj[1], cozum:'atolye-ve-orta-olcekli-uretim-icin-mesai-ve-vardiya-takibi', cozumAd:'Atölye ve orta ölçekli üretim için mesai ve vardiya takibi' }
+  { slug:'cok-istasyonlu-uretimde-personel-takibi-nasil-yapilir', soru:'Çok istasyonlu üretimde personel takibi nasıl yapılır?', kategori:'Puantaj & Personel Takibi', arac:A.puantaj[0], aracAd:A.puantaj[1], cozum:'atolye-ve-orta-olcekli-uretim-icin-mesai-ve-vardiya-takibi', cozumAd:'Atölye ve orta ölçekli üretim için mesai ve vardiya takibi' },
+
+  // ── YENİ: HAKEDİŞ / YEVMİYE / VARDIYA (araç genişleme) ──
+  q('yevmiye-nasil-hesaplanir','Yevmiye (günlük ücret) nasıl hesaplanır?','Puantaj & Personel Takibi',A.puantaj,B.puantaj),
+  q('isci-hakedisi-nasil-hesaplanir','İşçi hakedişi nasıl hesaplanır?','İş Hukuku & Bordro',A.puantaj,B.puantaj),
+  q('puantaj-kisaltmalari-ne-anlama-gelir','Puantaj kısaltmaları (T, Y, İ, R, HT, RT) ne anlama gelir?','Puantaj & Personel Takibi',A.puantaj,B.puantaj),
+  q('sgk-eksik-gun-bildirimi-nasil-yapilir','SGK eksik gün bildirimi nasıl yapılır (07 puantaj kodu)?','İş Hukuku & Bordro',A.puantaj,B.puantaj),
+  q('vardiya-cizelgesi-nasil-hazirlanir','Vardiya çizelgesi nasıl hazırlanır?','Puantaj & Personel Takibi',A.vardiya,null),
+  q('gece-vardiyasi-kac-saat-olabilir','Gece vardiyası en fazla kaç saat olabilir?','İş Hukuku & Bordro',A.vardiya,null),
+  q('7-24-noktada-kac-personel-gerekir','7/24 bir noktada kaç personel ve kaç vardiya gerekir?','Puantaj & Personel Takibi',A.vardiya,null),
+  { slug:'taseron-hakedisi-nasil-hesaplanir', soru:'Taşeron hakedişi nasıl hesaplanır?', kategori:'Puantaj & Personel Takibi', arac:A.puantaj[0], aracAd:A.puantaj[1], cozum:'insaat-santiyeleri-icin-personel-taseron-ve-zimmet-takibi', cozumAd:'İnşaat şantiyeleri için personel ve zimmet' },
+
+  // ── YENİ: DİŞ + SEKTÖREL RANDEVU GENİŞLEME ──
+  { slug:'dis-klinigi-hasta-takip-programi-nasil-olmali', soru:'Diş kliniği hasta takip programı nasıl olmalı?', kategori:'Sektörel Randevu', arac:A.randevu[0], aracAd:A.randevu[1], blog:B.dis[0], blogAd:B.dis[1], cozum:'dis-klinikleri-icin-randevu-hasta-ve-seans-takibi', cozumAd:'Diş klinikleri için randevu, hasta ve seans takibi' },
+  q('dis-klinigi-randevu-programi-ucretsiz-mi','Diş kliniği randevu programı ücretsiz mi, fiyatları nasıl?','Sektörel Randevu',A.randevu,B.dis),
+  { slug:'veteriner-asi-hatirlatma-sistemi-nasil-kurulur', soru:'Veteriner kliniğinde aşı hatırlatma sistemi nasıl kurulur?', kategori:'Sektörel Randevu', arac:A.randevu[0], aracAd:A.randevu[1], blog:B.noshow[0], blogAd:B.noshow[1], cozum:'veteriner-klinikleri-icin-randevu-ve-hasta-takip-sistemi', cozumAd:'Veteriner klinikleri için randevu ve hasta takibi' },
+  { slug:'diyetisyen-danisan-olcum-takibi-nasil-yapilir', soru:'Diyetisyen danışan ölçüm ve ilerleme takibi nasıl yapılır?', kategori:'Sektörel Randevu', arac:A.randevu[0], aracAd:A.randevu[1], blog:B.seans[0], blogAd:B.seans[1], cozum:'diyetisyen-ve-danisan-takip-sistemi', cozumAd:'Diyetisyen ve danışan takip sistemi' }
 ];
 
 module.exports = { SORULAR: SORULAR };
+

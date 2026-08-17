@@ -1246,8 +1246,154 @@ Bu ölçekte elle veya kartla takip hem yavaş hem hataya açıktır. TEKNOPERS,
 3. Hangi personel, hangi istasyonda, ne kadar çalıştı **görünür** olur.
 4. Vardiya ve fazla mesai otomatik hesaplanır, bordroya baz olur.
 
-Sabit bir kapı cihazı yalnızca girişi kaydeder; üretim içindeki dağılımı göstermez. Konumlu mobil takip, "kim nerede çalışıyor" sorusunu net yanıtlar. TEKNOPERS bunu cihaz olmadan sağlar; puantaj aracını aşağıdan kullanabilirsin.`
+Sabit bir kapı cihazı yalnızca girişi kaydeder; üretim içindeki dağılımı göstermez. Konumlu mobil takip, "kim nerede çalışıyor" sorusunu net yanıtlar. TEKNOPERS bunu cihaz olmadan sağlar; puantaj aracını aşağıdan kullanabilirsin.`,
+
+'yevmiye-nasil-hesaplanir':
+`Yevmiye, bir işçinin bir günlük çalışması karşılığı aldığı ücrettir. İnşaat, tarım, temizlik gibi işlerde ücret çoğu zaman aylık değil yevmiye (gündelik) olarak belirlenir.
+
+## Nasıl hesaplanır?
+
+1. **Aylık ücretten:** aylık brüt ÷ 30 = günlük brüt. Bordroda ay her zaman 30 gün kabul edilir; ayın 28 veya 31 çekmesi sonucu değiştirmez.
+2. **Saatlik ücretten:** günlük çalışma saati × saatlik ücret.
+3. **Sözleşmede yevmiyeli çalışanda:** yevmiye zaten bellidir; ay sonu ödeme = çalışılan gün × yevmiye.
+
+Örnek: 2026 asgari ücrette aylık brüt 33.030 TL ise günlük brüt yaklaşık **1.101 TL**'dir. Çalışılan günü hesaplayıp yevmiyeyle çarpmak için yukarıdaki **puantaj cetveli + hakediş** aracını kullanabilirsin; araç her personel için aylık hakedişi otomatik verir.`,
+
+'isci-hakedisi-nasil-hesaplanir':
+`Hakediş, bir işçiye dönem sonunda ödenmesi gereken toplam tutardır. Temeli puantajdır: önce çalışılan gün/süre bulunur, sonra ücretle çarpılır.
+
+## Adımlar
+
+1. **Puantajdan çalışılan günü** bul (tam gün 1, yarım gün 0,5).
+2. **Yevmiye veya aylık ücretle** çarparak esas hakedişi bul.
+3. **Fazla mesai** (%50 zamlı), **hafta tatili/UBGT çalışması** gibi zamlı kalemleri ekle.
+4. **SGK primi ve gelir vergisini** kesip **net** tutara in.
+
+İlk üç adımı yukarıdaki puantaj aracı otomatik yapar (yevmiyeyi girmen yeterli). Kesintili net rakam için ise net–brüt maaş aracını kullanabilirsin. İmzalı puantaj, olası bir hakediş ihtilafında en güçlü belgendir.`,
+
+'puantaj-kisaltmalari-ne-anlama-gelir':
+`Türkiye'de puantaj için **hukuken zorunlu tek bir standart kısaltma yoktur**; kodlar işyerine ve sektöre göre değişir. Önemli olan, cetvelde bir "kod açıklama (lejant)" bulunmasıdır. En yaygın kullanılanlar:
+
+- **T / Ç:** Tam gün çalışıldı
+- **Y:** Yarım gün
+- **HT:** Hafta tatili
+- **RT:** Resmi / genel tatil (UBGT)
+- **Yİ:** Yıllık ücretli izin
+- **İ:** İzinli (mazeret / idari)
+- **Üİ:** Ücretsiz izin
+- **R:** Raporlu (istirahat)
+- **X / D:** Devamsız (gelmedi)
+- **FM:** Fazla mesai (ayrı saat sütunu)
+
+Yukarıdaki puantaj aracında T, Y, İ, R, X, HT ve RT kodları kullanılır ve çalışılan gün otomatik toplanır. Farklı bir düzen kullanıyorsan çıktına kendi lejantını ekleyebilirsin.`,
+
+'sgk-eksik-gun-bildirimi-nasil-yapilir':
+`Bir ay içinde **30 günden az** çalışan sigortalının eksik gün nedeni SGK'ya bildirilmek zorundadır. Bildirim, aylık prim ve hizmet belgesi (MUHSGK) kapsamında yapılır.
+
+## Özet
+
+1. **Eksik gün nedenini kodla:** örneğin "07 - Puantaj Kayıtları", istirahat, ücretsiz izin, devamsızlık gibi.
+2. **1-9 çalışanlı işyerlerinde** "07 - Puantaj" seçildiğinde, ekteki puantajda **sigortalının imzası zorunludur**.
+3. **İmzasız veya tutarsız** bir belge geçersiz sayılabilir; primler re'sen (idarece) tahakkuk ettirilebilir.
+
+Yani eksik gün bildiriminin dayanağı puantajdır ve puantajın **düzenli tutulup imzalatılması** şarttır. Aylık cetveli hızlıca hazırlamak için yukarıdaki puantaj aracını kullanabilirsin. Güncel kod ve süreç için SGK mevzuatını ya da mali müşavirini teyit et.`,
+
+'vardiya-cizelgesi-nasil-hazirlanir':
+`Vardiya çizelgesi, personelin ay boyunca hangi gün hangi vardiyada olacağını gösteren plandır. İyi bir çizelge iki şeyi birden sağlar: her vardiyada yeterli kişi bulunması (kapsama) ve yasal sınırların (gece 7,5 saat, haftalık 45 saat) korunması.
+
+## Adımlar
+
+1. **Vardiya türlerini** belirle (ör. sabah / akşam / gece) ve her vardiyada kaç kişi gerektiğini yaz.
+2. **Personeli günlere dağıt;** kişi başı gece ve fazla mesai yükünü dengele, kimseyi üst üste geceye bırakma.
+3. **Kapsama açığını** kontrol et: hiçbir gün bir vardiya boş kalmasın.
+4. **İzin ve raporları** çizelgeye işle, açık kalan saatleri yedekle.
+
+Yukarıdaki **vardiya çizelgesi aracı** ile her güne vardiyayı tıklayarak atar; günlük kapsamayı ve kişi başı gece sayısını anında görürsün. Bir vardiya bir günde boşsa araç bunu işaretler.`,
+
+'gece-vardiyasi-kac-saat-olabilir':
+`4857 sayılı İş Kanunu m.69'a göre bir işçi **gece postasında 7,5 saatten fazla çalıştırılamaz**. Bu sınır fazla mesaiyle dahi aşılamaz; gece çalışmasında fazla çalışma yaptırılamaz.
+
+## Dikkat edilecekler
+
+1. **Gece süresi** 20:00–06:00 arası kabul edilir.
+2. İşçi **sürekli gece** vardiyasında tutulamaz; postalar düzenli değiştirilmelidir.
+3. Gece/gündüz postası geçişinde çalışana yeterli dinlenme (uygulamada en az 11 saat) tanınmalıdır.
+4. 18 yaşından küçükler gece çalıştırılamaz; periyodik sağlık kontrolü gerekir.
+
+Çizelgede kişi başı gece sayısını takip etmek hem adalet hem uyum meselesidir. Yukarıdaki vardiya aracı gece sayısını her satırda otomatik gösterir. Güncel yönetmelik için mevzuatı teyit et.`,
+
+'7-24-noktada-kac-personel-gerekir':
+`Kesintisiz (7/24) bir noktayı doldurmak için en az **3 vardiya** gerekir: sabah, akşam ve gece. Ancak yalnızca 3 kişiyle sürdürülemez.
+
+## Neden 3 değil 4-5 kişi?
+
+1. **Hafta tatili:** her çalışana haftada en az 1 gün kesintisiz dinlenme gerekir; o gün için yedek şart.
+2. **Yıllık izin ve rapor:** kadro dar olduğunda bu günler açık kalır ve fazla mesaiye biner.
+3. **Rotasyon:** kimsenin sürekli gecede kalmaması için değişim gerekir.
+
+Pratikte kesintisiz bir nokta için **nokta başına 4-5 kişilik** bir kadro sağlıklıdır. Kadro planını ve kapsama açığını görmek için yukarıdaki vardiya çizelgesi aracını kullanabilirsin.`,
+
+'taseron-hakedisi-nasil-hesaplanir':
+`Taşeron hakedişi, bir alt işverenin (taşeronun) yaptığı iş karşılığı hak ettiği tutardır. Şantiyede çoğunlukla **ekip bazlı** hesaplanır ve asıl işverenin en çok ihtilaf yaşadığı kalemlerden biridir.
+
+## Nasıl hesaplanır?
+
+1. **Her taşeron/ekip için ayrı puantaj** tut; kimin kaç gün çalıştığı ekip bazında ayrışsın.
+2. **Gün × yevmiye** (veya imalat işlerinde iş kalemi × birim fiyat) ile hakedişi bul.
+3. **Avans, malzeme ve kesintileri** düş; ay sonu net hakedişe in.
+4. **SGK prim günleriyle** karşılaştır; taşeron puantajı SGK bildirimiyle tutarlı olmalı.
+
+Konumlu-saatli ve **imzalı** bir puantaj, ay sonu "kim ne kadar çalıştı" tartışmasını bitirir ve olası davada delildir. Ekip bazlı puantajı hızlıca tutmak için yukarıdaki araca ekip adını işyeri alanına yazarak başlayabilirsin.`,
+
+'dis-klinigi-hasta-takip-programi-nasil-olmali':
+`Diş kliniğinde "hasta takibi", randevunun ötesine geçer: tedavi çok seanslıdır ve her hastanın geçmişi, kalan seansı ve bakiyesi ayrı ayrı takip edilmelidir.
+
+## Olması gerekenler
+
+1. **Hasta kartı:** tedavi geçmişi, hekim notları, radyografi/dosya.
+2. **Çok seanslı tedavi ve kalan seans** takibi (paket mantığı).
+3. **Otomatik hatırlatma:** no-show diş kliniğinde pahalıdır; koltuk boş kalır.
+4. **Tedavi bakiyesi ve tahsilat** takibi.
+5. **KVKK'ya uygun** sağlık verisi saklama, yetkili erişim.
+
+Hatırlatma mesajlarını hemen denemek için randevu hatırlatma aracını kullanabilirsin; hasta, seans ve ödemeyi bir arada yürüten bütünleşik klinik takibi için TEKNOPERS klinik modülü uygundur.`,
+
+'dis-klinigi-randevu-programi-ucretsiz-mi':
+`Piyasada iki ayrı şey "ücretsiz" diye karışır: **ücretsiz yardımcı araçlar** (randevu hatırlatma mesajı üreteci gibi) ile **tam klinik yazılımı**. Yardımcı araçlar ücretsiz olabilir; hasta, seans ve ödemeyi yöneten bütün bir sistemin ise bir maliyeti vardır.
+
+## Karar verirken
+
+1. **Deneme/ücretsiz başlangıç** sunan çözümleri tercih et; önce kendi kliniğinde test et.
+2. Fiyatı genelde **klinik veya kullanıcı başına** aylık belirlenir; koltuk ve hekim sayısına göre değişir.
+3. Asıl soru maliyet değil, **no-show düşüşü ve tahsilat disiplini**: bir dolu koltuk çoğu zaman aylık yazılım bedelini karşılar.
+
+Ücretsiz hatırlatma aracını hemen kullanabilir, bütünleşik sistemi ise WhatsApp'tan bilgi alarak deneyebilirsin.`,
+
+'veteriner-asi-hatirlatma-sistemi-nasil-kurulur':
+`Veteriner kliniğinde asıl kayıp, tedaviden çok **kaçırılan kontrol ve aşı** ziyaretleridir. Aşı hatırlatması yapan klinik, düzenli gelir kaynağı olan tekrar ziyaretleri kaybetmez.
+
+## Nasıl kurulur?
+
+1. **Hasta (hayvan) + sahip kartı:** tür, yaş, geçmiş ve iletişim bilgisi bir arada.
+2. **Aşı takvimi:** her aşının bir sonraki tarihi kayda bağlanır.
+3. **Otomatik hatırlatma:** aşı/kontrol tarihine göre WhatsApp veya SMS ile sahibe uyarı.
+4. **İlaç ve stok** entegrasyonu ile klinikte eksik kalmaz.
+
+Hatırlatma mesajı şablonlarını hemen oluşturmak için randevu hatırlatma aracını kullanabilirsin; hasta kartı ve otomatik aşı hatırlatmasını bir arada yürütmek için TEKNOPERS veteriner modülü uygundur.`,
+
+'diyetisyen-danisan-olcum-takibi-nasil-yapilir':
+`Diyetisyende sonucu ve sadakati getiren şey, danışanın **ilerlemesinin** görünür olmasıdır. Ölçüm takibi yalnızca kilo değil, sürecin tamamıdır.
+
+## Nasıl yapılır?
+
+1. **Danışan kartı:** kilo, ölçü ve vücut analizi geçmişi tarih tarih tutulur.
+2. **Seans notları ve beslenme planı** karta bağlanır.
+3. **Paket/seans takibi:** örneğin 8 görüşmelik paketten kalan otomatik sayılır.
+4. **Randevu ve otomatik hatırlatma** ile devamsızlık düşer.
+
+Danışana grafikle ilerlemesini göstermek bağlılığı artırır. Randevu hatırlatma mesajlarını hemen denemek için ilgili aracı, ölçüm ve paket takibini bir arada yürütmek için TEKNOPERS diyetisyen modülünü kullanabilirsin.`
 
 };
 
 module.exports = { CEVAPLAR: CEVAPLAR };
+

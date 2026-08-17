@@ -2,6 +2,17 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "redirects": [
     {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.teknopers.com.tr"
+        }
+      ],
+      "destination": "https://teknopers.com.tr/:path*",
+      "permanent": true
+    },
+    {
       "source": "/urun/on-muhasebe-cari-teklif-programi",
       "destination": "/urun/on-muhasebe-programi",
       "permanent": true

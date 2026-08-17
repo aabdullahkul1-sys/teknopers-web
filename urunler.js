@@ -190,7 +190,7 @@ var URUNLER = [
   ],
   nedir:["Diş klinikleri için hekim/koltuk bazlı çakışmasız takvim, hasta ve seans takibi.","Otomatik hatırlatma no-show'u düşürür; tedavi paketi ve ödeme takibi bir arada yürür."],
   kimlerIcin:["dis-klinikleri-icin-randevu-hasta-ve-seans-takibi"],
-  sorular:["dis-klinigi-randevu-programi-nasil-secilir","randevu-kacirma-no-show-nasil-onlenir","seans-paketi-takibi-nasil-yapilir"],
+  sorular:["dis-klinigi-randevu-programi-nasil-secilir","dis-klinigi-hasta-takip-programi-nasil-olmali","dis-klinigi-randevu-programi-ucretsiz-mi","randevu-kacirma-no-show-nasil-onlenir","seans-paketi-takibi-nasil-yapilir"],
   araclar:[{yol:"/araclar/randevu-hatirlatma-mesaji/",ad:"Randevu Hatırlatma Aracı"}],
   ctaBaslik:"Boş koltuğu doldurun", ctaMetin:"Diş kliniği randevu sistemini görmek için bize yazın."
 },
@@ -208,7 +208,7 @@ var URUNLER = [
   ],
   nedir:["Veteriner klinikleri için hasta (hayvan) ve sahip kaydını birlikte tutan, randevu ve hatırlatmayı birleştiren sistem.","Aşı ve kontrol hatırlatması düzenli ziyareti ve hayvan sağlığını güvence altına alır."],
   kimlerIcin:["veteriner-klinikleri-icin-randevu-ve-hasta-takip-sistemi"],
-  sorular:["veteriner-klinigi-randevu-programi-nasil-olmali","randevu-kacirma-no-show-nasil-onlenir","randevu-hatirlatma-mesaji-ornekleri"],
+  sorular:["veteriner-klinigi-randevu-programi-nasil-olmali","veteriner-asi-hatirlatma-sistemi-nasil-kurulur","randevu-kacirma-no-show-nasil-onlenir","randevu-hatirlatma-mesaji-ornekleri"],
   araclar:[{yol:"/araclar/randevu-hatirlatma-mesaji/",ad:"Randevu Hatırlatma Aracı"}],
   ctaBaslik:"Aşı hatırlatmasıyla hastayı geri getirin", ctaMetin:"Veteriner randevu sistemini görmek için bize yazın."
 },
@@ -226,7 +226,7 @@ var URUNLER = [
   ],
   nedir:["Diyetisyenler için randevunun yanı sıra danışanın kilo/ölçü ilerlemesini ve paket kullanımını izleyen sistem.","İlerlemeyi görmek hem sonuç hem sadakat getirir; randevu hatırlatması no-show'u azaltır."],
   kimlerIcin:["diyetisyen-ve-danisan-takip-sistemi"],
-  sorular:["diyetisyen-randevu-ve-danisan-takip-programi","seans-paketi-takibi-nasil-yapilir","randevu-kacirma-no-show-nasil-onlenir"],
+  sorular:["diyetisyen-randevu-ve-danisan-takip-programi","diyetisyen-danisan-olcum-takibi-nasil-yapilir","seans-paketi-takibi-nasil-yapilir","randevu-kacirma-no-show-nasil-onlenir"],
   araclar:[{yol:"/araclar/randevu-hatirlatma-mesaji/",ad:"Randevu Hatırlatma Aracı"}],
   ctaBaslik:"Danışanın ilerlemesini görünür kılın", ctaMetin:"Diyetisyen takip sistemini görmek için bize yazın."
 },

@@ -27,6 +27,12 @@ var COZUMLER = [
 
 c({
   slug: 'fabrika-icin-cihazsiz-pdks-ve-personel-takibi',
+  nasilCalisir: ["Personel fabrikaya girerken kendi telefonundan konum doğrulamalı giriş yapar; kart veya parmak izi cihazına gerek kalmaz.", "Vardiya, mola ve fazla mesai saatleri otomatik puantaja işlenir; bölüm ve hat bazında ayrışır.", "Yönetici anlık olarak kim içeride, kim geç kaldı, hangi hatta kaç kişi var görür.", "Ay sonunda puantaj ve hakediş tablosu tek tıkla Excel'e ve bordroya baz olarak çıkar."],
+  sss: [
+    { s: "Cihazsız PDKS fabrikada güvenilir mi?", c: "Konum doğrulama ve cihaz bağı ile personel yalnızca fabrika sahasındayken mesai başlatabilir; başka yerden veya başkasının yerine giriş engellenir. Bu, sabit kart cihazından daha esnek ve hilesizdir." },
+    { s: "150 kişilik bir fabrikada kurulum ne kadar sürer?", c: "Donanım kurulumu olmadığı için genellikle 1 gün içinde devreye girer; personel telefonuna uygulamayı kurar ve ilk gün mesai başlatır." },
+    { s: "KVKK açısından konum takibi sorun olur mu?", c: "Konum yalnızca mesai başlat/bitir anında ve iş amacıyla alınır, sürekli takip yapılmaz; aydınlatma metni ve açık rıza akışı sistemle birlikte gelir." }
+  ],
   sektor: 'Üretim & Fabrika',
   urun: 'sirket',
   arac: '/araclar/puantaj-cetveli/', aracAd: 'Puantaj Cetveli Aracı',
@@ -65,6 +71,12 @@ c({
 
 c({
   slug: 'hukuk-burolari-icin-gorev-atama-ve-evrak-zimmet-sistemi',
+  nasilCalisir: ["Her dosya ve duruşma bir göreve bağlanır; sorumlu avukat/katip ve son tarih atanır.", "Devredilen evrak ve dosyalar zimmetle kayda geçer; kimde olduğu her an bellidir.", "Yaklaşan süreler ve duruşmalar otomatik hatırlatılır, atlanmaz.", "Tamamlanan işler ve evrak hareketleri raporlanır; denetim ve teftişte kayıt hazırdır."],
+  sss: [
+    { s: "Müvekkil evrakı kaybolursa sorumluluk nasıl belirlenir?", c: "Zimmet kaydı, evrağın en son kimde olduğunu tarih ve imzayla gösterir; bu hem iç sorumluluğu netleştirir hem olası bir uyuşmazlıkta belge olur." },
+    { s: "Duruşma ve süre takibi nasıl yapılır?", c: "Her göreve son tarih girilir; sistem yaklaşan süreleri sorumlusuna otomatik hatırlatır, böylece hak düşürücü süreler kaçmaz." },
+    { s: "Küçük bir büro için fazla ağır olmaz mı?", c: "Modül sade kurgulanmıştır; sadece görev, süre ve evrak zimmeti kullanılarak 2-3 kişilik bir büroda da pratik çalışır." }
+  ],
   sektor: 'Hukuk & Müşavirlik',
   urun: 'sirket',
   baslik: 'Hukuk Büroları için Görev Atama ve Evrak Zimmet Sistemi',
@@ -101,6 +113,12 @@ c({
 
 c({
   slug: 'temizlik-sirketleri-icin-mobil-pdks-ve-saha-takibi',
+  nasilCalisir: ["Personel gittiği lokasyonda telefonundan konum doğrulamalı giriş-çıkış yapar.", "Hangi ekip hangi binada kaç saat çalıştı otomatik kaydolur ve müşteri bazında ayrışır.", "Eksik giden veya erken ayrılan personel yöneticiye anında görünür.", "Ay sonunda lokasyon ve personel bazlı puantaj ile müşteri hakediş dökümü hazır olur."],
+  sss: [
+    { s: "Çok lokasyonlu ekiplerde kimin nerede olduğu nasıl takip edilir?", c: "Her giriş konumla damgalandığı için hangi personelin hangi binada olduğu anlık görünür; kağıt föyle mümkün olmayan bir netlik sağlar." },
+    { s: "Müşteriye çalışma saatini ispatlayabilir miyim?", c: "Evet; lokasyon bazlı konumlu-saatli kayıt, müşteriye o ay kaç saat hizmet verildiğinin belgesidir ve fatura/hakediş anlaşmazlığını bitirir." },
+    { s: "Personel telefonu yoksa ne olur?", c: "Ekip liderinin telefonundan toplu giriş veya ortak bir cihaz kullanılabilir; sistem tek cihazdan çok personel girişini destekler." }
+  ],
   sektor: 'Temizlik Hizmetleri',
   urun: 'sirket',
   baslik: 'Temizlik Şirketleri için Mobil PDKS ve Saha Takip Sistemi',
@@ -136,6 +154,12 @@ c({
 
 c({
   slug: 'guvenlik-sirketleri-icin-devriye-ve-nokta-kontrol',
+  nasilCalisir: ["Her nokta için vardiya çizelgesi kurulur; sabah/akşam/gece kapsaması net görünür.", "Güvenlik görevlisi devriye noktalarını telefonuyla (QR/NFC/konum) tarayarak tur kaydı bırakır.", "Atlanan tur veya boş kalan vardiya yöneticiye anında bildirilir.", "Fazla mesai, gece sayısı ve hakediş otomatik hesaplanır, bordroya baz olur."],
+  sss: [
+    { s: "Devriye turlarının yapıldığını nasıl ispatlarım?", c: "Her nokta tarandığında zaman ve konum damgası kaydolur; müşteriye o gece hangi turların kaçta atıldığı raporla sunulur." },
+    { s: "7/24 bir nokta için kaç personel gerekir?", c: "En az 3 vardiya gerekir; izin ve rapor payıyla nokta başına 4-5 kişilik kadro sağlıklıdır. Sistem kapsama açığını önceden gösterir." },
+    { s: "Gece vardiyası sınırlarına uyumu sağlar mı?", c: "Sistem kişi başı gece sayısını takip eder ve sürekli geceye kalan personeli işaretler; İş Kanunu'nun gece 7,5 saat sınırına uyumu kolaylaştırır." }
+  ],
   sektor: 'Güvenlik Hizmetleri',
   urun: 'sirket',
   baslik: 'Güvenlik Şirketleri için Devriye ve Nokta Kontrol Sistemi',
@@ -170,6 +194,12 @@ c({
 
 c({
   slug: 'insaat-santiyeleri-icin-personel-taseron-ve-zimmet-takibi',
+  nasilCalisir: ["Her taşeron ve ekip ayrı tanımlanır; işçiler konumlu-saatli mesai başlatır.", "Puantaj taşeron bazında otomatik oluşur; her ekibin hakedişi ayrı görünür.", "Verilen ekipman ve malzeme zimmetle kayda geçer, iade takibi yapılır.", "Ay sonu taşeron hakedişi ve SGK prim günleri karşılaştırılır, uyuşmazlık kalmaz."],
+  sss: [
+    { s: "Taşeron hakedişi nasıl ayrışır?", c: "Her işçi bir taşerona/ekibe bağlıdır; puantaj otomatik olarak ekip bazında toplanır ve her taşeronun gün × yevmiye hakedişi ayrı çıkar." },
+    { s: "Şantiyede kağıt föy neden yetmez?", c: "Kağıt föy kaybolur, sonradan doldurulur ve ihtilafta işçi lehine yorumlanır; konumlu-saatli dijital kayıt hem doğru hem davada delildir." },
+    { s: "Ekipman kaybı nasıl önlenir?", c: "Verilen her alet zimmetle işçiye kaydedilir; iade edilmeyen ekipman ay sonunda net görünür ve hakedişten mahsup edilebilir." }
+  ],
   sektor: 'İnşaat & Şantiye',
   urun: 'sirket',
   arac: '/araclar/puantaj-cetveli/', aracAd: 'Puantaj Cetveli Aracı',
@@ -205,6 +235,12 @@ c({
 
 c({
   slug: 'depo-ve-lojistik-icin-stok-ve-demirbas-zimmet-yonetimi',
+  nasilCalisir: ["Ürünler barkodla tanımlanır; giriş-çıkış ve sayım telefondan barkod okutularak yapılır.", "Stok anlık güncellenir; kritik seviyenin altına düşen ürün otomatik uyarı verir.", "Forklift, terminal gibi demirbaşlar personele zimmetle verilir ve takip edilir.", "Sayım farkları ve stok hareketleri raporlanır; kayıp ve fire görünür olur."],
+  sss: [
+    { s: "Depo sayımı ne kadar hızlanır?", c: "Barkod okutmayla sayım elle listeye göre kat kat hızlanır ve insan hatası düşer; sayım farkı anında raporlanır." },
+    { s: "Demirbaş kimde, nasıl bilinir?", c: "Her demirbaş zimmetle bir personele kaydedilir; cihaz veya ekipmanın en son kimde olduğu tarihiyle görünür." },
+    { s: "Küçük bir depoda barkod sistemi pahalı değil mi?", c: "Ek donanım gerekmez; personelin telefonu barkod okuyucu olarak çalışır, böylece maliyet minimumda kalır." }
+  ],
   sektor: 'Depo & Lojistik',
   urun: 'sirket',
   baslik: 'Depo ve Lojistik için Stok ve Demirbaş Zimmet Yönetimi',
@@ -241,6 +277,12 @@ c({
 
 c({
   slug: 'uretim-ve-toptan-icin-teklif-cari-ve-stok-yonetimi',
+  nasilCalisir: ["Müşteriye profesyonel teklif hazırlanır; onaylanınca siparişe dönüşür.", "Cari hesap otomatik işler; kim ne kadar borçlu, vadesi ne zaman net görünür.", "Stok siparişle bağlıdır; çıkan ürün stoktan düşer, kritik seviye uyarır.", "Tahsilat ve vade takibi yapılır; geciken alacaklar raporlanır."],
+  sss: [
+    { s: "Teklif hazırlamak neden hızlanır?", c: "Ürün ve fiyatlar sistemde tanımlı olduğundan teklif dakikalar içinde oluşur ve tek tıkla PDF/WhatsApp ile gönderilir." },
+    { s: "Cari alacak takibi nasıl kolaylaşır?", c: "Her satış ve tahsilat carihe işlenir; vadesi gelen ve geçen alacaklar otomatik listelenir, unutulan tahsilat kalmaz." },
+    { s: "Stok ile satış birbirine bağlı mı?", c: "Evet; onaylanan siparişte ürün stoktan otomatik düşer, böylece elde olmayan ürünü satma ve stok tutmama sorunu ortadan kalkar." }
+  ],
   sektor: 'Üretim & Toptan Satış',
   urun: 'sirket',
   baslik: 'Üretim ve Toptan Satış için Teklif, Cari ve Stok Yönetimi',
@@ -277,6 +319,12 @@ c({
 
 c({
   slug: 'isletmeler-icin-ekipman-ve-evrak-zimmet-takibi',
+  nasilCalisir: ["Her ekipman, cihaz ve önemli evrak sisteme tanımlanır.", "Personele teslimde zimmet kaydı tutulur; kim, ne, ne zaman aldı bellidir.", "İade ve devir hareketleri kayda geçer; zimmet zinciri kopmaz.", "İşten ayrılışta personelin üzerindeki tüm zimmet tek ekranda görünür ve teslim alınır."],
+  sss: [
+    { s: "Zimmet tutanağı neden önemli?", c: "İmzalı zimmet, bir ekipman veya evrağın kimde olduğunu belgeler; kayıp, hasar veya haksız suçlama durumunda işverenin en güçlü savunmasıdır." },
+    { s: "İşten çıkışta eksik teslim nasıl önlenir?", c: "Personelin üzerindeki tüm zimmetler tek ekranda listelenir; teslim edilmeyen kalem net görünür ve ilişik kesme buna göre yapılır." },
+    { s: "Hangi işletmeler için uygundur?", c: "Ofis, atölye, saha ekibi fark etmeksizin cihaz, araç, kıyafet veya evrak zimmeti tutan her işletme için uygundur." }
+  ],
   sektor: 'Tüm Sektörler · Zimmet',
   urun: 'sirket',
   baslik: 'İşletmeler için Ekipman ve Evrak Zimmet Takibi',
@@ -311,6 +359,12 @@ c({
 
 c({
   slug: 'dis-klinikleri-icin-randevu-hasta-ve-seans-takibi',
+  nasilCalisir: ["Hekim ve koltuk bazlı çakışmasız takvimde randevu oluşturulur.", "Hasta kartına tedavi geçmişi, kalan seans ve notlar işlenir.", "Randevudan önce otomatik WhatsApp/SMS hatırlatma gider; no-show düşer.", "Tedavi bakiyesi ve tahsilat takip edilir; ödeme geçmişi hasta kartında görünür."],
+  sss: [
+    { s: "No-show'u gerçekten azaltır mı?", c: "Randevudan bir gün önce giden otomatik hatırlatma, gelmeme oranını belirgin düşürür; boşalan koltuk için erken haber alınır." },
+    { s: "Çok seanslı tedavide kalan seans nasıl takip edilir?", c: "Her tedavi bir pakete bağlanır; hastanın kaç seansı kaldığı otomatik sayılır ve 'kaç seansım vardı' tartışması biter." },
+    { s: "Hasta verisi KVKK'ya uygun saklanır mı?", c: "Hasta ve tedavi verisi yetkili erişimle korunur; aydınlatma ve rıza akışı sistemle birlikte gelir." }
+  ],
   sektor: 'Diş Klinikleri',
   urun: 'salon',
   arac: '/araclar/randevu-hatirlatma-mesaji/', aracAd: 'Randevu Hatırlatma Aracı',
@@ -347,6 +401,12 @@ c({
 
 c({
   slug: 'guzellik-ve-estetik-merkezleri-icin-randevu-ve-seans-programi',
+  nasilCalisir: ["Personel ve kabin bazlı takvimde randevu alınır; çakışma engellenir.", "Müşteri kartında geçmiş işlemler, paket ve kalan seans tutulur.", "Otomatik hatırlatma ve onay mesajları gönderilir.", "Paket satışı, kasa ve personel primi tek ekranda yönetilir."],
+  sss: [
+    { s: "Paket ve seans takibi nasıl yapılır?", c: "Müşteriye satılan paket sisteme işlenir; her ziyarette kalan seans otomatik düşer ve bitişe yakın yenileme hatırlatılır." },
+    { s: "Personel primi nasıl hesaplanır?", c: "Her işlemin hangi personel tarafından yapıldığı kaydedilir; ay sonu ciro ve prim otomatik çıkar." },
+    { s: "Randevu hatırlatması müşteri memnuniyetini artırır mı?", c: "Evet; zamanında hatırlatma hem no-show'u düşürür hem müşteriye kurumsal ve ilgili bir izlenim verir." }
+  ],
   sektor: 'Güzellik & Estetik',
   urun: 'salon',
   arac: '/araclar/salon-karlilik-simulatoru/', aracAd: 'Salon Kârlılık Simülatörü',
@@ -383,6 +443,12 @@ c({
 
 c({
   slug: 'kuafor-ve-berberler-icin-online-randevu-ve-crm',
+  nasilCalisir: ["Personel bazlı takvimde online veya telefonla randevu alınır.", "Müşteri kartında ziyaret geçmişi, tercih ve harcama tutulur.", "Randevu öncesi otomatik hatırlatma gönderilir.", "Kasa, gün sonu raporu ve personel primi otomatik hesaplanır."],
+  sss: [
+    { s: "Online randevu nasıl çalışır?", c: "Müşteri uygun saati kendisi seçer; randevu takvime düşer ve size de bildirilir, telefon trafiği azalır." },
+    { s: "Müşteri sadakati nasıl artırılır?", c: "Ziyaret geçmişi ve harcama kayıtlı olduğundan düzenli müşteriye özel hatırlatma ve teklif yapılabilir; geri dönüş artar." },
+    { s: "Berber dükkanı için fazla mı gelir?", c: "Hayır; sadece takvim, müşteri kartı ve kasa kullanılarak tek kişilik bir dükkanda da sade çalışır." }
+  ],
   sektor: 'Kuaför & Berber',
   urun: 'salon',
   arac: '/araclar/randevu-hatirlatma-mesaji/', aracAd: 'Randevu Hatırlatma Aracı',
@@ -419,6 +485,12 @@ c({
 
 c({
   slug: 'veteriner-klinikleri-icin-randevu-ve-hasta-takip-sistemi',
+  nasilCalisir: ["Randevu takvimine muayene ve işlem kaydı yapılır.", "Hasta (hayvan) ve sahip kartı birlikte tutulur; tedavi geçmişi işlenir.", "Aşı ve kontrol tarihine göre otomatik hatırlatma sahibe gider.", "İlaç stoğu ve tahsilat tek ekranda takip edilir."],
+  sss: [
+    { s: "Aşı hatırlatması neden önemli?", c: "Aşı ve kontrol, kliniğin düzenli gelir kaynağıdır; otomatik hatırlatma bu tekrar ziyaretlerin kaçmasını önler." },
+    { s: "Hayvan ve sahip bilgisi birlikte mi tutulur?", c: "Evet; her hasta kartı sahibiyle eşleşir, tedavi geçmişi ve iletişim tek yerde olur, kayıt karışmaz." },
+    { s: "İlaç stoğu takip edilebilir mi?", c: "Klinikte kullanılan ilaç ve malzeme stok modülüyle takip edilir; kritik seviyede uyarı gelir." }
+  ],
   sektor: 'Veteriner Klinikleri',
   urun: 'salon',
   arac: '/araclar/randevu-hatirlatma-mesaji/', aracAd: 'Randevu Hatırlatma Aracı',
@@ -455,6 +527,12 @@ c({
 
 c({
   slug: 'diyetisyen-ve-danisan-takip-sistemi',
+  nasilCalisir: ["Randevu takvimine görüşmeler işlenir; otomatik hatırlatma gider.", "Danışan kartında kilo, ölçü ve vücut analizi geçmişi tarih tarih tutulur.", "Beslenme planı ve seans notları karta bağlanır.", "Paket/seans kullanımı ve tahsilat takip edilir."],
+  sss: [
+    { s: "Danışan ilerlemesi nasıl gösterilir?", c: "Kilo ve ölçü geçmişi grafikle sunulur; danışan sonucu görünce motivasyon ve bağlılık artar." },
+    { s: "Paket takibi nasıl yapılır?", c: "Örneğin 8 görüşmelik paket sisteme işlenir; her görüşmede kalan otomatik düşer ve bitişte yenileme hatırlatılır." },
+    { s: "Sağlık verisi güvenli mi?", c: "Danışan verisi yetkili erişimle korunur ve KVKK aydınlatma/rıza akışıyla birlikte yönetilir." }
+  ],
   sektor: 'Diyetisyen',
   urun: 'salon',
   arac: '/araclar/randevu-hatirlatma-mesaji/', aracAd: 'Randevu Hatırlatma Aracı',
@@ -491,6 +569,12 @@ c({
 
 c({
   slug: 'pilates-ve-spor-studyolari-icin-uyelik-sistemi',
+  nasilCalisir: ["Grup ve özel ders takvimi kontenjanla kurulur.", "Üyelik ve paket sisteme işlenir; kalan ders ve bitiş tarihi takip edilir.", "Derse katılım (yoklama) kaydedilir.", "Üyelik bitişinden önce otomatik yenileme hatırlatması gönderilir."],
+  sss: [
+    { s: "Kalan ders ve üyelik bitişi nasıl takip edilir?", c: "Her üyeye tanımlı paketten katıldığı ders düşer; kalan ders ve bitiş tarihi otomatik görünür, 'dersim var mıydı' sorusu biter." },
+    { s: "Yenileme oranı nasıl artar?", c: "Üyelik bitişi önceden hatırlatıldığında yenileme belirgin artar; sistem bunu otomatik yapar." },
+    { s: "Kontenjan yönetimi var mı?", c: "Evet; her dersin kontenjanı tanımlıdır, dolan derse yeni kayıt engellenir ve bekleme yönetilebilir." }
+  ],
   sektor: 'Pilates & Spor Stüdyoları',
   urun: 'salon',
   arac: '/araclar/randevu-hatirlatma-mesaji/', aracAd: 'Randevu Hatırlatma Aracı',
@@ -527,6 +611,12 @@ c({
 
 c({
   slug: 'mali-musavir-ve-muhasebe-ofisleri-icin-evrak-ve-surec-takibi',
+  nasilCalisir: ["Her mükellef için beyanname ve evrak süreçleri göreve bağlanır.", "Gelen-giden evrak zimmetle kayda geçer; kimde olduğu bellidir.", "Beyan ve bildirim son tarihleri otomatik hatırlatılır.", "Tamamlanan işler ve eksik evrak mükellef bazında raporlanır."],
+  sss: [
+    { s: "Beyanname süreleri nasıl kaçmaz?", c: "Her sürece son tarih girilir; sistem yaklaşan beyanları sorumlusuna hatırlatır, ceza doğuran gecikmeler önlenir." },
+    { s: "Mükellef evrakı takibi nasıl kolaylaşır?", c: "Gelen her evrak mükellefe ve sürece bağlanır; hangi belgenin eksik olduğu tek ekranda görünür." },
+    { s: "Ofis içi iş dağılımı görünür mü?", c: "Evet; hangi personelin hangi mükellefte ne işi olduğu ve yükü raporlanır, iş takibi netleşir." }
+  ],
   sektor: 'Mali Müşavir & Muhasebe Ofisleri',
   urun: 'sirket',
   baslik: 'Mali Müşavir ve Muhasebe Ofisleri için Evrak ve Süreç Takip Sistemi',
@@ -564,6 +654,12 @@ c({
 
 c({
   slug: 'otel-restoran-ve-kafeler-icin-personel-ve-vardiya-takibi',
+  nasilCalisir: ["Yoğun ve sakin saatlere göre vardiya çizelgesi kurulur.", "Personel konum doğrulamalı giriş-çıkış yapar; part-time saatler net tutulur.", "Kapsama açığı (boş kalan vardiya) yöneticiye görünür.", "Fazla mesai ve hakediş otomatik hesaplanır, bordroya baz olur."],
+  sss: [
+    { s: "Part-time ve düzensiz vardiya nasıl takip edilir?", c: "Her personelin fiilî giriş-çıkışı konumla kaydedilir; part-time çalışanın saati net çıkar, eksik/fazla ödeme olmaz." },
+    { s: "Yoğun saatlerde yeterli personel var mı, nasıl görülür?", c: "Vardiya çizelgesi her öğün için kapsamayı gösterir; açık kalan saat önceden fark edilir ve yedeklenir." },
+    { s: "Bahşiş ve prim dağıtımı yapılabilir mi?", c: "Ciro ve personel kaydı tutulduğundan prim/bahşiş dağıtımı adil ve şeffaf yapılabilir." }
+  ],
   sektor: 'Otel, Restoran & Kafe',
   urun: 'sirket',
   arac: '/araclar/puantaj-cetveli/', aracAd: 'Puantaj Cetveli Aracı',
@@ -600,6 +696,12 @@ c({
 
 c({
   slug: 'nakliye-kargo-ve-filo-icin-saha-personel-ve-arac-zimmet-takibi',
+  nasilCalisir: ["Şoför ve saha personeli konum doğrulamalı mesai başlatır.", "Her araç bir şoföre zimmetle bağlanır; kilometre ve teslim kaydı tutulur.", "Fazla mesai ve saha süresi otomatik puantaja işlenir.", "Araç iade, hasar ve yakıt anlaşmazlıkları zimmet kaydıyla çözülür."],
+  sss: [
+    { s: "Şoförün sahada olduğu nasıl doğrulanır?", c: "Konumlu mesai başlatma, şoförün nerede ve ne zaman çalışmaya başladığını gösterir; denetlenemeyen mesai sorunu biter." },
+    { s: "Araç kimde, hasar kime ait bilinir mi?", c: "Her araç şoföre zimmetle kayıtlıdır; teslim ve iade tarihiyle görünür, hasar ve yakıt sorumluluğu netleşir." },
+    { s: "Filo büyükse yönetilebilir mi?", c: "Evet; araç ve personel sayısı arttıkça da her aracın kimde olduğu ve durumu tek ekranda takip edilir." }
+  ],
   sektor: 'Nakliye, Kargo & Filo',
   urun: 'sirket',
   arac: '/araclar/puantaj-cetveli/', aracAd: 'Puantaj Cetveli Aracı',
@@ -635,6 +737,12 @@ c({
 
 c({
   slug: 'market-ve-perakende-icin-stok-ve-personel-yonetimi',
+  nasilCalisir: ["Ürünler barkodla tanımlanır; stok giriş-çıkışı okutmayla yapılır.", "Kritik seviyenin altına düşen ürün otomatik sipariş uyarısı verir.", "Personel vardiya ve kasa devri kaydedilir.", "Stok farkı, kasa ve personel raporları gün sonunda hazır olur."],
+  sss: [
+    { s: "Raf boşalmadan sipariş nasıl verilir?", c: "Kritik stok seviyesi tanımlanır; ürün bu seviyeye inince sistem uyarır, böylece popüler ürün rafta bitmez." },
+    { s: "Kasa ve vardiya devri nasıl takip edilir?", c: "Her vardiyada kasa açılış-kapanışı kaydedilir; açık/fazla net görünür ve sorumluluk vardiyaya bağlanır." },
+    { s: "Küçük markette barkod pahalı değil mi?", c: "Personelin telefonu barkod okuyucu olarak çalışır; ek donanım gerekmediğinden maliyet düşüktür." }
+  ],
   sektor: 'Market & Perakende',
   urun: 'sirket',
   baslik: 'Market ve Perakende için Stok ve Personel Yönetimi',
@@ -669,6 +777,12 @@ c({
 
 c({
   slug: 'atolye-ve-orta-olcekli-uretim-icin-mesai-ve-vardiya-takibi',
+  nasilCalisir: ["Vardiya çizelgesi istasyon ve hat bazında kurulur.", "Personel konum doğrulamalı giriş yapar; hangi istasyonda çalıştığı kaydolur.", "Vardiya, fazla mesai ve taşeron hakedişi otomatik hesaplanır.", "İstasyon bazlı çalışma ve verim raporlanır, bordroya baz olur."],
+  sss: [
+    { s: "50-200 kişilik atölyede mesai nasıl takip edilir?", c: "Personel telefonundan konumlu giriş yapar; pahalı biyometrik cihaza gerek kalmadan vardiya ve fazla mesai otomatik hesaplanır." },
+    { s: "Hangi istasyonda kim çalıştı görülür mü?", c: "Evet; giriş istasyona bağlandığından üretim içindeki dağılım ve verim tek ekranda görünür." },
+    { s: "Taşeron hakedişi ayrışır mı?", c: "Taşeron ve ekip bazlı puantaj otomatik oluşur; her ekibin hakedişi ayrı çıkar ve SGK günleriyle karşılaştırılır." }
+  ],
   sektor: 'Atölye & Orta Ölçekli Üretim',
   urun: 'sirket',
   arac: '/araclar/puantaj-cetveli/', aracAd: 'Puantaj Cetveli Aracı',
