@@ -25,11 +25,11 @@
 <meta property="og:description" content="Hazır randevu hatırlatma, onay ve geri kazanım mesajları üret, tek tıkla kopyala. Ücretsiz.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://teknopers.com.tr/araclar/randevu-hatirlatma-mesaji/">
-<meta property="og:image" content="https://teknopers.com.tr/og-image.png">
+<meta property="og:image" content="https://teknopers.com.tr/og-araclar.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://teknopers.com.tr/og-image.png">
+<meta name="twitter:image" content="https://teknopers.com.tr/og-araclar.png">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -219,6 +219,7 @@ footer p{font-size:14px;max-width:360px}
   </div>
 
   <!-- TEK CTA -->
+  <div style="max-width:720px;margin:26px auto;padding:16px 20px;border:1px solid #EAD9A8;border-radius:16px;background:linear-gradient(135deg,#FFF9EC,#FFFDF7);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px"><div style="min-width:200px;flex:1"><div style="font-weight:800;font-size:15.5px;color:#0B1220;line-height:1.3">Beğendin mi? Gerçeğini gör.</div><div style="font-weight:500;font-size:13px;color:#6B7280;margin-top:3px;line-height:1.5">Canlı demoyu dene; sonra 15 gün ücretsiz + 1 yıl 1.000 ₺ kampanyasına katıl.</div></div><div style="display:flex;gap:9px;flex-wrap:wrap"><a href="/demo#salon" style="display:inline-flex;align-items:center;gap:6px;padding:11px 17px;border-radius:12px;background:#0B1220;color:#fff;font-weight:700;font-size:14px;text-decoration:none">▶ Canlı Demo</a><a href="/kampanya" style="display:inline-flex;align-items:center;gap:6px;padding:11px 17px;border-radius:12px;background:linear-gradient(135deg,#E0A100,#B8860B);color:#0B1220;font-weight:800;font-size:14px;text-decoration:none;box-shadow:0 8px 20px rgba(224,161,0,.3)">🚀 Kampanya →</a></div></div>
   <section class="cta">
     <h2>Bu mesajları tek tek yazmayı bırakın.</h2>
     <p>TeknoPersSalon, randevu saatinden önce hatırlatma ve onay mesajlarını müşterilerinize <strong>otomatik</strong> gönderir; gelmeyen müşteriye geri dönüşü de kendisi yapar. No-show düşer, takvim dolu kalır. TEKNOPERS'in salon & randevu ürünü.</p>
@@ -272,50 +273,108 @@ footer p{font-size:14px;max-width:360px}
   </div>
 </footer>
 
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org","@type":"WebApplication","name":"Randevu Hatırlatma Mesajı Oluşturucu",
-  "url":"https://teknopers.com.tr/araclar/randevu-hatirlatma-mesaji/","applicationCategory":"BusinessApplication",
-  "operatingSystem":"Web","inLanguage":"tr-TR","offers":{"@type":"Offer","price":"0","priceCurrency":"TRY"},
-  "description":"Kuaför, klinik ve diğer sektörler için hazır randevu hatırlatma, onay ve geri kazanım mesajları üreten ücretsiz araç. SMS/WhatsApp, kopyala, karakter sayacı."
-}
-</script>
+<!-- Yapisal veri (JSON-LD): kurulus + kirinti + uygulama + SSS -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "Randevu hatırlatma mesajı ne zaman gönderilmeli?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "En etkili zaman randevudan 1 gün (24 saat) öncesidir. Bazı işletmeler ayrıca randevu oluşturulduğunda bir onay mesajı ve randevudan birkaç saat önce ikinci bir kısa hatırlatma gönderir."
+      "@type": "Organization",
+      "@id": "https://teknopers.com.tr/#org",
+      "name": "TEKNOPERS",
+      "url": "https://teknopers.com.tr/",
+      "logo": "https://teknopers.com.tr/icon-512.png",
+      "sameAs": [
+        "https://www.instagram.com/teknopers.saha",
+        "https://www.linkedin.com/company/teknopers/",
+        "https://www.facebook.com/share/1DnvkpxuM1/"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Ana Sayfa",
+          "item": "https://teknopers.com.tr/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Araçlar",
+          "item": "https://teknopers.com.tr/araclar/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Randevu Hatırlatma Mesajı Oluşturucu",
+          "item": "https://teknopers.com.tr/araclar/randevu-hatirlatma-mesaji/"
+        }
+      ]
+    },
+    {
+      "@type": "WebApplication",
+      "name": "Randevu Hatırlatma Mesajı Oluşturucu",
+      "url": "https://teknopers.com.tr/araclar/randevu-hatirlatma-mesaji/",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "inLanguage": "tr-TR",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "TRY"
+      },
+      "description": "Kuaför, klinik ve diğer sektörler için hazır randevu hatırlatma, onay ve geri kazanım mesajları üreten ücretsiz araç. SMS/WhatsApp, kopyala, karakter sayacı.",
+      "@id": "https://teknopers.com.tr/araclar/randevu-hatirlatma-mesaji/#app",
+      "browserRequirements": "JavaScript etkin modern bir tarayıcı gerekir",
+      "isAccessibleForFree": true,
+      "dateModified": "2026-07-01",
+      "screenshot": "https://teknopers.com.tr/og-araclar.png",
+      "publisher": {
+        "@id": "https://teknopers.com.tr/#org"
+      },
+      "provider": {
+        "@id": "https://teknopers.com.tr/#org"
       }
     },
     {
-      "@type": "Question",
-      "name": "SMS mi WhatsApp mı daha iyi?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "SMS'in açılma oranı yüksektir ve telefon rehberi gerektirmez; WhatsApp ise ücretsiz olabilir, emoji ve daha uzun metne izin verir ancak müşterinin numaranızı görmesi/onay vermesi gerekir. Çoğu işletme ikisini birlikte kullanır."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Türkçe karakter SMS maliyetini neden artırıyor?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Standart SMS 160 karakterdir; ancak ş, ğ, ı, İ gibi karakterler mesajı Unicode formatına çevirir ve sınır 70 karaktere düşer. Bu da tek mesajın birden fazla SMS olarak faturalanmasına yol açabilir."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Bu mesajları toplu ve otomatik gönderebilir miyim?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Bu araç mesajı hazırlar; toplu ve otomatik gönderim için randevu sistemine ihtiyaç vardır. TeknoPersSalon randevu saatine göre hatırlatmaları otomatik gönderir."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Randevu hatırlatma mesajı ne zaman gönderilmeli?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "En etkili zaman randevudan 1 gün (24 saat) öncesidir. Bazı işletmeler ayrıca randevu oluşturulduğunda bir onay mesajı ve randevudan birkaç saat önce ikinci bir kısa hatırlatma gönderir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "SMS mi WhatsApp mı daha iyi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SMS'in açılma oranı yüksektir ve telefon rehberi gerektirmez; WhatsApp ise ücretsiz olabilir, emoji ve daha uzun metne izin verir ancak müşterinin numaranızı görmesi/onay vermesi gerekir. Çoğu işletme ikisini birlikte kullanır."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Türkçe karakter SMS maliyetini neden artırıyor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Standart SMS 160 karakterdir; ancak ş, ğ, ı, İ gibi karakterler mesajı Unicode formatına çevirir ve sınır 70 karaktere düşer. Bu da tek mesajın birden fazla SMS olarak faturalanmasına yol açabilir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Bu mesajları toplu ve otomatik gönderebilir miyim?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bu araç mesajı hazırlar; toplu ve otomatik gönderim için randevu sistemine ihtiyaç vardır. TeknoPersSalon randevu saatine göre hatırlatmaları otomatik gönderir."
+          }
+        }
+      ],
+      "@id": "https://teknopers.com.tr/araclar/randevu-hatirlatma-mesaji/#faq"
     }
   ]
 }
