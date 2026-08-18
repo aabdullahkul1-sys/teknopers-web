@@ -156,11 +156,11 @@ footer p{font-size:14px;max-width:360px}
 <meta name="theme-color" content="#0B1424">
 <meta property="og:site_name" content="TEKNOPERS">
 <meta property="og:locale" content="tr_TR">
-<meta property="og:image" content="https://teknopers.com.tr/og-image.png">
+<meta property="og:image" content="https://teknopers.com.tr/og-araclar.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://teknopers.com.tr/og-image.png">
+<meta name="twitter:image" content="https://teknopers.com.tr/og-araclar.png">
 <style id="mnav-fix">
 .mnav-btn{display:none}
 @media(max-width:880px){
@@ -249,6 +249,7 @@ footer p{font-size:14px;max-width:360px}
   </section>
 
   <!-- TEK CTA -->
+  <div style="max-width:720px;margin:26px auto;padding:16px 20px;border:1px solid #EAD9A8;border-radius:16px;background:linear-gradient(135deg,#FFF9EC,#FFFDF7);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px"><div style="min-width:200px;flex:1"><div style="font-weight:800;font-size:15.5px;color:#0B1220;line-height:1.3">Beğendin mi? Gerçeğini gör.</div><div style="font-weight:500;font-size:13px;color:#6B7280;margin-top:3px;line-height:1.5">Canlı demoyu dene; sonra 15 gün ücretsiz + 1 yıl 1.000 ₺ kampanyasına katıl.</div></div><div style="display:flex;gap:9px;flex-wrap:wrap"><a href="/demo" style="display:inline-flex;align-items:center;gap:6px;padding:11px 17px;border-radius:12px;background:#0B1220;color:#fff;font-weight:700;font-size:14px;text-decoration:none">▶ Canlı Demo</a><a href="/kampanya" style="display:inline-flex;align-items:center;gap:6px;padding:11px 17px;border-radius:12px;background:linear-gradient(135deg,#E0A100,#B8860B);color:#0B1220;font-weight:800;font-size:14px;text-decoration:none;box-shadow:0 8px 20px rgba(224,161,0,.3)">🚀 Kampanya →</a></div></div>
   <section class="cta">
     <h2>Her personelin izin hakkını ve kalanını tek tek takip etmek yorucu.</h2>
     <p>TEKNOPERS, her çalışanın kıdemine göre yıllık izin hakkını otomatik hesaplar, kullanılan ve kalan izni ekranda tutar. Elle takip, kağıt ve unutma yok. Kullanıcı başına ücret yok, kurulum 1 gün.</p>
@@ -320,57 +321,108 @@ footer p{font-size:14px;max-width:360px}
   </div>
 </footer>
 
-<!-- Structured data: hesaplayıcı -->
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"WebApplication",
-  "name":"Yıllık İzin Günü Hesaplama",
-  "url":"https://teknopers.com.tr/araclar/yillik-izin-hesaplama/",
-  "applicationCategory":"BusinessApplication",
-  "operatingSystem":"Web",
-  "inLanguage":"tr-TR",
-  "offers":{"@type":"Offer","price":"0","priceCurrency":"TRY"},
-  "description":"İşverenler için yıllık ücretli izin günü hesaplama aracı. İş Kanunu m.53'e göre kıdem ve yaşa dayalı 14/20/26 gün hesabı."
-}
-</script>
-<!-- Structured data: SSS -->
+<!-- Yapisal veri (JSON-LD): kurulus + kirinti + uygulama + SSS -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "İşçi kaç yıl sonra yıllık izne hak kazanır?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Deneme süresi dahil aynı işyerinde en az 1 yıl çalışmayı tamamlayan işçi yıllık ücretli izne hak kazanır. 1 yıl dolmadan yasal yıllık izin hakkı doğmaz."
+      "@type": "Organization",
+      "@id": "https://teknopers.com.tr/#org",
+      "name": "TEKNOPERS",
+      "url": "https://teknopers.com.tr/",
+      "logo": "https://teknopers.com.tr/icon-512.png",
+      "sameAs": [
+        "https://www.instagram.com/teknopers.saha",
+        "https://www.linkedin.com/company/teknopers/",
+        "https://www.facebook.com/share/1DnvkpxuM1/"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Ana Sayfa",
+          "item": "https://teknopers.com.tr/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Araçlar",
+          "item": "https://teknopers.com.tr/araclar/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Yıllık İzin Hesaplama",
+          "item": "https://teknopers.com.tr/araclar/yillik-izin-hesaplama/"
+        }
+      ]
+    },
+    {
+      "@type": "WebApplication",
+      "name": "Yıllık İzin Günü Hesaplama",
+      "url": "https://teknopers.com.tr/araclar/yillik-izin-hesaplama/",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "inLanguage": "tr-TR",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "TRY"
+      },
+      "description": "İşverenler için yıllık ücretli izin günü hesaplama aracı. İş Kanunu m.53'e göre kıdem ve yaşa dayalı 14/20/26 gün hesabı.",
+      "@id": "https://teknopers.com.tr/araclar/yillik-izin-hesaplama/#app",
+      "browserRequirements": "JavaScript etkin modern bir tarayıcı gerekir",
+      "isAccessibleForFree": true,
+      "dateModified": "2026-07-01",
+      "screenshot": "https://teknopers.com.tr/og-araclar.png",
+      "publisher": {
+        "@id": "https://teknopers.com.tr/#org"
+      },
+      "provider": {
+        "@id": "https://teknopers.com.tr/#org"
       }
     },
     {
-      "@type": "Question",
-      "name": "5 yıllık çalışan 14 mü 20 gün mü izin alır?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Kıdemi tam 5 yıl olan işçi 14 gün izne hak kazanır (kanun \"5 yıl dahil\" der). 5 yılı bir gün bile geçince süre 20 güne yükselir."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "50 yaşını geçen personelin izni değişir mi?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Evet. 50 yaş ve üzeri personele yıllık izin 20 günden az verilemez. Kıdemi daha fazla izin gerektiriyorsa (örneğin 15+ yıl için 26 gün), yüksek olan uygulanır."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Kullanılmayan yıllık izin ne olur?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "İşçinin izni kullandırılması işverenin sorumluluğundadır. İş sözleşmesi sona erdiğinde kullanılmayan izin günleri, işçinin son brüt ücreti üzerinden ödenir."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "İşçi kaç yıl sonra yıllık izne hak kazanır?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Deneme süresi dahil aynı işyerinde en az 1 yıl çalışmayı tamamlayan işçi yıllık ücretli izne hak kazanır. 1 yıl dolmadan yasal yıllık izin hakkı doğmaz."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "5 yıllık çalışan 14 mü 20 gün mü izin alır?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Kıdemi tam 5 yıl olan işçi 14 gün izne hak kazanır (kanun \"5 yıl dahil\" der). 5 yılı bir gün bile geçince süre 20 güne yükselir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "50 yaşını geçen personelin izni değişir mi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Evet. 50 yaş ve üzeri personele yıllık izin 20 günden az verilemez. Kıdemi daha fazla izin gerektiriyorsa (örneğin 15+ yıl için 26 gün), yüksek olan uygulanır."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kullanılmayan yıllık izin ne olur?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "İşçinin izni kullandırılması işverenin sorumluluğundadır. İş sözleşmesi sona erdiğinde kullanılmayan izin günleri, işçinin son brüt ücreti üzerinden ödenir."
+          }
+        }
+      ],
+      "@id": "https://teknopers.com.tr/araclar/yillik-izin-hesaplama/#faq"
     }
   ]
 }
