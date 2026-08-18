@@ -25,11 +25,11 @@
 <meta property="og:description" content="Sabit, kademeli veya hizmet+ürün prim modeliyle personel primini saniyede hesaplayın.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://teknopers.com.tr/araclar/personel-prim-hesaplama/">
-<meta property="og:image" content="https://teknopers.com.tr/og-image.png">
+<meta property="og:image" content="https://teknopers.com.tr/og-araclar.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://teknopers.com.tr/og-image.png">
+<meta name="twitter:image" content="https://teknopers.com.tr/og-araclar.png">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -268,6 +268,7 @@ footer p{font-size:14px;max-width:360px}
   </div>
 
   <!-- TEK CTA -->
+  <div style="max-width:720px;margin:26px auto;padding:16px 20px;border:1px solid #EAD9A8;border-radius:16px;background:linear-gradient(135deg,#FFF9EC,#FFFDF7);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px"><div style="min-width:200px;flex:1"><div style="font-weight:800;font-size:15.5px;color:#0B1220;line-height:1.3">Beğendin mi? Gerçeğini gör.</div><div style="font-weight:500;font-size:13px;color:#6B7280;margin-top:3px;line-height:1.5">Canlı demoyu dene; sonra 15 gün ücretsiz + 1 yıl 1.000 ₺ kampanyasına katıl.</div></div><div style="display:flex;gap:9px;flex-wrap:wrap"><a href="/demo" style="display:inline-flex;align-items:center;gap:6px;padding:11px 17px;border-radius:12px;background:#0B1220;color:#fff;font-weight:700;font-size:14px;text-decoration:none">▶ Canlı Demo</a><a href="/kampanya" style="display:inline-flex;align-items:center;gap:6px;padding:11px 17px;border-radius:12px;background:linear-gradient(135deg,#E0A100,#B8860B);color:#0B1220;font-weight:800;font-size:14px;text-decoration:none;box-shadow:0 8px 20px rgba(224,161,0,.3)">🚀 Kampanya →</a></div></div>
   <section class="cta">
     <h2>Cironun kaydı yoksa prim de hep tartışma olur.</h2>
     <p>TeknoPersSalon her personelin yaptığı işlemi ve ciroyu otomatik kaydeder, primi kurduğunuz modele (sabit/kademeli/ürün) göre kendisi hesaplar. Personel kendi kazancını uygulamadan görür, ay sonu sürpriz olmaz. TEKNOPERS'in salon & randevu ürünü.</p>
@@ -321,50 +322,108 @@ footer p{font-size:14px;max-width:360px}
   </div>
 </footer>
 
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org","@type":"WebApplication","name":"Kuaför & Salon Personel Prim Hesaplama",
-  "url":"https://teknopers.com.tr/araclar/personel-prim-hesaplama/","applicationCategory":"BusinessApplication",
-  "operatingSystem":"Web","inLanguage":"tr-TR","offers":{"@type":"Offer","price":"0","priceCurrency":"TRY"},
-  "description":"Kuaför ve güzellik salonları için personel prim hesaplama aracı. Sabit yüzde, kademeli (dilimli) ve hizmet+ürün ayrı oran modelleriyle kişi başına ve toplam prim hesabı."
-}
-</script>
+<!-- Yapisal veri (JSON-LD): kurulus + kirinti + uygulama + SSS -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "Güzellik sektöründe prim oranı ne kadar olmalı?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Kesin bir kural yoktur; salonunuzun kâr marjına bağlıdır. Sektörde hizmet primi genellikle %10–15, ürün satış primi daha düşük oranlarda uygulanır. Düşük sabit maaş + yüksek prim modeli üretkenliği artırır."
+      "@type": "Organization",
+      "@id": "https://teknopers.com.tr/#org",
+      "name": "TEKNOPERS",
+      "url": "https://teknopers.com.tr/",
+      "logo": "https://teknopers.com.tr/icon-512.png",
+      "sameAs": [
+        "https://www.instagram.com/teknopers.saha",
+        "https://www.linkedin.com/company/teknopers/",
+        "https://www.facebook.com/share/1DnvkpxuM1/"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Ana Sayfa",
+          "item": "https://teknopers.com.tr/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Araçlar",
+          "item": "https://teknopers.com.tr/araclar/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Personel Prim Hesaplama",
+          "item": "https://teknopers.com.tr/araclar/personel-prim-hesaplama/"
+        }
+      ]
+    },
+    {
+      "@type": "WebApplication",
+      "name": "Kuaför & Salon Personel Prim Hesaplama",
+      "url": "https://teknopers.com.tr/araclar/personel-prim-hesaplama/",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "inLanguage": "tr-TR",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "TRY"
+      },
+      "description": "Kuaför ve güzellik salonları için personel prim hesaplama aracı. Sabit yüzde, kademeli (dilimli) ve hizmet+ürün ayrı oran modelleriyle kişi başına ve toplam prim hesabı.",
+      "@id": "https://teknopers.com.tr/araclar/personel-prim-hesaplama/#app",
+      "browserRequirements": "JavaScript etkin modern bir tarayıcı gerekir",
+      "isAccessibleForFree": true,
+      "dateModified": "2026-07-01",
+      "screenshot": "https://teknopers.com.tr/og-araclar.png",
+      "publisher": {
+        "@id": "https://teknopers.com.tr/#org"
+      },
+      "provider": {
+        "@id": "https://teknopers.com.tr/#org"
       }
     },
     {
-      "@type": "Question",
-      "name": "Kademeli prim ile sabit prim arasındaki fark nedir?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Sabit primde tüm ciroya tek oran uygulanır. Kademeli primde ciro eşikleri aşıldıkça oran yükselir; bu, personeli üst dilime çıkmak için daha çok çalışmaya teşvik eder."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Primden vergi ve SGK kesilir mi?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Evet. Prim, ücretin bir parçası kabul edilir; brüt prim üzerinden SGK primi ve gelir vergisi kesintisi yapılması gerekir. Bu araç brüt prim tutarını gösterir."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Personel kendi primini görebilmeli mi?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Şeffaflık güven yaratır. Personelin kendi cirosunu ve prim hakkını görebilmesi ay sonu tartışmalarını önler. TeknoPersSalon'da her personel kendi kazancını uygulamadan takip edebilir."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Güzellik sektöründe prim oranı ne kadar olmalı?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Kesin bir kural yoktur; salonunuzun kâr marjına bağlıdır. Sektörde hizmet primi genellikle %10–15, ürün satış primi daha düşük oranlarda uygulanır. Düşük sabit maaş + yüksek prim modeli üretkenliği artırır."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kademeli prim ile sabit prim arasındaki fark nedir?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sabit primde tüm ciroya tek oran uygulanır. Kademeli primde ciro eşikleri aşıldıkça oran yükselir; bu, personeli üst dilime çıkmak için daha çok çalışmaya teşvik eder."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Primden vergi ve SGK kesilir mi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Evet. Prim, ücretin bir parçası kabul edilir; brüt prim üzerinden SGK primi ve gelir vergisi kesintisi yapılması gerekir. Bu araç brüt prim tutarını gösterir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Personel kendi primini görebilmeli mi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Şeffaflık güven yaratır. Personelin kendi cirosunu ve prim hakkını görebilmesi ay sonu tartışmalarını önler. TeknoPersSalon'da her personel kendi kazancını uygulamadan takip edebilir."
+          }
+        }
+      ],
+      "@id": "https://teknopers.com.tr/araclar/personel-prim-hesaplama/#faq"
     }
   ]
 }
