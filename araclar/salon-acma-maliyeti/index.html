@@ -25,11 +25,11 @@
 <meta property="og:description" content="Başlangıç sermayesi, aylık gider ve başabaş noktasını saniyede hesaplayın. Ücretsiz.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://teknopers.com.tr/araclar/salon-acma-maliyeti/">
-<meta property="og:image" content="https://teknopers.com.tr/og-image.png">
+<meta property="og:image" content="https://teknopers.com.tr/og-araclar.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://teknopers.com.tr/og-image.png">
+<meta name="twitter:image" content="https://teknopers.com.tr/og-araclar.png">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -247,6 +247,7 @@ footer p{font-size:14px;max-width:360px}
   </section>
 
   <!-- TEK CTA -->
+  <div style="max-width:720px;margin:26px auto;padding:16px 20px;border:1px solid #EAD9A8;border-radius:16px;background:linear-gradient(135deg,#FFF9EC,#FFFDF7);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px"><div style="min-width:200px;flex:1"><div style="font-weight:800;font-size:15.5px;color:#0B1220;line-height:1.3">Beğendin mi? Gerçeğini gör.</div><div style="font-weight:500;font-size:13px;color:#6B7280;margin-top:3px;line-height:1.5">Canlı demoyu dene; sonra 15 gün ücretsiz + 1 yıl 1.000 ₺ kampanyasına katıl.</div></div><div style="display:flex;gap:9px;flex-wrap:wrap"><a href="/demo#salon" style="display:inline-flex;align-items:center;gap:6px;padding:11px 17px;border-radius:12px;background:#0B1220;color:#fff;font-weight:700;font-size:14px;text-decoration:none">▶ Canlı Demo</a><a href="/kampanya" style="display:inline-flex;align-items:center;gap:6px;padding:11px 17px;border-radius:12px;background:linear-gradient(135deg,#E0A100,#B8860B);color:#0B1220;font-weight:800;font-size:14px;text-decoration:none;box-shadow:0 8px 20px rgba(224,161,0,.3)">🚀 Kampanya →</a></div></div>
   <section class="cta">
     <h2>Salonu açmak yarısı; asıl zor olan yönetmek.</h2>
     <p>Açılıştan sonra randevu, müşteri, ciro, personel primi ve stok hızla karmaşıklaşır. TeknoPersSalon ilk günden bunları tek yerde toplar; hangi hizmet kâr getiriyor, hangi personel ne üretiyor net görürsünüz. TEKNOPERS'in salon & randevu ürünü.</p>
@@ -300,50 +301,108 @@ footer p{font-size:14px;max-width:360px}
   </div>
 </footer>
 
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org","@type":"WebApplication","name":"Salon Açma Maliyeti & Başabaş Hesaplayıcı",
-  "url":"https://teknopers.com.tr/araclar/salon-acma-maliyeti/","applicationCategory":"BusinessApplication",
-  "operatingSystem":"Web","inLanguage":"tr-TR","offers":{"@type":"Offer","price":"0","priceCurrency":"TRY"},
-  "description":"Güzellik salonu / kuaför açma maliyeti hesaplama aracı. Başlangıç sermayesi, aylık sabit gider ve başabaş noktası analizi."
-}
-</script>
+<!-- Yapisal veri (JSON-LD): kurulus + kirinti + uygulama + SSS -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "Küçük bir kuaför açmak için ne kadar sermaye gerekir?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "2026 örneklerine göre küçük ölçekli bir salon için başlangıç sermayesi genellikle 300.000–700.000 TL bandındadır; lokasyon ve dekorasyon tercihlerine göre değişir. Kesin rakam için kendi tekliflerinizi araca girin."
+      "@type": "Organization",
+      "@id": "https://teknopers.com.tr/#org",
+      "name": "TEKNOPERS",
+      "url": "https://teknopers.com.tr/",
+      "logo": "https://teknopers.com.tr/icon-512.png",
+      "sameAs": [
+        "https://www.instagram.com/teknopers.saha",
+        "https://www.linkedin.com/company/teknopers/",
+        "https://www.facebook.com/share/1DnvkpxuM1/"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Ana Sayfa",
+          "item": "https://teknopers.com.tr/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Araçlar",
+          "item": "https://teknopers.com.tr/araclar/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Salon Açma Maliyeti Hesaplama",
+          "item": "https://teknopers.com.tr/araclar/salon-acma-maliyeti/"
+        }
+      ]
+    },
+    {
+      "@type": "WebApplication",
+      "name": "Salon Açma Maliyeti & Başabaş Hesaplayıcı",
+      "url": "https://teknopers.com.tr/araclar/salon-acma-maliyeti/",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "inLanguage": "tr-TR",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "TRY"
+      },
+      "description": "Güzellik salonu / kuaför açma maliyeti hesaplama aracı. Başlangıç sermayesi, aylık sabit gider ve başabaş noktası analizi.",
+      "@id": "https://teknopers.com.tr/araclar/salon-acma-maliyeti/#app",
+      "browserRequirements": "JavaScript etkin modern bir tarayıcı gerekir",
+      "isAccessibleForFree": true,
+      "dateModified": "2026-07-01",
+      "screenshot": "https://teknopers.com.tr/og-araclar.png",
+      "publisher": {
+        "@id": "https://teknopers.com.tr/#org"
+      },
+      "provider": {
+        "@id": "https://teknopers.com.tr/#org"
       }
     },
     {
-      "@type": "Question",
-      "name": "Salon açarken en büyük gider kalemi nedir?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Başlangıçta dekorasyon/tadilat ve ekipman/cihazlar; açıldıktan sonra ise personel (maaş + SGK) ve kira en ağır kalemlerdir."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Başabaş noktası nasıl hesaplanır?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Aylık sabit gideri, müşteri başına katkı payına (ortalama harcama − değişken maliyet) bölersiniz. Sonuç, o ay zarar etmemek için gereken müşteri sayısıdır."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Salon açmak için ruhsat gerekir mi?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Evet. İşyeri Açma ve Çalışma Ruhsatı zorunludur ve çoğu ilde güzellik/kuaför işletmeleri için sorumlu müdür/ustalık belgesi gibi ek şartlar aranır. Ruhsat ve danışmanlık masraflarını başlangıç kalemlerine eklemeyi unutmayın."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Küçük bir kuaför açmak için ne kadar sermaye gerekir?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "2026 örneklerine göre küçük ölçekli bir salon için başlangıç sermayesi genellikle 300.000–700.000 TL bandındadır; lokasyon ve dekorasyon tercihlerine göre değişir. Kesin rakam için kendi tekliflerinizi araca girin."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Salon açarken en büyük gider kalemi nedir?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Başlangıçta dekorasyon/tadilat ve ekipman/cihazlar; açıldıktan sonra ise personel (maaş + SGK) ve kira en ağır kalemlerdir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Başabaş noktası nasıl hesaplanır?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Aylık sabit gideri, müşteri başına katkı payına (ortalama harcama − değişken maliyet) bölersiniz. Sonuç, o ay zarar etmemek için gereken müşteri sayısıdır."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Salon açmak için ruhsat gerekir mi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Evet. İşyeri Açma ve Çalışma Ruhsatı zorunludur ve çoğu ilde güzellik/kuaför işletmeleri için sorumlu müdür/ustalık belgesi gibi ek şartlar aranır. Ruhsat ve danışmanlık masraflarını başlangıç kalemlerine eklemeyi unutmayın."
+          }
+        }
+      ],
+      "@id": "https://teknopers.com.tr/araclar/salon-acma-maliyeti/#faq"
     }
   ]
 }
