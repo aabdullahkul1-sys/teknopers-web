@@ -161,11 +161,11 @@ footer p{font-size:14px;max-width:360px}
 <meta name="theme-color" content="#0B1424">
 <meta property="og:site_name" content="TEKNOPERS">
 <meta property="og:locale" content="tr_TR">
-<meta property="og:image" content="https://teknopers.com.tr/og-image.png">
+<meta property="og:image" content="https://teknopers.com.tr/og-araclar.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://teknopers.com.tr/og-image.png">
+<meta name="twitter:image" content="https://teknopers.com.tr/og-araclar.png">
 <style id="mnav-fix">
 .mnav-btn{display:none}
 @media(max-width:880px){
@@ -270,6 +270,7 @@ footer p{font-size:14px;max-width:360px}
   </section>
 
   <!-- TEK CTA -->
+  <div style="max-width:720px;margin:26px auto;padding:16px 20px;border:1px solid #EAD9A8;border-radius:16px;background:linear-gradient(135deg,#FFF9EC,#FFFDF7);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px"><div style="min-width:200px;flex:1"><div style="font-weight:800;font-size:15.5px;color:#0B1220;line-height:1.3">Beğendin mi? Gerçeğini gör.</div><div style="font-weight:500;font-size:13px;color:#6B7280;margin-top:3px;line-height:1.5">Canlı demoyu dene; sonra 15 gün ücretsiz + 1 yıl 1.000 ₺ kampanyasına katıl.</div></div><div style="display:flex;gap:9px;flex-wrap:wrap"><a href="/demo" style="display:inline-flex;align-items:center;gap:6px;padding:11px 17px;border-radius:12px;background:#0B1220;color:#fff;font-weight:700;font-size:14px;text-decoration:none">▶ Canlı Demo</a><a href="/kampanya" style="display:inline-flex;align-items:center;gap:6px;padding:11px 17px;border-radius:12px;background:linear-gradient(135deg,#E0A100,#B8860B);color:#0B1220;font-weight:800;font-size:14px;text-decoration:none;box-shadow:0 8px 20px rgba(224,161,0,.3)">🚀 Kampanya →</a></div></div>
   <section class="cta">
     <h2>Kıdem, ihbar, izin — çıkış hesabı tek yerde toplanmalı.</h2>
     <p>TEKNOPERS, personel çıkışında bildirim süresini kıdemden otomatik bulur; ihbar ve kıdem tazminatını giydirilmiş ücrete göre birlikte hesaplar. Özlük, puantaj ve hak edişle aynı ekranda. Kullanıcı başına ücret yok.</p>
@@ -342,57 +343,108 @@ footer p{font-size:14px;max-width:360px}
   </div>
 </footer>
 
-<!-- Structured data: hesaplayıcı -->
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"WebApplication",
-  "name":"İhbar Tazminatı Hesaplama",
-  "url":"https://teknopers.com.tr/araclar/ihbar-tazminati-hesaplama/",
-  "applicationCategory":"BusinessApplication",
-  "operatingSystem":"Web",
-  "inLanguage":"tr-TR",
-  "offers":{"@type":"Offer","price":"0","priceCurrency":"TRY"},
-  "description":"İşverenler için ihbar tazminatı hesaplama aracı. İş Kanunu m.17'ye göre kıdeme dayalı bildirim süresi, brüt ihbar tazminatı, damga vergisi ve tahmini net hesabı."
-}
-</script>
-<!-- Structured data: SSS -->
+<!-- Yapisal veri (JSON-LD): kurulus + kirinti + uygulama + SSS -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "İhbar tazminatını kim öder?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "İş sözleşmesini bildirim süresine uymadan fesheden taraf öder. İşveren bildirimsiz çıkarırsa işçiye, işçi bildirimsiz ayrılırsa işverene ihbar tazminatı doğar."
+      "@type": "Organization",
+      "@id": "https://teknopers.com.tr/#org",
+      "name": "TEKNOPERS",
+      "url": "https://teknopers.com.tr/",
+      "logo": "https://teknopers.com.tr/icon-512.png",
+      "sameAs": [
+        "https://www.instagram.com/teknopers.saha",
+        "https://www.linkedin.com/company/teknopers/",
+        "https://www.facebook.com/share/1DnvkpxuM1/"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Ana Sayfa",
+          "item": "https://teknopers.com.tr/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Araçlar",
+          "item": "https://teknopers.com.tr/araclar/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "İhbar Tazminatı Hesaplama",
+          "item": "https://teknopers.com.tr/araclar/ihbar-tazminati-hesaplama/"
+        }
+      ]
+    },
+    {
+      "@type": "WebApplication",
+      "name": "İhbar Tazminatı Hesaplama",
+      "url": "https://teknopers.com.tr/araclar/ihbar-tazminati-hesaplama/",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "inLanguage": "tr-TR",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "TRY"
+      },
+      "description": "İşverenler için ihbar tazminatı hesaplama aracı. İş Kanunu m.17'ye göre kıdeme dayalı bildirim süresi, brüt ihbar tazminatı, damga vergisi ve tahmini net hesabı.",
+      "@id": "https://teknopers.com.tr/araclar/ihbar-tazminati-hesaplama/#app",
+      "browserRequirements": "JavaScript etkin modern bir tarayıcı gerekir",
+      "isAccessibleForFree": true,
+      "dateModified": "2026-07-01",
+      "screenshot": "https://teknopers.com.tr/og-araclar.png",
+      "publisher": {
+        "@id": "https://teknopers.com.tr/#org"
+      },
+      "provider": {
+        "@id": "https://teknopers.com.tr/#org"
       }
     },
     {
-      "@type": "Question",
-      "name": "İhbar tazminatının tavanı var mı?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Hayır. Kıdem tazminatından farklı olarak ihbar tazminatında üst sınır yoktur; doğrudan giydirilmiş brüt ücret üzerinden hesaplanır."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "İhbar tazminatından vergi kesilir mi?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Evet. İhbar tazminatı hem gelir vergisine hem damga vergisine tabidir. Bu yönüyle, yalnızca damga vergisi kesilen kıdem tazminatından ayrılır."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "İhbar süresi içinde iş aramaya izin var mı?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Evet. Bildirim süresi kullanıldığında işçiye günde en az 2 saat iş arama izni verilmesi gerekir; bu süre ücretten kesilmez."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "İhbar tazminatını kim öder?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "İş sözleşmesini bildirim süresine uymadan fesheden taraf öder. İşveren bildirimsiz çıkarırsa işçiye, işçi bildirimsiz ayrılırsa işverene ihbar tazminatı doğar."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "İhbar tazminatının tavanı var mı?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hayır. Kıdem tazminatından farklı olarak ihbar tazminatında üst sınır yoktur; doğrudan giydirilmiş brüt ücret üzerinden hesaplanır."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "İhbar tazminatından vergi kesilir mi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Evet. İhbar tazminatı hem gelir vergisine hem damga vergisine tabidir. Bu yönüyle, yalnızca damga vergisi kesilen kıdem tazminatından ayrılır."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "İhbar süresi içinde iş aramaya izin var mı?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Evet. Bildirim süresi kullanıldığında işçiye günde en az 2 saat iş arama izni verilmesi gerekir; bu süre ücretten kesilmez."
+          }
+        }
+      ],
+      "@id": "https://teknopers.com.tr/araclar/ihbar-tazminati-hesaplama/#faq"
     }
   ]
 }
