@@ -160,11 +160,11 @@ footer p{font-size:14px;max-width:360px}
 <meta name="theme-color" content="#0B1424">
 <meta property="og:site_name" content="TEKNOPERS">
 <meta property="og:locale" content="tr_TR">
-<meta property="og:image" content="https://teknopers.com.tr/og-image.png">
+<meta property="og:image" content="https://teknopers.com.tr/og-araclar.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://teknopers.com.tr/og-image.png">
+<meta name="twitter:image" content="https://teknopers.com.tr/og-araclar.png">
 <style id="mnav-fix">
 .mnav-btn{display:none}
 @media(max-width:880px){
@@ -259,6 +259,7 @@ footer p{font-size:14px;max-width:360px}
   </section>
 
   <!-- TEK CTA -->
+  <div style="max-width:720px;margin:26px auto;padding:16px 20px;border:1px solid #EAD9A8;border-radius:16px;background:linear-gradient(135deg,#FFF9EC,#FFFDF7);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px"><div style="min-width:200px;flex:1"><div style="font-weight:800;font-size:15.5px;color:#0B1220;line-height:1.3">Beğendin mi? Gerçeğini gör.</div><div style="font-weight:500;font-size:13px;color:#6B7280;margin-top:3px;line-height:1.5">Canlı demoyu dene; sonra 15 gün ücretsiz + 1 yıl 1.000 ₺ kampanyasına katıl.</div></div><div style="display:flex;gap:9px;flex-wrap:wrap"><a href="/demo" style="display:inline-flex;align-items:center;gap:6px;padding:11px 17px;border-radius:12px;background:#0B1220;color:#fff;font-weight:700;font-size:14px;text-decoration:none">▶ Canlı Demo</a><a href="/kampanya" style="display:inline-flex;align-items:center;gap:6px;padding:11px 17px;border-radius:12px;background:linear-gradient(135deg,#E0A100,#B8860B);color:#0B1220;font-weight:800;font-size:14px;text-decoration:none;box-shadow:0 8px 20px rgba(224,161,0,.3)">🚀 Kampanya →</a></div></div>
   <section class="cta">
     <h2>İşten çıkışta kıdem ve ihbarı elle hesaplamak riskli.</h2>
     <p>TEKNOPERS, personel çıkışında kıdem ve ihbar tazminatını giydirilmiş ücret ve güncel tavana göre otomatik hesaplar; özlük ve puantaj kayıtlarıyla birlikte tutar. Hatalı hesap, eksik ödeme, dava riski yok. Kullanıcı başına ücret yok.</p>
@@ -302,6 +303,16 @@ footer p{font-size:14px;max-width:360px}
       </details>
     </div>
   </section>
+<section class="content">
+    <h3>Kıdem Tazminatı Nasıl Hesaplanır?</h3>
+    <p>Aynı işverene bağlı olarak en az 1 yıl tam çalışmış olan personel, iş sözleşmesinin kanunda belirtilen haklı nedenlerle sona ermesi durumunda kıdem tazminatına hak kazanır. Hesaplama yapılırken; çalışılan her tam yıl için çalışana <strong>30 günlük giydirilmiş brüt ücreti</strong> tutarında ödeme yapılır.</p>
+
+    <h3>2026 Kıdem Tazminatı Tavanı Nedir?</h3>
+    <p>Kanun gereği kıdem tazminatı hesaplanırken baz alınacak brüt ücretin bir üst sınırı vardır. Buna "Kıdem Tazminatı Tavanı" denir. Çalışanın brüt maaşı bu tavanı aşsa bile, tazminat hesabı tavan tutar üzerinden yapılır. Tavan tutarı her yılın Ocak ve Temmuz aylarında Hazine ve Maliye Bakanlığı tarafından güncellenir. 2026 yılı güncel tavan tutarlarını aracımız otomatik olarak uygulamaktadır.</p>
+
+    <h3>Giydirilmiş Brüt Ücret Ne Demektir?</h3>
+    <p>Sadece temel brüt maaşınız değil; yıl içinde size düzenli olarak sağlanan parasal haklar (yol yardımı, yemek parası, ikramiye, devamlılık primi vb.) da brütleştirilerek tazminat hesabına dahil edilir. Buna giydirilmiş ücret denir.</p>
+</section>
 </main>
 
 <footer>
@@ -315,57 +326,108 @@ footer p{font-size:14px;max-width:360px}
   </div>
 </footer>
 
-<!-- Structured data: hesaplayıcı -->
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"WebApplication",
-  "name":"Kıdem Tazminatı Hesaplama",
-  "url":"https://teknopers.com.tr/araclar/kidem-tazminati-hesaplama/",
-  "applicationCategory":"BusinessApplication",
-  "operatingSystem":"Web",
-  "inLanguage":"tr-TR",
-  "offers":{"@type":"Offer","price":"0","priceCurrency":"TRY"},
-  "description":"İşverenler için kıdem tazminatı hesaplama aracı. Giydirilmiş brüt ücret, 2026 güncel tavan ve damga vergisi ile brüt/net kıdem tazminatı hesabı."
-}
-</script>
-<!-- Structured data: SSS -->
+<!-- Yapisal veri (JSON-LD): kurulus + kirinti + uygulama + SSS -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "Kıdem tazminatına hak kazanmak için kaç yıl gerekir?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "İşçinin aynı işyerinde en az 1 yıl çalışmış olması ve iş sözleşmesinin tazminat almaya hak kazandıracak bir nedenle sona ermesi gerekir."
+      "@type": "Organization",
+      "@id": "https://teknopers.com.tr/#org",
+      "name": "TEKNOPERS",
+      "url": "https://teknopers.com.tr/",
+      "logo": "https://teknopers.com.tr/icon-512.png",
+      "sameAs": [
+        "https://www.instagram.com/teknopers.saha",
+        "https://www.linkedin.com/company/teknopers/",
+        "https://www.facebook.com/share/1DnvkpxuM1/"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Ana Sayfa",
+          "item": "https://teknopers.com.tr/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Araçlar",
+          "item": "https://teknopers.com.tr/araclar/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Kıdem Tazminatı Hesaplama",
+          "item": "https://teknopers.com.tr/araclar/kidem-tazminati-hesaplama/"
+        }
+      ]
+    },
+    {
+      "@type": "WebApplication",
+      "name": "Kıdem Tazminatı Hesaplama",
+      "url": "https://teknopers.com.tr/araclar/kidem-tazminati-hesaplama/",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "inLanguage": "tr-TR",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "TRY"
+      },
+      "description": "İşverenler için kıdem tazminatı hesaplama aracı. Giydirilmiş brüt ücret, 2026 güncel tavan ve damga vergisi ile brüt/net kıdem tazminatı hesabı.",
+      "@id": "https://teknopers.com.tr/araclar/kidem-tazminati-hesaplama/#app",
+      "browserRequirements": "JavaScript etkin modern bir tarayıcı gerekir",
+      "isAccessibleForFree": true,
+      "dateModified": "2026-07-01",
+      "screenshot": "https://teknopers.com.tr/og-araclar.png",
+      "publisher": {
+        "@id": "https://teknopers.com.tr/#org"
+      },
+      "provider": {
+        "@id": "https://teknopers.com.tr/#org"
       }
     },
     {
-      "@type": "Question",
-      "name": "Kıdem tazminatı brüt maaştan mı hesaplanır?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Çıplak brüt maaştan değil, giydirilmiş brüt ücretten hesaplanır. Yani düzenli yol, yemek ve ikramiye gibi yan haklar da tutara dahil edilir."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Kıdem tazminatından hangi kesinti yapılır?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Sadece damga vergisi (binde 7,59) kesilir. Kıdem tazminatı gelir vergisinden ve SGK priminden istisnadır. Tavanı aşan kısım ödenirse o kısım vergilendirilir."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Giydirilmiş ücret tavanın üzerindeyse ne olur?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Her hizmet yılı için en fazla tavan tutarı (1 Temmuz–31 Aralık 2026 için 73.729,87 TL) esas alınır. Aşan kısım için kıdem tazminatı ödenmesi zorunlu değildir."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Kıdem tazminatına hak kazanmak için kaç yıl gerekir?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "İşçinin aynı işyerinde en az 1 yıl çalışmış olması ve iş sözleşmesinin tazminat almaya hak kazandıracak bir nedenle sona ermesi gerekir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kıdem tazminatı brüt maaştan mı hesaplanır?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Çıplak brüt maaştan değil, giydirilmiş brüt ücretten hesaplanır. Yani düzenli yol, yemek ve ikramiye gibi yan haklar da tutara dahil edilir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kıdem tazminatından hangi kesinti yapılır?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sadece damga vergisi (binde 7,59) kesilir. Kıdem tazminatı gelir vergisinden ve SGK priminden istisnadır. Tavanı aşan kısım ödenirse o kısım vergilendirilir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Giydirilmiş ücret tavanın üzerindeyse ne olur?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Her hizmet yılı için en fazla tavan tutarı (1 Temmuz–31 Aralık 2026 için 73.729,87 TL) esas alınır. Aşan kısım için kıdem tazminatı ödenmesi zorunlu değildir."
+          }
+        }
+      ],
+      "@id": "https://teknopers.com.tr/araclar/kidem-tazminati-hesaplama/#faq"
     }
   ]
 }
@@ -486,18 +548,6 @@ document.querySelectorAll('input[name="mod"]').forEach(r=>r.addEventListener('ch
 })();
 </script>
 
-<!-- SEO UZMANLIK METNİ BAŞLANGICI -->
-<section style="max-width: 800px; margin: 40px auto; padding: 20px; font-family: sans-serif; color: #333; line-height: 1.6; background: #fdfdfd; border-radius: 8px; border: 1px solid #eaeaea;">
-    <h2 style="font-size: 1.4rem; color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 5px;">Kıdem Tazminatı Nasıl Hesaplanır?</h2>
-    <p style="font-size: 0.95rem;">Aynı işverene bağlı olarak en az 1 yıl tam çalışmış olan personel, iş sözleşmesinin kanunda belirtilen haklı nedenlerle sona ermesi durumunda kıdem tazminatına hak kazanır. Hesaplama yapılırken; çalışılan her tam yıl için çalışana <strong>30 günlük giydirilmiş brüt ücreti</strong> tutarında ödeme yapılır.</p>
-
-    <h3 style="font-size: 1.2rem; color: #2c3e50; margin-top: 25px;">2026 Kıdem Tazminatı Tavanı Nedir?</h3>
-    <p style="font-size: 0.95rem;">Kanun gereği kıdem tazminatı hesaplanırken baz alınacak brüt ücretin bir üst sınırı vardır. Buna "Kıdem Tazminatı Tavanı" denir. Çalışanın brüt maaşı bu tavanı aşsa bile, tazminat hesabı tavan tutar üzerinden yapılır. Tavan tutarı her yılın Ocak ve Temmuz aylarında Hazine ve Maliye Bakanlığı tarafından güncellenir. 2026 yılı güncel tavan tutarlarını aracımız otomatik olarak uygulamaktadır.</p>
-
-    <h3 style="font-size: 1.2rem; color: #2c3e50; margin-top: 25px;">Giydirilmiş Brüt Ücret Ne Demektir?</h3>
-    <p style="font-size: 0.95rem;">Sadece temel brüt maaşınız değil; yıl içinde size düzenli olarak sağlanan parasal haklar (yol yardımı, yemek parası, ikramiye, devamlılık primi vb.) da brütleştirilerek tazminat hesabına dahil edilir. Buna giydirilmiş ücret denir.</p>
-</section>
-<!-- SEO UZMANLIK METNİ BİTİŞİ -->
 </body>
 
 </html>
