@@ -154,11 +154,11 @@ footer p{font-size:14px;max-width:360px}
 <meta name="theme-color" content="#0B1424">
 <meta property="og:site_name" content="TEKNOPERS">
 <meta property="og:locale" content="tr_TR">
-<meta property="og:image" content="https://teknopers.com.tr/og-image.png">
+<meta property="og:image" content="https://teknopers.com.tr/og-araclar.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://teknopers.com.tr/og-image.png">
+<meta name="twitter:image" content="https://teknopers.com.tr/og-araclar.png">
 <style id="mnav-fix">
 .mnav-btn{display:none}
 @media(max-width:880px){
@@ -233,6 +233,7 @@ footer p{font-size:14px;max-width:360px}
   </section>
 
   <!-- TEK CTA -->
+  <div style="max-width:720px;margin:26px auto;padding:16px 20px;border:1px solid #EAD9A8;border-radius:16px;background:linear-gradient(135deg,#FFF9EC,#FFFDF7);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px"><div style="min-width:200px;flex:1"><div style="font-weight:800;font-size:15.5px;color:#0B1220;line-height:1.3">Beğendin mi? Gerçeğini gör.</div><div style="font-weight:500;font-size:13px;color:#6B7280;margin-top:3px;line-height:1.5">Canlı demoyu dene; sonra 15 gün ücretsiz + 1 yıl 1.000 ₺ kampanyasına katıl.</div></div><div style="display:flex;gap:9px;flex-wrap:wrap"><a href="/demo" style="display:inline-flex;align-items:center;gap:6px;padding:11px 17px;border-radius:12px;background:#0B1220;color:#fff;font-weight:700;font-size:14px;text-decoration:none">▶ Canlı Demo</a><a href="/kampanya" style="display:inline-flex;align-items:center;gap:6px;padding:11px 17px;border-radius:12px;background:linear-gradient(135deg,#E0A100,#B8860B);color:#0B1220;font-weight:800;font-size:14px;text-decoration:none;box-shadow:0 8px 20px rgba(224,161,0,.3)">🚀 Kampanya →</a></div></div>
   <section class="cta">
     <h2>Ekibinizin gerçek maliyetini her ay elle toplamak zor.</h2>
     <p>TEKNOPERS, tüm personelin brüt ücretini, SGK işveren yükünü ve hak edişini tek ekranda toplar; bordro tabanını otomatik çıkarır. Kaç kişi, kaç güne kaça mal oluyor — anında görürsünüz. Kullanıcı başına ücret yok.</p>
@@ -277,6 +278,20 @@ footer p{font-size:14px;max-width:360px}
       </details>
     </div>
   </section>
+<section class="content">
+    <h3>2026 İşveren Maliyeti Nasıl Hesaplanır?</h3>
+    <p>Bir personelin firmaya olan toplam maliyeti, personelin eline geçen net maaştan ibaret değildir. 2026 yılı güncel mevzuatlarına göre işveren maliyeti hesaplanırken; <strong>brüt maaş</strong> üzerinden SGK işveren primi ve İşsizlik Sigortası işveren payı dikkate alınır. Hatasız bir ön muhasebe kaydı ve personel bütçelemesi için bu oranların doğru hesaplanması kritik önem taşır.</p>
+
+    <h3>2026 Yılı Yasal Kesinti Oranları</h3>
+    <p>Çalışanın brüt ücreti üzerinden işverenin ödemekle yükümlü olduğu yasal oranlar şunlardır:</p>
+    <ul>
+        <li><strong>SGK İşveren Payı:</strong> %20,5 (Düzenli ödemelerde sağlanan 5 puanlık hazine teşviki ile %15,5 olarak uygulanır).</li>
+        <li><strong>İşsizlik Sigortası İşveren Payı:</strong> %2</li>
+    </ul>
+
+    <h3>İşveren Maliyetine Neler Dahildir?</h3>
+    <p>Standart formül: <strong>Brüt Maaş + SGK İşveren Payı + İşsizlik Sigortası Payı</strong> şeklindedir. Firmalar, personele sağlanan yol, yemek, prim veya özel sigorta gibi ek yan hakları da bütçeleme yaparken toplam maliyete yansıtmalıdır. Yukarıdaki ücretsiz aracımız, yasal yükümlülüklerinizi anında hesaplayarak firmanızın nakit akışını planlamanıza yardımcı olur.</p>
+</section>
 </main>
 
 <footer>
@@ -290,57 +305,108 @@ footer p{font-size:14px;max-width:360px}
   </div>
 </footer>
 
-<!-- Structured data: hesaplayıcı -->
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"WebApplication",
-  "name":"Çalışanın İşverene Maliyeti Hesaplama",
-  "url":"https://teknopers.com.tr/araclar/isveren-maliyeti-hesaplama/",
-  "applicationCategory":"BusinessApplication",
-  "operatingSystem":"Web",
-  "inLanguage":"tr-TR",
-  "offers":{"@type":"Offer","price":"0","priceCurrency":"TRY"},
-  "description":"İşverenler için çalışan maliyeti hesaplama aracı. Brüt ücret, 2026 SGK işveren primi ve işsizlik payı ile aylık ve yıllık toplam işveren maliyeti hesabı."
-}
-</script>
-<!-- Structured data: SSS -->
+<!-- Yapisal veri (JSON-LD): kurulus + kirinti + uygulama + SSS -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "İşveren maliyeti brüt maaşın yüzde kaçı?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Teşviksiz durumda brüt ücretin üzerine yaklaşık %23,75 eklenir (SGK işveren %21,75 + işsizlik %2). İndirim uygulanan işyerlerinde bu oran düşer."
+      "@type": "Organization",
+      "@id": "https://teknopers.com.tr/#org",
+      "name": "TEKNOPERS",
+      "url": "https://teknopers.com.tr/",
+      "logo": "https://teknopers.com.tr/icon-512.png",
+      "sameAs": [
+        "https://www.instagram.com/teknopers.saha",
+        "https://www.linkedin.com/company/teknopers/",
+        "https://www.facebook.com/share/1DnvkpxuM1/"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Ana Sayfa",
+          "item": "https://teknopers.com.tr/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Araçlar",
+          "item": "https://teknopers.com.tr/araclar/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "İşveren Maliyeti Hesaplama",
+          "item": "https://teknopers.com.tr/araclar/isveren-maliyeti-hesaplama/"
+        }
+      ]
+    },
+    {
+      "@type": "WebApplication",
+      "name": "Çalışanın İşverene Maliyeti Hesaplama",
+      "url": "https://teknopers.com.tr/araclar/isveren-maliyeti-hesaplama/",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "inLanguage": "tr-TR",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "TRY"
+      },
+      "description": "İşverenler için çalışan maliyeti hesaplama aracı. Brüt ücret, 2026 SGK işveren primi ve işsizlik payı ile aylık ve yıllık toplam işveren maliyeti hesabı.",
+      "@id": "https://teknopers.com.tr/araclar/isveren-maliyeti-hesaplama/#app",
+      "browserRequirements": "JavaScript etkin modern bir tarayıcı gerekir",
+      "isAccessibleForFree": true,
+      "dateModified": "2026-07-01",
+      "screenshot": "https://teknopers.com.tr/og-araclar.png",
+      "publisher": {
+        "@id": "https://teknopers.com.tr/#org"
+      },
+      "provider": {
+        "@id": "https://teknopers.com.tr/#org"
       }
     },
     {
-      "@type": "Question",
-      "name": "Yol ve yemek yardımı bu hesaba dahil mi?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Hayır. Bu araç yalnızca brüt ücret ve SGK/işsizlik işveren primlerini hesaplar. Yol, yemek, özel sağlık sigortası gibi yan haklar ek maliyet olarak ayrıca eklenir."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "SGK tavanı işveren maliyetini nasıl etkiler?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "SGK primleri, 2026 için 247.725 TL olan prime esas kazanç tavanına kadar hesaplanır. Brüt ücret tavanı aşarsa, primler tavan tutarı üzerinden hesaplanır."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "AGİ maliyeti düşürür mü?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "AGİ (Asgari Geçim İndirimi) 2022'de kaldırıldı, işveren maliyeti hesabında yer almaz. Bunun yerine asgari ücretli çalışanlar için gelir ve damga vergisi istisnası uygulanır."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "İşveren maliyeti brüt maaşın yüzde kaçı?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Teşviksiz durumda brüt ücretin üzerine yaklaşık %23,75 eklenir (SGK işveren %21,75 + işsizlik %2). İndirim uygulanan işyerlerinde bu oran düşer."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Yol ve yemek yardımı bu hesaba dahil mi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hayır. Bu araç yalnızca brüt ücret ve SGK/işsizlik işveren primlerini hesaplar. Yol, yemek, özel sağlık sigortası gibi yan haklar ek maliyet olarak ayrıca eklenir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "SGK tavanı işveren maliyetini nasıl etkiler?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SGK primleri, 2026 için 247.725 TL olan prime esas kazanç tavanına kadar hesaplanır. Brüt ücret tavanı aşarsa, primler tavan tutarı üzerinden hesaplanır."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "AGİ maliyeti düşürür mü?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AGİ (Asgari Geçim İndirimi) 2022'de kaldırıldı, işveren maliyeti hesabında yer almaz. Bunun yerine asgari ücretli çalışanlar için gelir ve damga vergisi istisnası uygulanır."
+          }
+        }
+      ],
+      "@id": "https://teknopers.com.tr/araclar/isveren-maliyeti-hesaplama/#faq"
     }
   ]
 }
@@ -421,22 +487,6 @@ $('tesvik').addEventListener('change',hesapla);
 })();
 </script>
 
-<!-- SEO UZMANLIK METNİ BAŞLANGICI -->
-<section style="max-width: 800px; margin: 40px auto; padding: 20px; font-family: sans-serif; color: #333; line-height: 1.6; background: #fdfdfd; border-radius: 8px; border: 1px solid #eaeaea;">
-    <h2 style="font-size: 1.4rem; color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 5px;">2026 İşveren Maliyeti Nasıl Hesaplanır?</h2>
-    <p style="font-size: 0.95rem;">Bir personelin firmaya olan toplam maliyeti, personelin eline geçen net maaştan ibaret değildir. 2026 yılı güncel mevzuatlarına göre işveren maliyeti hesaplanırken; <strong>brüt maaş</strong> üzerinden SGK işveren primi ve İşsizlik Sigortası işveren payı dikkate alınır. Hatasız bir ön muhasebe kaydı ve personel bütçelemesi için bu oranların doğru hesaplanması kritik önem taşır.</p>
-
-    <h3 style="font-size: 1.2rem; color: #2c3e50; margin-top: 25px;">2026 Yılı Yasal Kesinti Oranları</h3>
-    <p style="font-size: 0.95rem;">Çalışanın brüt ücreti üzerinden işverenin ödemekle yükümlü olduğu yasal oranlar şunlardır:</p>
-    <ul style="font-size: 0.95rem;">
-        <li><strong>SGK İşveren Payı:</strong> %20,5 (Düzenli ödemelerde sağlanan 5 puanlık hazine teşviki ile %15,5 olarak uygulanır).</li>
-        <li><strong>İşsizlik Sigortası İşveren Payı:</strong> %2</li>
-    </ul>
-
-    <h3 style="font-size: 1.2rem; color: #2c3e50; margin-top: 25px;">İşveren Maliyetine Neler Dahildir?</h3>
-    <p style="font-size: 0.95rem;">Standart formül: <strong>Brüt Maaş + SGK İşveren Payı + İşsizlik Sigortası Payı</strong> şeklindedir. Firmalar, personele sağlanan yol, yemek, prim veya özel sigorta gibi ek yan hakları da bütçeleme yaparken toplam maliyete yansıtmalıdır. Yukarıdaki ücretsiz aracımız, yasal yükümlülüklerinizi anında hesaplayarak firmanızın nakit akışını planlamanıza yardımcı olur.</p>
-</section>
-<!-- SEO UZMANLIK METNİ BİTİŞİ -->
 </body>
 
 </html>
