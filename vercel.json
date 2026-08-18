@@ -25,6 +25,14 @@
   ],
   "rewrites": [
     {
+      "source": "/demo",
+      "destination": "/demo.html"
+    },
+    {
+      "source": "/kampanya",
+      "destination": "/kampanya.html"
+    },
+    {
       "source": "/urun/:slug",
       "destination": "/api/urun?slug=:slug"
     },

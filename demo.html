@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Canlı Demo — Şirket & Salon | İşletmenizi Tek Panelden Yönetin | TEKNOPERS</title>
+<meta name="description" content="TEKNOPERS'i kurmadan deneyin. İki canlı demo: Şirket & Saha (GPS'li PDKS, zimmet, stok, cari) ve Salon & Randevu. Örnek verilerle tıklayarak görün, sonra 15 gün ücretsiz + 1 yıl 1.000 ₺ kampanyasına katılın.">
+<meta name="keywords" content="teknopers demo, canlı demo, personel takip demo, randevu programı demo, işletme yazılımı deneme">
+<link rel="canonical" href="https://teknopers.com.tr/demo">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0B1220">
+<link rel="icon" href="/favicon.ico">
+<link rel="manifest" href="/site.webmanifest">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="TEKNOPERS">
+<meta property="og:title" content="Canlı Demo — TEKNOPERS'i Kurmadan Deneyin">
+<meta property="og:description" content="Personel, puantaj, randevu ve kasayı örnek verilerle canlı görün. Tek panelden işletme yönetimi.">
+<meta property="og:url" content="https://teknopers.com.tr/demo">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:image" content="https://teknopers.com.tr/og-urun.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="TEKNOPERS canlı demo">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://teknopers.com.tr/og-urun.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap">
+<script type="application/ld+json">
+{ "@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+  {"@type":"ListItem","position":1,"name":"Ana Sayfa","item":"https://teknopers.com.tr/"},
+  {"@type":"ListItem","position":2,"name":"Canlı Demo","item":"https://teknopers.com.tr/demo"} ] }
+</script>
+<style>
+:root{--navy:#0B1220;--navy2:#141F35;--paper:#F6F7FB;--gold:#E0A100;--goldD:#B8860B;--rose:#C0566A;--green:#0a7a58;--ink:#0B1220;--slate:#5B6472;--mut:#8A94A6;--line:#E6E9F0;--r:14px;--disp:'Bricolage Grotesque',system-ui,sans-serif;--body:'Figtree',system-ui,sans-serif;--mono:'JetBrains Mono',monospace}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--body);background:#EEF1F6;color:var(--ink);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.demobar{background:linear-gradient(90deg,var(--gold),var(--goldD));color:var(--navy);text-align:center;padding:9px 14px;font-weight:700;font-size:13.5px}
+.demobar a{color:var(--navy);font-weight:800;text-decoration:underline}
+.topnav{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+.brand{display:flex;align-items:center;gap:9px;font-family:var(--disp);font-weight:800;font-size:17px;text-decoration:none;color:var(--ink)}
+.brand i{width:24px;height:24px;border-radius:7px;background:linear-gradient(135deg,var(--gold),var(--goldD))}
+.topnav .actions{display:flex;gap:8px;align-items:center}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:10px 16px;border-radius:11px;font-weight:800;text-decoration:none;font-size:14px;border:0;cursor:pointer}
+.btn-gold{background:linear-gradient(135deg,var(--gold),var(--goldD));color:var(--navy);box-shadow:0 8px 20px rgba(224,161,0,.3)}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-sm{padding:8px 13px;font-size:13px}
+.app{display:grid;grid-template-columns:230px 1fr;max-width:1140px;margin:16px auto;gap:16px;padding:0 16px}
+.side{background:var(--navy);border-radius:var(--r);padding:16px 12px;height:max-content;position:sticky;top:78px}
+.side .biz{color:#fff;font-weight:700;font-size:14px;padding:8px 10px 14px;border-bottom:1px solid rgba(255,255,255,.08);margin-bottom:10px}
+.side .biz small{display:block;color:var(--mut);font-weight:500;font-size:11.5px;margin-top:2px}
+.side button{display:flex;align-items:center;gap:10px;width:100%;background:none;border:0;color:#AEB9CC;font:600 14px var(--body);padding:11px 12px;border-radius:10px;cursor:pointer;text-align:left;margin:2px 0}
+.side button .ic{font-size:16px}
+.side button:hover{background:rgba(255,255,255,.05);color:#fff}
+.side button.on{background:rgba(224,161,0,.14);color:#fff}
+.main{min-width:0}
+.head{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;flex-wrap:wrap;gap:8px}
+.head h1{font-family:var(--disp);font-weight:800;font-size:23px}
+.head .date{color:var(--slate);font-size:13px;font-family:var(--mono)}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px}
+.card{background:#fff;border:1px solid var(--line);border-radius:13px;padding:15px 16px}
+.card .l{color:var(--slate);font-size:12.5px;font-weight:600}
+.card .v{font-family:var(--disp);font-weight:800;font-size:26px;margin-top:4px}
+.card .d{font-size:12px;margin-top:3px}
+.up{color:var(--green)} .down{color:var(--rose)}
+.panel{background:#fff;border:1px solid var(--line);border-radius:13px;padding:0;overflow:hidden;margin-bottom:16px}
+.panel .ph{padding:14px 16px;border-bottom:1px solid var(--line);font-weight:700;font-size:15px;display:flex;justify-content:space-between;align-items:center}
+.panel .ph .tag{font:600 11.5px var(--mono);color:var(--goldD);background:#FBF3DE;padding:4px 9px;border-radius:7px}
+table{width:100%;border-collapse:collapse}
+th,td{text-align:left;padding:11px 16px;font-size:13.5px;border-bottom:1px solid #F0F3F7}
+th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase;letter-spacing:.4px}
+tr:last-child td{border-bottom:0}
+.pill{font:700 11px var(--mono);padding:4px 9px;border-radius:100px;display:inline-block}
+.pill.in{background:#E4F7F0;color:var(--green)} .pill.out{background:#F1F4F8;color:var(--mut)}
+.pill.ok{background:#E4F7F0;color:var(--green)} .pill.wait{background:#FFF4D6;color:#8a6600} .pill.no{background:#FBEEF0;color:var(--rose)}
+.mono{font-family:var(--mono)}
+.right{text-align:right}
+.view{display:none} .view.on{display:block}
+/* puantaj mini grid */
+.pz{overflow-x:auto}
+.pz table{min-width:640px}
+.pz td.d{text-align:center;font:700 12px var(--mono);width:30px;padding:8px 2px}
+.c-T{background:#E4F7F0;color:var(--green)} .c-Y{background:#FFF7E0;color:#8a6600} .c-I{background:#EEF2F7;color:#8a95a8} .c-HT{background:#F1F4F8;color:#aab4c4}
+.legend{display:flex;gap:14px;flex-wrap:wrap;padding:12px 16px;color:var(--slate);font-size:12px}
+.legend i{display:inline-block;width:20px;text-align:center;border-radius:5px;font:700 11px var(--mono);margin-right:5px}
+.foot-cta{background:linear-gradient(135deg,var(--navy),var(--navy2));border-radius:var(--r);padding:26px;color:#fff;text-align:center;margin:0 16px 26px;max-width:1140px}
+.foot-cta.mx{margin-left:auto;margin-right:auto}
+.foot-cta h2{font-family:var(--disp);font-size:22px;margin-bottom:6px}
+.foot-cta p{color:#C7D2E0;font-size:14.5px;margin-bottom:16px}
+.foot-cta .row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.note{color:var(--mut);font-size:12px;text-align:center;padding:0 16px 30px}
+.switch{display:flex;gap:8px;max-width:1140px;margin:16px auto 0;padding:0 16px;flex-wrap:wrap}
+.sw-btn{display:inline-flex;align-items:center;gap:8px;padding:12px 18px;border-radius:13px;border:1px solid var(--line);background:#fff;color:var(--slate);font:700 14.5px var(--body);cursor:pointer}
+.sw-btn.on{background:var(--navy);color:#fff;border-color:var(--navy);box-shadow:0 8px 20px rgba(11,18,32,.18)}
+.sw-btn small{font-weight:500;font-size:11px;opacity:.72}
+@media(max-width:560px){.sw-btn{flex:1;justify-content:center}.sw-btn small{display:none}}
+@media(max-width:820px){.app{grid-template-columns:1fr}.side{position:static;display:flex;flex-wrap:wrap;gap:4px}.side .biz{width:100%}.side button{width:auto}.cards{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+<div class="demobar">▶ Bu bir <b>canlı demo</b>dur — örnek verilerle gezinin. Kendi işletmenizi kurmak için <a href="/kampanya">kampanyaya katılın →</a></div>
+<div class="topnav">
+  <a class="brand" href="/"><i></i> TEKNOPERS <span style="font:700 10px var(--mono);color:#fff;background:var(--goldD);padding:3px 7px;border-radius:6px;margin-left:4px">DEMO</span></a>
+  <div class="actions">
+    <a class="btn btn-navy btn-sm" href="/">← Site</a>
+    <a class="btn btn-gold btn-sm" href="/kampanya">🚀 Kampanya · 1 Yıl 1.000 ₺</a>
+  </div>
+</div>
+
+<div class="switch">
+  <button class="sw-btn on" data-w="sirket">🏢 Şirket &amp; Saha <small>PDKS · zimmet · stok · cari</small></button>
+  <button class="sw-btn" data-w="salon">💇 Salon &amp; Randevu <small>randevu · müşteri · paket</small></button>
+</div>
+<div id="world-sirket" class="world">
+  <div class="app">
+    <aside class="side">
+      <div class="biz">Yıldız Temizlik Hizmetleri<small>Şirket &amp; Saha · Demo işletme</small></div>
+      <button class="on" data-v="panel"><span class="ic">📊</span> Panel</button>
+      <button data-v="saha"><span class="ic">📍</span> Saha &amp; Personel</button>
+      <button data-v="puantaj"><span class="ic">🕒</span> Puantaj</button>
+      <button data-v="zimmet"><span class="ic">🧰</span> Zimmet</button>
+      <button data-v="stok"><span class="ic">📦</span> Stok</button>
+      <button data-v="cari"><span class="ic">🧾</span> Cari &amp; Tahsilat</button>
+    </aside>
+    <main class="main">
+      <section class="view on" data-view="panel">
+        <div class="head"><h1>Panel</h1><span class="date">Bugün · 18 Ağustos 2026, Salı</span></div>
+        <div class="cards">
+          <div class="card"><div class="l">Sahadaki personel</div><div class="v">12/14</div><div class="d up">6 lokasyon aktif</div></div>
+          <div class="card"><div class="l">Aktif lokasyon</div><div class="v">6</div><div class="d">bina / site</div></div>
+          <div class="card"><div class="l">Bugünkü tahsilat</div><div class="v">14.200₺</div><div class="d up">▲ hedefin %92'si</div></div>
+          <div class="card"><div class="l">Kritik stok</div><div class="v down">3</div><div class="d down">ürün sipariş bekliyor</div></div>
+        </div>
+        <div class="panel">
+          <div class="ph">Bugünün özeti <span class="tag">canlı · GPS</span></div>
+          <table>
+            <tr><td>📍 <b>Akasya AVM</b> ekibi (4 kişi) sahaya zamanında giriş yaptı</td><td class="right"><span class="pill in">Sahada</span></td></tr>
+            <tr><td>⚠️ <b>Mehmet A.</b> — Nişantaşı Sitesi'ne henüz giriş yapmadı</td><td class="right"><span class="pill wait">Bekleniyor</span></td></tr>
+            <tr><td>🧰 <b>Cila makinesi #2</b> Ahmet Y. üzerinde — 6 gündür sahada</td><td class="right"><span class="pill ok">Zimmet</span></td></tr>
+            <tr><td>📦 Genel temizleyici stoğu kritik (8 koli)</td><td class="right"><span class="pill no">Sipariş</span></td></tr>
+            <tr><td>💳 <b>Akasya AVM</b> — 4.500₺ tahsilat vadesi 5 gün içinde</td><td class="right"><span class="pill wait">Vade</span></td></tr>
+          </table>
+        </div>
+      </section>
+      <section class="view" data-view="saha">
+        <div class="head"><h1>Saha &amp; Personel</h1><span class="date">14 personel · 12 sahada</span></div>
+        <div class="panel">
+          <div class="ph">Konumlu giriş durumu <span class="tag">GPS doğrulamalı</span></div>
+          <table>
+            <thead><tr><th>Personel</th><th>Lokasyon</th><th>Giriş</th><th>Durum</th><th class="right">Bu ay</th></tr></thead>
+            <tbody>
+              <tr><td><b>Ahmet Yılmaz</b></td><td>Akasya AVM</td><td class="mono">07:58</td><td><span class="pill in">Sahada</span></td><td class="right mono">22 gün</td></tr>
+              <tr><td><b>Fatma Demir</b></td><td>Akasya AVM</td><td class="mono">08:01</td><td><span class="pill in">Sahada</span></td><td class="right mono">21 gün</td></tr>
+              <tr><td><b>Hasan Kaya</b></td><td>Levent Plaza</td><td class="mono">07:45</td><td><span class="pill in">Sahada</span></td><td class="right mono">23 gün</td></tr>
+              <tr><td><b>Ayşe Çelik</b></td><td>Nişantaşı Sitesi</td><td class="mono">08:12</td><td><span class="pill in">Sahada</span></td><td class="right mono">20 gün</td></tr>
+              <tr><td><b>Mehmet Aslan</b></td><td>Nişantaşı Sitesi</td><td class="mono">—</td><td><span class="pill out">Bekleniyor</span></td><td class="right mono">19 gün</td></tr>
+              <tr><td><b>Zehra Ak</b></td><td>Maslak Ofis</td><td class="mono">08:30</td><td><span class="pill in">Sahada</span></td><td class="right mono">18 gün</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="view" data-view="puantaj">
+        <div class="head"><h1>Puantaj</h1><span class="date">Ağustos 2026 · ilk 10 gün</span></div>
+        <div class="panel pz">
+          <div class="ph">Lokasyon bazlı puantaj <span class="tag">otomatik hakediş</span></div>
+          <table>
+            <thead><tr><th>Personel</th><th class="d">1</th><th class="d">2</th><th class="d">3</th><th class="d">4</th><th class="d">5</th><th class="d">6</th><th class="d">7</th><th class="d">8</th><th class="d">9</th><th class="d">10</th><th class="right">Hakediş</th></tr></thead>
+            <tbody>
+              <tr><td><b>Ahmet Y.</b></td><td class="d c-T">T</td><td class="d c-T">T</td><td class="d c-HT">HT</td><td class="d c-T">T</td><td class="d c-T">T</td><td class="d c-T">T</td><td class="d c-T">T</td><td class="d c-T">T</td><td class="d c-HT">HT</td><td class="d c-T">T</td><td class="right mono">19.800₺</td></tr>
+              <tr><td><b>Hasan K.</b></td><td class="d c-T">T</td><td class="d c-T">T</td><td class="d c-HT">HT</td><td class="d c-T">T</td><td class="d c-T">T</td><td class="d c-T">T</td><td class="d c-T">T</td><td class="d c-T">T</td><td class="d c-HT">HT</td><td class="d c-T">T</td><td class="right mono">20.100₺</td></tr>
+              <tr><td><b>Zehra A.</b></td><td class="d c-T">T</td><td class="d c-I">İ</td><td class="d c-HT">HT</td><td class="d c-T">T</td><td class="d c-T">T</td><td class="d c-T">T</td><td class="d c-T">T</td><td class="d c-T">T</td><td class="d c-HT">HT</td><td class="d c-T">T</td><td class="right mono">18.400₺</td></tr>
+            </tbody>
+          </table>
+          <div class="legend"><span><i class="c-T">T</i>Tam gün</span><span><i class="c-Y">Y</i>Yarım</span><span><i class="c-I">İ</i>İzin</span><span><i class="c-HT">HT</i>Hafta tatili</span></div>
+        </div>
+      </section>
+      <section class="view" data-view="zimmet">
+        <div class="head"><h1>Zimmet</h1><span class="date">Ekipman &amp; demirbaş takibi</span></div>
+        <div class="panel">
+          <div class="ph">Zimmetli ekipman <span class="tag">kim · ne · ne zaman</span></div>
+          <table>
+            <thead><tr><th>Ekipman</th><th>Zimmetli</th><th>Lokasyon</th><th>Tarih</th><th class="right">Durum</th></tr></thead>
+            <tbody>
+              <tr><td><b>Cila makinesi #2</b></td><td>Ahmet Yılmaz</td><td>Akasya AVM</td><td class="mono">12.08</td><td class="right"><span class="pill ok">Kullanımda</span></td></tr>
+              <tr><td><b>Halı yıkama robotu</b></td><td>Hasan Kaya</td><td>Levent Plaza</td><td class="mono">10.08</td><td class="right"><span class="pill ok">Kullanımda</span></td></tr>
+              <tr><td><b>Sanayi elektrik süpürgesi</b></td><td>Zehra Ak</td><td>Maslak Ofis</td><td class="mono">15.08</td><td class="right"><span class="pill ok">Kullanımda</span></td></tr>
+              <tr><td><b>Yüksek basınç makinesi</b></td><td>—</td><td>Merkez depo</td><td class="mono">—</td><td class="right"><span class="pill out">Depoda</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="view" data-view="stok">
+        <div class="head"><h1>Stok</h1><span class="date">Malzeme deposu</span></div>
+        <div class="panel">
+          <div class="ph">Malzeme stoğu <span class="tag">kritik seviye uyarısı</span></div>
+          <table>
+            <thead><tr><th>Ürün</th><th>Stok</th><th class="right">Durum</th></tr></thead>
+            <tbody>
+              <tr><td><b>Genel yüzey temizleyici</b></td><td class="mono">8 koli</td><td class="right"><span class="pill no">Kritik</span></td></tr>
+              <tr><td><b>Cam temizleyici</b></td><td class="mono">24 koli</td><td class="right"><span class="pill ok">Yeterli</span></td></tr>
+              <tr><td><b>Çöp poşeti (jumbo)</b></td><td class="mono">6 paket</td><td class="right"><span class="pill wait">Azalıyor</span></td></tr>
+              <tr><td><b>Kağıt havlu</b></td><td class="mono">40 koli</td><td class="right"><span class="pill ok">Yeterli</span></td></tr>
+              <tr><td><b>Dezenfektan (5L)</b></td><td class="mono">3 bidon</td><td class="right"><span class="pill no">Kritik</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="view" data-view="cari">
+        <div class="head"><h1>Cari &amp; Tahsilat</h1><span class="date">Müşteri hesapları</span></div>
+        <div class="cards" style="grid-template-columns:repeat(3,1fr)">
+          <div class="card"><div class="l">Toplam alacak</div><div class="v">38.600₺</div></div>
+          <div class="card"><div class="l">Vadesi geçen</div><div class="v down">7.200₺</div></div>
+          <div class="card"><div class="l">Bu ay tahsilat</div><div class="v up">112.400₺</div></div>
+        </div>
+        <div class="panel">
+          <div class="ph">Müşteri carileri <span class="tag">vade takibi</span></div>
+          <table>
+            <thead><tr><th>Müşteri (lokasyon)</th><th>Sözleşme</th><th>Vade</th><th class="right">Bakiye</th></tr></thead>
+            <tbody>
+              <tr><td><b>Akasya AVM</b></td><td>Aylık</td><td class="mono">5 gün</td><td class="right mono down">4.500₺</td></tr>
+              <tr><td><b>Levent Plaza</b></td><td>Aylık</td><td class="mono">12 gün</td><td class="right mono down">6.800₺</td></tr>
+              <tr><td><b>Nişantaşı Sitesi</b></td><td>Aylık</td><td class="mono down">gecikmiş</td><td class="right mono down">3.200₺</td></tr>
+              <tr><td><b>Maslak Ofis</b></td><td>Aylık</td><td class="mono">20 gün</td><td class="right mono down">5.400₺</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+</div>
+
+<div id="world-salon" class="world" style="display:none">
+<div class="app">
+  <aside class="side">
+    <div class="biz">Güzel Saç Kuaför<small>Bakırköy · Demo işletme</small></div>
+    <button class="on" data-v="panel"><span class="ic">📊</span> Panel</button>
+    <button data-v="personel"><span class="ic">👥</span> Personel</button>
+    <button data-v="puantaj"><span class="ic">🕒</span> Puantaj</button>
+    <button data-v="randevu"><span class="ic">📅</span> Randevu</button>
+    <button data-v="kasa"><span class="ic">🧾</span> Kasa & Cari</button>
+  </aside>
+
+  <main class="main">
+    <!-- PANEL -->
+    <section class="view on" data-view="panel">
+      <div class="head"><h1>Panel</h1><span class="date">Bugün · 18 Ağustos 2026, Salı</span></div>
+      <div class="cards">
+        <div class="card"><div class="l">İçerideki personel</div><div class="v">4/5</div><div class="d up">1 kişi izinli</div></div>
+        <div class="card"><div class="l">Bugünkü randevu</div><div class="v">12</div><div class="d up">3'ü onay bekliyor</div></div>
+        <div class="card"><div class="l">Bugünkü ciro</div><div class="v">8.450₺</div><div class="d up">▲ dün 6.900₺</div></div>
+        <div class="card"><div class="l">Bekleyen tahsilat</div><div class="v">2.300₺</div><div class="d down">3 cari</div></div>
+      </div>
+      <div class="panel">
+        <div class="ph">Bugünün özeti <span class="tag">canlı</span></div>
+        <table>
+          <tr><td>🕒 Sabah vardiyasına <b>4 personel</b> zamanında giriş yaptı</td><td class="right"><span class="pill ok">Tamam</span></td></tr>
+          <tr><td>📅 Sırada <b>Merve Y.</b> — Saç boya · 14:30</td><td class="right mono">14:30</td></tr>
+          <tr><td>💳 <b>Ayşe K.</b> paketinden 1 seans düşüldü (kalan 3)</td><td class="right"><span class="pill ok">Paket</span></td></tr>
+          <tr><td>⚠️ <b>Selin A.</b> yarınki randevusunu onaylamadı</td><td class="right"><span class="pill wait">Hatırlat</span></td></tr>
+          <tr><td>📦 Şampuan stoğu kritik seviyede (4 adet)</td><td class="right"><span class="pill no">Sipariş</span></td></tr>
+        </table>
+      </div>
+    </section>
+
+    <!-- PERSONEL -->
+    <section class="view" data-view="personel">
+      <div class="head"><h1>Personel</h1><span class="date">5 kişi · 4 içeride</span></div>
+      <div class="panel">
+        <div class="ph">Personel durumu <span class="tag">GPS doğrulamalı</span></div>
+        <table>
+          <thead><tr><th>Ad Soyad</th><th>Görev</th><th>Giriş</th><th>Durum</th><th class="right">Bu ay</th></tr></thead>
+          <tbody>
+            <tr><td><b>Zeynep Demir</b></td><td>Kuaför</td><td class="mono">08:56</td><td><span class="pill in">İçeride</span></td><td class="right mono">21 gün</td></tr>
+            <tr><td><b>Merve Yıldız</b></td><td>Kuaför</td><td class="mono">09:02</td><td><span class="pill in">İçeride</span></td><td class="right mono">20 gün</td></tr>
+            <tr><td><b>Ahmet Kaya</b></td><td>Berber</td><td class="mono">08:48</td><td><span class="pill in">İçeride</span></td><td class="right mono">22 gün</td></tr>
+            <tr><td><b>Elif Şahin</b></td><td>Estetisyen</td><td class="mono">09:10</td><td><span class="pill in">İçeride</span></td><td class="right mono">19 gün</td></tr>
+            <tr><td><b>Buse Aydın</b></td><td>Resepsiyon</td><td class="mono">—</td><td><span class="pill out">İzinli</span></td><td class="right mono">18 gün</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- PUANTAJ -->
+    <section class="view" data-view="puantaj">
+      <div class="head"><h1>Puantaj</h1><span class="date">Ağustos 2026 · ilk 10 gün</span></div>
+      <div class="panel pz">
+        <div class="ph">Aylık puantaj <span class="tag">otomatik hakediş</span></div>
+        <table>
+          <thead><tr><th>Personel</th><th class="d">1</th><th class="d">2</th><th class="d">3</th><th class="d">4</th><th class="d">5</th><th class="d">6</th><th class="d">7</th><th class="d">8</th><th class="d">9</th><th class="d">10</th><th class="right">Hakediş</th></tr></thead>
+          <tbody>
+            <tr><td><b>Zeynep D.</b></td><td class="d c-T">T</td><td class="d c-T">T</td><td class="d c-HT">HT</td><td class="d c-T">T</td><td class="d c-T">T</td><td class="d c-T">T</td><td class="d c-Y">Y</td><td class="d c-T">T</td><td class="d c-HT">HT</td><td class="d c-T">T</td><td class="right mono">18.500₺</td></tr>
+            <tr><td><b>Merve Y.</b></td><td class="d c-T">T</td><td class="d c-I">İ</td><td class="d c-HT">HT</td><td class="d c-T">T</td><td class="d c-T">T</td><td class="d c-T">T</td><td class="d c-T">T</td><td class="d c-T">T</td><td class="d c-HT">HT</td><td class="d c-T">T</td><td class="right mono">17.900₺</td></tr>
+            <tr><td><b>Ahmet K.</b></td><td class="d c-T">T</td><td class="d c-T">T</td><td class="d c-HT">HT</td><td class="d c-T">T</td><td class="d c-T">T</td><td class="d c-T">T</td><td class="d c-T">T</td><td class="d c-T">T</td><td class="d c-HT">HT</td><td class="d c-T">T</td><td class="right mono">19.250₺</td></tr>
+          </tbody>
+        </table>
+        <div class="legend"><span><i class="c-T">T</i>Tam gün</span><span><i class="c-Y">Y</i>Yarım</span><span><i class="c-I">İ</i>İzin</span><span><i class="c-HT">HT</i>Hafta tatili</span></div>
+      </div>
+    </section>
+
+    <!-- RANDEVU -->
+    <section class="view" data-view="randevu">
+      <div class="head"><h1>Randevu</h1><span class="date">Bugün · 12 randevu</span></div>
+      <div class="panel">
+        <div class="ph">Bugünün randevuları <span class="tag">otomatik hatırlatma</span></div>
+        <table>
+          <thead><tr><th>Saat</th><th>Müşteri</th><th>İşlem</th><th>Personel</th><th class="right">Durum</th></tr></thead>
+          <tbody>
+            <tr><td class="mono">10:00</td><td><b>Fatma Öz</b></td><td>Fön</td><td>Zeynep D.</td><td class="right"><span class="pill ok">Geldi</span></td></tr>
+            <tr><td class="mono">11:30</td><td><b>Ayşe Korkmaz</b></td><td>Cilt bakımı (paket)</td><td>Elif Ş.</td><td class="right"><span class="pill ok">Geldi</span></td></tr>
+            <tr><td class="mono">13:00</td><td><b>Hakan Er</b></td><td>Saç & sakal</td><td>Ahmet K.</td><td class="right"><span class="pill ok">Onaylı</span></td></tr>
+            <tr><td class="mono">14:30</td><td><b>Merve Yılmaz</b></td><td>Saç boya</td><td>Zeynep D.</td><td class="right"><span class="pill wait">Bekliyor</span></td></tr>
+            <tr><td class="mono">16:00</td><td><b>Selin Ak</b></td><td>Keratin</td><td>Merve Y.</td><td class="right"><span class="pill no">Onaysız</span></td></tr>
+            <tr><td class="mono">17:15</td><td><b>Deniz Ay</b></td><td>Manikür</td><td>Elif Ş.</td><td class="right"><span class="pill wait">Bekliyor</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- KASA -->
+    <section class="view" data-view="kasa">
+      <div class="head"><h1>Kasa & Cari</h1><span class="date">Bugün · 8.450₺ ciro</span></div>
+      <div class="cards" style="grid-template-columns:repeat(3,1fr)">
+        <div class="card"><div class="l">Nakit</div><div class="v">3.150₺</div></div>
+        <div class="card"><div class="l">Kart</div><div class="v">5.300₺</div></div>
+        <div class="card"><div class="l">Bekleyen tahsilat</div><div class="v down">2.300₺</div></div>
+      </div>
+      <div class="panel">
+        <div class="ph">Son hareketler</div>
+        <table>
+          <thead><tr><th>Saat</th><th>Açıklama</th><th>Tür</th><th class="right">Tutar</th></tr></thead>
+          <tbody>
+            <tr><td class="mono">11:20</td><td>Fatma Öz — Fön</td><td>Kart</td><td class="right mono up">+250₺</td></tr>
+            <tr><td class="mono">12:05</td><td>Ayşe K. — Paket kullanımı</td><td>Paket</td><td class="right mono">0₺</td></tr>
+            <tr><td class="mono">12:40</td><td>Şampuan alımı (tedarik)</td><td>Gider</td><td class="right mono down">-1.100₺</td></tr>
+            <tr><td class="mono">13:35</td><td>Hakan E. — Saç & sakal</td><td>Nakit</td><td class="right mono up">+180₺</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="panel">
+        <div class="ph">Bekleyen cari <span class="tag">vade takibi</span></div>
+        <table>
+          <tbody>
+            <tr><td><b>Nurşen T.</b> — açık hesap</td><td class="right mono down">900₺</td></tr>
+            <tr><td><b>Gökhan B.</b> — açık hesap</td><td class="right mono down">800₺</td></tr>
+            <tr><td><b>Sema K.</b> — açık hesap</td><td class="right mono down">600₺</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+</div>
+</div>
+
+<div class="foot-cta mx">
+  <h2>Beğendiniz mi? Kendi işletmenizi kurun.</h2>
+  <p>Bu demodaki her şeyi kendi verilerinizle, 15 gün ücretsiz deneyin. Beğenirseniz 1 yıl sadece 1.000 ₺.</p>
+  <div class="row">
+    <a class="btn btn-gold" href="/kampanya">🚀 Kampanyaya Katıl · 1 Yıl 1.000 ₺</a>
+    <a class="btn btn-navy" href="https://wa.me/905434472226?text=Merhaba%2C%20canl%C4%B1%20demoyu%20g%C3%B6rd%C3%BCm%2C%20kendi%20i%C5%9Fletmem%20i%C3%A7in%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener">💬 WhatsApp'tan Bilgi Al</a>
+  </div>
+</div>
+<div class="note">Demodaki isimler, rakamlar ve randevular örnektir; gerçek veri değildir.</div>
+
+<script>
+(function(){
+  document.querySelectorAll('.world').forEach(function(world){
+    var btns=world.querySelectorAll('.side button'), views=world.querySelectorAll('.view');
+    btns.forEach(function(b){ b.addEventListener('click',function(){
+      btns.forEach(function(x){x.classList.remove('on');}); b.classList.add('on');
+      var v=b.getAttribute('data-v');
+      views.forEach(function(s){ s.classList.toggle('on', s.getAttribute('data-view')===v); });
+      window.scrollTo({top:0,behavior:'smooth'});
+    });});
+  });
+  function setWorld(w){
+    document.getElementById('world-sirket').style.display=(w==='salon')?'none':'';
+    document.getElementById('world-salon').style.display=(w==='salon')?'':'none';
+    document.querySelectorAll('.sw-btn').forEach(function(b){ b.classList.toggle('on', b.getAttribute('data-w')===w); });
+    try{ history.replaceState(null,'','#'+w); }catch(e){}
+  }
+  var h=(location.hash||'').replace('#','');
+  setWorld(h==='salon'?'salon':'sirket');
+  document.querySelectorAll('.sw-btn').forEach(function(b){ b.addEventListener('click',function(){ setWorld(b.getAttribute('data-w')); }); });
+})();
+</script>
+</body>
+</html>

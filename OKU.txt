@@ -1,0 +1,35 @@
+TEKNOPERS — TAM PAKET (tüm değişiklikler, tek yerde)
+Orijinal zip ile diff alındı: 30 değişen + 8 yeni = 38 dosya. Repo yapısıyla aynı yere koy.
+
+────────────────────────────────────────────────────────
+YENİ DOSYALAR (create) — 8
+  kampanya.html                       → /kampanya (geri sayım + Shopier + FAQ + şema)
+  demo.html                           → /demo (İKİ DÜNYALI canlı demo: Şirket & Saha + Salon)
+  og-cozum.png og-urun.png og-soru.png og-salon.png og-araclar.png  → paylaşım görselleri (kök)
+  araclar/vardiya-cizelgesi/index.html → yeni araç (Vardiya Çizelgesi)
+
+ÜZERİNE YAZ (replace) — 30
+  index.html          → ana sayfaya 19 çözüm + 16 soru iç link bölümü
+  sitemap.xml         → /demo, /kampanya + vardiya eklendi
+  vercel.json         → /demo, /kampanya rewrite + www→çıplak yönlendirme  ★ŞART★
+  cevaplar.js         → 104 cevabın tamamı derinleştirildi (min 95 kelime, 93 iç link)
+  cozumler.js         → 19 çözüme Nasıl çalışır + SSS
+  urunler.js          → 13 ürüne SSS
+  sorular.js          → yeni sorular + kısayollar
+  lib/cozum-motor.js  → FAQ + hub CollectionPage + og:image + FUNNEL (aile-farkında)
+  lib/urun-motor.js   → FAQ + hub CollectionPage + og:image + FUNNEL (aile-farkında)
+  lib/seo-motor.js    → hub CollectionPage + og:image + FUNNEL fonksiyonu
+  araclar/index.html  → vardiya kartı
+  araclar/*/index.html (12 araç) → FUNNEL bandı + og-araclar (salon araçları og-salon + /demo#salon)
+  blog-*.html (7)     → og-soru görseli
+
+────────────────────────────────────────────────────────
+DEPLOY SIRASI (önemli)
+  1. Önce YENİ dosyaları yükle (kampanya.html, demo.html, 5 png, vardiya klasörü).
+  2. Sonra vercel.json'u güncelle — bu olmadan /demo ve /kampanya 404 verir.
+  3. Kalan replace dosyaları yükle.
+  4. Deploy sonrası /demo ve /kampanya'yı bir kez aç (rewrite + cache ısınsın).
+  5. GSC → /demo ve /kampanya için "Dizine ekleme iste".
+
+NOT: Bu paketteki motorlar/araçlar tüm katmanları (içerik + şema + OG + funnel) içerir;
+     yani daha önce verdiğim parça paketlerin hepsinin YERİNE geçer. Kayıp olmaz.
