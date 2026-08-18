@@ -128,6 +128,7 @@ input[type=number]:focus{border-color:var(--gold);outline:none;box-shadow:0 0 0 
 .content h2{margin-top:34px}
 .content p{color:var(--ink2);font-size:15.5px;margin-top:12px}
 .content strong{color:var(--ink)}
+.content h3{margin-top:26px}
 .faq{margin-top:16px}
 .faq details{background:#fff;border:1px solid var(--line);border-radius:12px;padding:2px 18px;margin-top:10px}
 .faq summary{font-weight:600;color:var(--ink);cursor:pointer;padding:15px 0;list-style:none;font-size:15px}
@@ -151,11 +152,11 @@ footer p{font-size:14px;max-width:360px}
 <meta name="theme-color" content="#0B1424">
 <meta property="og:site_name" content="TEKNOPERS">
 <meta property="og:locale" content="tr_TR">
-<meta property="og:image" content="https://teknopers.com.tr/og-image.png">
+<meta property="og:image" content="https://teknopers.com.tr/og-araclar.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://teknopers.com.tr/og-image.png">
+<meta name="twitter:image" content="https://teknopers.com.tr/og-araclar.png">
 <style id="mnav-fix">
 .mnav-btn{display:none}
 @media(max-width:880px){
@@ -256,6 +257,7 @@ footer p{font-size:14px;max-width:360px}
   </section>
 
   <!-- TEK CTA -->
+  <div style="max-width:720px;margin:26px auto;padding:16px 20px;border:1px solid #EAD9A8;border-radius:16px;background:linear-gradient(135deg,#FFF9EC,#FFFDF7);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px"><div style="min-width:200px;flex:1"><div style="font-weight:800;font-size:15.5px;color:#0B1220;line-height:1.3">Beğendin mi? Gerçeğini gör.</div><div style="font-weight:500;font-size:13px;color:#6B7280;margin-top:3px;line-height:1.5">Canlı demoyu dene; sonra 15 gün ücretsiz + 1 yıl 1.000 ₺ kampanyasına katıl.</div></div><div style="display:flex;gap:9px;flex-wrap:wrap"><a href="/demo" style="display:inline-flex;align-items:center;gap:6px;padding:11px 17px;border-radius:12px;background:#0B1220;color:#fff;font-weight:700;font-size:14px;text-decoration:none">▶ Canlı Demo</a><a href="/kampanya" style="display:inline-flex;align-items:center;gap:6px;padding:11px 17px;border-radius:12px;background:linear-gradient(135deg,#E0A100,#B8860B);color:#0B1220;font-weight:800;font-size:14px;text-decoration:none;box-shadow:0 8px 20px rgba(224,161,0,.3)">🚀 Kampanya →</a></div></div>
   <section class="cta">
     <h2>Bunu her ay tüm ekibiniz için otomatik yapmak ister misiniz?</h2>
     <p>TEKNOPERS, GPS'li puantajdan fazla mesai ve hak edişe kadar bordronuzun tabanını otomatik hesaplar. Elle hesap, hata ve unutma yok. Kullanıcı başına ücret yok, kurulum 1 gün.</p>
@@ -272,8 +274,15 @@ footer p{font-size:14px;max-width:360px}
     <p>Eğer personelinizle haftalık çalışma süresini sözleşmeyle 45 saatin altında belirlediyseniz (örneğin 40 saat), 40 ile 45 saat arasındaki çalışma "fazla süreli çalışma" olarak kabul edilir ve <strong>%25 zamlı</strong> (1,25 kat) ödenir. Yukarıdaki hesaplayıcıda çalışma türünü seçerek her iki durumu da hesaplayabilirsiniz.</p>
     <p>Dikkat edilmesi gereken üç nokta var: Fazla çalışma yaptırmak için işçiden <strong>yazılı onay</strong> almanız gerekir. Bir işçiye yılda en fazla <strong>270 saat</strong> fazla çalışma yaptırılabilir. Son olarak işçi, ücret yerine <strong>serbest zaman</strong> kullanmayı da tercih edebilir: her fazla çalışma saati için 1,5 saat, her fazla süreli çalışma saati için 1,25 saat izin hakkı doğar. Bu hesaplayıcı size ödemeniz gereken brüt tutarı gösterir; SGK ve vergi kesintileri bordroda ayrıca işlenir.</p>
 
+    <h3>Bayram ve genel tatil günlerinde mesai</h3>
+    <p>Ulusal bayram ve genel tatil günlerinde çalıştırdığınız işçiye, çalışılan her gün için bir günlük ücret <strong>ayrıca</strong> ödenir (İş Kanunu m.47). Bu tatil çalışması aynı zamanda haftalık 45 saati de aşıyorsa, aşan kısım için ayrıca fazla mesai hesabı gündeme gelir. İki durum farklı kurallara tabi olduğundan, bayram/tatil ödemesini yukarıdaki fazla mesai hesabından ayrı değerlendirin.</p>
+
     <h2>Sık sorulan sorular</h2>
     <div class="faq">
+      <details>
+  <summary>Fazla mesai (fazla çalışma) nedir?</summary>
+  <p>Fazla çalışma, haftalık 45 saatlik yasal çalışma süresini aşan çalışmadır ve her saati %50 zamlı ödenir (İş Kanunu m.41). Sözleşmeyle haftalık çalışma 45 saatin altında belirlenmişse, 45 saate kadar yapılan ek çalışma "fazla süreli çalışma" sayılır ve %25 zamlı ödenir. Bu araç her iki durumu da 2026 değerleriyle hesaplar.</p>
+</details>
       <details>
         <summary>Fazla mesai ücreti brüt mü net mi hesaplanır?</summary>
         <p>Fazla mesai ücreti brüt saatlik ücret üzerinden hesaplanır. Bu araç size ödemeniz gereken brüt tutarı verir; personelin eline geçecek net tutar, bordrodaki SGK ve gelir vergisi kesintilerinden sonra oluşur.</p>
@@ -305,57 +314,67 @@ footer p{font-size:14px;max-width:360px}
   </div>
 </footer>
 
-<!-- Structured data: hesaplayıcı -->
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"WebApplication",
-  "name":"Fazla Mesai Ücreti Hesaplama",
-  "url":"https://teknopers.com.tr/araclar/fazla-mesai-hesaplama/",
-  "applicationCategory":"BusinessApplication",
-  "operatingSystem":"Web",
-  "inLanguage":"tr-TR",
-  "offers":{"@type":"Offer","price":"0","priceCurrency":"TRY"},
-  "description":"İşverenler için fazla mesai ücreti hesaplama aracı. İş Kanunu m.41'e göre %50 zamlı fazla çalışma ve %25 zamlı fazla süreli çalışma hesabı, 2026 değerleriyle."
-}
-</script>
-<!-- Structured data: SSS -->
+<!-- Yapisal veri (JSON-LD): kurulus + kirinti + uygulama + SSS -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "Fazla mesai ücreti brüt mü net mi hesaplanır?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Fazla mesai ücreti brüt saatlik ücret üzerinden hesaplanır. Bu araç size ödemeniz gereken brüt tutarı verir; personelin eline geçecek net tutar, bordrodaki SGK ve gelir vergisi kesintilerinden sonra oluşur."
-      }
+      "@type": "Organization",
+      "@id": "https://teknopers.com.tr/#org",
+      "name": "TEKNOPERS",
+      "url": "https://teknopers.com.tr/",
+      "logo": "https://teknopers.com.tr/icon-512.png",
+      "sameAs": [
+        "https://www.instagram.com/teknopers.saha",
+        "https://www.linkedin.com/company/teknopers/",
+        "https://www.facebook.com/share/1DnvkpxuM1/"
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Saatlik ücret aylık maaştan nasıl bulunur?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Aylık brüt maaş 225'e bölünür. Bunun nedeni, haftalık 45 saatlik yasal çalışmanın günde 7,5 saate, ayda ise 30 × 7,5 = 225 saate denk gelmesidir."
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://teknopers.com.tr/" },
+        { "@type": "ListItem", "position": 2, "name": "Araçlar", "item": "https://teknopers.com.tr/araclar/" },
+        { "@type": "ListItem", "position": 3, "name": "Fazla Mesai Hesaplama", "item": "https://teknopers.com.tr/araclar/fazla-mesai-hesaplama/" }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Bir işçiye yılda en fazla kaç saat fazla mesai yaptırabilirim?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "İş Kanunu'na göre yıllık fazla çalışma süresi 270 saati aşamaz. Bu sınırın üzerine çıkmak yasal risk oluşturur."
-      }
+      "@type": "WebApplication",
+      "@id": "https://teknopers.com.tr/araclar/fazla-mesai-hesaplama/#app",
+      "name": "Fazla Mesai Ücreti Hesaplama",
+      "url": "https://teknopers.com.tr/araclar/fazla-mesai-hesaplama/",
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "Bordro / Fazla Mesai",
+      "operatingSystem": "Web",
+      "browserRequirements": "JavaScript etkin modern bir tarayıcı gerekir",
+      "inLanguage": "tr-TR",
+      "isAccessibleForFree": true,
+      "dateModified": "2026-07-01",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "TRY" },
+      "featureList": [
+        "Aylık brüt maaştan saatlik ücret hesabı (÷ 225)",
+        "%50 zamlı fazla çalışma hesabı (İş Kanunu m.41)",
+        "%25 zamlı fazla süreli çalışma hesabı",
+        "Yıllık 270 saat üst sınırı uyarısı",
+        "2026 asgari ücret ve yasal parametrelerle güncel",
+        "Üyelik gerektirmez, tamamen ücretsiz"
+      ],
+      "screenshot": "https://teknopers.com.tr/og-araclar.png",
+      "publisher": { "@id": "https://teknopers.com.tr/#org" },
+      "provider": { "@id": "https://teknopers.com.tr/#org" },
+      "description": "İşverenler için fazla mesai ücreti hesaplama aracı. İş Kanunu m.41'e göre %50 zamlı fazla çalışma ve %25 zamlı fazla süreli çalışma hesabı, 2026 değerleriyle."
     },
     {
-      "@type": "Question",
-      "name": "Pazar ve resmi tatil çalışması fazla mesai midir?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Hafta tatili ve resmi tatil çalışmalarının ücretlendirilmesi ayrı kurallara tabidir ve bu araçtaki fazla mesai hesabından farklıdır. Bu tür durumlar için ayrıca bordro hesabı yapılmalıdır."
-      }
+      "@type": "FAQPage",
+      "@id": "https://teknopers.com.tr/araclar/fazla-mesai-hesaplama/#faq",
+      "mainEntity": [
+        { "@type": "Question", "name": "Fazla mesai (fazla çalışma) nedir?", "acceptedAnswer": { "@type": "Answer", "text": "Fazla çalışma, haftalık 45 saatlik yasal çalışma süresini aşan çalışmadır ve her saati %50 zamlı ödenir (İş Kanunu m.41). Sözleşmeyle haftalık çalışma 45 saatin altında belirlenmişse, 45 saate kadar yapılan ek çalışma 'fazla süreli çalışma' sayılır ve %25 zamlı ödenir. Bu araç her iki durumu da 2026 değerleriyle hesaplar." } },
+        { "@type": "Question", "name": "Fazla mesai ücreti brüt mü net mi hesaplanır?", "acceptedAnswer": { "@type": "Answer", "text": "Fazla mesai ücreti brüt saatlik ücret üzerinden hesaplanır. Bu araç size ödemeniz gereken brüt tutarı verir; personelin eline geçecek net tutar, bordrodaki SGK ve gelir vergisi kesintilerinden sonra oluşur." } },
+        { "@type": "Question", "name": "Saatlik ücret aylık maaştan nasıl bulunur?", "acceptedAnswer": { "@type": "Answer", "text": "Aylık brüt maaş 225'e bölünür. Bunun nedeni, haftalık 45 saatlik yasal çalışmanın günde 7,5 saate, ayda ise 30 × 7,5 = 225 saate denk gelmesidir." } },
+        { "@type": "Question", "name": "Bir işçiye yılda en fazla kaç saat fazla mesai yaptırabilirim?", "acceptedAnswer": { "@type": "Answer", "text": "İş Kanunu'na göre yıllık fazla çalışma süresi 270 saati aşamaz. Bu sınırın üzerine çıkmak yasal risk oluşturur." } },
+        { "@type": "Question", "name": "Pazar ve resmi tatil çalışması fazla mesai midir?", "acceptedAnswer": { "@type": "Answer", "text": "Hafta tatili ve resmi tatil çalışmalarının ücretlendirilmesi ayrı kurallara tabidir ve bu araçtaki fazla mesai hesabından farklıdır. Bu tür durumlar için ayrıca bordro hesabı yapılmalıdır." } }
+      ]
     }
   ]
 }
@@ -463,18 +482,6 @@ $('fillMin').addEventListener('click', (e) => {
 })();
 </script>
 
-<!-- SEO UZMANLIK METNİ BAŞLANGICI -->
-<section style="max-width: 800px; margin: 40px auto; padding: 20px; font-family: sans-serif; color: #333; line-height: 1.6; background: #fdfdfd; border-radius: 8px; border: 1px solid #eaeaea;">
-    <h2 style="font-size: 1.4rem; color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 5px;">Fazla Mesai Ücreti Nasıl Hesaplanır?</h2>
-    <p style="font-size: 0.95rem;">İş Kanununa göre haftalık 45 saati aşan çalışmalar <strong>fazla çalışma (fazla mesai)</strong> olarak kabul edilir. Fazla mesai ücreti, çalışanın normal saatlik ücretinin <strong>%50 zamlı</strong> (%150) haliyle ödenir.</p>
-
-    <h3 style="font-size: 1.2rem; color: #2c3e50; margin-top: 25px;">Saatlik Ücret Nasıl Bulunur?</h3>
-    <p style="font-size: 0.95rem;">Saatlik ücretinizi bulmak için aylık maktu (sabit) brüt maaşınız 225 saate bölünür. (Örn: Kanuni aylık çalışma süresi olan 30 gün x 7.5 saat = 225 saat). Bulunan saatlik ücret 1.5 ile çarpılarak 1 saatlik fazla mesai ücretiniz elde edilir.</p>
-    
-    <h3 style="font-size: 1.2rem; color: #2c3e50; margin-top: 25px;">Tatillerde ve Bayramlarda Mesai</h3>
-    <p style="font-size: 0.95rem;">Ulusal bayram ve genel tatil günlerinde çalışan işçiye, çalışılan her gün için bir günlük ilave ücret ödenir. Eğer bu tatil çalışması aynı zamanda haftalık 45 saati de aşıyorsa, hesaplama kuralları değişebilir.</p>
-</section>
-<!-- SEO UZMANLIK METNİ BİTİŞİ -->
 </body>
 
 </html>
