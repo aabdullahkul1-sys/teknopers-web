@@ -25,11 +25,11 @@
 <meta property="og:description" content="Resmi tatiller, köprü planlayıcı ve iş günü hesaplama — tek araçta, geri sayımlı.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://teknopers.com.tr/araclar/resmi-tatiller/">
-<meta property="og:image" content="https://teknopers.com.tr/og-image.png">
+<meta property="og:image" content="https://teknopers.com.tr/og-araclar.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://teknopers.com.tr/og-image.png">
+<meta name="twitter:image" content="https://teknopers.com.tr/og-araclar.png">
 <meta property="og:image:alt" content="TEKNOPERS 2026 resmi tatiller ve köprü tatil planlayıcı aracı">
 <meta name="twitter:title" content="2026 Resmi Tatiller, Köprü Tatil & İş Günü Hesaplama">
 <meta name="twitter:description" content="2026-2027 resmi tatil listesi, köprü fırsatları ve iki tarih arası iş günü hesaplama. Ücretsiz, üyeliksiz.">
@@ -232,6 +232,7 @@ footer p{font-size:14px;max-width:360px}
   </div>
 
   <!-- TEK CTA -->
+  <div style="max-width:720px;margin:26px auto;padding:16px 20px;border:1px solid #EAD9A8;border-radius:16px;background:linear-gradient(135deg,#FFF9EC,#FFFDF7);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px"><div style="min-width:200px;flex:1"><div style="font-weight:800;font-size:15.5px;color:#0B1220;line-height:1.3">Beğendin mi? Gerçeğini gör.</div><div style="font-weight:500;font-size:13px;color:#6B7280;margin-top:3px;line-height:1.5">Canlı demoyu dene; sonra 15 gün ücretsiz + 1 yıl 1.000 ₺ kampanyasına katıl.</div></div><div style="display:flex;gap:9px;flex-wrap:wrap"><a href="/demo" style="display:inline-flex;align-items:center;gap:6px;padding:11px 17px;border-radius:12px;background:#0B1220;color:#fff;font-weight:700;font-size:14px;text-decoration:none">▶ Canlı Demo</a><a href="/kampanya" style="display:inline-flex;align-items:center;gap:6px;padding:11px 17px;border-radius:12px;background:linear-gradient(135deg,#E0A100,#B8860B);color:#0B1220;font-weight:800;font-size:14px;text-decoration:none;box-shadow:0 8px 20px rgba(224,161,0,.3)">🚀 Kampanya →</a></div></div>
   <section class="cta">
     <h2>Resmi tatilde çalışan personelin ücreti farklıdır.</h2>
     <p>Ulusal bayram ve genel tatil günlerinde çalışan işçiye, normal ücretine ek olarak bir günlük ücret daha ödenir. TEKNOPERS vardiyayı tatillere göre planlar, tatil çalışmasını ve fazla mesaiyi otomatik hesaplayıp bordronun tabanını çıkarır. Elle takip ve hatalı ödeme yok.</p>
@@ -340,74 +341,132 @@ footer p{font-size:14px;max-width:360px}
   </div>
 </footer>
 
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org","@type":"WebApplication","name":"Resmi Tatiller, Köprü ve İş Günü Hesaplama",
-  "url":"https://teknopers.com.tr/araclar/resmi-tatiller/","applicationCategory":"BusinessApplication",
-  "operatingSystem":"Web","inLanguage":"tr-TR","offers":{"@type":"Offer","price":"0","priceCurrency":"TRY"},
-  "description":"2026-2027 resmi tatiller, köprü tatil planlayıcı ve iki tarih arası iş günü hesaplama aracı."
-}
-</script>
+<!-- Yapisal veri (JSON-LD): kurulus + kirinti + uygulama + SSS -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "2026'da en uzun tatil hangisi?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Hafta sonlarıyla birleştirildiğinde Kurban Bayramı öne çıkar: 25 Mayıs Pazartesi bir gün izin alındığında 23-31 Mayıs arası 9 güne kadar kesintisiz tatil yapılabilir. Aracın \"Köprü Tatil\" sekmesi tüm fırsatları listeler."
+      "@type": "Organization",
+      "@id": "https://teknopers.com.tr/#org",
+      "name": "TEKNOPERS",
+      "url": "https://teknopers.com.tr/",
+      "logo": "https://teknopers.com.tr/icon-512.png",
+      "sameAs": [
+        "https://www.instagram.com/teknopers.saha",
+        "https://www.linkedin.com/company/teknopers/",
+        "https://www.facebook.com/share/1DnvkpxuM1/"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Ana Sayfa",
+          "item": "https://teknopers.com.tr/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Araçlar",
+          "item": "https://teknopers.com.tr/araclar/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Resmi Tatiller ve İş Günü Hesaplama",
+          "item": "https://teknopers.com.tr/araclar/resmi-tatiller/"
+        }
+      ]
+    },
+    {
+      "@type": "WebApplication",
+      "name": "Resmi Tatiller, Köprü ve İş Günü Hesaplama",
+      "url": "https://teknopers.com.tr/araclar/resmi-tatiller/",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "inLanguage": "tr-TR",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "TRY"
+      },
+      "description": "2026-2027 resmi tatiller, köprü tatil planlayıcı ve iki tarih arası iş günü hesaplama aracı.",
+      "@id": "https://teknopers.com.tr/araclar/resmi-tatiller/#app",
+      "browserRequirements": "JavaScript etkin modern bir tarayıcı gerekir",
+      "isAccessibleForFree": true,
+      "dateModified": "2026-07-01",
+      "screenshot": "https://teknopers.com.tr/og-araclar.png",
+      "publisher": {
+        "@id": "https://teknopers.com.tr/#org"
+      },
+      "provider": {
+        "@id": "https://teknopers.com.tr/#org"
       }
     },
     {
-      "@type": "Question",
-      "name": "Arife günü tam gün tatil mi?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Hayır. Dini bayram arifeleri öğleden sonra (saat 13:00'ten itibaren) yarım gün resmi tatildir. Cumhuriyet Bayramı'nın arifesi olan 28 Ekim de öğleden sonra yarım gün tatildir."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Resmi tatilde çalışan işçiye ne kadar ödenir?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "İşçiye o günün ücreti çalışmasa da ödenir; fiilen çalışırsa çalıştığı her gün için bir günlük ücret daha eklenir. Yani tatilde çalışan işçi toplam iki yevmiye alır. Toplu iş sözleşmesiyle bu oran artabilir."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "İş günü hesabına resmi tatiller dahil mi?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Evet. Bu araçtaki iş günü hesabı, hafta sonlarının yanı sıra 2026 ve 2027 tam gün resmi tatillerini de düşer; arife (yarım gün) günleri iş günü olarak sayılır."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Ulusal bayram ile genel tatil farkı nedir?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Ulusal bayramlar 23 Nisan, 19 Mayıs, 30 Ağustos ve 29 Ekim'dir; genel tatiller ise dini bayramlar (Ramazan, Kurban), 1 Ocak, 1 Mayıs ve 15 Temmuz'dur. Ücret açısından ikisi de aynı kurala tabidir: çalışılmasa da ücretlidir, çalışılırsa bir yevmiye daha eklenir."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Resmi tatilde çalışmak zorunlu mu?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Ulusal bayram ve genel tatillerde çalışılıp çalışılmayacağı iş sözleşmesinde veya toplu iş sözleşmesinde kararlaştırılmamışsa, işçinin bu günlerde çalıştırılması için onayı gerekir. Çalışan işçiye o günün ücretine ek olarak çalıştığı her gün için bir günlük ücret daha ödenir."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "2027 resmi tatilleri nerede?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yukarıdaki araçta yılı 2027 olarak değiştirin; tam liste, köprü fırsatları ve iş günü hesabı 2027 için de çalışır. Dini bayram tarihleri her yıl yaklaşık 10-11 gün öne kayar."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "2026'da en uzun tatil hangisi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hafta sonlarıyla birleştirildiğinde Kurban Bayramı öne çıkar: 25 Mayıs Pazartesi bir gün izin alındığında 23-31 Mayıs arası 9 güne kadar kesintisiz tatil yapılabilir. Aracın \"Köprü Tatil\" sekmesi tüm fırsatları listeler."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Arife günü tam gün tatil mi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hayır. Dini bayram arifeleri öğleden sonra (saat 13:00'ten itibaren) yarım gün resmi tatildir. Cumhuriyet Bayramı'nın arifesi olan 28 Ekim de öğleden sonra yarım gün tatildir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Resmi tatilde çalışan işçiye ne kadar ödenir?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "İşçiye o günün ücreti çalışmasa da ödenir; fiilen çalışırsa çalıştığı her gün için bir günlük ücret daha eklenir. Yani tatilde çalışan işçi toplam iki yevmiye alır. Toplu iş sözleşmesiyle bu oran artabilir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "İş günü hesabına resmi tatiller dahil mi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Evet. Bu araçtaki iş günü hesabı, hafta sonlarının yanı sıra 2026 ve 2027 tam gün resmi tatillerini de düşer; arife (yarım gün) günleri iş günü olarak sayılır."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ulusal bayram ile genel tatil farkı nedir?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ulusal bayramlar 23 Nisan, 19 Mayıs, 30 Ağustos ve 29 Ekim'dir; genel tatiller ise dini bayramlar (Ramazan, Kurban), 1 Ocak, 1 Mayıs ve 15 Temmuz'dur. Ücret açısından ikisi de aynı kurala tabidir: çalışılmasa da ücretlidir, çalışılırsa bir yevmiye daha eklenir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Resmi tatilde çalışmak zorunlu mu?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ulusal bayram ve genel tatillerde çalışılıp çalışılmayacağı iş sözleşmesinde veya toplu iş sözleşmesinde kararlaştırılmamışsa, işçinin bu günlerde çalıştırılması için onayı gerekir. Çalışan işçiye o günün ücretine ek olarak çalıştığı her gün için bir günlük ücret daha ödenir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "2027 resmi tatilleri nerede?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yukarıdaki araçta yılı 2027 olarak değiştirin; tam liste, köprü fırsatları ve iş günü hesabı 2027 için de çalışır. Dini bayram tarihleri her yıl yaklaşık 10-11 gün öne kayar."
+          }
+        }
+      ],
+      "@id": "https://teknopers.com.tr/araclar/resmi-tatiller/#faq"
     }
   ]
 }
