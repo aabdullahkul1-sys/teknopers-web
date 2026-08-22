@@ -513,6 +513,64 @@ footer p{color:#A9B4C7;font-size:14px}
   .scene,.dcap p{opacity:0}.s1,.dcap .c1{opacity:1}
   .scrub i:nth-child(1){background:var(--gold)}
 }
+
+
+/* ===================== KLASİK KURUMSAL TEMA (2010s) ===================== */
+:root{--r:6px;--rs:4px;
+  --sh:0 1px 3px rgba(11,18,32,.13),0 1px 2px rgba(11,18,32,.08);
+  --shL:0 1px 2px rgba(11,18,32,.08)}
+/* --- Nav: kalın, opak, tok bar --- */
+nav{background:#fff;backdrop-filter:none;border-bottom:3px solid var(--ink);box-shadow:0 2px 8px rgba(11,18,32,.10)}
+.nav-in{padding:15px 22px}
+.logo{font-size:21px}.logo .lg{border-radius:5px}
+.nav-links a{font-size:14.5px;font-weight:700;color:var(--ink2);border-radius:4px}
+.nav-links a:hover{color:var(--goldD);background:#F0F3F8}
+/* --- Butonlar: tam dolgulu, köşeli, klasik (gölgesiz + net çerçeve) --- */
+.btn{border-radius:5px;font-weight:700;box-shadow:none;border:1px solid transparent}
+.btn-wa{border-color:#178043}.btn-gold{border-color:#b58500}.btn-rose{border-color:#9d3f52}.btn-navy{border-color:#05090f}
+.btn-ghost{background:#EDF0F6;color:var(--ink);border:1.5px solid var(--line2)}
+.btn-ghost:hover{background:#E1E6F0;border-color:var(--ink);color:var(--ink)}
+.nav-cta.btn{border-radius:5px}
+/* --- Bölümler: daha tok, bantlı ayrım + başlık altı çizgisi --- */
+section{padding:52px 0;border-top:1px solid var(--line)}
+.hero{border-top:0;padding:56px 0 44px}
+.band{border-radius:6px}
+.sec-head{margin-bottom:30px}
+.sec-head h2{margin:12px 0 12px;padding-bottom:14px;position:relative}
+.sec-head h2::after{content:"";position:absolute;left:0;bottom:0;width:60px;height:3px;background:var(--gold);border-radius:2px}
+.sec-head.ctr h2::after{left:50%;transform:translateX(-50%)}
+.rose-sec .sec-head h2::after{background:var(--rose)}
+/* --- Kartlar: net sınır + hafif gölge + üst aksan (klasik kurumsal kutu) --- */
+.pcard-l,.card,.sec-card,.ccard{background:#fff;border:1px solid var(--line2);border-radius:6px;box-shadow:var(--shL)}
+.card{padding:22px;border-top:3px solid var(--gold)}
+.rose-sec .card{border-top:3px solid var(--rose)}
+.pcard-l{border-top:3px solid var(--gold)}
+.fam.rose .pcard-l{border-top:3px solid var(--rose)}
+.card h3,.ccard h3{margin-top:0}
+.sec-card b{margin-top:0}
+.pcard-l:hover,.card:hover,.ccard:hover,.sec-card:hover{transform:none;box-shadow:0 3px 12px rgba(11,18,32,.14);border-color:var(--line2)}
+.custom-grid .ccard{padding:20px}
+
+/* Kampanya fiyatı + klasik fiyat kartları */
+.price .pOld{color:var(--mut2);text-decoration-color:var(--rose)}
+.pKmp{font-family:'Figtree';font-size:21px;font-weight:800;color:var(--ink);margin:2px 0 2px}
+.pKmp b{color:var(--goldD)}.pcard.rose .pKmp b{color:var(--roseD)}
+.pKmp small{font-size:12px;color:var(--mut);font-weight:600}
+.pcard{border:1px solid var(--line2);border-radius:6px;box-shadow:var(--shL)}
+.pcard.gold{border-top:3px solid var(--gold)}.pcard.rose{border-top:3px solid var(--rose)}
+.kmp{border-radius:8px}.toggle{border-radius:6px}
+
+/* Lead (kanca) formu — klasik kurumsal */
+#basla{border-top:1px solid var(--line)}
+.lead-card{background:#fff;border:1px solid var(--line2);border-top:3px solid var(--gold);border-radius:6px;box-shadow:var(--sh);padding:22px;position:relative}
+.lead-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
+.lead-card input,.lead-card select{width:100%;padding:12px 13px;border:1.5px solid var(--line2);border-radius:5px;font:inherit;font-size:15px;color:var(--ink);background:#fff;box-sizing:border-box}
+.lead-card input:focus,.lead-card select:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(224,161,0,.15)}
+.lead-btn{width:100%;justify-content:center;font-size:16px;padding:13px}
+.lead-msg{margin-top:12px;font-size:14px;font-weight:700;display:none}
+.lead-msg.ok{display:block;color:#15803d}.lead-msg.err{display:block;color:#b91c1c}
+.lead-note{margin:12px 0 0;font-size:12.5px;color:var(--mut);text-align:center}
+@media(max-width:520px){.lead-row{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -543,7 +601,7 @@ footer p{color:#A9B4C7;font-size:14px}
       <h1>İşletmenizin bütün işi, <span class="g">tek sistemde</span>.</h1>
       <p class="sub">Personelden <b>ön muhasebeye</b>, randevudan kasaya — sahada ve salonda çalışan işletmenizin her işi tek panelde toplanır. Defter, Excel ve dağınık WhatsApp mesajları yerine <b>tek sistem</b>. Kurar, öğretir, yanınızda dururuz.</p>
       <div class="hero-ctas">
-        <a class="btn btn-wa" href="https://wa.me/905434472226?text=Merhaba%2C%20i%C5%9Fletmem%20i%C3%A7in%20TEKNOPERS%20kurulumu%20hakk%C4%B1nda%20g%C3%B6r%C3%BC%C5%9Fmek%20istiyorum." target="_blank" rel="noopener">💬 WhatsApp'tan Başlayalım</a>
+        <a class="btn btn-wa" href="https://wa.me/905434472226?text=Merhaba%2C%20i%C5%9Fletmem%20i%C3%A7in%20TEKNOPERS%20kurulumu%20hakk%C4%B1nda%20g%C3%B6r%C3%BC%C5%9Fmek%20istiyorum." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.7 13.7L3 21l4.5-1.2A9 9 0 1 0 12 3z"/><path d="M9 9c0 3 2.4 5.4 5.4 5.4.6 0 1.1-.5 1.1-1.1 0-.3-.6-.8-1-1-.3-.1-.6 0-.8.2s-.4.2-.7 0a3.6 3.6 0 0 1-1.6-1.6c-.1-.3-.1-.5.1-.7s.3-.5.2-.8c-.2-.4-.7-1-1-1-.6 0-1.1.5-1.1 1.1z"/></svg>WhatsApp'tan Başlayalım</a>
         <a class="btn btn-ghost" href="#urunler">Ürünleri Gör</a>
       </div>
       <div class="trust">
@@ -557,27 +615,27 @@ footer p{color:#A9B4C7;font-size:14px}
         <div class="phone">
           <div class="screen">
             <div class="sbar"><span>9:41</span><span class="live"><i></i>canlı ürün turu</span></div>
-            <div class="ahead"><span class="lg">T</span><span class="t">TEKNOPERS<span>TEK EKRANDA İŞLETME</span></span></div>
+            <div class="ahead"><span class="lg">T</span><span class="t">TEKNOPERS<span>BUGÜN · TAKVİM · KASA</span></span></div>
             <div class="stage">
               <div class="scene s1">
-                <div class="drow"><span class="av">AY</span><span class="m"><b>Ahmet Yılmaz</b><i>Duvarcı ustası · Kadıköy şantiye</i></span><span class="r tag-ok">08:02 ✓</span></div>
-                <div class="dpill"><span class="dot"></span>Konum işyeriyle eşleşti — GPS ile doğrulandı</div>
-                <div class="drow"><span class="av">MK</span><span class="m"><b>Mahmut Kaya</b><i>Kalıpçı · aynı şantiye</i></span><span class="r tag-ok">08:05 ✓</span></div>
+                <div class="drow"><span class="av">AY</span><span class="m"><b>Ahmet Yılmaz</b><i>Duvarcı ustası · Kadıköy şantiye</i></span><span class="r tag-ok">İçeride</span></div>
+                <div class="dpill"><span class="dot"></span>📍 Konum doğrulandı · giriş 08:02</div>
+                <div class="drow"><span class="av">MK</span><span class="m"><b>Mahmut Kaya</b><i>Kalıpçı · aynı şantiye</i></span><span class="r tag-ok">İçeride</span></div>
               </div>
               <div class="scene s2">
                 <div class="dbig"><div class="lbl">Ahmet Y. · bu ay · brüt hak ediş</div><div class="num"><span class="cur">₺</span>27.450</div></div>
                 <div class="dmini"><span>Çalışma<b>26 gün</b></span><span>Fazla mesai<b>+8 sa</b></span><span>Raporlu<b>−1 gün</b></span></div>
-                <div class="dpill"><span class="dot"></span>Puantajdan mevzuata uygun otomatik hesap</div>
+                <div class="dpill"><span class="dot"></span>Puantajdan otomatik · 30 gün esası, mevzuata uygun</div>
               </div>
               <div class="scene s3">
-                <div class="drow"><span class="av">MK</span><span class="m"><b>14:30 — Merve K.</b><i>Saç kesimi + fön · 45 dk</i></span><span class="r tag-acc">Onaylandı</span></div>
+                <div class="drow"><span class="av">MK</span><span class="m"><b>14:30 · Merve K.</b><i>Saç kesimi + fön · 45 dk</i></span><span class="r tag-acc">Onaylandı</span></div>
                 <div class="dpill wa"><span class="dot" style="background:#25D366"></span>WhatsApp hatırlatması gönderildi</div>
-                <div class="drow"><span class="av">SÖ</span><span class="m"><b>15:30 — Seda Ö.</b><i>Lazer paketi · 4/6 seans</i></span><span class="r tag-ok">Seans düştü</span></div>
+                <div class="drow"><span class="av">SÖ</span><span class="m"><b>15:30 · Seda Ö.</b><i>Lazer paketi · 4/6 seans</i></span><span class="r tag-ok">Seans düştü</span></div>
               </div>
               <div class="scene s4">
-                <div class="dbig"><div class="lbl">Gün sonu · cebinize kalan</div><div class="num"><span class="cur">₺</span>8.900</div></div>
-                <div class="dmini"><span>Tahsilat<b>₺12.400</b></span><span>Gider<b>−₺3.500</b></span></div>
-                <div class="dpill"><span class="dot"></span>Gün kapandı — net kazanç hazır</div>
+                <div class="dbig"><div class="lbl">Bugünkü tahsilat · gün sonu</div><div class="num"><span class="cur">₺</span>12.400</div></div>
+                <div class="dmini"><span>Tahsilat<b>₺12.400</b></span><span>Gider<b>−₺3.500</b></span><span>Net<b>₺8.900</b></span></div>
+                <div class="dpill"><span class="dot"></span>Kasa · Bugün / Hafta / Ay / Yıl — net ₺8.900</div>
               </div>
             </div>
             <div class="dcap">
@@ -613,34 +671,37 @@ footer p{color:#A9B4C7;font-size:14px}
     <!-- Aile 1 -->
     <div class="fam reveal">
       <div class="fam-head"><span class="no">01</span><h3>Saha &amp; Personel</h3><span class="cnt">4 ürün</span></div>
+      <img src="/gorseller/temizlik-saha-ekip-takip.webp" width="1200" height="800" loading="lazy" decoding="async" alt="Tablet ile temizlik ekibini yöneten saha sorumlusu — TeknoPers saha personel takibi" style="display:block;width:100%;height:auto;border-radius:6px;margin:12px 0 18px;box-shadow:0 16px 40px -16px rgba(11,18,32,.30)">
       <div class="pgrid">
-        <a class="pcard-l" href="/urun/pdks-personel-takip-sistemi"><span class="glyph">⏱️</span><b>PDKS ve Personel Takip</b><p>Cihazsız, GPS'li mesai takibi. Kart hilesine kapalı, KVKK uyumlu, sıfır donanım.</p><span class="tug">Puantaj · Vardiya · İzin</span></a>
-        <a class="pcard-l" href="/urun/gorev-atama-ve-saha-yonetimi"><span class="glyph">🗂️</span><b>Görev Atama &amp; Saha Yönetimi</b><p>Ekibe görevi WhatsApp'tan değil, konum damgalı sistemden atayın. Kim ne yaptı tek panelde.</p><span class="tug">Görev · Konum · Onay</span></a>
-        <a class="pcard-l" href="/urun/zimmet-takip-sistemi"><span class="glyph">🔐</span><b>Zimmet Takip</b><p>Laptop, araç, kıymetli evrak… Kimde ne var? Fotoğraf ve dijital onayla kayıt altında.</p><span class="tug">Ekipman · Evrak · İade</span></a>
-        <a class="pcard-l" href="/urun/atolye-ve-orta-olcekli-uretim-icin-pdks"><span class="glyph">🏭</span><b>Atölye &amp; Üretim için PDKS</b><p>50-200 kişilik atölyede cihazsız, pahalı turnike olmadan mesai ve hak ediş takibi.</p><span class="tug">Atölye · Vardiya · Bordro</span></a>
+        <a class="pcard-l" href="/urun/pdks-personel-takip-sistemi"><b>PDKS ve Personel Takip</b><p>Cihazsız, GPS'li mesai takibi. Kart hilesine kapalı, KVKK uyumlu, sıfır donanım.</p><span class="tug">Puantaj · Vardiya · İzin</span></a>
+        <a class="pcard-l" href="/urun/gorev-atama-ve-saha-yonetimi"><b>Görev Atama &amp; Saha Yönetimi</b><p>Ekibe görevi WhatsApp'tan değil, konum damgalı sistemden atayın. Kim ne yaptı tek panelde.</p><span class="tug">Görev · Konum · Onay</span></a>
+        <a class="pcard-l" href="/urun/zimmet-takip-sistemi"><b>Zimmet Takip</b><p>Laptop, araç, kıymetli evrak… Kimde ne var? Fotoğraf ve dijital onayla kayıt altında.</p><span class="tug">Ekipman · Evrak · İade</span></a>
+        <a class="pcard-l" href="/urun/atolye-ve-orta-olcekli-uretim-icin-pdks"><b>Atölye &amp; Üretim için PDKS</b><p>50-200 kişilik atölyede cihazsız, pahalı turnike olmadan mesai ve hak ediş takibi.</p><span class="tug">Atölye · Vardiya · Bordro</span></a>
       </div>
     </div>
 
     <!-- Aile 2 -->
     <div class="fam reveal">
       <div class="fam-head"><span class="no">02</span><h3>Stok, Satış &amp; Ön Muhasebe</h3><span class="cnt">3 ürün</span></div>
+      <img src="/gorseller/depo-stok-kontrolu-tablet.webp" width="1200" height="800" loading="lazy" decoding="async" alt="Depo rafında tablet ile stok kontrolü yapan çalışan — TeknoPers stok yönetimi" style="display:block;width:100%;height:auto;border-radius:6px;margin:12px 0 18px;box-shadow:0 16px 40px -16px rgba(11,18,32,.30)">
       <div class="pgrid">
-        <a class="pcard-l" href="/urun/on-muhasebe-programi"><span class="glyph">📒</span><b>Ön Muhasebe</b><p>Cari, fatura, kasa, gider ve tahsilat tek ekranda. İşin günlük parası kontrol altında.</p><span class="tug">Cari · Fatura · Kasa</span></a>
-        <a class="pcard-l" href="/urun/satis-teklif-ve-cari-programi"><span class="glyph">🧾</span><b>Satış, Teklif ve Cari</b><p>Antetli profesyonel teklif, sipariş yönetimi ve borç-alacak takibi bir arada.</p><span class="tug">Teklif · Sipariş · Cari</span></a>
-        <a class="pcard-l" href="/urun/depo-stok-yonetim-programi"><span class="glyph">📦</span><b>Depo ve Stok Yönetim</b><p>Barkodla saniyede stok, OCR ile fatura okuma ve kritik seviye uyarısı.</p><span class="tug">Barkod · OCR · Sayım</span></a>
+        <a class="pcard-l" href="/urun/on-muhasebe-programi"><b>Ön Muhasebe</b><p>Cari, fatura, kasa, gider ve tahsilat tek ekranda. İşin günlük parası kontrol altında.</p><span class="tug">Cari · Fatura · Kasa</span></a>
+        <a class="pcard-l" href="/urun/satis-teklif-ve-cari-programi"><b>Satış, Teklif ve Cari</b><p>Antetli profesyonel teklif, sipariş yönetimi ve borç-alacak takibi bir arada.</p><span class="tug">Teklif · Sipariş · Cari</span></a>
+        <a class="pcard-l" href="/urun/depo-stok-yonetim-programi"><b>Depo ve Stok Yönetim</b><p>Barkodla saniyede stok, OCR ile fatura okuma ve kritik seviye uyarısı.</p><span class="tug">Barkod · OCR · Sayım</span></a>
       </div>
     </div>
 
     <!-- Aile 3 -->
     <div class="fam rose reveal">
       <div class="fam-head"><span class="no">03</span><h3>Sektörel Randevu · Salon</h3><span class="cnt">6 ürün</span></div>
+      <img src="/gorseller/kuafor-salon-randevu-yonetimi.webp" width="1200" height="800" loading="lazy" decoding="async" alt="Kuaför salonu sahibi tablet ile randevuları yönetiyor — TeknoPers Salon" style="display:block;width:100%;height:auto;border-radius:6px;margin:12px 0 18px;box-shadow:0 16px 40px -16px rgba(11,18,32,.30)">
       <div class="pgrid">
-        <a class="pcard-l" href="/urun/kuafor-ve-berber-randevu-programi"><span class="glyph">💈</span><b>Kuaför &amp; Berber Randevu</b><p>Çakışmasız online randevu, otomatik WhatsApp hatırlatma ve müşteri geçmişi.</p><span class="tug">Randevu · Hatırlatma · CRM</span></a>
-        <a class="pcard-l" href="/urun/guzellik-ve-estetik-randevu-programi"><span class="glyph">💅</span><b>Güzellik &amp; Estetik Randevu</b><p>Lazer, cilt bakımı gibi çok seanslı hizmetlerde paket takibi ve otomatik hatırlatma.</p><span class="tug">Paket · Seans · Hatırlatma</span></a>
-        <a class="pcard-l" href="/urun/dis-klinigi-randevu-programi"><span class="glyph">🦷</span><b>Diş Kliniği Randevu</b><p>Çok seanslı tedavilerde hasta geçmişi, kalan seans ve no-show'u düşüren hatırlatma.</p><span class="tug">Hasta · Tedavi · Seans</span></a>
-        <a class="pcard-l" href="/urun/veteriner-klinik-randevu-programi"><span class="glyph">🐾</span><b>Veteriner Klinik Randevu</b><p>Hayvan ve sahip kaydını birlikte tutun; aşı ve kontrol hatırlatmalarını otomatikleştirin.</p><span class="tug">Hasta · Aşı · Kontrol</span></a>
-        <a class="pcard-l" href="/urun/diyetisyen-danisan-takip-programi"><span class="glyph">🥗</span><b>Diyetisyen Danışan Takip</b><p>Danışanın kilo/ölçü ilerlemesi, paket kullanımı ve randevuları tek ekranda.</p><span class="tug">Danışan · İlerleme · Paket</span></a>
-        <a class="pcard-l" href="/urun/pilates-studyo-uyelik-programi"><span class="glyph">🧘</span><b>Pilates Stüdyo Üyelik</b><p>Ders takvimi, üyelik/paket takibi ve yoklama bir arada. Üyelik bitişini hatırlatır.</p><span class="tug">Ders · Üyelik · Yoklama</span></a>
+        <a class="pcard-l" href="/urun/kuafor-ve-berber-randevu-programi"><b>Kuaför &amp; Berber Randevu</b><p>Çakışmasız online randevu, otomatik WhatsApp hatırlatma ve müşteri geçmişi.</p><span class="tug">Randevu · Hatırlatma · CRM</span></a>
+        <a class="pcard-l" href="/urun/guzellik-ve-estetik-randevu-programi"><b>Güzellik &amp; Estetik Randevu</b><p>Lazer, cilt bakımı gibi çok seanslı hizmetlerde paket takibi ve otomatik hatırlatma.</p><span class="tug">Paket · Seans · Hatırlatma</span></a>
+        <a class="pcard-l" href="/urun/dis-klinigi-randevu-programi"><b>Diş Kliniği Randevu</b><p>Çok seanslı tedavilerde hasta geçmişi, kalan seans ve no-show'u düşüren hatırlatma.</p><span class="tug">Hasta · Tedavi · Seans</span></a>
+        <a class="pcard-l" href="/urun/veteriner-klinik-randevu-programi"><b>Veteriner Klinik Randevu</b><p>Hayvan ve sahip kaydını birlikte tutun; aşı ve kontrol hatırlatmalarını otomatikleştirin.</p><span class="tug">Hasta · Aşı · Kontrol</span></a>
+        <a class="pcard-l" href="/urun/diyetisyen-danisan-takip-programi"><b>Diyetisyen Danışan Takip</b><p>Danışanın kilo/ölçü ilerlemesi, paket kullanımı ve randevuları tek ekranda.</p><span class="tug">Danışan · İlerleme · Paket</span></a>
+        <a class="pcard-l" href="/urun/pilates-studyo-uyelik-programi"><b>Pilates Stüdyo Üyelik</b><p>Ders takvimi, üyelik/paket takibi ve yoklama bir arada. Üyelik bitişini hatırlatır.</p><span class="tug">Ders · Üyelik · Yoklama</span></a>
       </div>
     </div>
 
@@ -658,16 +719,17 @@ footer p{color:#A9B4C7;font-size:14px}
       <h2>Sahadaki ekibi, depodaki malı,<br>müşterideki alacağı tek yerden görün.</h2>
       <p class="sub">İnşaat, temizlik, güvenlik, teknik servis… Ekibi sahada çalışan her işletme için: personel telefonundan kendi ekranını kullanır, siz her şeyi kendi panelinizden izlersiniz. İkisi tamamen ayrıdır — personel yalnız kendini görür.</p>
     </div>
+    <img src="/gorseller/saha-personel-pdks-insaat.webp" width="1200" height="800" loading="lazy" decoding="async" alt="İnşaat sahasında telefonla giriş yapan personel — TeknoPers GPS'li PDKS ve puantaj" style="display:block;width:100%;height:auto;border-radius:6px;margin:6px 0 26px;box-shadow:0 18px 44px -16px rgba(11,18,32,.32)">
     <div class="grid3">
-      <div class="card reveal"><div class="ic">📍</div><h3>GPS'li Giriş-Çıkış (Puantaj)</h3><p>Personel tek dokunuşla giriş yapar, konumu işyeriyle teyit edilir. Geç kalmalar dakikasıyla raporlanır; kesinti uygulamak sizin kararınız.</p></div>
-      <div class="card reveal"><div class="ic">🧮</div><h3>Türk Bordrosuna Göre Hak Ediş</h3><p>30 gün esası, yevmiyeli/maaşlı ayrımı, ücretli izin–raporlu–devamsızlık farkı, ek mesai. Hak ediş "göz kararı" değil; mevzuata uygun otomatik hesap.</p></div>
-      <div class="card reveal"><div class="ic">📒</div><h3>Ön Muhasebe: Cari, Fatura, Kasa</h3><p>Müşteri ve tedarikçi carisi, tahsilat, gider ve gün sonu. Kim ne borçlu, kime ne ödenecek — telefonda, güncel. İşin günlük parası kontrol altında.</p></div>
-      <div class="card reveal"><div class="ic">📦</div><h3>Onaylı Stok ve Depo</h3><p>Her stok girişi yönetici onayına düşer — depoya "kaydı sonra atarız" diye mal girmez. Barkod ve kategori desteğiyle sayım net tutulur.</p></div>
-      <div class="card reveal"><div class="ic">🧾</div><h3>Fatura ve Fişi Fotoğraftan Okur</h3><p>İrsaliye veya fişin fotoğrafını çekin; kalemleri sistem okur, siz onaylarsınız. KDV dahil/hariç hesabı otomatik. Elle giriş en aza iner.</p></div>
-      <div class="card reveal"><div class="ic">🔐</div><h3>Zimmet Takibi</h3><p>Laptop, telefon, araç, kıymetli evrak kimde? Teslim fotoğraf, konum ve dijital onayla kayıt altına alınır; çıkışta zimmet kolayca kapanır.</p></div>
-      <div class="card reveal"><div class="ic">📄</div><h3>Profesyonel PDF + Excel Raporlar</h3><p>Kurumsal başlıklı puantaj ve cari ekstre PDF'leri, tek dokunuşla Excel. Muhasebecinize gönderirsiniz, iş biter.</p></div>
-      <div class="card reveal"><div class="ic">🔒</div><h3>Cihaz Kilidi ve Yetkiler</h3><p>Her personel ilk giriş yaptığı telefona bağlanır — "arkadaşım yerime giriş yaptı" dönemi kapanır. Rol bazlı yetkiler: herkes yalnız işini görür.</p></div>
-      <div class="card reveal"><div class="ic">🔔</div><h3>Anlık Bildirimler</h3><p>İzin talebi, stok onayı, gün sonu özeti… Önemli olan her şey telefonunuza bildirim olarak düşer; uygulamayı kolaçan etmenize gerek kalmaz.</p></div>
+      <div class="card reveal"><h3>GPS'li Giriş-Çıkış (Puantaj)</h3><p>Personel tek dokunuşla giriş yapar, konumu işyeriyle teyit edilir. Geç kalmalar dakikasıyla raporlanır; kesinti uygulamak sizin kararınız.</p></div>
+      <div class="card reveal"><h3>Türk Bordrosuna Göre Hak Ediş</h3><p>30 gün esası, yevmiyeli/maaşlı ayrımı, ücretli izin–raporlu–devamsızlık farkı, ek mesai. Hak ediş "göz kararı" değil; mevzuata uygun otomatik hesap.</p></div>
+      <div class="card reveal"><h3>Ön Muhasebe: Cari, Fatura, Kasa</h3><p>Müşteri ve tedarikçi carisi, tahsilat, gider ve gün sonu. Kim ne borçlu, kime ne ödenecek — telefonda, güncel. İşin günlük parası kontrol altında.</p></div>
+      <div class="card reveal"><h3>Onaylı Stok ve Depo</h3><p>Her stok girişi yönetici onayına düşer — depoya "kaydı sonra atarız" diye mal girmez. Barkod ve kategori desteğiyle sayım net tutulur.</p></div>
+      <div class="card reveal"><h3>Fatura ve Fişi Fotoğraftan Okur</h3><p>İrsaliye veya fişin fotoğrafını çekin; kalemleri sistem okur, siz onaylarsınız. KDV dahil/hariç hesabı otomatik. Elle giriş en aza iner.</p></div>
+      <div class="card reveal"><h3>Zimmet Takibi</h3><p>Laptop, telefon, araç, kıymetli evrak kimde? Teslim fotoğraf, konum ve dijital onayla kayıt altına alınır; çıkışta zimmet kolayca kapanır.</p></div>
+      <div class="card reveal"><h3>Profesyonel PDF + Excel Raporlar</h3><p>Kurumsal başlıklı puantaj ve cari ekstre PDF'leri, tek dokunuşla Excel. Muhasebecinize gönderirsiniz, iş biter.</p></div>
+      <div class="card reveal"><h3>Cihaz Kilidi ve Yetkiler</h3><p>Her personel ilk giriş yaptığı telefona bağlanır — "arkadaşım yerime giriş yaptı" dönemi kapanır. Rol bazlı yetkiler: herkes yalnız işini görür.</p></div>
+      <div class="card reveal"><h3>Anlık Bildirimler</h3><p>İzin talebi, stok onayı, gün sonu özeti… Önemli olan her şey telefonunuza bildirim olarak düşer; uygulamayı kolaçan etmenize gerek kalmaz.</p></div>
     </div>
     <div class="cta-row reveal">
       <a class="btn btn-gold" href="https://wa.me/905434472226?text=Merhaba%2C%20%C5%9Firket%20takip%20sistemi%20(personel%2Fon%20muhasebe%2Fstok)%20i%C3%A7in%20g%C3%B6r%C3%BC%C5%9Fmek%20istiyorum.%20Firmam%C4%B1zda%20__%20ki%C5%9Fi%20%C3%A7al%C4%B1%C5%9F%C4%B1yor." target="_blank" rel="noopener">Şirketim İçin Görüşelim →</a>
@@ -683,22 +745,23 @@ footer p{color:#A9B4C7;font-size:14px}
       <h2>Randevu defteri çöpe.<br>İşletme telefonda, müşteri linkte.</h2>
       <p class="sub">Kuaför, diş kliniği, diyetisyen, pilates stüdyosu, dövme stüdyosu ve veteriner kliniği için: müşteriniz kendi linkinden randevusunu alır, sistem hatırlatır, seansları sayar, kasanızı tutar. <b>Sistem sizin sektörünüzün diliyle kurulur</b> — diş kliniğinde "hasta" ve "tedavi", diyetisyende "danışan" ve "seans" yazar.</p>
     </div>
+    <img src="/gorseller/salon-randevu-takvimi.webp" width="1200" height="800" loading="lazy" decoding="async" alt="Salon çalışanı tablette randevu takvimini görüntülüyor — TeknoPersSalon randevu yönetimi" style="display:block;width:100%;height:auto;border-radius:6px;margin:6px 0 26px;box-shadow:0 18px 44px -16px rgba(11,18,32,.32)">
     <div class="sec-grid reveal">
-      <div class="sec-card"><span class="se">💈</span><b>Kuaför &amp; Berber</b><i>MÜŞTERİ · HİZMET</i><u>Saç, sakal, bakım paketleri hazır</u></div>
-      <div class="sec-card"><span class="se">💅</span><b>Güzellik &amp; Estetik</b><i>MÜŞTERİ · SEANS</i><u>Lazer, cilt bakımı, kaş-kirpik hazır</u></div>
-      <div class="sec-card"><span class="se">🦷</span><b>Diş Kliniği</b><i>HASTA · TEDAVİ</i><u>Muayene, dolgu, kanal, implant hazır</u></div>
-      <div class="sec-card"><span class="se">🥗</span><b>Diyetisyen</b><i>DANIŞAN · SEANS</i><u>Ön görüşme, program, 4 haftalık paket hazır</u></div>
-      <div class="sec-card"><span class="se">🧘</span><b>Pilates &amp; Stüdyo</b><i>ÜYE · DERS</i><u>Reformer, mat, ders paketleri hazır</u></div>
-      <div class="sec-card"><span class="se">🐾</span><b>Veteriner</b><i>SAHİP · İŞLEM</i><u>Muayene, aşı, cerrahi, aşı paketi hazır</u></div>
+      <div class="sec-card"><b>Kuaför &amp; Berber</b><i>MÜŞTERİ · HİZMET</i><u>Saç, sakal, bakım paketleri hazır</u></div>
+      <div class="sec-card"><b>Güzellik &amp; Estetik</b><i>MÜŞTERİ · SEANS</i><u>Lazer, cilt bakımı, kaş-kirpik hazır</u></div>
+      <div class="sec-card"><b>Diş Kliniği</b><i>HASTA · TEDAVİ</i><u>Muayene, dolgu, kanal, implant hazır</u></div>
+      <div class="sec-card"><b>Diyetisyen</b><i>DANIŞAN · SEANS</i><u>Ön görüşme, program, 4 haftalık paket hazır</u></div>
+      <div class="sec-card"><b>Pilates &amp; Stüdyo</b><i>ÜYE · DERS</i><u>Reformer, mat, ders paketleri hazır</u></div>
+      <div class="sec-card"><b>Veteriner</b><i>SAHİP · İŞLEM</i><u>Muayene, aşı, cerrahi, aşı paketi hazır</u></div>
     </div>
     <p class="sec-note reveal">Sektörünüz listede yok mu? <b>Söyleyin, ekleyelim.</b> Yeni sektör tanımlamak bizde dakikalar sürüyor — hizmet listeniz ve ekrandaki kelimeler size göre kurulur.</p>
     <div class="grid3">
-      <div class="card reveal"><div class="ic">📅</div><h3>Akıllı Randevu Takvimi</h3><p>Gün gün, personel personel dolu-boş takip. Çakışan saat sistemce engellenir; ertelemede hatırlatma mesajı da kendini günceller.</p></div>
-      <div class="card reveal"><div class="ic">🔗</div><h3>Müşteriye Özel Randevu Linki</h3><p>İşletmenize özel linki paylaşın; müşteri hizmetini, kişiyi ve saatini kendi seçsin. Gece 23:00'te bile randevu alınır — telefon susmaz.</p></div>
-      <div class="card reveal"><div class="ic">💬</div><h3>Otomatik Hatırlatma</h3><p>Randevudan önce bildirim ve WhatsApp hatırlatması. "Unutmuşum" dönemi biter, boş saat azalır.</p></div>
-      <div class="card reveal"><div class="ic">🎫</div><h3>Seanslı Paket Satışı</h3><p>"Lazer 6 Seans", "12 Ders" ya da "4 Haftalık Takip" tanımlayın; randevu girince seans düşer, iptalde geri gelir. Müşteri kalan seansını kendi telefonundan görür — tartışma biter.</p></div>
-      <div class="card reveal"><div class="ic">💰</div><h3>Kasa + Gider = Net Kazanç</h3><p>Tahsilatlar otomatik, giderleri siz girersiniz; gün-hafta-ay net kazancınız hazır. Cebinize ne kaldığını her akşam bilirsiniz.</p></div>
-      <div class="card reveal"><div class="ic">🏆</div><h3>Personel Primi ve Yarışı</h3><p>Her işlem o işi yapan kişiye işler; prim doğru kişiye gider. Günün yarış tablosu ekibi diri tutar. <b>İhtiyacınız yoksa bu bölüm hiç görünmez.</b></p></div>
+      <div class="card reveal"><h3>Akıllı Randevu Takvimi</h3><p>Gün gün, personel personel dolu-boş takip. Çakışan saat sistemce engellenir; ertelemede hatırlatma mesajı da kendini günceller.</p></div>
+      <div class="card reveal"><h3>Müşteriye Özel Randevu Linki</h3><p>İşletmenize özel linki paylaşın; müşteri hizmetini, kişiyi ve saatini kendi seçsin. Gece 23:00'te bile randevu alınır — telefon susmaz.</p></div>
+      <div class="card reveal"><h3>Otomatik Hatırlatma</h3><p>Randevudan önce bildirim ve WhatsApp hatırlatması. "Unutmuşum" dönemi biter, boş saat azalır.</p></div>
+      <div class="card reveal"><h3>Seanslı Paket Satışı</h3><p>"Lazer 6 Seans", "12 Ders" ya da "4 Haftalık Takip" tanımlayın; randevu girince seans düşer, iptalde geri gelir. Müşteri kalan seansını kendi telefonundan görür — tartışma biter.</p></div>
+      <div class="card reveal"><h3>Kasa + Gider = Net Kazanç</h3><p>Tahsilatlar otomatik, giderleri siz girersiniz; gün-hafta-ay net kazancınız hazır. Cebinize ne kaldığını her akşam bilirsiniz.</p></div>
+      <div class="card reveal"><h3>Personel Primi ve Yarışı</h3><p>Her işlem o işi yapan kişiye işler; prim doğru kişiye gider. Günün yarış tablosu ekibi diri tutar. <b>İhtiyacınız yoksa bu bölüm hiç görünmez.</b></p></div>
     </div>
     <div class="cta-row reveal">
       <a class="btn btn-rose" href="https://wa.me/905434472226?text=Merhaba%2C%20randevu%20program%C4%B1%20i%C3%A7in%20g%C3%B6r%C3%BC%C5%9Fmek%20istiyorum.%20Sekt%C3%B6r%C3%BCm%3A%20__%20%2C%20i%C5%9Fletmemin%20ad%C4%B1%3A%20__" target="_blank" rel="noopener">İşletmem İçin Görüşelim →</a>
@@ -714,11 +777,12 @@ footer p{color:#A9B4C7;font-size:14px}
       <h2>İki üründen fazlası: işinize göre yazılım.</h2>
       <p class="sub">İşiniz hazır ürünlere tam oturmuyorsa, ihtiyacınıza göre kurar ya da sıfırdan geliştiririz. İlke aynı: telefondan yönetilir, veriniz sizde durur, fiyat baştan bellidir.</p>
     </div>
+    <img src="/gorseller/isletme-sahibi-mobil-yonetim.webp" width="1200" height="800" loading="lazy" decoding="async" alt="İşletmesini telefonundan yöneten KOBİ sahibi — TeknoPers" style="display:block;width:100%;height:auto;border-radius:6px;margin:6px 0 26px;box-shadow:0 18px 44px -16px rgba(11,18,32,.32)">
     <div class="custom-grid reveal">
-      <div class="ccard"><span class="ci">🧩</span><h3>Sektörünüze özel akış</h3><p>Ekrandaki kelimeler, hizmet listesi ve iş akışı sizin işinize göre kurulur — hazır kalıba sığmak zorunda değilsiniz.</p></div>
-      <div class="ccard"><span class="ci">🔗</span><h3>Var olan sisteme bağlanma</h3><p>Kullandığınız muhasebe, e-fatura ya da cihazlarla konuşacak köprüler kurar; iki sistemi tek akışta buluştururuz.</p></div>
-      <div class="ccard"><span class="ci">📊</span><h3>Size özel rapor ve panel</h3><p>Patron gözüyle görmek istediğiniz özet neyse onu panele koyarız; kararı tahminle değil rakamla verirsiniz.</p></div>
-      <div class="ccard"><span class="ci">🤖</span><h3>Yapay zekâ destekli araçlar</h3><p>Fatura okuma, akıllı asistan, otomatik hatırlatma… Tekrar eden işi yazılıma devredip asıl işinize bakarsınız.</p></div>
+      <div class="ccard"><h3>Sektörünüze özel akış</h3><p>Ekrandaki kelimeler, hizmet listesi ve iş akışı sizin işinize göre kurulur — hazır kalıba sığmak zorunda değilsiniz.</p></div>
+      <div class="ccard"><h3>Var olan sisteme bağlanma</h3><p>Kullandığınız muhasebe, e-fatura ya da cihazlarla konuşacak köprüler kurar; iki sistemi tek akışta buluştururuz.</p></div>
+      <div class="ccard"><h3>Size özel rapor ve panel</h3><p>Patron gözüyle görmek istediğiniz özet neyse onu panele koyarız; kararı tahminle değil rakamla verirsiniz.</p></div>
+      <div class="ccard"><h3>Yapay zekâ destekli araçlar</h3><p>Fatura okuma, akıllı asistan, otomatik hatırlatma… Tekrar eden işi yazılıma devredip asıl işinize bakarsınız.</p></div>
     </div>
     <div class="center reveal">
       <a class="btn btn-navy" href="https://wa.me/905434472226?text=Merhaba%2C%20i%C5%9Fletmeme%20%C3%B6zel%20bir%20yaz%C4%B1l%C4%B1m%20%C3%A7%C3%B6z%C3%BCm%C3%BC%20hakk%C4%B1nda%20g%C3%B6r%C3%BC%C5%9Fmek%20istiyorum." target="_blank" rel="noopener">İhtiyacınızı Anlatın →</a>
@@ -820,7 +884,7 @@ footer p{color:#A9B4C7;font-size:14px}
     </div>
     <!-- ===== LANSMAN KAMPANYASI ===== -->
     <div class="kmp reveal" id="kampanya">
-      <span class="kick">🚀 Lansman Kampanyası · Sınırlı süre</span>
+      <span class="kick">Lansman Kampanyası · Sınırlı süre</span>
       <div class="kmp-big">1 yıl 1.000 ₺</div>
       <p class="kmp-sub"><b style="color:#fff">Şirket Takip</b> ve <b style="color:#fff">TeknoPersSalon</b> — her iki üründe de ilk yıl 1.000 ₺. Sunucu maliyetine yakın bir fiyata sistemi kurun, tüm yıl kullanın.</p>
       <div class="kmp-row">
@@ -831,7 +895,7 @@ footer p{color:#A9B4C7;font-size:14px}
       <p class="kmp-cond">Karşılığında: sistemi bir ay kullandıktan sonra kısa bir kullanıcı yorumu ve işletmeni referans gösterme izni (kayıtta onaylanır).</p>
       <div class="kmp-cta">
         <a class="btn btn-gold" id="kmpBtn" href="#" target="_blank" rel="noopener">Hemen Katıl — 1.000 ₺ →</a>
-        <a class="kmp-wa" href="https://wa.me/905434472226?text=Merhaba%2C%201%20y%C4%B1l%201.000%20%E2%82%BA%20lansman%20kampanyas%C4%B1%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener">💬 Önce soru sor</a>
+        <a class="kmp-wa" href="https://wa.me/905434472226?text=Merhaba%2C%201%20y%C4%B1l%201.000%20%E2%82%BA%20lansman%20kampanyas%C4%B1%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.7 13.7L3 21l4.5-1.2A9 9 0 1 0 12 3z"/><path d="M9 9c0 3 2.4 5.4 5.4 5.4.6 0 1.1-.5 1.1-1.1 0-.3-.6-.8-1-1-.3-.1-.6 0-.8.2s-.4.2-.7 0a3.6 3.6 0 0 1-1.6-1.6c-.1-.3-.1-.5.1-.7s.3-.5.2-.8c-.2-.4-.7-1-1-1-.6 0-1.1.5-1.1 1.1z"/></svg>Önce soru sor</a>
       </div>
       <div class="kmp-scar">Kampanya <span id="kmpBitis">—</span>'e kadar · <span id="kmpGun">—</span></div>
     </div>
@@ -846,7 +910,8 @@ footer p{color:#A9B4C7;font-size:14px}
       <div class="pcard gold reveal">
         <div class="pt">TEKNOPERS Şirket Takip</div>
         <div class="pd">Saha ekibi olan işletmeler için: personel + ön muhasebe + stok + cari</div>
-        <div class="price"><span id="pSirket">2.500</span> ₺<small> / <span class="perTxt">ay</span></small></div>
+        <div class="price"><s class="pOld"><span id="pSirket">2.500</span> ₺<small> / <span class="perTxt">ay</span></small></s></div>
+        <div class="pKmp">İlk yıl <b>1.000 ₺</b> <small>· yıllık tek ödeme · lansman</small></div>
         <div class="pnote" id="nSirket"></div>
         <ul class="plist">
           <li>Sınırsız personel — kullanıcı başına ücret yok</li>
@@ -862,7 +927,8 @@ footer p{color:#A9B4C7;font-size:14px}
       <div class="pcard rose reveal">
         <div class="pt">TeknoPersSalon</div>
         <div class="pd">Randevuyla çalışan işletmeler için: randevu + paket + kasa</div>
-        <div class="price"><span id="pSalon">1.500</span> ₺<small> / <span class="perTxt">ay</span></small></div>
+        <div class="price"><s class="pOld"><span id="pSalon">1.500</span> ₺<small> / <span class="perTxt">ay</span></small></s></div>
+        <div class="pKmp">İlk yıl <b>1.000 ₺</b> <small>· yıllık tek ödeme · lansman</small></div>
         <div class="pnote" id="nSalon"></div>
         <ul class="plist">
           <li>Sınırsız randevu ve müşteri kaydı</li>
@@ -876,7 +942,7 @@ footer p{color:#A9B4C7;font-size:14px}
         <a class="btn btn-rose" style="width:100%" href="https://wa.me/905434472226?text=Merhaba%2C%20Randevu%20Program%C4%B1%20i%C3%A7in%20teklif%20almak%20istiyorum.%20Sekt%C3%B6r%C3%BCm%3A%20__" target="_blank" rel="noopener">WhatsApp'tan Teklif Al</a>
       </div>
     </div>
-    <div class="kdv">Yukarıdaki fiyatlar kampanya sonrası normal fiyatlardır ve KDV dahil değildir. Kampanya fiyatı (1 yıl 1.000 ₺) yıllık tek ödemedir ve kampanya kartındaki "Hemen Katıl" ile Shopier üzerinden alınır.</div>
+    <div class="kdv">Üstü çizili fiyatlar kampanya sonrası normal fiyatlardır (KDV hariç). Lansman kampanyasında her iki üründe de <b>ilk yıl 1.000 ₺</b> (yıllık tek ödeme). 15 gün ücretsiz deneyip karar verirsin.</div>
   </div>
 </section>
 
@@ -940,12 +1006,33 @@ footer p{color:#A9B4C7;font-size:14px}
       <span class="kick">Tek mesaj uzaktasınız</span>
       <h2>Bugün yazın, yarın düzenle çalışın.</h2>
       <p class="sub">Kaç kişi çalıştığınızı ve ne iş yaptığınızı yazın — gerisini birlikte hallederiz.</p>
-      <a class="btn btn-wa" style="font-size:16px;padding:16px 32px" href="https://wa.me/905434472226?text=Merhaba%2C%20i%C5%9Fletmem%20i%C3%A7in%20TEKNOPERS%20kurulumu%20hakk%C4%B1nda%20g%C3%B6r%C3%BC%C5%9Fmek%20istiyorum." target="_blank" rel="noopener">💬 0543 447 22 26 — WhatsApp'tan Yaz</a>
+      <a class="btn btn-wa" style="font-size:16px;padding:16px 32px" href="https://wa.me/905434472226?text=Merhaba%2C%20i%C5%9Fletmem%20i%C3%A7in%20TEKNOPERS%20kurulumu%20hakk%C4%B1nda%20g%C3%B6r%C3%BC%C5%9Fmek%20istiyorum." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.7 13.7L3 21l4.5-1.2A9 9 0 1 0 12 3z"/><path d="M9 9c0 3 2.4 5.4 5.4 5.4.6 0 1.1-.5 1.1-1.1 0-.3-.6-.8-1-1-.3-.1-.6 0-.8.2s-.4.2-.7 0a3.6 3.6 0 0 1-1.6-1.6c-.1-.3-.1-.5.1-.7s.3-.5.2-.8c-.2-.4-.7-1-1-1-.6 0-1.1.5-1.1 1.1z"/></svg>0543 447 22 26 — WhatsApp'tan Yaz</a>
     </div>
   </div>
 </section>
 </main>
 
+<section id="basla" class="reveal">
+  <div class="wrap" style="max-width:660px">
+    <div class="sec-head ctr"><span class="kick">Ücretsiz Başla</span>
+      <h2>15 gün ücretsiz deneyin</h2>
+      <p class="sub">Bilgilerinizi bırakın, kurulumu birlikte yapalım. Beğenirseniz ilk yıl sadece <b>1.000 ₺</b>.</p></div>
+    <div class="lead-card">
+      <div class="lead-row">
+        <input id="lfAd" type="text" placeholder="Ad Soyad" autocomplete="name" maxlength="80">
+        <input id="lfTel" type="tel" placeholder="Telefon (05xx...)" autocomplete="tel" inputmode="tel" maxlength="20">
+      </div>
+      <div class="lead-row">
+        <select id="lfSektor" aria-label="Sektör"><option value="">Sektörünüz…</option><option>İnşaat / Saha</option><option>Temizlik</option><option>Güvenlik</option><option>Teknik Servis</option><option>Nakliye / Lojistik</option><option>Kuaför & Güzellik</option><option>Diş & Klinik</option><option>Diyetisyen</option><option>Pilates / Spor</option><option>Veteriner</option><option>Dövme & Piercing</option><option>Perakende / Mağaza</option><option>Diğer</option></select>
+        <select id="lfUrun" aria-label="Ürün"><option value="sirket">Şirket Takip (saha/depo)</option><option value="salon">Salon &amp; Randevu</option><option value="ikisi">İkisi de</option></select>
+      </div>
+      <input id="lfWeb" type="text" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+      <button id="lfBtn" type="button" class="btn btn-gold lead-btn">Ücretsiz Denemeyi Başlat</button>
+      <div id="lfMsg" class="lead-msg" role="status"></div>
+      <p class="lead-note">Bilgileriniz yalnızca sizinle iletişim için kullanılır. Spam yok.</p>
+    </div>
+  </div>
+</section>
 <footer>
   <div class="wrap">
     <div class="foot-grid">
@@ -1054,6 +1141,37 @@ document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
   links.querySelectorAll('a').forEach(function(a){a.addEventListener('click',close);});
   window.addEventListener('scroll',function(){if(document.body.classList.contains('mnav-open'))close();},{passive:true});
   document.addEventListener('click',function(e){if(document.body.classList.contains('mnav-open')&&!e.target.closest('.nav-in'))close();});
+})();
+</script>
+<script>
+(function(){
+  function ev(n,p){ if(typeof gtag==='function') gtag('event',n,p||{}); }
+  // GA4 dönüşüm olayları — delege
+  document.addEventListener('click',function(e){
+    var a=e.target.closest('a,button'); if(!a) return;
+    var href=(a.getAttribute&&a.getAttribute('href'))||'';
+    if(/wa\.me|api\.whatsapp|whatsapp/i.test(href)) ev('whatsapp_click',{yer:location.pathname});
+    else if(/shopier/i.test(href)) ev('shopier_click',{});
+    else if(/\/demo/.test(href)) ev('demo_click',{});
+  },true);
+  // Lead formu
+  var btn=document.getElementById('lfBtn'); if(!btn) return;
+  btn.addEventListener('click',function(){
+    var ad=(document.getElementById('lfAd').value||'').trim();
+    var tel=(document.getElementById('lfTel').value||'').trim();
+    var sektor=document.getElementById('lfSektor').value||'';
+    var urun=document.getElementById('lfUrun').value||'';
+    var hp=document.getElementById('lfWeb').value||'';
+    var msg=document.getElementById('lfMsg');
+    if(hp) return; // honeypot
+    if(ad.length<2 || tel.replace(/\D/g,'').length<7){ msg.className='lead-msg err'; msg.textContent='Lütfen ad ve geçerli bir telefon girin.'; return; }
+    var urunTxt = urun==='salon' ? 'Salon & Randevu' : (urun==='ikisi' ? 'İkisi de' : 'Şirket Takip');
+    var metin='Merhaba, 15 gün ücretsiz denemek istiyorum.\nAd: '+ad+'\nTelefon: '+tel+(sektor?'\nSektör: '+sektor:'')+'\nÜrün: '+urunTxt;
+    var wa='https://wa.me/905434472226?text='+encodeURIComponent(metin);
+    ev('lead_submit',{urun:urun,sektor:sektor});
+    msg.className='lead-msg ok'; msg.textContent='WhatsApp açılıyor — mesajı gönderdiğinizde talebiniz bize ulaşır.';
+    var w=window.open(wa,'_blank'); if(!w){ window.location.href=wa; }
+  });
 })();
 </script>
 </body>
