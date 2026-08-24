@@ -20,7 +20,7 @@ module.exports = function(req,res){
   var ham=(req.query&&req.query.slug)||'';
   if(ham==='__liste__'){
     res.statusCode=200; res.setHeader('Content-Type','text/html; charset=utf-8');
-    res.setHeader('Cache-Control','public, s-maxage=86400, stale-while-revalidate=604800');
+    res.setHeader('Cache-Control','public, s-maxage=60, stale-while-revalidate=120');
     return res.end(motor.urunListeUret(URUNLER));
   }
   var slug=temizSlug(ham);
@@ -29,6 +29,6 @@ module.exports = function(req,res){
   var sektorler=(o.kimlerIcin||[]).map(function(sl){var c=HC[sl];return c?{slug:c.slug,baslik:c.baslik,sektor:c.sektor}:null;}).filter(Boolean);
   var sorular=(o.sorular||[]).map(function(sl){var s=HS[sl];return s?{slug:s.slug,soru:s.soru}:null;}).filter(Boolean);
   res.statusCode=200; res.setHeader('Content-Type','text/html; charset=utf-8');
-  res.setHeader('Cache-Control','public, s-maxage=86400, stale-while-revalidate=604800');
+  res.setHeader('Cache-Control','public, s-maxage=60, stale-while-revalidate=120');
   return res.end(motor.urunSayfaUret(o,sektorler,sorular));
 };

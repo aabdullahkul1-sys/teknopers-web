@@ -23,7 +23,7 @@ module.exports = function(req, res){
   if (ham === '__liste__') {
     res.statusCode = 200;
     res.setHeader('Content-Type','text/html; charset=utf-8');
-    res.setHeader('Cache-Control','public, s-maxage=86400, stale-while-revalidate=604800');
+    res.setHeader('Cache-Control','public, s-maxage=60, stale-while-revalidate=120');
     return res.end(motor.cozumListeUret(COZUMLER));
   }
   var slug = temizSlug(ham);
@@ -37,6 +37,6 @@ module.exports = function(req, res){
   var ilgiliCozumler = (o.ilgiliCozumler||[]).map(function(sl){ var c=HC[sl]; return c?{slug:c.slug,baslik:c.baslik}:null; }).filter(Boolean);
   res.statusCode = 200;
   res.setHeader('Content-Type','text/html; charset=utf-8');
-  res.setHeader('Cache-Control','public, s-maxage=86400, stale-while-revalidate=604800');
+  res.setHeader('Cache-Control','public, s-maxage=60, stale-while-revalidate=120');
   return res.end(motor.cozumSayfaUret(o, ilgiliSorular, ilgiliCozumler, COZUM_URUN[slug] || null));
 };

@@ -42,7 +42,7 @@ module.exports = async function (req, res) {
   if (ham === '__liste__') {
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/html; charset=utf-8');
-    res.setHeader('Cache-Control', 'public, s-maxage=86400, stale-while-revalidate=604800');
+    res.setHeader('Cache-Control', 'public, s-maxage=60, stale-while-revalidate=120');
     return res.end(seo.listeSayfasiUret(SORULAR));
   }
 
@@ -92,7 +92,7 @@ module.exports = async function (req, res) {
 
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/html; charset=utf-8');
-    res.setHeader('Cache-Control', 'public, max-age=0, s-maxage=86400, stale-while-revalidate=604800');
+    res.setHeader('Cache-Control', 'public, max-age=0, s-maxage=60, stale-while-revalidate=120');
     return res.end(html);
 
   } catch (e) {
