@@ -68,19 +68,28 @@ module.exports = async function (req, res) {
 
   var urun = (b.urun === 'salon') ? 'salon' : 'erp';
 
-  // Salon: gerçek 2 günlük deneme aç (superadmin create_salon + trial_days)
+  // Salon: gerçek demo (superadmin create_salon + sektör + trial_days)
+  //  Dönüş: müşteri linki (/?s=kod) + yönetici linki (/?s=kod&y=1) + kod + PIN
   if (urun === 'salon') {
     var MASTER = process.env.TEKNOPERS_MASTER_KEY;
     if (!MASTER) return j(res, 200, { ok:false, sebep:'yapilandirma' });
+    var izin = ['guzellik','dis','veteriner','diyetisyen','pilates','dovme'];
+    var sektor = (izin.indexOf(b.sektor) > -1) ? b.sektor : 'guzellik';
     try {
       var sc = await fetch(SALON + '/api/superadmin', {
         method:'POST',
         headers:{ 'Content-Type':'application/json', 'Authorization':'Bearer ' + MASTER },
-        body: JSON.stringify({ action:'create_salon', salon_name: ad, owner_name: ad, sector:'guzellik', trial_days: GUN })
+        body: JSON.stringify({ action:'create_salon', salon_name: ad, owner_name: ad, sector: sektor, trial_days: GUN })
       });
       var sj = await sc.json().catch(function(){ return {}; });
       if (!sj || !sj.ok || !sj.login) return j(res, 200, { ok:false, sebep:'olusturulamadi' });
-      return j(res, 200, { ok:true, urun:'salon', url: SALON, kod: sj.login.code, pin: sj.login.pin, gun: GUN });
+      var kod = sj.login.code, e = encodeURIComponent(kod);
+      return j(res, 200, {
+        ok:true, urun:'salon', kod: kod, pin: sj.login.pin, gun: GUN, sektor: sektor,
+        yoneticiLink: SALON + '/?s=' + e + '&y=1',
+        musteriLink:  SALON + '/?s=' + e,
+        url: SALON + '/?s=' + e + '&y=1'
+      });
     } catch (e) {
       return j(res, 200, { ok:false, sebep:'hata' });
     }
@@ -106,7 +115,7 @@ module.exports = async function (req, res) {
     if (!cj || !cj.ok || !cj.sirket) return j(res, 200, { ok:false, sebep:'olusturulamadi' });
 
     return j(res, 200, {
-      ok:true, urun:'erp', url: ERP,
+      ok:true, urun:'erp', url: ERP + '/y',
       kod: cj.sirket.kod, pin: cj.mgr_pin, gun: GUN
     });
   } catch (e) {
