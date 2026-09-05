@@ -77,6 +77,12 @@ input[type=text]:focus{border-color:var(--gold)}
 .steps li b{color:var(--ink);font-weight:600}
 .foot{border-top:1px solid var(--line);padding:26px 0;color:var(--mut);font-size:13.5px;text-align:center;margin-top:30px}
 .foot a{color:var(--slate)}
+
+.linkbox{background:var(--paper);border:1px solid var(--line);border-radius:11px;padding:12px 13px;margin-top:12px;text-align:left}
+.linkbox .lk-k{font-size:12px;font-weight:600;color:var(--slate);margin-bottom:6px}
+.linkbox .lk-v{display:flex;align-items:center;gap:8px}
+.linkbox .lk-v a{flex:1;font-family:var(--mono);font-size:12px;color:var(--gold);word-break:break-all;text-decoration:none}
+.linkbox .lk-c{flex:0 0 auto;border:1px solid var(--line);background:#fff;border-radius:8px;padding:6px 10px;font-size:12px;font-weight:600;color:var(--ink);cursor:pointer}
 </style>
 </head>
 <body>
@@ -101,6 +107,18 @@ input[type=text]:focus{border-color:var(--gold)}
       <label><input type="radio" name="durun" value="salon">Salon & Randevu<small>randevu · seans · paket</small></label>
     </div>
 
+    <div id="dSekWrap" style="display:none;margin-top:14px">
+      <label class="f" for="dsektor">Salon sektörü</label>
+      <select id="dsektor" style="width:100%;font-family:inherit;font-size:16px;color:var(--ink);background:#fff;border:1.5px solid #D8DEEA;border-radius:10px;padding:13px 12px;outline:none">
+        <option value="guzellik">Güzellik / Kuaför</option>
+        <option value="dis">Diş Kliniği</option>
+        <option value="veteriner">Veteriner</option>
+        <option value="diyetisyen">Diyetisyen</option>
+        <option value="pilates">Pilates / Stüdyo</option>
+        <option value="dovme">Dövme / Piercing</option>
+      </select>
+    </div>
+
     <input class="hp" id="dweb" type="text" tabindex="-1" autocomplete="off" aria-hidden="true" placeholder="Web siteniz">
     <button class="btn btn-primary" id="dBtn" type="button" style="width:100%;margin-top:18px">15 günlük demoyu başlat</button>
     <div class="msg" id="dMsg"></div>
@@ -109,32 +127,21 @@ input[type=text]:focus{border-color:var(--gold)}
 
   <div class="card done" id="dDone">
     <div class="ico">✓</div>
-    <h2 style="text-align:center">Demonuz hazır 🎉</h2>
+    <h2 style="text-align:center" id="dBaslik">Demonuz hazır 🎉</h2>
     <p class="s" style="text-align:center" id="dOzet">15 gün boyunca ücretsiz kullanabilirsiniz.</p>
     <div class="creds">
       <div style="font-size:13px;color:var(--slate)">Uygulama girişi için:</div>
       <div class="row">
-        <div><div class="k">İşletme Kodu</div><div class="val" id="dKod">—</div></div>
+        <div><div class="k" id="dKodLbl">Kod</div><div class="val" id="dKod">—</div></div>
         <div><div class="k">Yönetici PIN</div><div class="val" id="dPin">—</div></div>
       </div>
     </div>
-    <ol class="steps">
-      <li><b>Uygulamayı açın:</b> <a id="dUrl" href="#" target="_blank" rel="noopener" style="color:var(--gold);font-weight:600">giriş sayfası</a></li>
-      <li><b>Kod + PIN</b> ile giriş yapın (yukarıdaki bilgiler).</li>
-      <li>15 gün boyunca dilediğiniz gibi deneyin.</li>
-    </ol>
+    <div id="dLinks"></div>
     <div class="warn">⏳ Demo <b id="dGun">15</b> gün sonra otomatik kapanır — verileriniz silinmez. Devam etmek için tek yol bizimle iletişime geçmektir.</div>
-    <a class="btn btn-wa" id="dWa" href="#" target="_blank" rel="noopener" style="width:100%;margin-top:16px">💬 Devam / soru için WhatsApp</a>
-    <a class="btn btn-dark" id="dGit" href="#" target="_blank" rel="noopener" style="width:100%;margin-top:10px">Uygulamaya git →</a>
+    <a class="btn btn-primary" id="dGit" href="#" target="_blank" rel="noopener" style="width:100%;margin-top:16px">Yönetici Ekranına Git →</a>
+    <a class="btn btn-wa" id="dWa" href="#" target="_blank" rel="noopener" style="width:100%;margin-top:10px">💬 Devam / soru için WhatsApp</a>
   </div>
 
-  <div class="card done" id="dSalon">
-    <div class="ico" style="background:var(--goldSoft);color:#6b5107;border-color:var(--goldLine)">✦</div>
-    <h2 style="text-align:center">Salon demosu için tek adım</h2>
-    <p class="s" style="text-align:center">Salon & randevu tarafında demonuzu size özel açıyoruz. İşletme adınızla WhatsApp'tan yazın, 15 günlük demonuzu hemen kuralım.</p>
-    <a class="btn btn-wa" id="dSalonWa" href="#" target="_blank" rel="noopener" style="width:100%;margin-top:8px">💬 Salon Demomu Başlat</a>
-    <a class="btn btn-outline" href="/demo#salon" style="width:100%;margin-top:10px">Önce canlı salon demosunu gez</a>
-  </div>
 </div>
 
 <footer class="foot"><div class="wrap">© <span id="yil">2026</span> TEKNOPERS · <a href="/magaza">Ürünler</a> · <a href="/demo">Canlı Demo</a> · <a href="/egitim">Eğitim</a> · <a href="/">Ana sayfa</a></div></footer>
@@ -146,7 +153,26 @@ input[type=text]:focus{border-color:var(--gold)}
   function ev(n,p){ if(typeof gtag==='function') gtag('event',n,p||{}); }
   function val(){ return (document.getElementById('dad').value||'').trim(); }
   function urun(){ var r=document.querySelector('input[name="durun"]:checked'); return r?r.value:'erp'; }
+  function sektor(){ var e=document.getElementById('dsektor'); return e?e.value:'guzellik'; }
   function wa(t){ return 'https://wa.me/'+WA+'?text='+encodeURIComponent(t); }
+  function esc(x){ return String(x).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];}); }
+
+  function senkron(){ document.getElementById('dSekWrap').style.display=(urun()==='salon')?'block':'none'; }
+  Array.prototype.forEach.call(document.querySelectorAll('input[name="durun"]'),function(r){ r.addEventListener('change',senkron); });
+  senkron();
+
+  function linkSatir(etiket,url){
+    return '<div class="linkbox"><div class="lk-k">'+etiket+'</div><div class="lk-v"><a href="'+esc(url)+'" target="_blank" rel="noopener">'+esc(url)+'</a><button type="button" class="lk-c" data-u="'+esc(url)+'">Kopyala</button></div></div>';
+  }
+  function kopyaBagla(){
+    Array.prototype.forEach.call(document.querySelectorAll('.lk-c'),function(b){
+      b.addEventListener('click',function(){ var u=b.getAttribute('data-u');
+        function ok(){ b.textContent='Kopyalandı \u2713'; setTimeout(function(){b.textContent='Kopyala';},1500); }
+        if(navigator.clipboard){ navigator.clipboard.writeText(u).then(ok).catch(function(){}); }
+        else { var t=document.createElement('textarea');t.value=u;document.body.appendChild(t);t.select();try{document.execCommand('copy');ok();}catch(e){}document.body.removeChild(t); }
+      });
+    });
+  }
 
   var btn=document.getElementById('dBtn');
   btn.addEventListener('click',function(){
@@ -155,9 +181,10 @@ input[type=text]:focus{border-color:var(--gold)}
     var ad=val();
     if(ad.length<2){ m.className='msg err'; m.textContent='Lütfen işletme/şirket adını yazın.'; document.getElementById('dad').focus(); return; }
 
-    ev('demo_baslat',{urun:urun()});
+    ev('demo_baslat',{urun:urun(),sektor:urun()==='salon'?sektor():''});
     btn.disabled=true; btn.textContent='Demo açılıyor…';
-    fetch('/api/demo-olustur',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({ad:ad,urun:urun()})})
+    var yuk={ad:ad,urun:urun()}; if(urun()==='salon') yuk.sektor=sektor();
+    fetch('/api/demo-olustur',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(yuk)})
       .then(function(r){ return r.json().catch(function(){return {ok:false};}); })
       .then(function(j){
         btn.disabled=false; btn.textContent='15 günlük demoyu başlat';
@@ -166,16 +193,22 @@ input[type=text]:focus{border-color:var(--gold)}
           var d=document.getElementById('dDone'); d.classList.add('on');
           document.getElementById('dKod').textContent=j.kod;
           document.getElementById('dPin').textContent=j.pin||'—';
-          document.getElementById('dGun').textContent=j.gun||2;
-          document.getElementById('dUrl').href=j.url; document.getElementById('dGit').href=j.url;
-          document.getElementById('dOzet').textContent=ad+' için '+(j.gun||2)+' günlük demonuz açıldı.';
+          document.getElementById('dGun').textContent=j.gun||15;
+          document.getElementById('dGit').href=j.url;
           document.getElementById('dWa').href=wa('Merhaba, '+ad+' için demoyu başlattım (kod '+j.kod+'). Devam etmek istiyorum, bilgi alabilir miyim?');
+          if(j.urun==='salon'){
+            document.getElementById('dBaslik').textContent='Demo salonunuz hazır \ud83c\udf89';
+            document.getElementById('dKodLbl').textContent='Salon Kodu';
+            document.getElementById('dOzet').textContent=ad+' için '+(j.gun||15)+' günlük salon demonuz açıldı. Aşağıdaki iki bağlantıyı kullanın.';
+            document.getElementById('dLinks').innerHTML=linkSatir('\ud83d\udc68\u200d\ud83d\udcbc Yönetici bağlantısı (kod + PIN ile giriş)',j.yoneticiLink)+linkSatir('\ud83d\udcf2 Müşteri randevu bağlantısı (müşterilere paylaşın)',j.musteriLink);
+          } else {
+            document.getElementById('dBaslik').textContent='Yönetici girişiniz hazır \ud83c\udf89';
+            document.getElementById('dKodLbl').textContent='Şirket Kodu';
+            document.getElementById('dOzet').textContent=ad+' için '+(j.gun||15)+' günlük demonuz açıldı. Yönetici ekranında aşağıdaki kod ve PIN ile giriş yapın.';
+            document.getElementById('dLinks').innerHTML=linkSatir('\ud83d\udda5\ufe0f Yönetici ekranı (kod + PIN ile giriş)',j.url);
+          }
+          kopyaBagla();
           d.scrollIntoView({behavior:'smooth',block:'center'});
-        } else if(j && j.sebep==='salon-iletisim'){
-          document.getElementById('formIc').style.display='none';
-          var s=document.getElementById('dSalon'); s.classList.add('on');
-          document.getElementById('dSalonWa').href=wa('Merhaba, '+ad+' için 15 günlük Salon & Randevu demosu açtırmak istiyorum.');
-          s.scrollIntoView({behavior:'smooth',block:'center'});
         } else {
           m.className='msg err';
           m.innerHTML='Şu an otomatik açılamadı. İşletme adınızla WhatsApp\'tan yazın, demonuzu hemen kuralım: <a href="'+wa('Merhaba, '+ad+' için 15 günlük demo açtırmak istiyorum.')+'" target="_blank" rel="noopener" style="color:#8E3346;font-weight:700;text-decoration:underline">WhatsApp</a>';
