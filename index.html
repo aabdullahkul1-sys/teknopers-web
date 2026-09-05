@@ -24,8 +24,8 @@
 <!-- ===== KAMPANYA link önizlemesi (DM/sosyal paylaşım) — kampanya bitince aşağıdaki blok yerine eski değerlere dön:
   og:title "TEKNOPERS — İşletmenizin bütün işi tek sistemde" · og:description "Personelden ön muhasebeye, randevudan kasaya. Sabit fiyat, 1 günde kurulum."
   og:image + twitter:image "/og-image.png" · twitter:title/description aynı ===== -->
-<meta property="og:title" content="TEKNOPERS — 1 Yıl 1.000 ₺ (Lansman Kampanyası)">
-<meta property="og:description" content="İşletmenizin tüm işi tek sistemde: personel, randevu, ön muhasebe, stok. 15 gün ücretsiz deneyin, beğenirseniz 1 yıl sadece 1.000 ₺. Sınırlı süre.">
+<meta property="og:title" content="TEKNOPERS — Aylık 1.000 ₺ (Lansman Kampanyası)">
+<meta property="og:description" content="İşletmenizin tüm işi tek sistemde: personel, randevu, ön muhasebe, stok. 15 gün ücretsiz deneyin, beğenirseniz aylık sadece 1.000 ₺. Sınırlı süre.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://teknopers.com.tr">
 <link rel="canonical" href="https://teknopers.com.tr/">
@@ -39,12 +39,12 @@
 <meta property="og:image" content="https://teknopers.com.tr/og-kampanya.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="TEKNOPERS lansman kampanyası — 1 yıl 1.000 ₺">
+<meta property="og:image:alt" content="TEKNOPERS lansman kampanyası — aylık 1.000 ₺">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="TEKNOPERS — 1 Yıl 1.000 ₺ (Lansman Kampanyası)">
-<meta name="twitter:description" content="15 gün ücretsiz deneyin, beğenirseniz 1 yıl sadece 1.000 ₺. Personel · randevu · ön muhasebe · stok. Sınırlı süre.">
+<meta name="twitter:title" content="TEKNOPERS — Aylık 1.000 ₺ (Lansman Kampanyası)">
+<meta name="twitter:description" content="15 gün ücretsiz deneyin, beğenirseniz aylık sadece 1.000 ₺. Personel · randevu · ön muhasebe · stok. Sınırlı süre.">
 <meta name="twitter:image" content="https://teknopers.com.tr/og-kampanya.png">
-<meta name="twitter:image:alt" content="TEKNOPERS lansman kampanyası — 1 yıl 1.000 ₺">
+<meta name="twitter:image:alt" content="TEKNOPERS lansman kampanyası — aylık 1.000 ₺">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -98,7 +98,7 @@
       "description": "Saha ekibi olan işletmeler için GPS'li puantaj, Türk bordro mantığıyla hak ediş, ön muhasebe (cari, fatura, kasa), onaylı stok ve zimmet takibi.",
       "offers": [
         { "@type": "Offer", "price": "2500", "priceCurrency": "TRY", "description": "Standart aylık fiyat" },
-        { "@type": "Offer", "price": "1000", "priceCurrency": "TRY", "priceValidUntil": "2026-09-12", "availability": "https://schema.org/InStock", "url": "https://teknopers.com.tr/#fiyat", "description": "Lansman kampanyası — 1 yıl kullanım" }
+        { "@type": "Offer", "price": "1000", "priceCurrency": "TRY", "priceValidUntil": "2026-09-12", "availability": "https://schema.org/InStock", "url": "https://teknopers.com.tr/#fiyat", "description": "Lansman kampanyası — aylık 1.000 ₺" }
       ],
       "publisher": { "@id": "https://teknopers.com.tr/#org" }
     },
@@ -110,7 +110,7 @@
       "description": "Kuaför, diş kliniği, diyetisyen, pilates, dövme ve veteriner için online randevu, seanslı paket takibi, otomatik WhatsApp hatırlatma ve kasa yönetimi.",
       "offers": [
         { "@type": "Offer", "price": "1500", "priceCurrency": "TRY", "description": "Standart aylık fiyat" },
-        { "@type": "Offer", "price": "1000", "priceCurrency": "TRY", "priceValidUntil": "2026-09-12", "availability": "https://schema.org/InStock", "url": "https://teknopers.com.tr/#fiyat", "description": "Lansman kampanyası — 1 yıl kullanım" }
+        { "@type": "Offer", "price": "1000", "priceCurrency": "TRY", "priceValidUntil": "2026-09-12", "availability": "https://schema.org/InStock", "url": "https://teknopers.com.tr/#fiyat", "description": "Lansman kampanyası — aylık 1.000 ₺" }
       ],
       "publisher": { "@id": "https://teknopers.com.tr/#org" }
     },
@@ -229,67 +229,17 @@ nav{position:sticky;top:0;z-index:50;background:rgba(246,247,251,.82);backdrop-f
 
 /* ---- HERO ---- */
 .hero{padding:64px 0 48px;position:relative}
-.hero-grid2{display:grid;grid-template-columns:1.06fr .94fr;gap:52px;align-items:center}
 .eyebrow{margin-bottom:18px}
-.hx-l h1{font-size:clamp(2.35rem,5.3vw,4rem);margin:0 0 20px}
-.hx-l h1 .g{color:var(--gold)}
-.hx-l h1 .rz{color:var(--rose)}
 .sub{font-size:clamp(1.02rem,1.7vw,1.2rem);color:var(--mut);max-width:38ch;font-weight:450}
 .sub b{color:var(--ink);font-weight:700}
-.hero-ctas{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0 22px}
+
 .trust{display:flex;flex-wrap:wrap;gap:8px}
 .tchip{font-family:'JetBrains Mono',monospace;font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
   color:var(--mut);background:#fff;border:1px solid var(--line);border-radius:8px;padding:7px 10px;display:inline-flex;gap:7px;align-items:center}
 .tchip b{color:var(--ok)}
 
-/* ---- İMZA: telefon canlı ürün turu ---- */
-.hx-r{display:flex;justify-content:center}
-.demo{position:relative;padding:14px}
-.demo::before{content:"";position:absolute;inset:0;border-radius:44px;
-  background:linear-gradient(150deg,rgba(224,161,0,.14),rgba(192,86,106,.12));filter:blur(2px);z-index:0}
-.phone{position:relative;z-index:1;width:296px;background:#0A101C;border-radius:40px;padding:11px;
-  box-shadow:0 40px 80px -30px rgba(11,18,32,.6),0 0 0 2px #05090f,inset 0 0 0 2px #1b2536}
-.screen{background:linear-gradient(180deg,#fbfcfe,#f2f5fb);border-radius:30px;overflow:hidden;height:568px;display:flex;flex-direction:column;position:relative}
-.sbar{display:flex;justify-content:space-between;align-items:center;padding:11px 16px 7px;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--ink);font-weight:700}
-.sbar .live{display:inline-flex;align-items:center;gap:6px;color:var(--ok);text-transform:lowercase;letter-spacing:.02em}
-.sbar .live i{width:7px;height:7px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 0 rgba(18,153,107,.6);animation:pulse 1.8s infinite}
-@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(18,153,107,.5)}70%{box-shadow:0 0 0 7px rgba(18,153,107,0)}100%{box-shadow:0 0 0 0 rgba(18,153,107,0)}}
-.ahead{display:flex;align-items:center;gap:10px;padding:6px 16px 12px;border-bottom:1px solid var(--line)}
-.ahead .lg{width:30px;height:30px;border-radius:8px;background:var(--ink);color:var(--gold);display:grid;place-items:center;font-weight:800;font-size:15px}
-.ahead .t{font-family:'Bricolage Grotesque';font-weight:800;font-size:14px;letter-spacing:-.01em;line-height:1.1}
-.ahead .t span{display:block;font-family:'JetBrains Mono',monospace;font-size:8px;font-weight:600;color:var(--mut2);letter-spacing:.12em;margin-top:2px}
-.stage{position:relative;flex:1;margin:12px 14px}
-.scene{position:absolute;inset:0;display:flex;flex-direction:column;gap:9px;opacity:0;animation:tour 11.2s infinite}
-.s1{animation-delay:0s}.s2{animation-delay:2.8s}.s3{animation-delay:5.6s}.s4{animation-delay:8.4s}
-@keyframes tour{0%{opacity:0;transform:translateY(9px)}2.5%{opacity:1;transform:translateY(0)}22%{opacity:1;transform:translateY(0)}25%{opacity:0;transform:translateY(-6px)}100%{opacity:0}}
-.drow{display:flex;align-items:center;gap:9px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:9px 11px;box-shadow:var(--shL)}
-.av{width:30px;height:30px;border-radius:8px;background:var(--goldBg);color:var(--goldD);display:grid;place-items:center;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:11px;flex:0 0 auto}
-.s3 .av,.s4 .av{background:var(--roseBg);color:var(--roseD)}
-.m{flex:1;min-width:0}.m b{display:block;font-size:12.5px;font-weight:700;color:var(--ink)}
-.m i{font-style:normal;font-size:10.5px;color:var(--mut2)}
-.r{font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:700;flex:0 0 auto}
-.tag-ok{color:var(--ok)}.tag-acc{color:var(--rose)}
-.dpill{display:flex;align-items:center;gap:8px;font-size:11px;color:var(--mut);background:var(--okBg);border-radius:9px;padding:8px 10px;font-weight:600}
-.dpill .dot{width:7px;height:7px;border-radius:50%;background:var(--ok);flex:0 0 auto}
-.dpill.wa{background:#E8F8EE}
-.dbig{background:var(--ink);color:#fff;border-radius:14px;padding:14px 15px}
-.dbig .lbl{font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:#8FA0BC}
-.dbig .num{font-family:'Bricolage Grotesque';font-weight:800;font-size:30px;margin-top:4px;letter-spacing:-.02em}
-.dbig .num .cur{color:var(--gold);font-size:20px;vertical-align:top;margin-right:2px}
-.s4 .dbig .num .cur{color:#F4A9B4}
-.dmini{display:flex;gap:7px}
-.dmini span{flex:1;background:#fff;border:1px solid var(--line);border-radius:10px;padding:8px 6px;font-size:9.5px;color:var(--mut2);text-align:center;font-weight:600}
-.dmini b{display:block;color:var(--ink);font-size:12.5px;margin-top:2px}
-.dcap{padding:0 16px 6px;min-height:34px}
-.dcap p{position:absolute;font-size:11px;color:var(--mut);opacity:0;animation:tour 11.2s infinite;font-weight:500;padding-right:16px}
-.dcap .c1{animation-delay:0s}.dcap .c2{animation-delay:2.8s}.dcap .c3{animation-delay:5.6s}.dcap .c4{animation-delay:8.4s}
-.scrub{display:flex;gap:5px;padding:2px 16px 14px}
-.scrub i{height:3px;flex:1;border-radius:2px;background:var(--line2);animation:lit 11.2s infinite}
-.scrub i:nth-child(1){animation-delay:0s}.scrub i:nth-child(2){animation-delay:2.8s}.scrub i:nth-child(3){animation-delay:5.6s}.scrub i:nth-child(4){animation-delay:8.4s}
-@keyframes lit{0%{background:var(--line2)}2.5%,22%{background:var(--gold)}25%,100%{background:var(--line2)}}
-.scrub i:nth-child(3),.scrub i:nth-child(4){}
-@keyframes litR{0%{background:var(--line2)}2.5%,22%{background:var(--rose)}25%,100%{background:var(--line2)}}
-.scrub i:nth-child(3),.scrub i:nth-child(4){animation-name:litR}
+/* ---- Hero sağ: sektör seçici ---- */
+
 
 /* ---- Bant ---- */
 .band{background:var(--ink);color:#fff;border-radius:var(--r);margin:8px auto 0;max-width:calc(var(--max) - 44px)}
@@ -488,8 +438,6 @@ footer p{color:#A9B4C7;font-size:14px}
 
 /* ---- Responsive ---- */
 @media(max-width:920px){
-  .hero-grid2{grid-template-columns:1fr;gap:38px}
-  .hx-r{order:-1}
   .pgrid,.grid3,.sec-grid,.tst-grid,.ilke,.steps{grid-template-columns:repeat(2,1fr)}
   .custom-grid{grid-template-columns:repeat(2,1fr)}
   .price-grid{grid-template-columns:1fr}
@@ -511,8 +459,6 @@ footer p{color:#A9B4C7;font-size:14px}
 @media(prefers-reduced-motion:reduce){
   *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
   .reveal{opacity:1;transform:none}
-  .scene,.dcap p{opacity:0}.s1,.dcap .c1{opacity:1}
-  .scrub i:nth-child(1){background:var(--gold)}
 }
 
 
@@ -572,6 +518,49 @@ section{padding:52px 0;border-top:1px solid var(--line)}
 .lead-msg.ok{display:block;color:#15803d}.lead-msg.err{display:block;color:#b91c1c}
 .lead-note{margin:12px 0 0;font-size:12.5px;color:var(--mut);text-align:center}
 @media(max-width:520px){.lead-row{grid-template-columns:1fr}}
+
+
+/* ===== Mağaza vitrini hero ===== */
+.hero{padding:48px 0 44px;position:relative}
+.hero-top{text-align:center;max-width:740px;margin:0 auto 34px}
+.hero-top .kick{justify-content:center}
+.hero-top h1{font-size:clamp(2rem,4.5vw,3.3rem);margin:14px 0 14px}
+.hero-top h1 .g{color:var(--gold)}
+.hero-lead{color:var(--mut);font-size:clamp(15px,1.9vw,18px);max-width:580px;margin:0 auto}
+.hero-search{display:flex;align-items:center;gap:8px;max-width:540px;margin:24px auto 0;background:#fff;border:1.5px solid var(--line2);border-radius:14px;padding:7px 7px 7px 14px;box-shadow:0 10px 30px -18px rgba(11,18,32,.25)}
+.hero-search:focus-within{border-color:var(--gold)}
+.hero-search .hs-ic{display:flex;color:var(--mut2);flex:0 0 auto}
+.hero-search .hs-ic svg{width:19px;height:19px}
+.hero-search input{flex:1;border:0;outline:0;font-family:inherit;font-size:15px;color:var(--ink);background:transparent;min-width:0}
+.hero-search button{flex:0 0 auto;padding:10px 18px;font-size:14.5px}
+.store-cat{margin-bottom:26px}
+.cat-h{display:flex;align-items:center;gap:9px;font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--mut2);margin-bottom:14px;flex-wrap:wrap}
+.cat-h .dot{width:9px;height:9px;border-radius:3px;flex:0 0 auto}
+.cat-note{color:var(--mut2);opacity:.7;font-size:10.5px;letter-spacing:.03em;text-transform:none}
+.store-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:14px}
+.scard{position:relative;display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;text-decoration:none;transition:transform .18s,box-shadow .18s,border-color .18s}
+.scard:hover{transform:translateY(-4px);box-shadow:0 22px 46px -24px rgba(11,18,32,.4)}
+.scard.k-sirket:hover{border-color:var(--gold)}
+.scard.k-salon:hover{border-color:var(--rose)}
+.scard-img{position:relative;aspect-ratio:16/10;overflow:hidden;background:var(--paper)}
+.scard-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s ease}
+.scard:hover .scard-img img{transform:scale(1.06)}
+.scard-img.ph{display:grid;place-items:center;background:linear-gradient(140deg,var(--rose),var(--roseD))}
+.scard.k-sirket .scard-img.ph{background:linear-gradient(140deg,var(--gold),var(--goldD))}
+.scard-img.ph .ph-ic{color:#fff;opacity:.92}
+.scard-img.ph .ph-ic svg{width:54px;height:54px}
+.scard-b{padding:15px 16px 17px}
+.scard-b b{display:block;font-family:'Bricolage Grotesque',system-ui,sans-serif;font-weight:800;font-size:16px;color:var(--ink);letter-spacing:-.01em;margin-bottom:5px}
+.scard-b .d{display:block;color:var(--mut);font-size:12.5px;line-height:1.5}
+.price{position:absolute;top:10px;right:10px;font-family:'JetBrains Mono',monospace;font-size:11.5px;font-weight:700;color:var(--ink);background:rgba(255,255,255,.94);backdrop-filter:blur(4px);border:1px solid rgba(255,255,255,.5);border-radius:8px;padding:5px 9px;box-shadow:0 4px 12px -4px rgba(11,18,32,.25)}
+.price i{font-style:normal;color:var(--mut2);font-weight:600}
+.price-in{position:static;display:inline-block;margin-top:11px;background:var(--paper);border:1px solid var(--line);box-shadow:none;backdrop-filter:none}
+.scard .go{position:absolute;top:10px;left:10px;z-index:2;width:30px;height:30px;border-radius:9px;background:rgba(11,18,32,.55);backdrop-filter:blur(3px);display:grid;place-items:center;opacity:0;transform:translateX(-5px);transition:.18s}
+.scard .go svg{width:16px;height:16px;color:#fff}
+.scard:hover .go{opacity:1;transform:translateX(0)}
+.store-foot{display:flex;gap:11px;justify-content:center;flex-wrap:wrap;margin:30px 0 16px}
+.store-trust{justify-content:center}
+@media(max-width:520px){.store-grid{grid-template-columns:1fr 1fr;gap:10px}.scard{padding:16px 14px}.scard .ic{width:42px;height:42px}.scard b{font-size:15px}}
 </style>
 </head>
 <body>
@@ -596,58 +585,36 @@ section{padding:52px 0;border-top:1px solid var(--line)}
 <main id="icerik">
 <!-- ================= HERO ================= -->
 <header class="hero" id="hero">
-  <div class="wrap hero-grid2">
-    <div class="hx-l">
+  <div class="wrap">
+    <div class="hero-top">
       <span class="kick eyebrow">İşletme Yönetim Sistemi · Telefondan çalışır</span>
-      <h1>İşletmenizin bütün işi, <span class="g">tek sistemde</span>.</h1>
-      <p class="sub">Personelden <b>ön muhasebeye</b>, randevudan kasaya — sahada ve salonda çalışan işletmenizin her işi tek panelde toplanır. Defter, Excel ve dağınık WhatsApp mesajları yerine <b>tek sistem</b>. Kurar, öğretir, yanınızda dururuz.</p>
-      <div class="hero-ctas">
-        <a class="btn btn-wa" href="https://wa.me/905434472226?text=Merhaba%2C%20i%C5%9Fletmem%20i%C3%A7in%20TEKNOPERS%20kurulumu%20hakk%C4%B1nda%20g%C3%B6r%C3%BC%C5%9Fmek%20istiyorum." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.7 13.7L3 21l4.5-1.2A9 9 0 1 0 12 3z"/><path d="M9 9c0 3 2.4 5.4 5.4 5.4.6 0 1.1-.5 1.1-1.1 0-.3-.6-.8-1-1-.3-.1-.6 0-.8.2s-.4.2-.7 0a3.6 3.6 0 0 1-1.6-1.6c-.1-.3-.1-.5.1-.7s.3-.5.2-.8c-.2-.4-.7-1-1-1-.6 0-1.1.5-1.1 1.1z"/></svg>WhatsApp'tan Başlayalım</a>
-        <a class="btn btn-ghost" href="#urunler">Ürünleri Gör</a>
+      <h1>İşletmenize özel program, <span class="g">hepsi burada</span>.</h1>
+      <p class="hero-lead">Sektörünüzü seçin, size özel programı görün. Personel, randevu, stok ve ön muhasebe tek panelde — her biri aylık 1.000 ₺, 15 gün ücretsiz.</p>
+      <form class="hero-search" onsubmit="return heroAra(event)" role="search">
+        <span class="hs-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></span>
+        <input id="heroQ" type="text" autocomplete="off" placeholder="İşletmenizi yazın: kuaför, diş, inşaat, depo, diyetisyen…" aria-label="İşletmenizi arayın">
+        <button type="submit" class="btn btn-gold">Bul</button>
+      </form>
+    </div>
+
+    <div class="store">
+      <div class="store-cat">
+        <div class="cat-h"><span class="dot" style="background:var(--gold)"></span>Şirket &amp; Saha <span class="cat-note">— erp.teknopers.com.tr</span></div>
+        <div class="store-grid"><a class="scard k-sirket" href="/pdks-personel-takip-programi"><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><div class="scard-img"><img src="/gorseller/saha-personel-pdks-insaat.webp" alt="Sahada personel PDKS ve giriş takibi" loading="lazy" width="760" height="507"><span class="price">1.000 ₺<i>/ay</i></span></div><div class="scard-b"><b>PDKS &amp; Personel</b><span class="d">Cihazsız GPS’li mesai, hakediş, izin</span></div></a><a class="scard k-sirket" href="/depo-stok-takip-programi"><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><div class="scard-img"><img src="/gorseller/depo-stok-takip-tablet.webp" alt="Tablet ile depo ve stok takibi" loading="lazy" width="760" height="507"><span class="price">1.000 ₺<i>/ay</i></span></div><div class="scard-b"><b>Depo &amp; Stok</b><span class="d">Barkod, OCR fatura, kritik stok</span></div></a><a class="scard k-sirket" href="/cari-teklif-on-muhasebe-programi"><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><div class="scard-img"><img src="/gorseller/isletme-sahibi-mobil-yonetim.webp" alt="İşletme sahibi mobil yönetim" loading="lazy" width="760" height="507"><span class="price">1.000 ₺<i>/ay</i></span></div><div class="scard-b"><b>Cari &amp; Teklif</b><span class="d">Markalı teklif, POS, cari takip</span></div></a></div>
       </div>
-      <div class="trust">
+      <div class="store-cat">
+        <div class="cat-h"><span class="dot" style="background:var(--rose)"></span>Salon &amp; Klinik <span class="cat-note">— salon.teknopers.com.tr</span></div>
+        <div class="store-grid"><a class="scard k-salon" href="/kuafor-berber-randevu-programi"><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><div class="scard-img"><img src="/gorseller/kuafor-salon-randevu-yonetimi.webp" alt="Kuaför salon randevu yönetimi" loading="lazy" width="760" height="507"><span class="price">1.000 ₺<i>/ay</i></span></div><div class="scard-b"><b>Kuaför &amp; Berber</b><span class="d">Personel bazlı randevu, prim</span></div></a><a class="scard k-salon" href="/guzellik-estetik-randevu-programi"><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><div class="scard-img"><img src="/gorseller/guzellik-estetik-randevu.webp" alt="Güzellik ve estetik merkezi randevu" loading="lazy" width="760" height="507"><span class="price">1.000 ₺<i>/ay</i></span></div><div class="scard-b"><b>Güzellik &amp; Estetik</b><span class="d">Seans paketi, online randevu</span></div></a><a class="scard k-salon" href="/dis-klinigi-randevu-programi"><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><div class="scard-img"><img src="/gorseller/dis-klinik-randevu.webp" alt="Diş kliniği randevu ve hasta takibi" loading="lazy" width="760" height="507"><span class="price">1.000 ₺<i>/ay</i></span></div><div class="scard-b"><b>Diş Kliniği</b><span class="d">Hasta geçmişi, tedavi paketi</span></div></a><a class="scard k-salon" href="/veteriner-klinik-randevu-programi"><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><div class="scard-img"><img src="/gorseller/veteriner-klinik-randevu.webp" alt="Veteriner kliniği randevu takibi" loading="lazy" width="760" height="507"><span class="price">1.000 ₺<i>/ay</i></span></div><div class="scard-b"><b>Veteriner</b><span class="d">Aşı karnesi, hasta takibi</span></div></a><a class="scard k-salon" href="/diyetisyen-danisan-takip-programi"><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><div class="scard-img"><img src="/gorseller/klinik-diyetisyen-randevu.webp" alt="Diyetisyen danışan randevu ve takip" loading="lazy" width="760" height="507"><span class="price">1.000 ₺<i>/ay</i></span></div><div class="scard-b"><b>Diyetisyen</b><span class="d">Danışan takip, haftalık paket</span></div></a><a class="scard k-salon" href="/pilates-studyo-uyelik-programi"><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><div class="scard-img ph"><span class="ph-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="4.5" r="1.8"/><path d="M12 7c-3 2-5 3-8.5 3M12 7c3 2 5 3 8.5 3M12 7v6l-3 6M12 13l3 6"/></svg></span></div><div class="scard-b"><b>Pilates &amp; Yoga</b><span class="d">Ders paketi, kontenjan</span><span class="price price-in">1.000 ₺<i>/ay</i></span></div></a><a class="scard k-salon" href="/dovme-piercing-randevu-programi"><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><div class="scard-img ph"><span class="ph-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l3.5-1L18 8.5 15.5 6 4 17.5z"/><path d="M14 7l3 3M16.5 4.5l3 3"/></svg></span></div><div class="scard-b"><b>Dövme &amp; Piercing</b><span class="d">Sanatçı bazlı randevu, portföy</span><span class="price price-in">1.000 ₺<i>/ay</i></span></div></a></div>
+      </div>
+      <div class="store-foot">
+        <a class="btn btn-gold" href="/demo-talep">Ücretsiz Demo Başlat</a>
+        <a class="btn btn-ghost" href="/magaza">Tüm ürünleri gör →</a>
+        <a class="btn btn-wa" href="https://wa.me/905434472226?text=Merhaba%2C%20TEKNOPERS%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+      <div class="trust store-trust">
         <span class="tchip"><b>✓</b> Kullanıcı başına ücret yok</span>
         <span class="tchip"><b>✓</b> 1 günde kurulum, bizden</span>
         <span class="tchip"><b>✓</b> Verileriniz sizde</span>
-      </div>
-    </div>
-    <div class="hx-r">
-      <div class="demo" aria-label="TEKNOPERS ürün turu: sahada giriş, hak ediş, salon randevusu ve gün sonu kasa">
-        <div class="phone">
-          <div class="screen">
-            <div class="sbar"><span>9:41</span><span class="live"><i></i>canlı ürün turu</span></div>
-            <div class="ahead"><span class="lg">T</span><span class="t">TEKNOPERS<span>BUGÜN · TAKVİM · KASA</span></span></div>
-            <div class="stage">
-              <div class="scene s1">
-                <div class="drow"><span class="av">AY</span><span class="m"><b>Ahmet Yılmaz</b><i>Duvarcı ustası · Kadıköy şantiye</i></span><span class="r tag-ok">İçeride</span></div>
-                <div class="dpill"><span class="dot"></span>📍 Konum doğrulandı · giriş 08:02</div>
-                <div class="drow"><span class="av">MK</span><span class="m"><b>Mahmut Kaya</b><i>Kalıpçı · aynı şantiye</i></span><span class="r tag-ok">İçeride</span></div>
-              </div>
-              <div class="scene s2">
-                <div class="dbig"><div class="lbl">Ahmet Y. · bu ay · brüt hak ediş</div><div class="num"><span class="cur">₺</span>27.450</div></div>
-                <div class="dmini"><span>Çalışma<b>26 gün</b></span><span>Fazla mesai<b>+8 sa</b></span><span>Raporlu<b>−1 gün</b></span></div>
-                <div class="dpill"><span class="dot"></span>Puantajdan otomatik · 30 gün esası, mevzuata uygun</div>
-              </div>
-              <div class="scene s3">
-                <div class="drow"><span class="av">MK</span><span class="m"><b>14:30 · Merve K.</b><i>Saç kesimi + fön · 45 dk</i></span><span class="r tag-acc">Onaylandı</span></div>
-                <div class="dpill wa"><span class="dot" style="background:#25D366"></span>WhatsApp hatırlatması gönderildi</div>
-                <div class="drow"><span class="av">SÖ</span><span class="m"><b>15:30 · Seda Ö.</b><i>Lazer paketi · 4/6 seans</i></span><span class="r tag-ok">Seans düştü</span></div>
-              </div>
-              <div class="scene s4">
-                <div class="dbig"><div class="lbl">Bugünkü tahsilat · gün sonu</div><div class="num"><span class="cur">₺</span>12.400</div></div>
-                <div class="dmini"><span>Tahsilat<b>₺12.400</b></span><span>Gider<b>−₺3.500</b></span><span>Net<b>₺8.900</b></span></div>
-                <div class="dpill"><span class="dot"></span>Kasa · Bugün / Hafta / Ay / Yıl — net ₺8.900</div>
-              </div>
-            </div>
-            <div class="dcap">
-              <p class="c1">Personel sahada giriş yaptı, konumu doğrulandı.</p>
-              <p class="c2">Puantajdan hak ediş kendiliğinden hesaplandı.</p>
-              <p class="c3">Randevu takvime düştü, hatırlatma gitti.</p>
-              <p class="c4">Gün kapandı — cebinize kalanı görüyorsunuz.</p>
-            </div>
-            <div class="scrub"><i></i><i></i><i></i><i></i></div>
-          </div>
-        </div>
       </div>
     </div>
   </div>
@@ -886,16 +853,16 @@ section{padding:52px 0;border-top:1px solid var(--line)}
     <!-- ===== LANSMAN KAMPANYASI ===== -->
     <div class="kmp reveal" id="kampanya">
       <span class="kick">Lansman Kampanyası · Sınırlı süre</span>
-      <div class="kmp-big">1 yıl 1.000 ₺</div>
-      <p class="kmp-sub"><b style="color:#fff">Şirket Takip</b> ve <b style="color:#fff">TeknoPersSalon</b> — her iki üründe de ilk yıl 1.000 ₺. Sunucu maliyetine yakın bir fiyata sistemi kurun, tüm yıl kullanın.</p>
+      <div class="kmp-big">Aylık 1.000 ₺</div>
+      <p class="kmp-sub"><b style="color:#fff">Şirket Takip</b> ve <b style="color:#fff">TeknoPersSalon</b> — her iki üründe de aylık 1.000 ₺. Sunucu maliyetine yakın bir fiyata sistemi kurun, her ay kullanın.</p>
       <div class="kmp-row">
-        <div class="kmp-chip"><b>İlk yıl 1.000 ₺</b><br>Tek ödeme · kurulum, eğitim ve WhatsApp destek dahil</div>
-        <div class="kmp-chip"><b>Uçurum yok</b><br>Yıl sonunda kalmak istersen kurucu fiyatın <b>kalıcı</b> olur: Şirket 625 ₺/ay, Salon 375 ₺/ay</div>
+        <div class="kmp-chip"><b>Aylık 1.000 ₺</b><br>Kurulum, eğitim ve WhatsApp destek dahil · kullanıcı başına ek ücret yok</div>
+        <div class="kmp-chip"><b>Sürpriz yok</b><br>Her ay aynı <b>1.000 ₺</b> — sonradan artan kullanıcı ücreti yok</div>
         <div class="kmp-chip"><b>Fiyat kilidi</b><br>Kurucu üye fiyatın sonraki zamlardan etkilenmez</div>
       </div>
       <p class="kmp-cond">Karşılığında: sistemi bir ay kullandıktan sonra kısa bir kullanıcı yorumu ve işletmeni referans gösterme izni (kayıtta onaylanır).</p>
       <div class="kmp-cta">
-        <a class="btn btn-gold" id="kmpBtn" href="#" target="_blank" rel="noopener">Hemen Katıl — 1.000 ₺ →</a>
+        <a class="btn btn-gold" id="kmpBtn" href="/demo-talep">15 Gün Ücretsiz Başla →</a>
         <a class="kmp-wa" href="https://wa.me/905434472226?text=Merhaba%2C%201%20y%C4%B1l%201.000%20%E2%82%BA%20lansman%20kampanyas%C4%B1%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.7 13.7L3 21l4.5-1.2A9 9 0 1 0 12 3z"/><path d="M9 9c0 3 2.4 5.4 5.4 5.4.6 0 1.1-.5 1.1-1.1 0-.3-.6-.8-1-1-.3-.1-.6 0-.8.2s-.4.2-.7 0a3.6 3.6 0 0 1-1.6-1.6c-.1-.3-.1-.5.1-.7s.3-.5.2-.8c-.2-.4-.7-1-1-1-.6 0-1.1.5-1.1 1.1z"/></svg>Önce soru sor</a>
       </div>
       <div class="kmp-scar">Kampanya <span id="kmpBitis">—</span>'e kadar · <span id="kmpGun">—</span></div>
@@ -912,7 +879,7 @@ section{padding:52px 0;border-top:1px solid var(--line)}
         <div class="pt">TEKNOPERS Şirket Takip</div>
         <div class="pd">Saha ekibi olan işletmeler için: personel + ön muhasebe + stok + cari</div>
         <div class="price"><s class="pOld"><span id="pSirket">2.500</span> ₺<small> / <span class="perTxt">ay</span></small></s></div>
-        <div class="pKmp">İlk yıl <b>1.000 ₺</b> <small>· yıllık tek ödeme · lansman</small></div>
+        <div class="pKmp">Aylık <b>1.000 ₺</b> <small>· lansman kampanyası</small></div>
         <div class="pnote" id="nSirket"></div>
         <ul class="plist">
           <li>Sınırsız personel — kullanıcı başına ücret yok</li>
@@ -929,7 +896,7 @@ section{padding:52px 0;border-top:1px solid var(--line)}
         <div class="pt">TeknoPersSalon</div>
         <div class="pd">Randevuyla çalışan işletmeler için: randevu + paket + kasa</div>
         <div class="price"><s class="pOld"><span id="pSalon">1.500</span> ₺<small> / <span class="perTxt">ay</span></small></s></div>
-        <div class="pKmp">İlk yıl <b>1.000 ₺</b> <small>· yıllık tek ödeme · lansman</small></div>
+        <div class="pKmp">Aylık <b>1.000 ₺</b> <small>· lansman kampanyası</small></div>
         <div class="pnote" id="nSalon"></div>
         <ul class="plist">
           <li>Sınırsız randevu ve müşteri kaydı</li>
@@ -943,7 +910,7 @@ section{padding:52px 0;border-top:1px solid var(--line)}
         <a class="btn btn-rose" style="width:100%" href="https://wa.me/905434472226?text=Merhaba%2C%20Randevu%20Program%C4%B1%20i%C3%A7in%20teklif%20almak%20istiyorum.%20Sekt%C3%B6r%C3%BCm%3A%20__" target="_blank" rel="noopener">WhatsApp'tan Teklif Al</a>
       </div>
     </div>
-    <div class="kdv">Üstü çizili fiyatlar kampanya sonrası normal fiyatlardır (KDV hariç). Lansman kampanyasında her iki üründe de <b>ilk yıl 1.000 ₺</b> (yıllık tek ödeme). 15 gün ücretsiz deneyip karar verirsin.</div>
+    <div class="kdv">Üstü çizili fiyatlar normal fiyatlardır (KDV hariç). Lansman kampanyasında her iki üründe de <b>aylık 1.000 ₺</b>. Önce 15 gün ücretsiz deneyip karar verirsin.</div>
   </div>
 </section>
 
@@ -1017,7 +984,7 @@ section{padding:52px 0;border-top:1px solid var(--line)}
   <div class="wrap" style="max-width:660px">
     <div class="sec-head ctr"><span class="kick">Ücretsiz Başla</span>
       <h2>15 gün ücretsiz deneyin</h2>
-      <p class="sub">Bilgilerinizi bırakın, kurulumu birlikte yapalım. Beğenirseniz ilk yıl sadece <b>1.000 ₺</b>.</p></div>
+      <p class="sub">Bilgilerinizi bırakın, kurulumu birlikte yapalım. Beğenirseniz aylık sadece <b>1.000 ₺</b>.</p></div>
     <div class="lead-card">
       <div class="lead-row">
         <input id="lfAd" type="text" placeholder="Ad Soyad" autocomplete="name" maxlength="80">
@@ -1085,7 +1052,7 @@ const KAMPANYA={
   shopier:'https://www.shopier.com/Teknopers/49879869'         // Shopier ürün linkin
 };
 (function(){
-  var btn=document.getElementById('kmpBtn'); if(btn) btn.href=KAMPANYA.shopier;
+  var btn=document.getElementById('kmpBtn'); if(btn) btn.href='/demo-talep';  // once 15 gun ucretsiz demo
   var bt=document.getElementById('kmpBitis'); if(bt) bt.textContent=KAMPANYA.bitisMetin;
   var gun=document.getElementById('kmpGun'), box=document.getElementById('kampanya');
   var end=new Date(KAMPANYA.bitisISO+'T23:59:59');
@@ -1171,11 +1138,18 @@ if(document.readyState==='complete')setTimeout(e,2500);else addEventListener('lo
     var urunTxt = urun==='salon' ? 'Salon & Randevu' : (urun==='ikisi' ? 'İkisi de' : 'Şirket Takip');
     var metin='Merhaba, 15 gün ücretsiz denemek istiyorum.\nAd: '+ad+'\nTelefon: '+tel+(sektor?'\nSektör: '+sektor:'')+'\nÜrün: '+urunTxt;
     var wa='https://wa.me/905434472226?text='+encodeURIComponent(metin);
+    function waAc(){ var w=window.open(wa,'_blank'); if(!w){ window.location.href=wa; } }
     ev('lead_submit',{urun:urun,sektor:sektor});
-    msg.className='lead-msg ok'; msg.textContent='WhatsApp açılıyor — mesajı gönderdiğinizde talebiniz bize ulaşır.';
-    var w=window.open(wa,'_blank'); if(!w){ window.location.href=wa; }
+    msg.className='lead-msg ok'; msg.textContent='WhatsApp’a yönlendiriliyorsunuz — mesajı gönderdiğinizde size hemen dönüş yapıp demonuzu kuralım.';
+    waAc();
   });
 })();
+</script>
+<script>
+function heroAra(e){e.preventDefault();var q=(document.getElementById('heroQ').value||'').toLowerCase().trim();
+var M=[[/(kuaf|berber|saç|erkek kuaf)/,'/kuafor-berber-randevu-programi'],[/(güzel|estetik|cilt|tırnak|lazer|kaş|kirpik|makyaj|manik|pedik)/,'/guzellik-estetik-randevu-programi'],[/(diş|dent|ortodont|implant|kanal|dolgu)/,'/dis-klinigi-randevu-programi'],[/(veteriner|hayvan|pet|kedi|köpek|aşı)/,'/veteriner-klinik-randevu-programi'],[/(diyet|beslen|danışan|kilo)/,'/diyetisyen-danisan-takip-programi'],[/(pilates|yoga|spor|stüdyo|reformer|ders)/,'/pilates-studyo-uyelik-programi'],[/(dövme|tattoo|piercing|kalıcı makyaj|microblading)/,'/dovme-piercing-randevu-programi'],[/(personel|pdks|mesai|puantaj|inşaat|şantiye|güvenlik|temizlik|saha|vardiya|zimmet|bordro|hakediş)/,'/pdks-personel-takip-programi'],[/(stok|depo|barkod|sayım|sipariş|ambar)/,'/depo-stok-takip-programi'],[/(cari|teklif|muhasebe|fatura|ön muhasebe|pos|tahsilat)/,'/cari-teklif-on-muhasebe-programi']];
+for(var i=0;i<M.length;i++){if(M[i][0].test(q)){location.href=M[i][1];return false;}}
+location.href='/magaza';return false;}
 </script>
 </body>
 </html>

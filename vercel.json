@@ -14,19 +14,126 @@
     },
     {
       "source": "/urun/on-muhasebe-cari-teklif-programi",
-      "destination": "/urun/on-muhasebe-programi",
+      "destination": "/cari-teklif-on-muhasebe-programi",
       "permanent": true
     },
     {
       "source": "/urun/salon-randevu-yonetim-programi",
-      "destination": "/urun/kuafor-ve-berber-randevu-programi",
+      "destination": "/kuafor-berber-randevu-programi",
+      "permanent": true
+    },
+    {
+      "source": "/urun/pdks-personel-takip-sistemi",
+      "destination": "/pdks-personel-takip-programi",
+      "permanent": true
+    },
+    {
+      "source": "/urun/depo-stok-yonetim-programi",
+      "destination": "/depo-stok-takip-programi",
+      "permanent": true
+    },
+    {
+      "source": "/urun/satis-teklif-ve-cari-programi",
+      "destination": "/cari-teklif-on-muhasebe-programi",
+      "permanent": true
+    },
+    {
+      "source": "/urun/on-muhasebe-programi",
+      "destination": "/cari-teklif-on-muhasebe-programi",
+      "permanent": true
+    },
+    {
+      "source": "/urun/kuafor-ve-berber-randevu-programi",
+      "destination": "/kuafor-berber-randevu-programi",
+      "permanent": true
+    },
+    {
+      "source": "/urun/guzellik-ve-estetik-randevu-programi",
+      "destination": "/guzellik-estetik-randevu-programi",
+      "permanent": true
+    },
+    {
+      "source": "/urun/dis-klinigi-randevu-programi",
+      "destination": "/dis-klinigi-randevu-programi",
+      "permanent": true
+    },
+    {
+      "source": "/urun/veteriner-klinik-randevu-programi",
+      "destination": "/veteriner-klinik-randevu-programi",
+      "permanent": true
+    },
+    {
+      "source": "/urun/diyetisyen-danisan-takip-programi",
+      "destination": "/diyetisyen-danisan-takip-programi",
+      "permanent": true
+    },
+    {
+      "source": "/urun/pilates-studyo-uyelik-programi",
+      "destination": "/pilates-studyo-uyelik-programi",
+      "permanent": true
+    },
+    {
+      "source": "/urun/dovme-ve-piercing-studyo-randevu-programi",
+      "destination": "/dovme-piercing-randevu-programi",
       "permanent": true
     }
   ],
   "rewrites": [
     {
+      "source": "/dovme-piercing-randevu-programi",
+      "destination": "/dovme-piercing-randevu-programi.html"
+    },
+    {
+      "source": "/pilates-studyo-uyelik-programi",
+      "destination": "/pilates-studyo-uyelik-programi.html"
+    },
+    {
+      "source": "/diyetisyen-danisan-takip-programi",
+      "destination": "/diyetisyen-danisan-takip-programi.html"
+    },
+    {
+      "source": "/veteriner-klinik-randevu-programi",
+      "destination": "/veteriner-klinik-randevu-programi.html"
+    },
+    {
+      "source": "/dis-klinigi-randevu-programi",
+      "destination": "/dis-klinigi-randevu-programi.html"
+    },
+    {
+      "source": "/guzellik-estetik-randevu-programi",
+      "destination": "/guzellik-estetik-randevu-programi.html"
+    },
+    {
+      "source": "/kuafor-berber-randevu-programi",
+      "destination": "/kuafor-berber-randevu-programi.html"
+    },
+    {
+      "source": "/cari-teklif-on-muhasebe-programi",
+      "destination": "/cari-teklif-on-muhasebe-programi.html"
+    },
+    {
+      "source": "/depo-stok-takip-programi",
+      "destination": "/depo-stok-takip-programi.html"
+    },
+    {
+      "source": "/pdks-personel-takip-programi",
+      "destination": "/pdks-personel-takip-programi.html"
+    },
+    {
+      "source": "/magaza",
+      "destination": "/magaza.html"
+    },
+    {
       "source": "/demo",
       "destination": "/demo.html"
+    },
+    {
+      "source": "/demo-talep",
+      "destination": "/demo-talep.html"
+    },
+    {
+      "source": "/egitim",
+      "destination": "/egitim.html"
     },
     {
       "source": "/kampanya",

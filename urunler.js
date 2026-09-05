@@ -17,7 +17,7 @@ var URUNLER = [
     { s: "Fiyat personel sayısına göre artar mı?", c: "Hayır. Fiyat işletme başınadır; personel ve kayıt sayısı fiyatı değiştirmez, kullanıcı başına ücret yoktur." },
     { s: "İnternetin olmadığı sahada çalışır mı?", c: "Uygulama işlemleri çevrimdışı kaydeder; bağlantı gelince otomatik olarak senkronlar, veri kaybı olmaz." }
   ], ad:"PDKS ve Personel Takip", etiket:"Şirket Takip · Saha",
-  keyword:"Cihazsız PDKS ve Personel Takip Programı", urunTuru:"sirket", ikon:"⏱️", aile:"Saha & Personel",
+  keyword:"Cihazsız PDKS ve Personel Takip Programı", urunTuru:"sirket", ikon:"⏱️", aile:"PDKS & Personel Takibi",
   hero:["Parmak izi ve kart cihazına gerek kalmadan, personelin kendi telefonundan konum doğrulamalı mesai takibi. KVKK uyumlu, kart hilesine kapalı, sıfır donanım."],
   altOzellikler:[
     {i:"📋",b:"Puantaj",a:"Giriş-çıkış, mola ve fazla mesai otomatik puantaja işlenir."},
@@ -40,7 +40,7 @@ var URUNLER = [
     { s: "İşten ayrılışta eksik teslim nasıl görülür?", c: "Personelin üzerindeki tüm zimmetler tek ekranda listelenir; teslim edilmeyen kalem net görünür ve ilişik kesme buna göre yapılır." },
     { s: "Hangi varlıklar takip edilebilir?", c: "Cihaz, araç, alet, iş kıyafeti, telefon veya evrak — teslim edilen her şey personel bazında kaydedilir." }
   ], ad:"Zimmet Takip", etiket:"Şirket Takip · Zimmet",
-  keyword:"Ekipman ve Evrak Zimmet Takip Programı", urunTuru:"sirket", ikon:"🔐", aile:"Saha & Personel",
+  keyword:"Ekipman ve Evrak Zimmet Takip Programı", urunTuru:"sirket", ikon:"🔐", aile:"PDKS & Personel Takibi",
   hero:["Laptop, telefon, araç, kıymetli evrak… Kimde ne var? Teslimi fotoğraf, konum ve dijital onayla kayıt altına alın."],
   altOzellikler:[
     {i:"💻",b:"Ekipman zimmeti",a:"Demirbaş teslimi kime, ne zaman verildi kayda geçer."},
@@ -63,7 +63,7 @@ var URUNLER = [
     { s: "Görevin gerçekten yapıldığı nasıl doğrulanır?", c: "Tamamlanma anı zaman ve konum damgasıyla kaydedilir; isterseniz fotoğraf ve not eklenir, denetlenemeyen iş sorunu biter." },
     { s: "Ayrı bir ücreti var mı?", c: "Şirket Takip Sistemi paketine dahildir; işletme başına, kullanıcı başına ücret yoktur." }
   ], ad:"Görev Atama ve Saha Yönetimi", etiket:"Şirket Takip · Saha",
-  keyword:"Görev Atama ve Saha Ekip Yönetimi Programı", urunTuru:"sirket", ikon:"🗂️", aile:"Saha & Personel",
+  keyword:"Görev Atama ve Saha Ekip Yönetimi Programı", urunTuru:"sirket", ikon:"🗂️", aile:"PDKS & Personel Takibi",
   hero:["Ekibe görevi WhatsApp'tan değil, izole ve konum damgalı bir sistemden atayın. Kim, neyi, nerede, ne zaman yaptı tek panelde."],
   altOzellikler:[
     {i:"📌",b:"İzole görev atama",a:"Görevler kuruma özel şifreli ekrandan atanır."},
@@ -86,7 +86,7 @@ var URUNLER = [
     { s: "Hangi istasyonda kim çalıştı görülür mü?", c: "Evet. Giriş istasyona bağlandığından üretim içindeki dağılım ve verim tek ekranda görünür." },
     { s: "Taşeron hakedişi ayrışır mı?", c: "Ekip ve taşeron bazlı puantaj otomatik oluşur; her ekibin hakedişi ayrı çıkar ve SGK günleriyle karşılaştırılabilir." }
   ], ad:"Atölye ve Orta Ölçekli Üretim için PDKS", etiket:"Şirket Takip · Üretim",
-  keyword:"50-200 Personelli Atölye ve Üretim için Cihazsız PDKS", urunTuru:"sirket", ikon:"🏭", aile:"Saha & Personel",
+  keyword:"50-200 Personelli Atölye ve Üretim için Cihazsız PDKS", urunTuru:"sirket", ikon:"🏭", aile:"PDKS & Personel Takibi",
   hero:["50-200 personelli atölye ve orta ölçekli üretim için cihazsız, KVKK uyumlu mesai takibi. Pahalı biyometrik cihaz ve kart hilesi olmadan, çok istasyonlu."],
   altOzellikler:[
     {i:"🏭",b:"İstasyon bazlı takip",a:"Çok tezgâhlı üretimde kim nerede çalıştı görünür."},
@@ -111,7 +111,7 @@ var URUNLER = [
     { s: "Kritik stok uyarısı var mı?", c: "Evet. Ürün belirlediğiniz kritik seviyeye inince sistem otomatik sipariş uyarısı verir, popüler ürün rafta bitmez." },
     { s: "Sayım ne kadar hızlanır?", c: "Barkod okutmayla sayım elle listeye göre kat kat hızlanır, insan hatası düşer ve sayım farkı anında raporlanır." }
   ], ad:"Depo ve Stok Yönetim", etiket:"Şirket Takip · Depo",
-  keyword:"Barkodlu Depo ve Stok Takip Programı", urunTuru:"sirket", ikon:"📦", aile:"Stok, Satış & Ön Muhasebe",
+  keyword:"Barkodlu Depo ve Stok Takip Programı", urunTuru:"sirket", ikon:"📦", aile:"Depo & Stok Takibi",
   hero:["Barkodla saniyede stok giriş-çıkışı, OCR ile fatura okuma ve kritik seviye uyarısı. Depo farklarını görünür kılın."],
   altOzellikler:[
     {i:"🏷️",b:"Barkodlu stok",a:"Hızlı ve hatasız giriş-çıkış, anlık kalan miktar."},
@@ -134,7 +134,7 @@ var URUNLER = [
     { s: "Cari alacak takibi nasıl kolaylaşır?", c: "Her satış ve tahsilat carihe işlenir; vadesi gelen ve geçen alacaklar otomatik listelenir, unutulan tahsilat kalmaz." },
     { s: "Stok ile satış birbirine bağlı mı?", c: "Evet. Onaylanan siparişte ürün stoktan otomatik düşer; elde olmayanı satma sorunu ortadan kalkar." }
   ], ad:"Satış, Teklif ve Cari", etiket:"Şirket Takip · Satış",
-  keyword:"Antetli Teklif, Cari ve Satış Yönetim Programı", urunTuru:"sirket", ikon:"🧾", aile:"Stok, Satış & Ön Muhasebe",
+  keyword:"Antetli Teklif, Cari ve Satış Yönetim Programı", urunTuru:"sirket", ikon:"🧾", aile:"Cari, Teklif & Ön Muhasebe",
   hero:["Antetli profesyonel teklif, sipariş yönetimi ve cari (borç-alacak) takibi bir arada. Satışı stok ve tahsilatla tek ekrandan yürütün."],
   altOzellikler:[
     {i:"📝",b:"Antetli teklif",a:"Fiyat listesinden dakikalar içinde profesyonel teklif."},
@@ -157,7 +157,7 @@ var URUNLER = [
     { s: "e-Fatura ve e-Arşiv ile çalışır mı?", c: "Kullandığınız e-belge sistemlerine köprü kurulabilir; iki sistem tek akışta buluşur." },
     { s: "Fiyatı nasıl?", c: "Şirket Takip Sistemi paketine dahildir; işletme başına, sınırsız personel, kullanıcı başına ücret yok." }
   ], ad:"Ön Muhasebe", etiket:"Şirket Takip · Ön Muhasebe",
-  keyword:"Ön Muhasebe Programı — Cari, Fatura, Kasa", urunTuru:"sirket", ikon:"📒", aile:"Stok, Satış & Ön Muhasebe",
+  keyword:"Ön Muhasebe Programı — Cari, Fatura, Kasa", urunTuru:"sirket", ikon:"📒", aile:"Cari, Teklif & Ön Muhasebe",
   hero:["İşletmenizin günlük para akışını — cari, fatura, kasa, gider, tahsilat — eksiksiz yöneten ön muhasebe sistemi. Günü gününe kontrol, tek ekranda."],
   altOzellikler:[
     {i:"👥",b:"Cari hesap",a:"Müşteri ve tedarikçi borç-alacak takibi."},
@@ -312,6 +312,30 @@ var URUNLER = [
   sorular:["pilates-studyosu-uyelik-takip-programi","seans-paketi-takibi-nasil-yapilir","randevu-kacirma-no-show-nasil-onlenir"],
   araclar:[{yol:"/araclar/randevu-hatirlatma-mesaji/",ad:"Randevu Hatırlatma Aracı"}],
   ctaBaslik:"Üyelik yenilemesini kaçırmayın", ctaMetin:"Pilates üyelik sistemini görmek için bize yazın."
+},
+
+{
+  slug:"dovme-ve-piercing-studyo-randevu-programi",
+  sss:[
+    {s:"Sanatçı bazlı randevu ve portföy tutulabiliyor mu?",c:"Evet. Her sanatçının takvimi ayrıdır; müşteri istediği sanatçıdan randevu alır. Yapılan çalışmaların fotoğrafları müşteri kartında portföy olarak saklanır."},
+    {s:"Kapora/ön ödeme takibi var mı?",c:"Randevuya kapora tanımlayabilir, alınan ön ödemeyi kaydedebilirsiniz; gelmeyen randevularda kapora kaydı ve no-show geçmişi tutulur."},
+    {s:"Randevu hatırlatması ve onam formu gönderiliyor mu?",c:"Randevu öncesi WhatsApp'tan otomatik hatırlatma gider; onam/aydınlatma metni ve bakım talimatını da mesajla paylaşabilirsiniz."}
+  ], ad:"Dövme & Piercing Randevu", etiket:"Salon Programı · Randevu",
+  keyword:"Dövme ve Piercing Stüdyosu Randevu Programı", urunTuru:"salon", ikon:"🖊️", aile:"Sektörel Randevu · Salon",
+  hero:["Dövme ve piercing stüdyoları için sanatçı bazlı online randevu, kapora takibi ve müşteri portföyü. No-show'u kaporayla azaltın, randevu öncesi otomatik hatırlatma ve bakım talimatını WhatsApp'tan gönderin."],
+  altOzellikler:[
+    {i:"🎨",b:"Sanatçı takvimi",a:"Her sanatçının ayrı takvimi; müşteri seçerek randevu alır."},
+    {i:"💳",b:"Kapora/ön ödeme",a:"Randevuya kapora; alınan ön ödeme kaydı."},
+    {i:"🖼️",b:"Portföy",a:"Yapılan çalışmalar müşteri kartında foto olarak saklanır."},
+    {i:"💬",b:"WhatsApp hatırlatma",a:"Randevu öncesi otomatik hatırlatma ve bakım talimatı."},
+    {i:"🚫",b:"No-show takibi",a:"Gelmeyen müşteri geçmişi ve kapora kaydı."},
+    {i:"📅",b:"Online randevu",a:"Müşteri linkten uygun saati kendisi seçer."}
+  ],
+  nedir:["Dövme/piercing stüdyosu randevu sistemi, sanatçı takvimini kapora ve müşteri portföyüyle birleştiren yapıdır. TEKNOPERS'te müşteri istediği sanatçıdan online randevu alır, kapora kaydı ve hatırlatma otomatik yürür.","Kapora ve no-show takibi boş kalan saati azaltır; portföy ve bakım talimatı müşteri ilişkisini güçlendirir."],
+  kimlerIcin:["guzellik-ve-estetik-merkezleri-icin-randevu-ve-seans-programi","kuafor-ve-berberler-icin-online-randevu-ve-crm"],
+  sorular:[],
+  araclar:[{yol:"/araclar/randevu-hatirlatma-mesaji/",ad:"Randevu Hatırlatma Aracı"}],
+  ctaBaslik:"Boş kalan saati kaporayla azaltın", ctaMetin:"Dövme & piercing randevu demosu için bize yazın."
 }
 
 ];
